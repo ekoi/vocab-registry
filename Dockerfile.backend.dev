@@ -1,0 +1,14 @@
+# https://pythonspeed.com/articles/base-image-python-docker-images/
+
+FROM python:3.7-slim-buster
+WORKDIR /usr/src/app
+ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
+#Server will reload itself on file changes if in dev mode
+ENV FLASK_ENV=development 
+
+COPY ./backend/requirements.txt requirements.txt
+
+RUN pip install -r requirements.txt
+
+CMD ["gunicorn", "--reload", "--access-logfile", "-", "-b", "0.0.0.0:5000", "-w", "4", "app:app" ]
