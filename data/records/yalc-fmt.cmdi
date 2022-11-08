@@ -1,0 +1,22 @@
+<cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+    <cmd:Header>
+        <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
+    </cmd:Header>
+    <cmd:Resources>
+        <cmd:ResourceProxyList/>
+        <cmd:JournalFileProxyList/>
+        <cmd:ResourceRelationList/>
+    </cmd:Resources>
+    <cmd:Components>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Linked Data File Formats</cmd:title><cmd:Location><cmd:uri>https://www.w3.org/ns/formats/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/microdata</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/Turtle</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/TriG</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/SPARQL_Results_XML</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/SPARQL_Results_TSV</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/SPARQL_Results_JSON</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/SPARQL_Results_CSV</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/RIF_XML</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/RDFa</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/RDF_XML</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/RDF_JSON</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/PROV-XML</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/PROV-N</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/POWDER-S</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/POWDER</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/OWL_XML</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/OWL_Manchester</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/OWL_Functional</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/N3</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/N-Triples</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/N-Quads</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/LD_Patch</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/JSON-LD</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/ns/formats/Format</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Unique IRIs for Linked Data file formats.</cmd:description></cmd:Description><cmd:Assessement>
+                <cmd:Recommendation>
+                    <cmd:Rating>appears</cmd:Rating>
+                    <cmd:Publisher>
+                        <cmd:name>YALC</cmd:name>
+                    </cmd:Publisher>
+                </cmd:Recommendation>
+            </cmd:Assessement>
+        </cmd:Vocabulary>
+    </cmd:Components>
+</cmd:CMD>

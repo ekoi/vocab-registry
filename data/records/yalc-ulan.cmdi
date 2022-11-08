@@ -1,0 +1,28 @@
+<cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+    <cmd:Header>
+        <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
+    </cmd:Header>
+    <cmd:Resources>
+        <cmd:ResourceProxyList/>
+        <cmd:JournalFileProxyList/>
+        <cmd:ResourceRelationList/>
+    </cmd:Resources>
+    <cmd:Components>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Art &amp; Architecture Thesaurus (ULAN)</cmd:title><cmd:Location><cmd:uri>https://www.getty.edu/research/tools/vocabularies/ulan/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://vocab.getty.edu/dataset/ulan/explicit.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:License><cmd:url>https://opendatacommons.org/licenses/by/1-0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">AAT is a structured, multilingual vocabulary including terms, descriptions, and other information for generic concepts related to art, architecture, other cultural heritage, and conservation.  For decades now, the AAT has been used as a primary reference by museums, art libraries, archives, visual resource catalogers, conservation specialists, archaeological projects, bibliographic projects, researchers, and information specialists who are dealing with the needs of these users.
+
+Terms for any concept may include the plural form of the term, singular form, natural order, inverted order, spelling variants, scientific and common forms, various forms of speech, and synonyms that have various etymological roots.  Among these terms, one is flagged as the term (or descriptor) preferred by the Getty Vocabulary Program.  There may be multiple descriptors reflecting usage in multiple languages. Preferences for individual contributors may differ and are noted.
+
+The AAT is a thesaurus in compliance with ISO and NISO standards.
+
+The focus of each AAT record is a concept.  Linked to each concept are terms, related concepts, its position in the hierarchy, sources for the data, and notes.  The conceptual framework of facets and hierarchies in the AAT is designed to allow a general classification scheme for art, architecture and conservation.  The framework is not subject-specific; for example, there is no defined portion of the AAT that is specific only for Renaissance painting.  The terms to describe Renaissance paintings will be found in many locations in the AAT hierarchies.  There may be multiple broader contexts, making AAT polyhierarchical.  In addition the AAT has equivalence and associative relationships.  The temporal coverage of the AAT ranges from Antiquity to the present and the scope is global.</cmd:description></cmd:Description><cmd:Assessement>
+                <cmd:Recommendation>
+                    <cmd:Rating>appears</cmd:Rating>
+                    <cmd:Publisher>
+                        <cmd:name>YALC</cmd:name>
+                    </cmd:Publisher>
+                </cmd:Recommendation>
+            </cmd:Assessement>
+        </cmd:Vocabulary>
+    </cmd:Components>
+</cmd:CMD>

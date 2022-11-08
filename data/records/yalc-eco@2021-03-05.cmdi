@@ -1,0 +1,26 @@
+<cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+    <cmd:Header>
+        <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
+    </cmd:Header>
+    <cmd:Resources>
+        <cmd:ResourceProxyList/>
+        <cmd:JournalFileProxyList/>
+        <cmd:ResourceRelationList/>
+    </cmd:Resources>
+    <cmd:Components>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Evidence &amp; Conclusion Ontology (ECO)</cmd:title><cmd:Location><cmd:uri>https://www.ebi.ac.uk/ols/ontologies/eco</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.obolibrary.org/obo/eco/releases/2021-03-05/eco.owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Evidence &amp; Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain that arise from laboratory experiments, computational methods, literature curation, or other means.  Researchers can use these types of evidence to support assertions about things (such as scientific conclusions, gene annotations, or other statements of fact) that result from scientific research.
+
+ECO comprises two high-level classes, evidence and assertion method, where evidence is defined as &#8220;a type of information that is used to support an assertion,&#8221; and assertion method is defined as &#8220;a means by which a statement is made about an entity.&#8221;  Together evidence and assertion method can be combined to describe both the support for an assertion and whether that assertion was made by a human being or a computer.  However, ECO is not used to make the assertion itself; for that, one would use another ontology, free text description, or some other means.
+
+ECO was originally created around the year 2000 to support gene product annotation by the Gene Ontology, which now displays ECO in AmiGO 2.  Today ECO is used by many groups concerned with evidence in scientific research.</cmd:description></cmd:Description><cmd:Assessement>
+                <cmd:Recommendation>
+                    <cmd:Rating>appears</cmd:Rating>
+                    <cmd:Publisher>
+                        <cmd:name>YALC</cmd:name>
+                    </cmd:Publisher>
+                </cmd:Recommendation>
+            </cmd:Assessement>
+        </cmd:Vocabulary>
+    </cmd:Components>
+</cmd:CMD>

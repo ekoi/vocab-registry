@@ -1,6 +1,7 @@
 .idea/
 
 .DS_Store
-data/
+data/nodes
+#data/records
 
 *__pycache__

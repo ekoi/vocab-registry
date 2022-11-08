@@ -1,0 +1,22 @@
+[
+    {
+        "name": "title",
+        "fields": [
+            {
+                "name": "title",
+                "path": "./cmd:Components/cmd:Vocabulary/cmd:title[@xml:lang='en']",
+                "unbounded": "no"
+            }
+        ]
+    },
+    {
+        "name": "publisher",
+        "fields": [
+            {
+                "name": "publisher",
+                "path": "./cmd:Components/cmd:Vocabulary/cmd:Assessement/cmd:Recommendation/cmd:Publisher/cmd:name",
+                "unbounded": "yes"
+            }
+        ]
+    }
+]
