@@ -4,7 +4,7 @@ import {useState, useEffect} from "react";
 import {Fragment} from "react";
 import img from "../assets/img/M0004.jpg";
 import {HOME, SERVICE} from "../misc/config";
-import {IResultItem, IResultList, ICollection_item, ISearchObject} from "../misc/interfaces";
+import {IResultItem, IPublisher, IResultList, ICollection_item, ISearchObject} from "../misc/interfaces";
 import Document from "../elements/document";
 import Bibliography from "../elements/bibliography";
 import Annotations from "../elements/annotations";
@@ -14,37 +14,20 @@ import {Base64} from "js-base64";
 function Detail() {
     let navigate = useNavigate();
     const dummy: IResultItem = {
-        _id: "",
-//        locatie: [],
-        telefoon: "",
-//        onderwerp: [],
-//        organisatie: [],
-//        rol: [],
-        titel: "'"
+        record:"",
+        title: ""
     }
     const params = useParams();
     const id = params.id as String;
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState<IResultItem>(dummy);
-    document.title = "Item | Diplomatieke Getuigenissen";
-
-    /*
-    async function fetch_data() {
-        const url = SERVICE + "/item?id=" + id;
-        const response = await fetch(url);
-        const json: IResultItem = await response.json();
-        if (json.titel !== undefined) {
-            setData(json as IResultItem);
-            setLoading(false);
-        }
-    }
-    */
+    document.title = "Item | CLARIAH+ FAIR Vocabulary Registry";
 
     async function fetch_data() {
-        const url = SERVICE + "/detail?rec=1";
+        const url = SERVICE + "/detail?rec=" + id;
         const response = await fetch(url);
         const json: IResultItem = await response.json();
-        if (json.titel !== undefined) {
+        if (json.title !== undefined) {
             setData(json as IResultItem);
             setLoading(false);
         }
@@ -67,33 +50,18 @@ function Detail() {
     return (
 
         <div className="hcContentContainer">
-            {/*<div className="collectionBrowser">
-                {collectionFetched ? (
-                    <div>Select manuscript from search results: </div>
-                ) : (
-                    <div>Loading</div>
-                )}
-            </div>*/}
             <div className="hcLayoutFacet-Result hcBasicSideMargin hcMarginBottom15">
                 {loading ? (
                     <div>Loading</div>
                 ) : (<div>
-                    <h3 className="detailH3">{data.titel}</h3>
+                    <h3 className="detailH3">{data.title}</h3>
                     <div className="ecoDetailTable">
                         <div className="ecoDetailRow">
                             <div className="ecoLabelCell">
-                                Titel
+                                Title
                             </div>
                             <div className="ecoCell">
-                                {data.titel}
-                            </div>
-                        </div>
-                        <div className="ecoDetailRow">
-                            <div className="ecoLabelCell">
-                                Telefoon
-                            </div>
-                            <div className="ecoCell">
-                                {data.telefoon}
+                                {data.title}
                             </div>
                         </div>
                     </div>

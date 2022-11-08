@@ -6,7 +6,7 @@ class Index:
     def __init__(self, config):
         self.config = config
         # self.es = Elasticsearch(hosts=[{"host": "ecodices_es"}], retry_on_timeout=True)
-        self.client = Elasticsearch(hosts=[{"host": "vocab_es"}], retry_on_timeout=True)
+        self.client = Elasticsearch(hosts=[{"host": "elastic"}], retry_on_timeout=True)
 
     def no_case(self, str_in):
         str = str_in.strip()
@@ -100,7 +100,7 @@ class Index:
                     "match_all": {}},
                     "size": length,
                     "from": start,
-                    "_source": ["record","titel", "telefoon"],
+                    "_source": ["record","title", "publisher"],
                     "sort": [
                         {orderFieldName: {"order": "asc"}}
                     ]

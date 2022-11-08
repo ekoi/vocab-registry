@@ -8,14 +8,14 @@ import {useNavigate} from "react-router-dom";
 
 function Collections() {
     let navigate = useNavigate();
-    document.title ="Diplomatieke Getuigenissen";
+    document.title ="CLARIAH+ FAIR Vocabulary Registry";
 
     function goSearch(facetValue: string) {
         let searchStruc: ISearchObject = {
             searchvalues: [{name: "Collection", field: "collection", values: [facetValue]}],
             page: 1,
             page_length: 30,
-            sortorder: "titel"
+            sortorder: "title"
         };
         if (facetValue == "all") {
             searchStruc.searchvalues = [];
@@ -26,9 +26,9 @@ function Collections() {
 
     return (
         <div className="hcContentContainer">
-            <h2>Demo Diplomatieke Getuigenissen</h2>
+            <h2>CLARIAH+ FAIR Vocabulary Registry</h2>
             <div>
-                Dit is een demo voor het zoeken in de metadata van de collectie Diplomatieke Getuigenissen.
+                Find a FAIR Vocabulary that suits you needs!
             </div>
             <div className="hcClickable" onClick={() => goSearch("all")}>Browse</div>
 

@@ -18,14 +18,14 @@ function Document(props: {item: IResultItem}) {
     }
 
     return (<div>
-        <h3 className="detailH3">{props.item.titel}</h3>
+        <h3 className="detailH3">{props.item.title}</h3>
         <div className="ecoDetailTable">
             <div className="ecoDetailRow">
                 <div className="ecoLabelCell">
-                    Titel
+                    Title
                 </div>
                 <div className="ecoCell">
-                    {props.item.titel}
+                    {props.item.title}
                 </div>
             </div>
         </div>

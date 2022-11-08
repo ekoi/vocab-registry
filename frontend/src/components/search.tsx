@@ -29,13 +29,13 @@ function Search() {
     const [result, setResult] = useState<IResultList>({amount: 0, pages: 0, items: []});
     const [numberOfItems, setNumberOfItems] = useState(0);
     let navigate = useNavigate();
-    document.title = "Search | Diplomatieke Getuigenissen";
+    document.title = "Search | CLARIAH+ FAIR Vocabulary Registry";
 
     let searchBuffer: ISearchObject = {
         searchvalues: parameters.searchvalues,
         page: page,
         page_length: 500,
-        sortorder: "titel",
+        sortorder: "title",
     };
 
     let facets = parameters.searchvalues;
@@ -150,11 +150,8 @@ function Search() {
             <div className="hcLayoutFacet-Result hcBasicSideMargin hcMarginBottom15">
                 <div className="hcLayoutFacets">
                     <FreeTextFacet add={sendCandidate}/>
-                    <ListFacet parentCallback={sendCandidate} name="Naam" field="naam"/>
-                    <ListFacet parentCallback={sendCandidate} name="Locatie" field="locatie.locatie"/>
-                    <ListFacet parentCallback={sendCandidate} name="Organisatie" field="organisatie.organisatie"/>
-                    <ListFacet parentCallback={sendCandidate} name="Rol" field="rol.rol"/>
-                    <ListFacet parentCallback={sendCandidate} name="Onderwerp" field="onderwerp.onderwerp"/>
+                    <ListFacet parentCallback={sendCandidate} name="Title" field="title"/>
+                    <ListFacet parentCallback={sendCandidate} name="Publisher" field="publisher.publisher"/>
                 </div>
                 <div className="hcLayoutResults">
                     <div className="hcResultsHeader hcMarginBottom1">

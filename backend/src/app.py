@@ -95,7 +95,7 @@ def get_detail():
     root = file.getroot()
     ns = {"cmd": "http://www.clarin.eu/cmd/","xml": "http://www.w3.org/XML/1998/namespace"}
     ttl = grab_value("./cmd:Components/cmd:Vocabulary/cmd:title[@xml:lang='en']", root, ns)
-    retStruc = {"rec": rec,"title": ttl}
+    retStruc = {"record": rec,"title": ttl}
     return json.dumps(retStruc)
 
 

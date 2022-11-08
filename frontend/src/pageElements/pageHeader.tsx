@@ -1,5 +1,6 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
+import {HOME} from "../misc/config";
 
 function PageHeader() {
     const navigate = useNavigate();
@@ -9,12 +10,12 @@ function PageHeader() {
                 <header className=" hcPageHeaderSimple hcBasicSideMargin">
                     <div className="hcBrand">
                         <div className="hcBrandLogo" onClick={() => {navigate("/")}}>
-                            <div className="hcTitle">Diplomatieke Getuigenissen</div>
+                            <div className="hcTitle">CLARIAH+ FAIR Vocabulary Registry</div>
                         </div>
                     </div>
 
                     <nav>
-                        <a href="">Test version</a>
+                        <a href={HOME}>Test version</a>
                     </nav>
                 </header>
             </div>
