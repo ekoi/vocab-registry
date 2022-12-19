@@ -2,6 +2,7 @@ from flask import Flask, request
 import json
 from elastic_index import Index
 from lxml import etree
+import elementpath
 import unicodedata
 
 
@@ -17,7 +18,8 @@ config = {
 index = Index(config)
 
 def grab_value(path, root, ns):
-    content = root.findall(path, ns)
+    # content = root.findall(path, ns)
+    content = elementpath.select(root, path, ns)
     if content and content[0].text is not None:
         return unicodedata.normalize("NFKD", content[0].text).strip()
     else:
@@ -25,7 +27,8 @@ def grab_value(path, root, ns):
 
 def grab_list(name, path, root, ns):
     ret_arr = []
-    content = root.findall(path, ns)
+    # content = root.findall(path, ns)
+    content = elementpath.select(root, path, ns)
     for item in content:
         buffer = {name : unicodedata.normalize("NFKD", item.text).strip()}
         if buffer not in ret_arr:
@@ -93,7 +96,8 @@ def get_detail():
     rec = request.args.get("rec")
     file = etree.parse("/data/records/"+rec)
     root = file.getroot()
-    ns = {"cmd": "http://www.clarin.eu/cmd/","xml": "http://www.w3.org/XML/1998/namespace"}
+    #ns = {"cmd": "http://www.clarin.eu/cmd/","xml": "http://www.w3.org/XML/1998/namespace"}
+    ns = {"cmd": "http://www.clarin.eu/cmd/"}
     ttl = grab_value("./cmd:Components/cmd:Vocabulary/cmd:title[@xml:lang='en']", root, ns)
     retStruc = {"record": rec,"title": ttl}
     return json.dumps(retStruc)
