@@ -4,7 +4,7 @@ from elastic_index import Index
 from lxml import etree
 import elementpath
 import unicodedata
-
+from cmdi_parser import parser
 
 
 app = Flask(__name__)
@@ -16,6 +16,7 @@ config = {
 }
 
 index = Index(config)
+parser = parser()
 
 def grab_value(path, root, ns):
     # content = root.findall(path, ns)
@@ -94,13 +95,7 @@ def get_collection():
 def get_detail():
     print('test')
     rec = request.args.get("rec")
-    file = etree.parse("/data/records/"+rec)
-    root = file.getroot()
-    #ns = {"cmd": "http://www.clarin.eu/cmd/","xml": "http://www.w3.org/XML/1998/namespace"}
-    ns = {"cmd": "http://www.clarin.eu/cmd/"}
-    ttl = grab_value("./cmd:Components/cmd:Vocabulary/cmd:title[@xml:lang='en']", root, ns)
-    retStruc = {"record": rec,"title": ttl}
-    return json.dumps(retStruc)
+    return json.dumps(parser.parse(rec))
 
 
 
