@@ -39,7 +39,8 @@ export interface IRemoveFacet {
 export interface IResultItem {
     _id?: string,
     record: string,
-    title: string
+    title: string,
+    description: string,
 }
 
 export interface IPublisher {

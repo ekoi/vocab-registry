@@ -1,3 +1,27 @@
+from lxml import etree
+import elementpath
+import unicodedata
+
+
+def grab_value(path, root, ns):
+    # content = root.findall(path, ns)
+    content = elementpath.select(root, path, ns)
+    if content and content[0].text is not None:
+        return unicodedata.normalize("NFKD", content[0].text).strip()
+    else:
+        return ""
+
+def grab_list(name, path, root, ns):
+    ret_arr = []
+    # content = root.findall(path, ns)
+    content = elementpath.select(root, path, ns)
+    for item in content:
+        buffer = {name : unicodedata.normalize("NFKD", item.text).strip()}
+        if buffer not in ret_arr:
+            ret_arr.append(buffer)
+    return ret_arr
+
+
 class parser:
     def parse(self, rec):
         file = etree.parse("/data/records/"+rec)

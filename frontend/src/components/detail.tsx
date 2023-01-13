@@ -15,7 +15,8 @@ function Detail() {
     let navigate = useNavigate();
     const dummy: IResultItem = {
         record:"",
-        title: ""
+        title: "",
+        description: ""
     }
     const params = useParams();
     const id = params.id as String;
@@ -62,6 +63,14 @@ function Detail() {
                             </div>
                             <div className="ecoCell">
                                 {data.title}
+                            </div>
+                        </div>
+                        <div className="ecoDetailRow">
+                            <div className="ecoLabelCell">
+                                Description
+                            </div>
+                            <div className="ecoCell">
+                                {data.description}
                             </div>
                         </div>
                     </div>
