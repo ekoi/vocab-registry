@@ -1,4 +1,4 @@
-<cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+<?xml version="1.0" encoding="UTF-8"?><cmd:CMD xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
     <cmd:Header>
         <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
     </cmd:Header>
@@ -8,8 +8,8 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary>
-            <cmd:title xml:lang="en">HTTP Vocabulary</cmd:title><cmd:Location><cmd:uri>https://www.w3.org/TR/HTTP-in-RDF10</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A vocabulary that defines a collection of RDF classes and properties that represent the HTTP vocabulary as defined by the HTTP specification [RFC2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html).  These RDF terms can be used to record HTTP or secure HTTP request and response messages in RDF format, such as by automated Web accessibility evaluation tools that want to describe Web resources, including the various headers exchanged between the client and server during content negotiation.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary><cmd:title xml:lang="en">HTTP Vocabulary</cmd:title>
+            <cmd:Location><cmd:uri>https://www.w3.org/TR/HTTP-in-RDF10</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A vocabulary that defines a collection of RDF classes and properties that represent the HTTP vocabulary as defined by the HTTP specification [RFC2616](http://www.w3.org/Protocols/rfc2616/rfc2616.html).  These RDF terms can be used to record HTTP or secure HTTP request and response messages in RDF format, such as by automated Web accessibility evaluation tools that want to describe Web resources, including the various headers exchanged between the client and server during content negotiation.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
