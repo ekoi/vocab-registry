@@ -41,6 +41,7 @@ export interface IResultItem {
     record: string,
     title: string,
     description: string,
+    home: string,
 }
 
 export interface IPublisher {

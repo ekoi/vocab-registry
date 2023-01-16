@@ -16,7 +16,8 @@ function Detail() {
     const dummy: IResultItem = {
         record:"",
         title: "",
-        description: ""
+        description: "",
+        home: "",
     }
     const params = useParams();
     const id = params.id as String;
@@ -73,6 +74,14 @@ function Detail() {
                                 {data.description}
                             </div>
                         </div>
+                        <div className="ecoDetailRow">
+                            <div className="ecoLabelCell">
+                                Homepage
+                            </div>
+                            <div className="ecoCell">
+                                {data.home}
+                            </div>
+                        </div>                   
                     </div>
                 </div>)}
             </div>
