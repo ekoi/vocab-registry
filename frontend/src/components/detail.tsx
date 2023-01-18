@@ -18,6 +18,8 @@ function Detail() {
         title: "",
         description: "",
         home: "",
+        endpoint: "",
+        license: "",
     }
     const params = useParams();
     const id = params.id as String;
@@ -82,7 +84,23 @@ function Detail() {
                             <div className="ecoCell">
                                 {data.home}
                             </div>
-                        </div>                   
+                        </div> 
+                        <div className="ecoDetailRow">
+                            <div className="ecoLabelCell">
+                                Endpoint
+                            </div>
+                            <div className="ecoCell">
+                                {data.endpoint}
+                            </div>
+                        </div> 
+                        <div className="ecoDetailRow">
+                            <div className="ecoLabelCell">
+                                License
+                            </div>
+                            <div className="ecoCell">
+                                {data.license}
+                            </div>
+                        </div>                                                                  
                     </div>
                 </div>)}
             </div>

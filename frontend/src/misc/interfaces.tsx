@@ -42,6 +42,8 @@ export interface IResultItem {
     title: string,
     description: string,
     home: string,
+    endpoint: string,
+    license: string,
 }
 
 export interface IPublisher {
