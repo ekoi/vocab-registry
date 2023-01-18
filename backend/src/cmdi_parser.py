@@ -33,5 +33,5 @@ class parser:
         ttl = grab_value("(//cmd:Components/cmd:Vocabulary/cmd:title[@xml:lang='en'][normalize-space(.)!=''],base-uri(/cmd:CMD)[normalize-space(.)!=''],'Hallo Wereld!')[1]", root, ns)
         desc = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Description/cmd:description[@xml:lang='en']", root, ns)
         home = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Location[cmd:type='homepage']/cmd:uri", root, ns)
-        retStruc = {"record": rec,"title": ttl, "description": desc, "homepage": home}
+        retStruc = {"record": rec,"title": ttl, "description": desc, "home": home}
         return retStruc

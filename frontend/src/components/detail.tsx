@@ -31,6 +31,7 @@ function Detail() {
         const json: IResultItem = await response.json();
         if (json.title !== undefined) {
             setData(json as IResultItem);
+            console.log(json);
             setLoading(false);
         }
     }
