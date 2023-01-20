@@ -3,5 +3,5 @@
 .DS_Store
 data/nodes
 #data/records
-
+node_modules
 *__pycache__
