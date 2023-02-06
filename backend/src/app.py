@@ -67,7 +67,7 @@ def manuscript():
 def get_collection():
     data = request.get_json()
     collection_items = index.get_collection_items(data["collection"])
-    return json.dumps(collection_items);
+    return json.dumps(collection_items)
 
 @app.route("/detail", methods=['GET'])
 def get_detail():

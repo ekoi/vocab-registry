@@ -29,7 +29,7 @@ class parser:
     def parse(self, rec):
         file = etree.parse("/data/records/"+rec)
         root = file.getroot()
-        ns = {"cmd": "http://www.clarin.eu/cmd/","xml": "http://www.w3.org/XML/1998/namespace"}
+        ns = {"cmd": "http://www.clarin.eu/cmd/"}
         ttl = grab_value("(//cmd:Components/cmd:Vocabulary/cmd:title[@xml:lang='en'][normalize-space(.)!=''],base-uri(/cmd:CMD)[normalize-space(.)!=''],'Hallo Wereld!')[1]", root, ns)
         desc = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Description/cmd:description[@xml:lang='en']", root, ns)
         home = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Location[cmd:type='homepage']/cmd:uri", root, ns)
