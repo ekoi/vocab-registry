@@ -34,15 +34,15 @@ services:
       networks:
         - vocab_network         
 
-  backend:
+  app:
     build:
        context: ./
-       #dockerfile: Dockerfile.backend.dev
-       dockerfile: Dockerfile.backend
+       #dockerfile: Dockerfile.dev
+       dockerfile: Dockerfile
     environment:
-       - VIRTUAL_HOST=vocab-service.sd.di.huc.knaw.nl
+       - VIRTUAL_HOST=vocab.sd.di.huc.knaw.nl
     ports:
-       - 5050:5000
+       - 5000:5000
     volumes:
        - ./data:/data
        #- ./backend/src:/usr/src/app

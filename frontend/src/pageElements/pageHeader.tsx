@@ -1,6 +1,5 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
-import {HOME} from "../misc/config";
 
 function PageHeader() {
     const navigate = useNavigate();
@@ -13,10 +12,6 @@ function PageHeader() {
                             <div className="hcTitle">CLARIAH+ FAIR Vocabulary Registry</div>
                         </div>
                     </div>
-
-                    <nav>
-                        <a href={HOME}>Test version</a>
-                    </nav>
                 </header>
             </div>
             <div className="hcContentContainer hcMarginBottom5 hcBorderBottom">

@@ -2,11 +2,10 @@ import React from "react";
 import {Fragment} from "react";
 import {IFacetValue, ISendCandidate} from "../misc/interfaces";
 import {useState, useEffect} from "react";
-import {SERVICE} from "../misc/config";
 
 function ListFacet(props: {parentCallback: ISendCandidate, name: string, field: string}) {
     const [data, setData] = useState<IFacetValue[]>([]);
-    const [url, setUrl] = useState(SERVICE + "/facet?name=" + props.field + "&amount=10");
+    const [url, setUrl] = useState("/facet?name=" + props.field + "&amount=10");
     const [help, setHelp] = useState(false);
     const [loading, setLoading] = useState(true);
     const [more, setMore] = useState(true);
@@ -26,9 +25,9 @@ function ListFacet(props: {parentCallback: ISendCandidate, name: string, field: 
 
     function changeListLength() {
         if (more) {
-            setUrl(SERVICE + "/facet?name=" + props.field + "&amount=500");
+            setUrl("/facet?name=" + props.field + "&amount=500");
         } else {
-            setUrl(SERVICE + "/facet?name=" + props.field + "&amount=10");
+            setUrl("/facet?name=" + props.field + "&amount=10");
         }
         setMore(!more);
     }

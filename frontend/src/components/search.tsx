@@ -15,7 +15,6 @@ import {Base64} from "js-base64";
 import FreeTextFacet from "../facets/freeTextFacet";
 import ListFacet from "../facets/listFacet";
 import CenturyFacet from "../facets/centuryFacet";
-import {SERVICE, HOME} from "../misc/config";
 import ManuscriptList from "../elements/manuscriptList";
 import {Fragment} from "react";
 
@@ -44,13 +43,12 @@ function Search() {
     const cross: string = "[x]";
 
     async function fetch_data() {
-        const url = SERVICE + "/browse";
+        const url = "/browse";
         const response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json',
-                'Origin': HOME
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(searchStruc)
         });

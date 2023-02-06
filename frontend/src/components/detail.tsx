@@ -3,7 +3,6 @@ import {useParams, useNavigate} from "react-router-dom";
 import {useState, useEffect} from "react";
 import {Fragment} from "react";
 import img from "../assets/img/M0004.jpg";
-import {HOME, SERVICE} from "../misc/config";
 import {IResultItem, IPublisher, IResultList, ICollection_item, ISearchObject} from "../misc/interfaces";
 import Document from "../elements/document";
 import Bibliography from "../elements/bibliography";
@@ -28,7 +27,7 @@ function Detail() {
     document.title = "Item | CLARIAH+ FAIR Vocabulary Registry";
 
     async function fetch_data() {
-        const url = SERVICE + "/detail?rec=" + id;
+        const url = "/detail?rec=" + id;
         const response = await fetch(url);
         const json: IResultItem = await response.json();
         if (json.title !== undefined) {

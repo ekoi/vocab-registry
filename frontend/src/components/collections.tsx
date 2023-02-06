@@ -2,7 +2,6 @@ import React from 'react';
 import {Fragment} from "react";
 import {useState, useEffect} from "react";
 import {IFacetValue, ISearchObject, ISearchValues} from "../misc/interfaces";
-import {HOME, SERVICE} from "../misc/config";
 import {Base64} from "js-base64";
 import {useNavigate} from "react-router-dom";
 
