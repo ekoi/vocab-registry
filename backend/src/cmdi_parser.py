@@ -34,6 +34,6 @@ class parser:
         desc = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Description/cmd:description[@xml:lang='en']", root, ns)
         home = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Location[cmd:type='homepage']/cmd:uri", root, ns)
         endpoint = grab_value("./cmd:Components/cmd:Vocabulary/cmd:Location[cmd:type='endpoint']/cmd:uri", root, ns)
-        license = grab_value("./cmd:Components/cmd:Vocabulary/cmd:License/cmd:url", root, ns)
+        license = grab_value("(./cmd:Components/cmd:Vocabulary/cmd:License/cmd:url,'http://rightsstatements.org/vocab/UND/1.0/')[normalize-space(.)!=''][1]", root, ns)
         retStruc = {"record": rec,"title": ttl, "description": desc, "home": home, "endpoint": endpoint, "license": license}
         return retStruc
