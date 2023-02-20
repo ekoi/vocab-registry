@@ -1,17 +1,9 @@
 import React from "react";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
-import {Fragment} from "react";
-import img from "../assets/img/M0004.jpg";
-import {IResultItem, IPublisher, IResultList, ICollection_item, ISearchObject} from "../misc/interfaces";
-import Document from "../elements/document";
-import Bibliography from "../elements/bibliography";
-import Annotations from "../elements/annotations";
-import {Base64} from "js-base64";
-
+import {IResultItem} from "../misc/interfaces";
 
 function Detail() {
-    let navigate = useNavigate();
     const dummy: IResultItem = {
         record:"",
         title: "",
@@ -37,22 +29,11 @@ function Detail() {
         }
     }
 
-    function goSearch(label: string, field: string, facetValue: string) {
-        let searchStruc: ISearchObject = {
-            searchvalues: [{name: label, field: field, values: [facetValue]}],
-            page: 1,
-            page_length: 30,
-            sortorder: "title"
-        };
-        const code: string = Base64.encode(JSON.stringify(searchStruc));
-        navigate("/search/" + code);
-    }
     useEffect(() => {
         fetch_data();
     }, [loading]);
 
     return (
-
         <div className="hcContentContainer">
             <div className="hcLayoutFacet-Result hcBasicSideMargin hcMarginBottom15">
                 {loading ? (

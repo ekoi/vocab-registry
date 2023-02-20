@@ -1,16 +1,16 @@
 import React from "react";
 import {IResultList, IResultItem} from "../misc/interfaces";
-import ManuscriptListDetails from "./manuscriptListDetails";
+import VocabListDetails from "./vocabListDetails";
 
-function ManuscriptList(props: {result: IResultList}) {
+function VocabList(props: {result: IResultList}) {
     return (
         <div>
         {props.result.items.map((item: IResultItem, index: number) => {
             return (
-                <ManuscriptListDetails result={item} key={index}/>
+                <VocabListDetails result={item} key={index}/>
             )
             })}
         </div>)
 }
 
-export default ManuscriptList
+export default VocabList

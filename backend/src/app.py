@@ -1,18 +1,11 @@
 from flask import Flask, request, jsonify, send_from_directory
 from elastic_index import Index
-from cmdi_parser import parser
+from cmdi_parser import Parser
 
 
 app = Flask(__name__, static_folder='../../frontend/build', static_url_path='')
-
-config = {
-    "url" : "localhost",
-    "port" : "9200",
-    "doc_type" : "vocab"
-}
-
-index = Index(config)
-parser = parser()
+index = Index()
+parser = Parser()
 
 @app.after_request
 def after_request(response):

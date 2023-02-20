@@ -3,9 +3,7 @@ import math
 
 
 class Index:
-    def __init__(self, config):
-        self.config = config
-        # self.es = Elasticsearch(hosts=[{"host": "ecodices_es"}], retry_on_timeout=True)
+    def __init__(self):
         self.client = Elasticsearch(hosts=[{"host": "localhost"}], retry_on_timeout=True)
 
     def no_case(self, str_in):
@@ -40,8 +38,6 @@ class Index:
             buffer = {"key": hits["key"], "doc_count": hits["doc_count"]}
             ret_array.append(buffer)
         return ret_array
-
-
 
     def get_filter_facet(self, field, amount, facet_filter):
         ret_array = []

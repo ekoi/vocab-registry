@@ -6,7 +6,6 @@ import {
     IFacetCandidate,
     ISearchObject,
     ISearchValues,
-    ISendPage,
     IResetFacets,
     IResultList,
     IRemoveFacet
@@ -14,10 +13,8 @@ import {
 import {Base64} from "js-base64";
 import FreeTextFacet from "../facets/freeTextFacet";
 import ListFacet from "../facets/listFacet";
-import CenturyFacet from "../facets/centuryFacet";
-import ManuscriptList from "../elements/manuscriptList";
+import VocabList from "../elements/vocabList";
 import {Fragment} from "react";
-
 
 function Search() {
     const params = useParams();
@@ -58,14 +55,6 @@ function Search() {
         setLoading(false);
     }
 
-    const goToPage: ISendPage = (page: number) => {
-        searchBuffer.page = page;
-        setSearchStruc(searchBuffer);
-        setRefresh(!refresh);
-        navigate('/search/' + Base64.toBase64(JSON.stringify(parameters)));
-        window.scroll(0, 0);
-    }
-
     const removeFacet: IRemoveFacet = (field: string, value: string) => {
         searchBuffer = searchStruc;
         if (typeof searchBuffer.searchvalues === "object") {
@@ -88,12 +77,9 @@ function Search() {
     }
 
     const resetFacets: IResetFacets = () => {
-        //searchBuffer = searchStruc;
-        //searchBuffer.page = 1;
         searchBuffer.searchvalues = [];
         setSearchStruc(searchBuffer);
         navigate('/search/' + Base64.toBase64(JSON.stringify(searchBuffer)));
-        //window.scroll(0, 0);
         setRefresh(!refresh);
     }
 
@@ -176,13 +162,8 @@ function Search() {
                             })
                         )}
                     </div>
-                    {/*<div className="hcList">
-                        <div className="hcListHeader">
-                            <div className="hcLabel">Manuscripts</div>
-                        </div>
-                    </div>*/}
                     {loading ? (<div className="hcResultListLoading">Loading...</div>) : (
-                        <ManuscriptList result={result}/>)}
+                        <VocabList result={result}/>)}
                 </div>
             </div>
         </div>

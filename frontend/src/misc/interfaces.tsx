@@ -46,25 +46,12 @@ export interface IResultItem {
     license: string,
 }
 
-export interface IPublisher {
-    publisher: string
-}
-
 export interface IResultList {
     amount: number,
     pages: number,
     items: IResultItem[]
 }
 
-export interface ISendPage {
-    (data: number): void
-}
-
 export interface IResetFacets {
     (): void
-}
-
-export interface ICollection_item {
-    title: string,
-    "_id": string
 }

@@ -27,8 +27,6 @@ function FreeTextFacet(props: {add: ISendCandidate}) {
         setTextField("");
     }, [refresh]);
 
-
-
     return (
         <div className="hcFacet">
             <div className="hcFacetTitle">Text search</div>

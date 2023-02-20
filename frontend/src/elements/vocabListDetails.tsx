@@ -1,9 +1,8 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import {IResultItem} from "../misc/interfaces";
-import img from "../assets/img/manuscript.jpg";
 
-function ManuscriptListDetails(props: {result: IResultItem}) {
+function VocabListDetails(props: {result: IResultItem}) {
     let navigate = useNavigate();
 
     return (<div className="hcResultListDetail">
@@ -20,4 +19,4 @@ function ManuscriptListDetails(props: {result: IResultItem}) {
     </div>);
 }
 
-export default ManuscriptListDetails;
+export default VocabListDetails;

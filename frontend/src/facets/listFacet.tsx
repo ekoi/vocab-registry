@@ -6,11 +6,9 @@ import {useState, useEffect} from "react";
 function ListFacet(props: {parentCallback: ISendCandidate, name: string, field: string}) {
     const [data, setData] = useState<IFacetValue[]>([]);
     const [url, setUrl] = useState("/facet?name=" + props.field + "&amount=10");
-    const [help, setHelp] = useState(false);
     const [loading, setLoading] = useState(true);
     const [more, setMore] = useState(true);
     const [hidden, setHidden] = useState(true);
-
 
     async function fetchData() {
         const response = await fetch(url);
@@ -36,10 +34,7 @@ function ListFacet(props: {parentCallback: ISendCandidate, name: string, field: 
         fetchData();
     }, [url]);
 
-
-
     return (
-
         <div className="hcFacet">
             <div className="hcFacetTitle" onClick={() => setHidden(!hidden)}>
                 <span>{props.name}</span>
@@ -47,11 +42,6 @@ function ListFacet(props: {parentCallback: ISendCandidate, name: string, field: 
                     {hidden ? (<Fragment>+</Fragment>) : (<Fragment>-</Fragment>)}
                 </span>
             </div>
-            {/*{ help &&
-            <div className="hcFacetHelp">
-                <strong>The {props.name.toLowerCase()} facet </strong><br/>
-                Filter on {props.name.toLowerCase()}.
-            </div> }*/}
             {!hidden &&
             <div className="hcFacetItems">
                 {!loading ? (<div>
@@ -68,7 +58,6 @@ function ListFacet(props: {parentCallback: ISendCandidate, name: string, field: 
             }
         </div>
     );
-
 }
 
 export default ListFacet;

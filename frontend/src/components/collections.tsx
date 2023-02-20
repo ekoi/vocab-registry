@@ -1,7 +1,5 @@
 import React from 'react';
-import {Fragment} from "react";
-import {useState, useEffect} from "react";
-import {IFacetValue, ISearchObject, ISearchValues} from "../misc/interfaces";
+import {ISearchObject} from "../misc/interfaces";
 import {Base64} from "js-base64";
 import {useNavigate} from "react-router-dom";
 
@@ -30,8 +28,6 @@ function Collections() {
                 Find a FAIR Vocabulary that suits you needs!
             </div>
             <div className="hcClickable" onClick={() => goSearch("all")}>Browse</div>
-
-
         </div>
     )
 
