@@ -1,0 +1,57 @@
+@startuml
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Vocabulary" as vocab {
+  *_id : number <<generated>>
+  --
+  *title: langtext
+  description : langtext
+  license: anyURI 
+  'license uri from a known set
+  versioningPolicy: text
+  sustainabilityPolicy: text
+  created: dateTime
+  modified: dateTime
+}
+
+entity "Location" as loc {
+  *location: anyURI
+  --
+  *type : {"homepage", "endpoint", "dump"}
+  recipe: {"sparql", "skosmos", ...}
+}
+
+entity "Review" as rev {
+  *_id : number <<generated>>
+  --
+  *rating: int
+  *review : langtext
+  nickname: text
+  moderation: {"blocked", "quarantaine"}
+  user: eppn
+}
+
+entity "Usage" as use {
+  --
+  *count: int
+  *outOf : in
+}
+
+entity "Recommendation" as rec {
+  * publisher : anyURI
+  --
+  rating: text
+  ' publisher uri's come from known domains
+}
+
+vocab ||..|{ loc
+vocab ||..o{ rev
+vocab ||..o{ use
+vocab ||..o{ rec
+
+@enduml
