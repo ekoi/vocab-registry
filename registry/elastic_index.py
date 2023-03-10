@@ -1,15 +1,17 @@
-from elasticsearch import Elasticsearch
+import os
 import math
+from elasticsearch import Elasticsearch
 
 
 class Index:
     def __init__(self):
-        self.client = Elasticsearch(hosts=[{"host": "localhost"}], retry_on_timeout=True)
+        self.client = Elasticsearch(hosts=[{"host": os.environ.get("ES_HOST", "localhost")}], retry_on_timeout=True)
 
-    def no_case(self, str_in):
+    @staticmethod
+    def _no_case(str_in):
         str = str_in.strip()
         ret_str = ""
-        if (str != ""):
+        if str != "":
             for char in str:
                 ret_str = ret_str + "[" + char.upper() + char.lower() + "]"
         return ret_str + ".*"
@@ -47,7 +49,7 @@ class Index:
             {
                 "query": {
                     "regexp": {
-                        field: self.no_case(facet_filter)
+                        field: self._no_case(facet_filter)
                     }
                 },
                 "size": 0,
@@ -96,7 +98,7 @@ class Index:
                     "match_all": {}},
                     "size": length,
                     "from": start,
-                    "_source": ["record","title", "publisher"],
+                    "_source": ["record", "title", "description", "publisher"],
                     "sort": [
                         {orderFieldName: {"order": "asc"}}
                     ]

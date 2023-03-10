@@ -1,0 +1,33 @@
+.hcResultListDetail {
+    min-height: initial;
+}
+
+.detailTable {
+    display: table;
+}
+
+.detailRow {
+    display: table-row;
+    font-size: 14px;
+}
+
+.labelCell, .cell {
+    display: table-cell;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+.detailRow:last-child .labelCell, .detailRow:last-child .cell {
+    padding-bottom: 4px;
+}
+
+.labelCell {
+    width: 180px;
+    border-right: 1px solid #aaa;
+    font-weight: bold;
+}
+
+.cell {
+    padding-left: 20px;
+}
+

@@ -1,7 +1,6 @@
 .idea/
 .DS_Store
 data/nodes
-#data/records
 node_modules
 venv
 build

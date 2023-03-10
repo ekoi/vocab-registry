@@ -1,12 +1,12 @@
 FROM node:alpine as frontend-build
 
 WORKDIR /app
-COPY ./frontend/ /app
+COPY ./registry/frontend/ /app
 RUN npm install && npm run build
 
 FROM python:3.7-slim
 
-ENV PYTHONPATH /app/backend/src
+ENV PYTHONPATH /app
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update && apt-get install -y procps locales
@@ -20,14 +20,15 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
 WORKDIR /app
-COPY ./backend/ /app/backend
+COPY ./registry/ /app
+COPY ./requirements.txt /app
 COPY --from=frontend-build /app/build /app/frontend/build
 
-RUN pip3 install --trusted-host pypi.python.org -r /app/backend/requirements.txt
+RUN pip3 install --trusted-host pypi.python.org -r /app/requirements.txt
 
-ENV FLASK_APP=/app/backend/src/app.py
+ENV FLASK_APP=/app/app.py
 ENV FLASK_ENV=production
 
 EXPOSE 5000
 
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "-t", "60", "-w", "4", "app:app"]
+CMD ["gunicorn", "-b", ":5000", "-t", "60", "-w", "4", "app:app"]
