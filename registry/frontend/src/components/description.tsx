@@ -1,18 +1,9 @@
 import React, {ReactElement} from 'react';
 import {Vocab} from '../misc/interfaces';
 
-export default function VocabDetail({data}: { data: Vocab }) {
+export default function Description({data}: { data: Vocab }) {
     return (
-        <div className="hcContentContainer">
-            <div className="hcAlignLeftRight hcMarginBottom1_5">
-                <h3>{data.title}</h3>
-                <div className="hcToggle">
-                    <button>Description</button>
-                    <button>Relations</button>
-                    <button>Reviews</button>
-                </div>
-            </div>
-
+        <>
             {data.description && <div className="detailLine hcMarginBottom1_5">{data.description}</div>}
 
             <div className="detailTable">
@@ -29,7 +20,7 @@ export default function VocabDetail({data}: { data: Vocab }) {
                     <DetailRow label="Endpoint" values={data.locations.filter(l => l.type === 'endpoint').map(l =>
                         <a href={l.location}>{l.location}</a>)}/>}
             </div>
-        </div>
+        </>
     );
 }
 
