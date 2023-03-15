@@ -39,11 +39,41 @@ entity "Review" as rev {
 entity "Usage" as use {
   --
   *count: int
-  *outOf : in
+  *outOf : int
+}
+
+entity "Summary" as sum {
+}
+
+entity "Source" as s {
+  --
+  *count: int
+}
+
+entity "Predicate" as p {
+  --
+  *count: int
+}
+
+entity "Object" as o {
+  --
+  *count: int
+}
+
+entity "Class" as cl {
+  --
+  *uri: anyURI
+  *prefix: text
+}
+
+entity "Namespace" as ns {
+  --
+  *uri: anyURI
+  *prefix: text
 }
 
 entity "Recommendation" as rec {
-  * publisher : anyURI
+  *publisher : anyURI
   --
   rating: text
   ' publisher uri's come from known domains
@@ -52,6 +82,18 @@ entity "Recommendation" as rec {
 vocab ||..|{ loc
 vocab ||..o{ rev
 vocab ||..o{ use
+vocab ||..o| sum
 vocab ||..o{ rec
+
+sum ||..|{ s
+sum ||..|{ p
+sum ||..|{ o
+sum ||..|{ cl
+
+vocab ||..|{ ns
+sum ||..|{ ns
+s ||..|{ ns
+p ||..|{ ns
+o ||..|{ ns
 
 @enduml
