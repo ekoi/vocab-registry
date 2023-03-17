@@ -13,29 +13,41 @@ def parse(id):
     ns = {"cmd": "http://www.clarin.eu/cmd/"}
     voc_root = './cmd:Components/cmd:Vocabulary'
 
-    def grab_value(path, root):
+    def grab_value(path, root, func=None):
         content = elementpath.select(root, path, ns)
         if content and type(content[0]) == str:
-            return unicodedata.normalize("NFKD", content[0]).strip()
+            content = unicodedata.normalize("NFKD", content[0]).strip()
         elif content and content[0].text is not None:
-            return unicodedata.normalize("NFKD", content[0].text).strip()
+            content = unicodedata.normalize("NFKD", content[0].text).strip()
         else:
-            return None
+            content = None
+
+        if content and func:
+            content = func(content)
+
+        return content
+
+    def grab_first(path, root):
+        content = elementpath.select(root, path, ns)
+        return content[0] if content else None
 
     def create_summary_for(elem, is_obj=False):
         summary = {
-            "count": int(grab_value("./cmd:count", elem)),
+            "count": grab_value("./cmd:count", elem, int),
             "stats": [{
                 "uri": grab_value("./cmd:URI", ns_elem),
                 "prefix": grab_value("./cmd:prefix", ns_elem),
-                "count": int(grab_value("./cmd:count", ns_elem)),
+                "count": grab_value("./cmd:count", ns_elem, int),
             } for ns_elem in elementpath.select(elem, "./cmd:Namespaces/cmd:Namespace", ns)]
         }
 
         if is_obj:
+            classes_root = grab_first("./cmd:Classes", elem)
+            literals_root = grab_first("./cmd:Literals", elem)
+
             summary.update(
-                classes=create_summary_for(elementpath.select(elem, "./cmd:Classes", ns)),
-                literals=create_summary_for(elementpath.select(elem, "./cmd:Literals", ns))
+                classes=create_summary_for(classes_root) if classes_root else None,
+                literals=create_summary_for(literals_root) if literals_root else None
             )
 
         return summary
@@ -81,12 +93,10 @@ def parse(id):
                 "uri": grab_value(f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:URI", root),
                 "prefix": grab_value(f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:prefix", root)
             },
-            "stats": create_summary_for(grab_value(f"{voc_root}/cmd:Summary", root)),
-            "subjects": create_summary_for(
-                elementpath.select(root, f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Subjects", ns)),
-            "predicates": create_summary_for(
-                elementpath.select(root, f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", ns)),
-            "objects": create_summary_for(
-                elementpath.select(root, f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", ns), is_obj=True),
-        } if elementpath.select(root, f"{voc_root}/cmd:Summary", ns) else None
+            "stats": create_summary_for(grab_first(f"{voc_root}/cmd:Summary", root)),
+            "subjects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Subjects", root)),
+            "predicates": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
+            "objects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root),
+                                          is_obj=True),
+        } if grab_first(f"{voc_root}/cmd:Summary", root) else None
     }
