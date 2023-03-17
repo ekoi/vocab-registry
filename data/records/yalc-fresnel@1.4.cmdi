@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><cmd:CMD xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+<cmd:CMD xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
     <cmd:Header>
         <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
     </cmd:Header>
@@ -16,7 +16,7 @@ Displaying RDF in a human-friendly manner by way of an RDF display vocabulary is
 Fresnel's design goals are to create an ontology that is:
 
 - useful for rendering different output formats like HTML, SVG, PDF, plain text, and others,
-- applicable across different RDF display paradigms, (nested box-based textual representation à la XHTML+CSS, node-link diagram, etc.),
+- applicable across different RDF display paradigms, (nested box-based textual representation &#224; la XHTML+CSS, node-link diagram, etc.),
 - built on existing Web technology,
 - extensible for more specialized needs,
 - easy to learn and use.
@@ -38,7 +38,7 @@ Possible output formats include:
 - plain text documents,
 - interactive rich clients such as [Haystack](http://haystack.csail.mit.edu/).
 
-The choice of what output format to support, and how to interpret the formatted tree produced by the second step to produce the actual output (i.e., the third step), is a prerogative of each application.  Fresnel expresses RDF presentation knowledge in a declarative way; Fresnel applications should take all formatting information into account, but are free to interpret and adapt them in a way that is appropriate w.r.t their fundamental representation paradigm (e.g. nested box-based textual representation à la XHTML+CSS, node-link diagram, etc.).  In other words, Fresnel does not dictate how to transform the tree resulting from the formatting step into an actual target document of the chosen output format.</cmd:description></cmd:Description><cmd:Assessement>
+The choice of what output format to support, and how to interpret the formatted tree produced by the second step to produce the actual output (i.e., the third step), is a prerogative of each application.  Fresnel expresses RDF presentation knowledge in a declarative way; Fresnel applications should take all formatting information into account, but are free to interpret and adapt them in a way that is appropriate w.r.t their fundamental representation paradigm (e.g. nested box-based textual representation &#224; la XHTML+CSS, node-link diagram, etc.).  In other words, Fresnel does not dictate how to transform the tree resulting from the formatting step into an actual target document of the chosen output format.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -46,6 +46,6 @@ The choice of what output format to support, and how to interpret the formatted 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        </cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>47</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>18</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>107</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>50</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>115</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI><cmd:prefix>dc</cmd:prefix><cmd:count>8</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>dtype</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>61</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

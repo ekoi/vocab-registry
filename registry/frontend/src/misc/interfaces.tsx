@@ -30,8 +30,8 @@ export interface Vocab {
     }[];
     summary: {
         namespace: {
-            uri: string;
-            prefix: string;
+            uri: string | null;
+            prefix: string | null;
         },
         stats: VocabSummary;
         subjects: VocabSummary;
@@ -41,11 +41,11 @@ export interface Vocab {
 }
 
 export interface VocabSummary {
-    count: number;
+    count: number | null;
     stats: {
-        uri: string;
-        prefix: string;
-        count: number;
+        uri: string | null;
+        prefix: string | null;
+        count: number | null;
     }
 }
 
