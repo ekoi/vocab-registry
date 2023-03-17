@@ -45,7 +45,7 @@ entity "Usage" as use {
 entity "Summary" as sum {
 }
 
-entity "Source" as s {
+entity "Subject" as s {
   --
   *count: int
 }
