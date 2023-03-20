@@ -13,7 +13,7 @@ export default function Detail({data}: { data: Vocab }) {
 
     return (
         <div className="hcContentContainer">
-            <div className="hcAlignLeftRight hcMarginBottom1_5">
+            <div className="hcRowJustify hcMarginBottom1">
                 <h1>{data.title}</h1>
 
                 <div className="hcRowJustify">
