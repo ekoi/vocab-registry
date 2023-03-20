@@ -24,7 +24,7 @@ export default function Description({data}: { data: Vocab }) {
                         <a href={l.location}>{l.location}</a>)}/>}
                 {data.recommendations &&
                     <DetailRow label="Publisher" values={data.recommendations.map(r =>
-                        <Recommendation recommendation={r}/>)}/>}
+                        <Recommendation vocab={data} recommendation={r}/>)}/>}
             </div>
         </>
     );
@@ -45,12 +45,18 @@ function DetailRow({label, values}: { label: string, values: string | string[] |
     );
 }
 
-function Recommendation({recommendation}: { recommendation: VocabRecommendation }) {
+function Recommendation({recommendation, vocab}: { vocab: Vocab, recommendation: VocabRecommendation }) {
     switch (recommendation.publisher) {
-        // case 'YALC':
-        //     return <a href={`https://triplydb.com/${id}`}>YALC</a>;
+        case 'YALC':
+            const id = vocab.id
+                .replace('yalc-', '')
+                .replace('.cmdi', '');
+            const encodedId = encodeURIComponent(id);
+            return <a href={`https://github.com/TriplyDB/YALC/blob/master/datasets/${encodedId}.json`}
+                      target="_blank">YALC</a>;
         case 'Awesome Humanities':
-            return <a href="https://github.com/CLARIAH/awesome-humanities-ontologies">Awesome Humanities</a>;
+            return <a href="https://github.com/CLARIAH/awesome-humanities-ontologies"
+                      target="_blank">Awesome Humanities</a>;
         default:
             return <>{recommendation.publisher}</>;
     }
