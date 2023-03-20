@@ -24,10 +24,7 @@ export interface Vocab {
         count: number;
         outOf: number;
     };
-    recommendations: {
-        publisher: string;
-        rating: string | null;
-    }[];
+    recommendations: VocabRecommendation[];
     summary: {
         namespace: {
             uri: string | null;
@@ -40,18 +37,23 @@ export interface Vocab {
     } | null;
 }
 
+export interface VocabRecommendation {
+    publisher: string;
+    rating: string | null;
+}
+
 export interface VocabSummary {
     count: number | null;
     stats: {
         uri: string | null;
         prefix: string | null;
         count: number | null;
-    }
+    }[]
 }
 
 export interface VocabObjectSummary extends VocabSummary {
-    classes: VocabSummary;
-    literals: VocabSummary;
+    classes: VocabSummary | null;
+    literals: VocabSummary | null;
 }
 
 export interface VocabIndex {

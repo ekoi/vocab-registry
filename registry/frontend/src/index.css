@@ -1,5 +1,16 @@
+h1 {
+    font-size: 1em;
+    line-height: 130%;
+    font-weight: 700;
+}
+
 .hcResultListDetail {
     min-height: initial !important;
+}
+
+.back {
+    font-size: small;
+    margin-right: 25px;
 }
 
 .active {
@@ -38,7 +49,7 @@
 
 .review {
     margin-bottom: 1em;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid #aaa;
 }
 
 .review:last-child {
@@ -57,5 +68,51 @@
 .review p {
     white-space: pre-wrap;
     text-align: justify;
+    font-size: smaller;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    border-bottom: 1px solid #aaa;
+}
+
+tfoot {
+    border-top: 1px solid #aaa;
+}
+
+thead, tfoot {
+    background-color: #f7f8f9;
+}
+
+tbody {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f8f9;
+}
+
+.vocabSummary tbody th {
+    font-weight: normal;
+    text-align: left;
+    color: #082045;
+}
+
+.vocabSummary thead tr:last-child {
+    font-size: small;
+    font-style: italic;
+}
+
+.prefix {
+    display: inline;
+    padding: 2px 5px;
+    margin-left: 10px;
+    background-color: #082045;
+    border-radius: 6px;
+    color: white;
     font-size: smaller;
 }
