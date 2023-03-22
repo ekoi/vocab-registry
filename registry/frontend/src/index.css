@@ -1,6 +1,81 @@
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0 0 0 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    border-bottom: 1px solid #aaa;
+}
+
+tfoot {
+    border-top: 1px solid #aaa;
+}
+
+thead, tfoot {
+    background-color: #f7f8f9;
+}
+
+tbody {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f8f9;
+}
+
 .hcResultListDetail {
-    width: initial !important;
-    min-height: initial !important;
+    display: block;
+    border: 1px solid #dddddd;
+    padding: 10px 16px;
+    margin: 0 0 20px 0;
+    background-color: #f8f4f1;
+}
+
+.hcResultListDetail h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0A3D73;
+}
+
+.hcNoList li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.hcToggle button {
+    margin: 0 0;
+    border-radius: 0;
+    border-right: 0;
+}
+
+.hcToggle > *:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.hcToggle > *:last-child {
+    border-radius: 0 4px 4px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extraBottomMargin {
+    margin-bottom: 1.5rem;
 }
 
 .back {
@@ -14,6 +89,7 @@
 }
 
 .detailLine {
+    font-size: smaller;
     word-break: break-word;
 }
 
@@ -70,30 +146,6 @@
     font-size: smaller;
 }
 
-table {
-    border-collapse: collapse;
-    font-size: 14px;
-}
-
-thead {
-    border-bottom: 1px solid #aaa;
-}
-
-tfoot {
-    border-top: 1px solid #aaa;
-}
-
-thead, tfoot {
-    background-color: #f7f8f9;
-}
-
-tbody {
-    text-align: center;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f7f8f9;
-}
 
 .vocabSummary tbody th {
     font-weight: normal;

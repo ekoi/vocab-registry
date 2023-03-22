@@ -5,7 +5,7 @@ import {Vocab, VocabRecommendation} from '../misc/interfaces';
 export default function Description({data}: { data: Vocab }) {
     return (
         <>
-            {data.description && <ReactMarkdown className="detailLine hcMarginBottom1_5">
+            {data.description && <ReactMarkdown className="detailLine extraBottomMargin">
                 {data.description}
             </ReactMarkdown>}
 

@@ -13,32 +13,34 @@ export default function Detail({data}: { data: Vocab }) {
 
     return (
         <div className="hcContentContainer">
-            <div className="hcRowJustify hcMarginBottom1">
-                <h1>{data.title}</h1>
+            <div className="hcBasicSideMargin">
+                <div className="justify hcMarginBottom1">
+                    <h1>{data.title}</h1>
 
-                <div className="hcRowJustify">
-                    <a className="back" href="#" onClick={_ => navigate(-1)}>&larr; Return to previous page</a>
+                    <div className="justify">
+                        <a className="back" href="#" onClick={_ => navigate(-1)}>&larr; Return to previous page</a>
 
-                    <div className="hcToggle">
-                        <button className={viewOpened === ViewOpened.DESCRIPTION ? 'active' : ''}
-                                onClick={_ => setViewOpened(ViewOpened.DESCRIPTION)}>
-                            Description
-                        </button>
-                        <button className={viewOpened === ViewOpened.SUMMARY ? 'active' : ''}
-                                onClick={_ => setViewOpened(ViewOpened.SUMMARY)}>
-                            Summary
-                        </button>
-                        <button className={viewOpened === ViewOpened.REVIEWS ? 'active' : ''}
-                                onClick={_ => setViewOpened(ViewOpened.REVIEWS)}>
-                            Reviews
-                        </button>
+                        <div className="hcToggle">
+                            <button className={viewOpened === ViewOpened.DESCRIPTION ? 'active' : ''}
+                                    onClick={_ => setViewOpened(ViewOpened.DESCRIPTION)}>
+                                Description
+                            </button>
+                            <button className={viewOpened === ViewOpened.SUMMARY ? 'active' : ''}
+                                    onClick={_ => setViewOpened(ViewOpened.SUMMARY)}>
+                                Summary
+                            </button>
+                            <button className={viewOpened === ViewOpened.REVIEWS ? 'active' : ''}
+                                    onClick={_ => setViewOpened(ViewOpened.REVIEWS)}>
+                                Reviews
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            {viewOpened === ViewOpened.DESCRIPTION && <Description data={data}/>}
-            {viewOpened === ViewOpened.SUMMARY && <Summary data={data}/>}
-            {viewOpened === ViewOpened.REVIEWS && <Reviews data={data}/>}
+                {viewOpened === ViewOpened.DESCRIPTION && <Description data={data}/>}
+                {viewOpened === ViewOpened.SUMMARY && <Summary data={data}/>}
+                {viewOpened === ViewOpened.REVIEWS && <Reviews data={data}/>}
+            </div>
         </div>
     );
 }
