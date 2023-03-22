@@ -13,6 +13,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                      getFetchUrl={id => '/detail?rec=' + id}
                      detailComponent={Detail}
                      searchUrl="/browse"
+                     pageLength={10}
+                     withPaging={true}
                      resultItemComponent={ListItem}
                      facetsComponent={Facets}/>
     </React.StrictMode>
