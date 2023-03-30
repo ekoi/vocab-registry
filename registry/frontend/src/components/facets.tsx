@@ -7,6 +7,6 @@ export default function Facets({sendCandidateHandler}: { sendCandidateHandler: I
         <ListFacet parentCallback={sendCandidateHandler}
                    name="Publisher"
                    field="publisher.publisher"
-                   url="http://localhost:5000/facet"/>
+                   url="/facet"/>
     </>;
 }
