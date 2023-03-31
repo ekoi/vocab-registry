@@ -22,7 +22,7 @@ ENV LANGUAGE en_US.UTF-8
 WORKDIR /app
 COPY ./registry/ /app
 COPY ./requirements.txt /app
-COPY --from=frontend-build /app/build /app/frontend/build
+COPY --from=frontend-build /app/dist /app/frontend/dist
 
 RUN pip3 install --trusted-host pypi.python.org -r /app/requirements.txt
 

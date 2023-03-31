@@ -3,7 +3,7 @@ from flask_cors import CORS
 from elastic_index import Index
 from cmdi_parser import parse
 
-app = Flask(__name__, static_folder='frontend/build', static_url_path='')
+app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 CORS(app)
 
 index = Index()

@@ -1,35 +1,26 @@
 {
-  "name": "browser",
+  "name": "vocab-registry",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://127.0.0.1:5000",
+  "type": "module",
   "dependencies": {
-    "@types/node": "^18.15.1",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "browser-base-react": "github:knaw-huc/browser-base-react",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.5",
     "react-router-dom": "^6.9.0",
-    "react-scripts": "^5.0.1",
     "retext-stringify": "^3.1.0",
-    "typescript": "^4.9.5"
+    "browser-base-react": "github:knaw-huc/browser-base-react"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   }
 }
