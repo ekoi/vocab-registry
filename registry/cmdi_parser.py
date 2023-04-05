@@ -70,7 +70,7 @@ def parse(id):
         "locations": [{
             "location": grab_value("./cmd:uri", elem),
             "type": grab_value("./cmd:type", elem),
-            "recipe": None
+            "recipe": grab_value("./cmd:recipe", elem),
         } for elem in elementpath.select(root, f"{voc_root}/cmd:Location", ns)],
         "reviews": [{
             "id": str(uuid.uuid4()),

@@ -1,10 +1,18 @@
 import React, {ReactElement} from 'react';
 import ReactMarkdown from 'react-markdown';
-import {Vocab, VocabRecommendation} from '../misc/interfaces';
+import {Vocab, VocabLocation, VocabRecommendation} from '../misc/interfaces';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
+import {faArrowUpRightFromSquare, faHouse, faGear, faDownload} from '@fortawesome/free-solid-svg-icons';
 
 export default function Description({data}: { data: Vocab }) {
     return (
         <>
+            {data.locations.length > 0 && <div className="iconBar extraBottomMargin">
+                {data.locations.map(loc =>
+                    <LocationIcon key={loc.location} location={loc}/>)}
+            </div>}
+
             {data.description && <ReactMarkdown className="detailLine extraBottomMargin">
                 {data.description}
             </ReactMarkdown>}
@@ -16,17 +24,48 @@ export default function Description({data}: { data: Vocab }) {
                 {data.versioningPolicy && <DetailRow label="Versioning policy" values={data.versioningPolicy}/>}
                 {data.sustainabilityPolicy &&
                     <DetailRow label="Sustainability policy" values={data.sustainabilityPolicy}/>}
-                {data.locations.filter(l => l.type === 'homepage').length > 0 &&
-                    <DetailRow label="Homepage" values={data.locations.filter(l => l.type === 'homepage').map(l =>
-                        <a href={l.location}>{l.location}</a>)}/>}
-                {data.locations.filter(l => l.type === 'endpoint').length > 0 &&
-                    <DetailRow label="Endpoint" values={data.locations.filter(l => l.type === 'endpoint').map(l =>
-                        <a href={l.location}>{l.location}</a>)}/>}
                 {data.recommendations &&
                     <DetailRow label="Publisher" values={data.recommendations.map(r =>
-                        <Recommendation vocab={data} recommendation={r}/>)}/>}
+                        <Recommendation key={r.publisher} vocab={data} recommendation={r}/>)}/>}
             </div>
         </>
+    );
+}
+
+function LocationIcon({location}: { location: VocabLocation }) {
+    let iconDefinition: IconDefinition, text: string;
+    if (location.type === 'homepage') {
+        switch (location.recipe) {
+            case 'skosmos':
+                iconDefinition = faArrowUpRightFromSquare;
+                text = 'Open in Skosmos';
+                break;
+            default:
+                iconDefinition = faHouse;
+                text = 'Go to homepage';
+                break;
+        }
+    }
+    else {
+        switch (location.recipe) {
+            case 'sparql':
+                iconDefinition = faGear;
+                text = 'Query with SPARQL';
+                break;
+            default:
+                iconDefinition = faDownload;
+                text = 'Go to data';
+                break;
+        }
+    }
+
+    return (
+        <div className="icon">
+            <a href={location.location} target="_blank">
+                <FontAwesomeIcon icon={iconDefinition}/>
+                {text}
+            </a>
+        </div>
     );
 }
 

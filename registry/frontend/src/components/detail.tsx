@@ -17,7 +17,7 @@ export default function Detail({data}: { data: Vocab }) {
                 <div className="justify hcMarginBottom1">
                     <h1>{data.title}</h1>
 
-                    <div className="justify">
+                    <div className="justify fitContent">
                         <a className="back" href="#" onClick={_ => navigate(-1)}>&larr; Return to previous page</a>
 
                         <div className="hcToggle">

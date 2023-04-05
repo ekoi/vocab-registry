@@ -5,7 +5,9 @@ export default defineConfig({
     plugins: [react()],
     server: {
         proxy: {
-            '/': 'http://127.0.0.1:5000'
+            '/browse': 'http://127.0.0.1:5000',
+            '/detail': 'http://127.0.0.1:5000',
+            '/facet': 'http://127.0.0.1:5000'
         }
     }
 });

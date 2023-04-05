@@ -27,7 +27,6 @@ COPY --from=frontend-build /app/dist /app/frontend/dist
 RUN pip3 install --trusted-host pypi.python.org -r /app/requirements.txt
 
 ENV FLASK_APP=/app/app.py
-ENV FLASK_ENV=production
 
 EXPOSE 5000
 

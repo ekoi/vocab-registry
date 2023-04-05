@@ -74,8 +74,37 @@ tbody tr:nth-child(even) {
     align-items: center;
 }
 
+.iconBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.icon {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.icon:not(:last-child) {
+    border-right: 1px solid #aaa;
+}
+
+.icon a {
+    color: #082045;
+}
+
+.icon svg {
+    margin-right: 1rem;
+}
+
 .extraBottomMargin {
     margin-bottom: 1.5rem;
+}
+
+.fitContent {
+    min-width: fit-content;
 }
 
 .back {

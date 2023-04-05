@@ -7,11 +7,7 @@ export interface Vocab {
     sustainabilityPolicy: string | null;
     created: string;
     modified: string;
-    locations: {
-        location: string;
-        type: 'homepage' | 'endpoint' | 'dump';
-        recipe: 'sparql' | 'skosmos' | null;
-    }[];
+    locations: VocabLocation[];
     reviews: {
         id: string;
         rating: number;
@@ -35,6 +31,12 @@ export interface Vocab {
         predicates: VocabSummary;
         objects: VocabObjectSummary;
     } | null;
+}
+
+export interface VocabLocation {
+    location: string;
+    type: 'homepage' | 'endpoint';
+    recipe: 'sparql' | 'skosmos' | 'rdf' | null;
 }
 
 export interface VocabRecommendation {
