@@ -1,0 +1,25 @@
+<cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+    <cmd:Header>
+        <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
+    </cmd:Header>
+    <cmd:Resources>
+        <cmd:ResourceProxyList/>
+        <cmd:JournalFileProxyList/>
+        <cmd:ResourceRelationList/>
+    </cmd:Resources>
+    <cmd:Components>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">SPDX</cmd:title><cmd:Location><cmd:uri>https://spdx.org/rdf/terms</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This specification describes the SPDX&#174; language, defined as a dictionary of named properties and classes using W3C's RDF Technology.  SPDX&#174; is an open standard for communicating software bill of material information, including components, licenses, copyrights, and security references.  SPDX reduces redundant work by providing a common format for companies and communities to share important data, thereby streamlining and improving compliance.
+
+Known issues:
+- `rdfs:comment` and `rdfs:seeAlso` are used within the SPDX classes and causes a redefinition of these standard terms.</cmd:description></cmd:Description><cmd:Assessement>
+                <cmd:Recommendation>
+                    <cmd:Rating>appears</cmd:Rating>
+                    <cmd:Publisher>
+                        <cmd:name>YALC</cmd:name>
+                    </cmd:Publisher>
+                </cmd:Recommendation>
+            </cmd:Assessement>
+        </cmd:Vocabulary>
+    </cmd:Components>
+</cmd:CMD>

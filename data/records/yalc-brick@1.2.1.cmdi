@@ -1,0 +1,31 @@
+<cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" xmlns:cmdp="http://www.clarin.eu/cmd/1/profiles/clarin.eu:cr1:p_1653377925723" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1653377925723/xsd">
+    <cmd:Header>
+        <cmd:MdProfile>clarin.eu:cr1:p_1653377925723</cmd:MdProfile>
+    </cmd:Header>
+    <cmd:Resources>
+        <cmd:ResourceProxyList/>
+        <cmd:JournalFileProxyList/>
+        <cmd:ResourceRelationList/>
+    </cmd:Resources>
+    <cmd:Components>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Brick: A uniform metadata schema for buildings</cmd:title><cmd:Location><cmd:uri>https://brickschema.org/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://opensource.org/licenses/BSD-3-Clause</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Brick is an open-source effort to standardize semantic descriptions of the physical, logical and virtual assets in buildings and the relationships between them.  Brick consists of an extensible dictionary of terms and concepts in and around buildings, a set of relationships for linking and composing concepts together, and a flexible data model permitting seamless integration of Brick with existing tools and databases.  Through the use of powerful Semantic Web technology, Brick can describe the broad set of idiosyncratic and custom features, assets and subsystems found across the building stock in a consistent matter.
+
+Adopting Brick as the canonical description of a building enables the following:
+
+- Brick lowers the cost of deploying analytics, energy efficiency measures and intelligent controls across buildings
+- Brick presents an integrated, cross-vendor representation of the multitude of subsystems in modern buildings: HVAC, lighting, fire, security and so on
+- Brick simplifies the development of smart analytics and control applications
+- Brick reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
+
+Brick is free and open-sourced under the BSD 3-Clause license.  The source code for Brick, this website, and related tools developed by the Brick team are available on [GitHub](https://github.com/BrickSchema).</cmd:description></cmd:Description><cmd:Assessement>
+                <cmd:Recommendation>
+                    <cmd:Rating>appears</cmd:Rating>
+                    <cmd:Publisher>
+                        <cmd:name>YALC</cmd:name>
+                    </cmd:Publisher>
+                </cmd:Recommendation>
+            </cmd:Assessement>
+        </cmd:Vocabulary>
+    </cmd:Components>
+</cmd:CMD>
