@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">RECommendations Ontology (RECO)</cmd:title>
-            <cmd:Location><cmd:uri>https://raw.githubusercontent.com/wouterbeek/reco/master/reco.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by-sa/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The RECO ontology defines the vocabulary for representing preferences-as-constraints and preferences-as-ratings as RDF graphs.  This lightweight vocabulary provides domain-independent means to describe user profiles in a coherent and context-aware way.  RECO has been designed as an extension of both [Friend-Of-A-Friend (FOAF)](/none/foaf) and [Who Am I! (WAI)](/treelogic/wai) ontologies.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:License><cmd:url>https://creativecommons.org/licenses/by-sa/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The RECO ontology defines the vocabulary for representing preferences-as-constraints and preferences-as-ratings as RDF graphs.  This lightweight vocabulary provides domain-independent means to describe user profiles in a coherent and context-aware way.  RECO has been designed as an extension of both [Friend-Of-A-Friend (FOAF)](/none/foaf) and [Who Am I! (WAI)](/treelogic/wai) ontologies.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>19</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>16</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>59</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>19</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>16</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>59</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>2011-08</cmd:version><cmd:validFrom>2011-08-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/wouterbeek/reco/master/reco.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

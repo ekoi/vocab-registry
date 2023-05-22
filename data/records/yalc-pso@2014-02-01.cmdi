@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">Publishing Status Ontology (PSO)</cmd:title>
-            <cmd:Location><cmd:uri>https://github.com/sparontologies/pso</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.sparontologies.net/ontologies/pso</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/pso.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/pso.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g. draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:Location><cmd:uri>https://github.com/sparontologies/pso</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.sparontologies.net/ontologies/pso</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/pso.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">PSO, the Publishing Status Ontology, is an ontology written in OWL 2 DL for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process (e.g. draft, submitted, under review, rejected, accepted for publication, proof, published, Version of Record, catalogued, archived).</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>90</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>25</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>176</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>90</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>25</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>176</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>2014-02-01</cmd:version><cmd:validFrom>2014-02-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>http://purl.org/spar/pso.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

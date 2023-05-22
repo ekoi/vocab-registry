@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">Bibliographic Reference Ontology (BiRO)</cmd:title>
-            <cmd:Location><cmd:uri>http://www.sparontologies.net/ontologies/biro</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://sparontologies.github.io/biro/current/biro.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/biro.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The Bibliographic Reference Ontology (BiRO) allows the description of reference lists and bibliographic references themselves.  In particular, BiRO uses an [OWL-based definition of the FRBR model](http://www.sparontologies.net/ontologies/frbr) to define bibliographic references and their compilation into ordered bibliographic lists, by means of the [Collections Ontology](http://purl.org/co), as shown in the following figure.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:Location><cmd:uri>http://www.sparontologies.net/ontologies/biro</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://sparontologies.github.io/biro/current/biro.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The Bibliographic Reference Ontology (BiRO) allows the description of reference lists and bibliographic references themselves.  In particular, BiRO uses an [OWL-based definition of the FRBR model](http://www.sparontologies.net/ontologies/frbr) to define bibliographic references and their compilation into ordered bibliographic lists, by means of the [Collections Ontology](http://purl.org/co), as shown in the following figure.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>40</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>23</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>72</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>40</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>23</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>72</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.1.1</cmd:version><cmd:Location><cmd:uri>http://purl.org/spar/biro.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

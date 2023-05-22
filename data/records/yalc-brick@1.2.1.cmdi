@@ -26,6 +26,6 @@ Brick is free and open-sourced under the BSD 3-Clause license.  The source code 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        </cmd:Vocabulary>
+        <cmd:type>owl</cmd:type></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

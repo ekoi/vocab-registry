@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">Essential FRBR in OWL2 DL</cmd:title>
-            <cmd:Location><cmd:uri>https://github.com/sparontologies/frbr</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.sparontologies.net/ontologies/frbr</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/frbr.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/frbr.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Essential FRBR in OWL2 DL Ontology (FRBR) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:Location><cmd:uri>https://github.com/sparontologies/frbr</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.sparontologies.net/ontologies/frbr</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://purl.org/spar/frbr.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Essential FRBR in OWL2 DL Ontology (FRBR) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>283</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>34</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>404</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>283</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>34</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>404</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0.1</cmd:version><cmd:Location><cmd:uri>http://purl.org/spar/frbr.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

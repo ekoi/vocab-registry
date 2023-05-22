@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">MDTO</cmd:title><cmd:Location><cmd:uri>https://www.nationaalarchief.nl/archiveren/mdto/rdf-ontologie</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://www.nationaalarchief.nl/sites/default/files/field-file/RDF.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en"/></cmd:Description><cmd:Assessement>
+            <cmd:title xml:lang="en">MDTO</cmd:title><cmd:Location><cmd:uri>https://www.nationaalarchief.nl/archiveren/mdto/rdf-ontologie</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en"/></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        </cmd:Vocabulary>
+        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://www.nationaalarchief.nl/sites/default/files/field-file/RDF.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">GND Gender</cmd:title>
-            <cmd:Location><cmd:uri>https://d-nb.info/standards/vocab/gnd/gender.html#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://d-nb.info/standards/vocab/gnd/gender.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">GND Gender is a value vocabulary (skos:ConceptScheme) listing the possible gender values used in the RDF encoding of the information in the Integrated Authority File (Gemeinsame Normdatei, GND).</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:Location><cmd:uri>https://d-nb.info/standards/vocab/gnd/gender.html#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">GND Gender is a value vocabulary (skos:ConceptScheme) listing the possible gender values used in the RDF encoding of the information in the Integrated Authority File (Gemeinsame Normdatei, GND).</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>6</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>26</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>41</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>6</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>26</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>41</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://d-nb.info/standards/vocab/gnd/gender.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

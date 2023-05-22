@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">Publication Frequency List</cmd:title>
-            <cmd:Location><cmd:uri>http://id.loc.gov/vocabulary/frequencies.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://id.loc.gov/vocabulary/frequencies.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Publication Frequency List is derived from a controlled list of coded values in MARC 21 Format for Bibliographic Data field 008/18.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:Location><cmd:uri>http://id.loc.gov/vocabulary/frequencies.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Publication Frequency List is derived from a controlled list of coded values in MARC 21 Format for Bibliographic Data field 008/18.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>24</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>17</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>56</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>24</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>17</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>56</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://id.loc.gov/vocabulary/frequencies.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

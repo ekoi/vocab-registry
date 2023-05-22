@@ -20,6 +20,6 @@ Known issues:
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        </cmd:Vocabulary>
+        <cmd:type>owl</cmd:type></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

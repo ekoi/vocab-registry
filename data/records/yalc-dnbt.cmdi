@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">DNB Metadata Terms</cmd:title>
-            <cmd:Location><cmd:uri>https://d-nb.info/standards/elementset/dnb#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://d-nb.info/standards/elementset/dnb.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The DNB RDF Vocabulary is a collection of classes, properties and datatypes used within the DNB's linked data service.  It complements the [GND Ontology](dnb/gndo) which is specifically geared towards authority data from the Integrated Authority File (GND), whereas this vocabulary is more general-purpose.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:Location><cmd:uri>https://d-nb.info/standards/elementset/dnb#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The DNB RDF Vocabulary is a collection of classes, properties and datatypes used within the DNB's linked data service.  It complements the [GND Ontology](dnb/gndo) which is specifically geared towards authority data from the Integrated Authority File (GND), whereas this vocabulary is more general-purpose.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>38</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>35</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>141</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>38</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>35</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>141</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://d-nb.info/standards/elementset/dnb.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

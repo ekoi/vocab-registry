@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">ConceptNet</cmd:title><cmd:Location><cmd:uri>https://conceptnet.io</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://s3.amazonaws.com/conceptnet/precomputed-data/2016/assertions/conceptnet-assertions-5.5.0.csv.gz</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ConceptNet is a freely-available semantic network, designed to help computers understand the meanings of words that people use.
+            <cmd:title xml:lang="en">ConceptNet</cmd:title><cmd:Location><cmd:uri>https://conceptnet.io</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ConceptNet is a freely-available semantic network, designed to help computers understand the meanings of words that people use.
 
 ConceptNet originated from the crowdsourcing project Open Mind Common Sense, which was launched in 1999 at the MIT Media Lab.  It has since grown to include knowledge from other crowdsourced resources, expert-created resources, and games with a purpose.</cmd:description></cmd:Description><cmd:Assessement>
                 <cmd:Recommendation>
@@ -19,6 +19,6 @@ ConceptNet originated from the crowdsourcing project Open Mind Common Sense, whi
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        </cmd:Vocabulary>
+        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>5.5.0</cmd:version><cmd:Location><cmd:uri>https://s3.amazonaws.com/conceptnet/precomputed-data/2016/assertions/conceptnet-assertions-5.5.0.csv.gz</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

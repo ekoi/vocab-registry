@@ -9,7 +9,7 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary><cmd:title xml:lang="en">Literal Reification pattern</cmd:title>
-            <cmd:Location><cmd:uri>https://github.com/SPAROntologies/literal</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/SPAROntologies/literal/master/docs/current/literal.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Recently within the Semantic Web community a new topic has been actively discussed: whether and how to allow literals to be subjects of RDF statements ([link](https://www.w3.org/2001/sw/wiki/Literals_as_Subjects)).  This discussions failed to provide a unique and clear indication of how to proceed in that regard.
+            <cmd:Location><cmd:uri>https://github.com/SPAROntologies/literal</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Recently within the Semantic Web community a new topic has been actively discussed: whether and how to allow literals to be subjects of RDF statements ([link](https://www.w3.org/2001/sw/wiki/Literals_as_Subjects)).  This discussions failed to provide a unique and clear indication of how to proceed in that regard.
 
 Although one of the suggestions coming out of the discussion was to explicitly include the proposal in a (future) specification of RDF, this topic is not actually new, particularly in ontology modelling.  The needs to describe &#8220;typical&#8221; literals (specially strings) as individuals of a particular class has been addressed by a lot of models in past, such as Common Tag (through the class Tag), SIOC (through the classes Category and Tag), SKOS-XL (through the class Label), and LMM (through the class Expression).
 
@@ -21,6 +21,6 @@ After considering the above-mentioned models and other related and inspiring one
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>37</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>30</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>60</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>37</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>30</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>60</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>2011-03-23</cmd:version><cmd:validFrom>2011-03-23T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/SPAROntologies/literal/master/docs/current/literal.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>
