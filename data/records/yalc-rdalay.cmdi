@@ -17,6 +17,6 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        </cmd:Vocabulary>
+        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>19</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>21</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>633</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary></cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>
