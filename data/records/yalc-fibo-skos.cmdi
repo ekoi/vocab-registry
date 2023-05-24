@@ -1628,7 +1628,7 @@
           <cmd:recipe>skosmos</cmd:recipe>
         </cmd:Location>
         <cmd:Location>
-          <cmd:uri>https://sparql.vocabs.dev.clariah.nl/vocabs?graph=urn%3Avocab%3Afibo-skos%402020-06-30</cmd:uri>
+          <cmd:uri>https://sparql.vocabs.dev.clariah.nl/vocabs?default-graph-uri=urn%3Avocab%3Afibo-skos%402020-06-30</cmd:uri>
           <cmd:type>endpoint</cmd:type>
           <cmd:recipe>sparql</cmd:recipe>
         </cmd:Location>
