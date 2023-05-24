@@ -52,7 +52,14 @@ def parse(id):
 
         return summary
 
-    file = os.environ.get('RECORDS_PATH', '../data/records/') + id
+    def create_location_for(elem):
+        return {
+            "location": grab_value("./cmd:uri", elem),
+            "type": grab_value("./cmd:type", elem),
+            "recipe": grab_value("./cmd:recipe", elem),
+        }
+
+    file = os.environ.get('RECORDS_PATH', '../data/records/') + id + '.cmdi'
     parsed = etree.parse(file)
     root = parsed.getroot()
 
@@ -67,11 +74,7 @@ def parse(id):
         "sustainabilityPolicy": None,
         "created": datetime.utcfromtimestamp(os.path.getctime(file)).isoformat(),
         "modified": datetime.utcfromtimestamp(os.path.getmtime(file)).isoformat(),
-        "locations": [{
-            "location": grab_value("./cmd:uri", elem),
-            "type": grab_value("./cmd:type", elem),
-            "recipe": grab_value("./cmd:recipe", elem),
-        } for elem in elementpath.select(root, f"{voc_root}/cmd:Location", ns)],
+        "locations": [create_location_for(elem) for elem in elementpath.select(root, f"{voc_root}/cmd:Location", ns)],
         "reviews": [{
             "id": str(uuid.uuid4()),
             "rating": randint(1, 6),
@@ -98,5 +101,10 @@ def parse(id):
             "predicates": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
             "objects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root),
                                           is_obj=True),
-        } if grab_first(f"{voc_root}/cmd:Summary", root) else None
+        } if grab_first(f"{voc_root}/cmd:Summary", root) else None,
+        "versions": [{
+            "version": grab_value("./cmd:version", elem),
+            "validFrom": grab_value("./cmd:validFrom", elem),
+            "locations": [create_location_for(loc_elem) for loc_elem in elementpath.select(elem, "./cmd:Location", ns)],
+        } for elem in elementpath.select(root, f"{voc_root}/cmd:Version", ns)]
     }

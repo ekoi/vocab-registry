@@ -1,37 +1,46 @@
-ul, ol {
+.detailRow ul, .detailRow ol {
     margin: 0;
     padding: 0;
 }
 
-li {
+.detailRow li {
     padding: 0;
     margin: 0 0 0 1rem;
 }
 
-table {
+.vocabSummary table {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
 }
 
-thead {
+.vocabSummary thead {
     border-bottom: 1px solid #aaa;
 }
 
-tfoot {
+.vocabSummary tfoot {
     border-top: 1px solid #aaa;
 }
 
-thead, tfoot {
+.vocabSummary thead, .vocabSummary tfoot {
     background-color: #f7f8f9;
 }
 
-tbody {
+.vocabSummary tbody {
     text-align: center;
 }
 
-tbody tr:nth-child(even) {
+.vocabSummary tbody tr:nth-child(even) {
     background-color: #f7f8f9;
+}
+
+.yasguiContainer {
+    all: initial;
+    font-family: inherit;
+}
+
+.yasgui .autocompleteWrapper {
+    display: none !important;
 }
 
 .hcResultListDetail {
@@ -82,9 +91,14 @@ tbody tr:nth-child(even) {
     font-weight: 700;
 }
 
+.iconBar.inline {
+    display: inline-flex;
+}
+
 .icon {
     flex-grow: 1;
     text-align: center;
+    padding: 0 1em;
 }
 
 .icon:not(:last-child) {
@@ -112,7 +126,7 @@ tbody tr:nth-child(even) {
     margin-right: 25px;
 }
 
-.active {
+.tabActive {
     background-color: rgba(0, 0, 0, 0.11);
     border: 1px solid rgba(0, 0, 0, 0.13);
 }
@@ -151,6 +165,74 @@ tbody tr:nth-child(even) {
     padding-left: 20px;
 }
 
+.pill {
+    display: inline;
+    padding: 2px 5px;
+    margin-left: 10px;
+    background-color: #082045;
+    border-radius: 6px;
+    color: white;
+    font-size: smaller;
+}
+
+.toggle {
+    display: inline-block;
+    padding: 0;
+    margin-right: 0.5em;
+    width: 1em;
+}
+
+.vocabVersion {
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #aaa;
+}
+
+.vocabVersion:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.vocabVersionHeader {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.vocabVersionDate {
+    font-size: small;
+}
+
+.vocabVersionBody {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-out;
+}
+
+.vocabVersionBody.open {
+    display: block;
+    max-height: 100vh;
+}
+
+.vocabSummary tbody th {
+    font-weight: normal;
+    text-align: left;
+    color: #082045;
+}
+
+.vocabSummary thead tr:last-child {
+    font-size: small;
+    font-style: italic;
+}
+
+.prefix {
+    display: inline;
+    padding: 2px 5px;
+    margin-left: 10px;
+    background-color: #082045;
+    border-radius: 6px;
+    color: white;
+    font-size: smaller;
+}
+
 .review {
     margin-bottom: 1em;
     border-bottom: 1px solid #aaa;
@@ -172,27 +254,5 @@ tbody tr:nth-child(even) {
 .review p {
     white-space: pre-wrap;
     text-align: justify;
-    font-size: smaller;
-}
-
-
-.vocabSummary tbody th {
-    font-weight: normal;
-    text-align: left;
-    color: #082045;
-}
-
-.vocabSummary thead tr:last-child {
-    font-size: small;
-    font-style: italic;
-}
-
-.prefix {
-    display: inline;
-    padding: 2px 5px;
-    margin-left: 10px;
-    background-color: #082045;
-    border-radius: 6px;
-    color: white;
     font-size: smaller;
 }

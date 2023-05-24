@@ -8,7 +8,7 @@ export default function ListItem({item}: { item: VocabIndex }) {
 
     return (
         <div className="hcResultListDetail">
-            <h2><Link to={'/detail/' + item.record}>{item.title}</Link></h2>
+            <h2><Link to={'/detail/' + item.record.substring(0, item.record.length - 5)}>{item.title}</Link></h2>
             <div className="detailLine">
                 {description}
             </div>

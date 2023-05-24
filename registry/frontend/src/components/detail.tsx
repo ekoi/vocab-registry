@@ -4,8 +4,9 @@ import {Vocab} from '../misc/interfaces';
 import Description from './description';
 import Summary from './summary';
 import Reviews from './reviews';
+import Versions from './versions';
 
-enum ViewOpened { DESCRIPTION, SUMMARY, REVIEWS}
+enum ViewOpened { DESCRIPTION, VERSIONS, SUMMARY, REVIEWS}
 
 export default function Detail({data}: { data: Vocab }) {
     const navigate = useNavigate();
@@ -21,15 +22,19 @@ export default function Detail({data}: { data: Vocab }) {
                         <a className="back" href="#" onClick={_ => navigate(-1)}>&larr; Return to previous page</a>
 
                         <div className="hcToggle">
-                            <button className={viewOpened === ViewOpened.DESCRIPTION ? 'active' : ''}
+                            <button className={`hcButton ${viewOpened === ViewOpened.DESCRIPTION ? 'tabActive' : ''}`}
                                     onClick={_ => setViewOpened(ViewOpened.DESCRIPTION)}>
                                 Description
                             </button>
-                            <button className={viewOpened === ViewOpened.SUMMARY ? 'active' : ''}
+                            <button className={`hcButton ${viewOpened === ViewOpened.VERSIONS ? 'tabActive' : ''}`}
+                                    onClick={_ => setViewOpened(ViewOpened.VERSIONS)}>
+                                Versions
+                            </button>
+                            <button className={`hcButton ${viewOpened === ViewOpened.SUMMARY ? 'tabActive' : ''}`}
                                     onClick={_ => setViewOpened(ViewOpened.SUMMARY)}>
                                 Summary
                             </button>
-                            <button className={viewOpened === ViewOpened.REVIEWS ? 'active' : ''}
+                            <button className={`hcButton ${viewOpened === ViewOpened.REVIEWS ? 'tabActive' : ''}`}
                                     onClick={_ => setViewOpened(ViewOpened.REVIEWS)}>
                                 Reviews
                             </button>
@@ -38,6 +43,7 @@ export default function Detail({data}: { data: Vocab }) {
                 </div>
 
                 {viewOpened === ViewOpened.DESCRIPTION && <Description data={data}/>}
+                {viewOpened === ViewOpened.VERSIONS && <Versions data={data}/>}
                 {viewOpened === ViewOpened.SUMMARY && <Summary data={data}/>}
                 {viewOpened === ViewOpened.REVIEWS && <Reviews data={data}/>}
             </div>

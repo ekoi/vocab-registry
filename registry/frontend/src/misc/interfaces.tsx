@@ -31,12 +31,19 @@ export interface Vocab {
         predicates: VocabSummary;
         objects: VocabObjectSummary;
     } | null;
+    versions: VocabVersion[];
 }
 
 export interface VocabLocation {
     location: string;
     type: 'homepage' | 'endpoint';
-    recipe: 'sparql' | 'skosmos' | 'rdf' | null;
+    recipe: 'sparql' | 'skosmos' | 'webvowl' | 'rdf' | 'cache' | null;
+}
+
+export interface VocabVersion {
+    version: string;
+    validFrom: string | null;
+    locations: VocabLocation[];
 }
 
 export interface VocabRecommendation {

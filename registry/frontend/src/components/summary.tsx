@@ -27,7 +27,7 @@ export default function Summary({data}: { data: Vocab }) {
             <tbody>
             {summary.stats.stats.map(stat => (
                 <tr key={stat.prefix}>
-                    <th>{stat.uri} <span className="prefix">{stat.prefix}</span></th>
+                    <th>{stat.uri} <span className="pill">{stat.prefix}</span></th>
                     <td>{summary.subjects.stats.find(s => s.prefix === stat.prefix)?.count ?? 0}</td>
                     <td>{summary.predicates.stats.find(s => s.prefix === stat.prefix)?.count ?? 0}</td>
                     <td>{summary.objects.classes?.stats?.find(s => s.prefix === stat.prefix)?.count ?? 0}</td>
