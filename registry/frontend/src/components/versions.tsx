@@ -1,13 +1,9 @@
 import dayjs from 'dayjs';
-import React, {MouseEvent, useState} from 'react';
-import LocationIcon from './locationIcon';
-import Yasgui from '../misc/yasgui';
-import {Vocab, VocabLocation, VocabVersion} from '../misc/interfaces';
-
-interface OpenLocation {
-    type: string;
-    endpoint: string;
-}
+import React from 'react';
+import LocationIconBar from './locationIconBar';
+import LocationInteract from './locationInteract';
+import useLocationFocus from '../hooks/locationHook';
+import {Vocab, VocabVersion} from '../misc/interfaces';
 
 export default function Versions({data}: { data: Vocab }) {
     return (
@@ -20,18 +16,7 @@ export default function Versions({data}: { data: Vocab }) {
 }
 
 function Version({version}: { version: VocabVersion }) {
-    const [showFor, setShowFor] = useState<OpenLocation | null>(null);
-
-    const onLocationClick = (loc: VocabLocation, e: MouseEvent<HTMLAnchorElement>) => {
-        if (showFor && showFor.type === loc.recipe && showFor.endpoint === loc.location) {
-            setShowFor(null);
-            e.preventDefault();
-        }
-        else if (loc.recipe === 'sparql') {
-            setShowFor({type: loc.recipe, endpoint: loc.location});
-            e.preventDefault();
-        }
-    };
+    const [locationFocus, onLocationClick] = useLocationFocus();
 
     return (
         <div className="vocabVersion">
@@ -42,20 +27,11 @@ function Version({version}: { version: VocabVersion }) {
                     Valid from: {dayjs(version.validFrom).format('MMM D, YYYY')}
                 </span>}
 
-                {version.locations.length > 0 && <div className="iconBar inline">
-                    {version.locations.map(loc =>
-                        <LocationIcon key={loc.location} location={loc} onClick={e => onLocationClick(loc, e)}/>)}
-                </div>}
+                {version.locations.length > 0 &&
+                    <LocationIconBar locations={version.locations} inline={true} onLocationClick={onLocationClick}/>}
             </div>
 
-            <div className={`vocabVersionBody ${showFor !== null ? 'open' : ''}`}>
-                {showFor && showFor.type === 'sparql' && <VersionYasgui endpoint={showFor.endpoint}/>}
-            </div>
+            <LocationInteract location={locationFocus}/>
         </div>
     );
-}
-
-function VersionYasgui({endpoint}: { endpoint: string }) {
-    const config = {requestConfig: {endpoint}, persistenceId: endpoint};
-    return <Yasgui config={config} disableEndpointSelector={true}/>;
 }

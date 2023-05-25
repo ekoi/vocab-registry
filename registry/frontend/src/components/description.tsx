@@ -1,41 +1,23 @@
 import dayjs from 'dayjs';
-import React, {MouseEvent, ReactElement, useState} from 'react';
+import React, {ReactElement} from 'react';
 import ReactMarkdown from 'react-markdown';
-import LocationIcon from './locationIcon';
-import {Vocab, VocabLocation, VocabRecommendation} from '../misc/interfaces';
-import Yasgui from '../misc/yasgui.js';
-
-interface OpenLocation {
-    type: string;
-    endpoint: string;
-}
+import LocationIconBar from './locationIconBar';
+import LocationInteract from './locationInteract';
+import useLocationFocus from '../hooks/locationHook';
+import {Vocab, VocabRecommendation} from '../misc/interfaces';
 
 export default function Description({data}: { data: Vocab }) {
-    const [showFor, setShowFor] = useState<OpenLocation | null>(null);
-
-    const onLocationClick = (loc: VocabLocation, e: MouseEvent<HTMLAnchorElement>) => {
-        if (showFor && showFor.type === loc.recipe && showFor.endpoint === loc.location) {
-            setShowFor(null);
-            e.preventDefault();
-        }
-        else if (loc.recipe === 'sparql') {
-            setShowFor({type: loc.recipe, endpoint: loc.location});
-            e.preventDefault();
-        }
-    };
+    const [locationFocus, onLocationClick] = useLocationFocus();
 
     const latestVersion = data.versions
         ?.sort((a, b) => -1 * a.version.localeCompare(b.version))
         ?.find(Boolean);
+    const locations = data.locations.concat(...(latestVersion?.locations || []));
 
     return (
         <>
-            {(data.locations.length > 0 || data.versions?.find(v => v.locations.length > 0)) &&
-                <div className="iconBar extraBottomMargin">
-                    {data.locations.concat(...(latestVersion?.locations || [])).map(loc =>
-                        <LocationIcon key={loc.location} location={loc}
-                                      onClick={e => onLocationClick(loc, e)}/>)}
-                </div>}
+            {locations.length > 0 &&
+                <LocationIconBar locations={locations} onLocationClick={onLocationClick} inline={false}/>}
 
             {data.description && <ReactMarkdown className="detailLine extraBottomMargin">
                 {data.description}
@@ -53,9 +35,7 @@ export default function Description({data}: { data: Vocab }) {
                         <Recommendation key={r.publisher} vocab={data} recommendation={r}/>)}/>}
             </div>
 
-            <div className={`vocabVersionBody ${showFor !== null ? 'open' : ''}`}>
-                {showFor && showFor.type === 'sparql' && <VersionYasgui endpoint={showFor.endpoint}/>}
-            </div>
+            <LocationInteract location={locationFocus}/>
         </>
     );
 }
@@ -88,9 +68,4 @@ function Recommendation({recommendation, vocab}: { vocab: Vocab, recommendation:
         default:
             return <>{recommendation.publisher}</>;
     }
-}
-
-function VersionYasgui({endpoint}: { endpoint: string }) {
-    const config = {requestConfig: {endpoint}, persistenceId: endpoint};
-    return <Yasgui config={config} disableEndpointSelector={true}/>;
 }

@@ -1,10 +1,25 @@
-import React, {MouseEventHandler} from 'react';
+import React, {MouseEvent, MouseEventHandler} from 'react';
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowUpRightFromSquare, faDownload, faGear, faHouse} from '@fortawesome/free-solid-svg-icons';
-import {VocabLocation} from '../misc/interfaces.js';
+import {VocabLocation} from '../misc/interfaces';
 
-export default function LocationIcon({location, onClick}: {
+interface LocationIconBarProps {
+    locations: VocabLocation[];
+    inline: boolean;
+    onLocationClick: (loc: VocabLocation, e: MouseEvent<HTMLAnchorElement>) => void;
+}
+
+export default function LocationIconBar({locations, inline, onLocationClick}: LocationIconBarProps) {
+    return (
+        <div className={`iconBar ${inline ? 'inline' : ''}`}>
+            {locations.map(loc =>
+                <LocationIcon key={loc.location} location={loc} onClick={e => onLocationClick(loc, e)}/>)}
+        </div>
+    );
+}
+
+function LocationIcon({location, onClick}: {
     location: VocabLocation,
     onClick?: MouseEventHandler<HTMLAnchorElement>
 }) {

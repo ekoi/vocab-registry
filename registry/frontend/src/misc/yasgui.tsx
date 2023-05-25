@@ -20,8 +20,8 @@ yasguiGripSheet.replaceSync(yasguiGripStyles);
 const disableEndpointSelectorSheet = new CSSStyleSheet();
 disableEndpointSelectorSheet.insertRule(
     '.yasgui .autocompleteWrapper {\n' +
-    '    visibility: hidden;\n' +
-    '  }'
+    '  visibility: hidden;\n' +
+    '}'
 );
 
 export default function Yasgui({config = {}, disableEndpointSelector = false}: YasguiParams) {
