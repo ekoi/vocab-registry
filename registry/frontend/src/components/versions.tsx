@@ -56,6 +56,6 @@ function Version({version}: { version: VocabVersion }) {
 }
 
 function VersionYasgui({endpoint}: { endpoint: string }) {
-    const config = {requestConfig: {endpoint}};
-    return <Yasgui config={config}/>;
+    const config = {requestConfig: {endpoint}, persistenceId: endpoint};
+    return <Yasgui config={config} disableEndpointSelector={true}/>;
 }

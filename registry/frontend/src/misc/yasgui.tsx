@@ -1,23 +1,45 @@
 import {useEffect, useRef} from 'react';
 import {default as TriplyYasGui, PartialConfig} from '@triply/yasgui';
-import '@triply/yasgui/build/yasgui.min.css';
 
-export default function Yasgui({config = {}}: { config: PartialConfig }) {
-    localStorage.removeItem('yagui__config');
+// @ts-ignore
+import yasguiStyles from '@triply/yasgui/build/yasgui.min.css?inline';
+// @ts-ignore
+import yasguiGripStyles from './yasgui-grip.css?inline';
 
-    const ref = useRef<HTMLDivElement>(null);
+interface YasguiParams {
+    config?: PartialConfig;
+    disableEndpointSelector?: boolean;
+}
+
+const yasguiSheet = new CSSStyleSheet();
+yasguiSheet.replaceSync(yasguiStyles);
+
+const yasguiGripSheet = new CSSStyleSheet();
+yasguiGripSheet.replaceSync(yasguiGripStyles);
+
+const disableEndpointSelectorSheet = new CSSStyleSheet();
+disableEndpointSelectorSheet.insertRule(
+    '.yasgui .autocompleteWrapper {\n' +
+    '    visibility: hidden;\n' +
+    '  }'
+);
+
+export default function Yasgui({config = {}, disableEndpointSelector = false}: YasguiParams) {
+    const refContainer = useRef<HTMLDivElement>(null);
+
     useEffect(() => {
-        if (ref.current && ref.current.children.length === 0) {
-            // const linkElem = document.createElement('link');
-            // linkElem.setAttribute('rel', 'stylesheet');
-            // linkElem.setAttribute('href', 'style.css');
+        if (refContainer.current && !refContainer.current.shadowRoot) {
+            const adoptedStyleSheets = [yasguiSheet, yasguiGripSheet];
+            if (disableEndpointSelector)
+                adoptedStyleSheets.push(disableEndpointSelectorSheet);
 
-            // const shadow = ref.current.attachShadow({mode: 'open'});
-            // shadow.appendChild(linkElem);
+            const shadow = refContainer.current.attachShadow({mode: 'open'});
+            shadow.adoptedStyleSheets = adoptedStyleSheets;
 
-            new TriplyYasGui(ref.current, config);
+            // ShadowRoot is not a HTMLElement, but both have the required 'appendChild' method
+            new TriplyYasGui(shadow as unknown as HTMLElement, config);
         }
     });
 
-    return <div className="yasguiContainer" ref={ref}/>;
+    return <div className="yasguiContainer" ref={refContainer}/>;
 }

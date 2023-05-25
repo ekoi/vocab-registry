@@ -34,15 +34,6 @@
     background-color: #f7f8f9;
 }
 
-.yasguiContainer {
-    all: initial;
-    font-family: inherit;
-}
-
-.yasgui .autocompleteWrapper {
-    display: none !important;
-}
-
 .hcResultListDetail {
     display: block;
     border: 1px solid #dddddd;

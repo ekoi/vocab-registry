@@ -91,6 +91,6 @@ function Recommendation({recommendation, vocab}: { vocab: Vocab, recommendation:
 }
 
 function VersionYasgui({endpoint}: { endpoint: string }) {
-    const config = {requestConfig: {endpoint}};
-    return <Yasgui config={config}/>;
+    const config = {requestConfig: {endpoint}, persistenceId: endpoint};
+    return <Yasgui config={config} disableEndpointSelector={true}/>;
 }
