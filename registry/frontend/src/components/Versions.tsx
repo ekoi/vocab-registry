@@ -1,8 +1,8 @@
 import dayjs from 'dayjs';
 import React from 'react';
-import LocationIconBar from './locationIconBar';
-import LocationInteract from './locationInteract';
-import useLocationFocus from '../hooks/locationHook';
+import LocationIconBar from './LocationIconBar';
+import LocationInteract from './LocationInteract';
+import useLocationFocus from '../hooks/useLocationFocus';
 import {Vocab, VocabVersion} from '../misc/interfaces';
 
 export default function Versions({data}: { data: Vocab }) {

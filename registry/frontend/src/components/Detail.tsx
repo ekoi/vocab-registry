@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import {Vocab} from '../misc/interfaces';
-import Description from './description';
-import Summary from './summary';
-import Reviews from './reviews';
-import Versions from './versions';
+import Description from './Description';
+import Summary from './Summary';
+import Reviews from './Reviews';
+import Versions from './Versions';
 
 enum ViewOpened { DESCRIPTION, VERSIONS, SUMMARY, REVIEWS}
 

@@ -1,7 +1,9 @@
-from flask import Flask, request, jsonify
+from werkzeug.http import parse_date
+from flask import Flask, request, jsonify, abort, redirect
 from flask_cors import CORS
 from elastic_index import Index
 from cmdi_parser import parse
+from datetime import datetime
 
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 CORS(app)
@@ -33,10 +35,33 @@ def browse():
     return jsonify(ret_struc)
 
 
-@app.get('/detail')
-def get_detail():
-    rec = request.args.get("rec")
-    return jsonify(parse(rec))
+@app.get('/vocab/<id>')
+def get_vocab(id):
+    return jsonify(parse(id))
+
+
+@app.get('/proxy/<recipe>/<id>')
+def proxy(recipe, id):
+    record = parse(id)
+    if not record:
+        abort(404)
+
+    request_date = parse_date(request.headers['accept-datetime']).replace(tzinfo=None) \
+        if 'accept-datetime' in request.headers else None
+
+    locations = None
+    if request_date:
+        for version in record['versions']:
+            if not locations and version['validFrom'] and datetime.fromisoformat(version['validFrom']) <= request_date:
+                locations = version['locations']
+    else:
+        locations = record['versions'][0]['locations']
+
+    redirect_uri = next(loc['location'] for loc in locations if loc['recipe'] == recipe) if locations else None
+    if not redirect_uri:
+        abort(404)
+
+    return redirect(redirect_uri, code=302)
 
 
 if __name__ == '__main__':

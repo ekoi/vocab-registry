@@ -1,5 +1,6 @@
 import os
 import uuid
+import operator
 import elementpath
 import unicodedata
 
@@ -102,9 +103,10 @@ def parse(id):
             "objects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root),
                                           is_obj=True),
         } if grab_first(f"{voc_root}/cmd:Summary", root) else None,
-        "versions": [{
+        "versions": sorted([{
             "version": grab_value("./cmd:version", elem),
             "validFrom": grab_value("./cmd:validFrom", elem),
             "locations": [create_location_for(loc_elem) for loc_elem in elementpath.select(elem, "./cmd:Location", ns)],
-        } for elem in elementpath.select(root, f"{voc_root}/cmd:Version", ns)]
+        } for elem in elementpath.select(root, f"{voc_root}/cmd:Version", ns)],
+            key=operator.itemgetter('validFrom'), reverse=True)
     }

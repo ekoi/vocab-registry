@@ -29,7 +29,7 @@ class Index:
                             "field": field,
                             "size": amount,
                             "order": {
-                                "_term": "asc"
+                                "_key": "asc"
                             }
                         }
                     }

@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
 import React, {ReactElement} from 'react';
 import ReactMarkdown from 'react-markdown';
-import LocationIconBar from './locationIconBar';
-import LocationInteract from './locationInteract';
-import useLocationFocus from '../hooks/locationHook';
+import LocationIconBar from './LocationIconBar';
+import LocationInteract from './LocationInteract';
+import useLocationFocus from '../hooks/useLocationFocus';
 import {Vocab, VocabRecommendation} from '../misc/interfaces';
 
 export default function Description({data}: { data: Vocab }) {
@@ -16,8 +16,9 @@ export default function Description({data}: { data: Vocab }) {
 
     return (
         <>
-            {locations.length > 0 &&
-                <LocationIconBar locations={locations} onLocationClick={onLocationClick} inline={false}/>}
+            {locations.length > 0 && <div className="extraBottomMargin">
+                <LocationIconBar locations={locations} onLocationClick={onLocationClick} inline={false}/>
+            </div>}
 
             {data.description && <ReactMarkdown className="detailLine extraBottomMargin">
                 {data.description}

@@ -1,5 +1,5 @@
 import React from 'react';
-import Yasgui from '../misc/yasgui';
+import Yasgui from '../misc/Yasgui';
 import {VocabLocation} from '../misc/interfaces';
 
 export default function LocationInteract({location}: { location: VocabLocation | null }) {
