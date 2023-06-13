@@ -42,6 +42,12 @@ def get_vocab(id):
 
 @app.get('/proxy/<recipe>/<id>')
 def proxy(recipe, id):
+    # Proxy for cache: /{regex:[a-z0-9-_]+[^@](\\.[a-z]+)?}
+    # Proxy to: /proxy/cache/$1 for regex: /([a-z0-9-_]+)(\\.[a-z]+)?
+
+    # Proxy for skosmos: /{regex:[a-z0-9-]+[^_]*}
+    # Proxy to: /proxy/skosmos/$1 for regex: /([a-z0-9-_]+)(/.*)?
+
     record = parse(id)
     if not record:
         abort(404)
