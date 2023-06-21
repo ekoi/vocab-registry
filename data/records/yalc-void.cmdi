@@ -37,12 +37,104 @@
                 <cmd:Statements>
                     <cmd:Subjects>
                         <cmd:count>43</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://rdfs.org/ns/void#</cmd:URI>
+                                <cmd:prefix>void</cmd:prefix>
+                                <cmd:count>147</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Subjects>
                     <cmd:Predicates>
                         <cmd:count>29</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>47</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/ns/adms#</cmd:URI>
+                                <cmd:prefix>adms</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                                <cmd:prefix>dct</cmd:prefix>
+                                <cmd:count>14</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/vocab/vann/</cmd:URI>
+                                <cmd:prefix>vann</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                                <cmd:prefix>foaf</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>114</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://schema.org/</cmd:URI>
+                                <cmd:prefix>sdo</cmd:prefix>
+                                <cmd:count>24</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Predicates>
                     <cmd:Objects>
                         <cmd:count>122</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>0</cmd:count>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                    <cmd:prefix>rdf</cmd:prefix>
+                                    <cmd:count>3</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                    <cmd:prefix>owl</cmd:prefix>
+                                    <cmd:count>31</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/ns/adms#</cmd:URI>
+                                    <cmd:prefix>adms</cmd:prefix>
+                                    <cmd:count>3</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:count>7</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                                    <cmd:prefix>foaf</cmd:prefix>
+                                    <cmd:count>3</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://rdfs.org/ns/void#</cmd:URI>
+                                    <cmd:prefix>void</cmd:prefix>
+                                    <cmd:count>40</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                    <cmd:prefix>rdfs</cmd:prefix>
+                                    <cmd:count>8</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>https://schema.org/</cmd:URI>
+                                    <cmd:prefix>sdo</cmd:prefix>
+                                    <cmd:count>8</cmd:count>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>0</cmd:count>
+                        </cmd:Literals>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

@@ -89,12 +89,114 @@ The data triples in this ontology instantiate `FinRegOnt` classes `USC_Title`, `
                 <cmd:Statements>
                     <cmd:Subjects>
                         <cmd:count>44</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
+                                <cmd:prefix>fr-rule-iaa</cmd:prefix>
+                                <cmd:count>9</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
+                                <cmd:prefix>hfr-rule-iaa</cmd:prefix>
+                                <cmd:count>17</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Subjects>
                     <cmd:Predicates>
                         <cmd:count>24</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                                <cmd:prefix>dct</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://judo.googlecode.com/svn/tunk/Judging_Contracts_Core.owl#</cmd:URI>
+                                <cmd:prefix>jc-core</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.estrellaproject.org/lkif-core/expression.owl#</cmd:URI>
+                                <cmd:prefix>lkif-expr</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>39</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>56</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>13</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                                <cmd:prefix>skos</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.omg.org/techprocess/ab/SpecificationMetadata/</cmd:URI>
+                                <cmd:prefix>sm</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Predicates>
                     <cmd:Objects>
                         <cmd:count>75</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>0</cmd:count>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
+                                    <cmd:prefix>fr-rule-iaa</cmd:prefix>
+                                    <cmd:count>4</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
+                                    <cmd:prefix>hfr-rule-iaa</cmd:prefix>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://judo.googlecode.com/svn/tunk/Judging_Contracts_Core.owl#</cmd:URI>
+                                    <cmd:prefix>jc-core</cmd:prefix>
+                                    <cmd:count>2</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                    <cmd:prefix>owl</cmd:prefix>
+                                    <cmd:count>18</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                    <cmd:prefix>rdf</cmd:prefix>
+                                    <cmd:count>9</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                    <cmd:prefix>rdfs</cmd:prefix>
+                                    <cmd:count>3</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:count>3</cmd:count>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>0</cmd:count>
+                        </cmd:Literals>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

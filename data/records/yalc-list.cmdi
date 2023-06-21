@@ -40,12 +40,74 @@
                 <cmd:Statements>
                     <cmd:Subjects>
                         <cmd:count>18</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>https://w3id.org/list#</cmd:URI>
+                                <cmd:prefix>list</cmd:prefix>
+                                <cmd:count>18</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Subjects>
                     <cmd:Predicates>
                         <cmd:count>24</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>9</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI>
+                                <cmd:prefix>dce</cmd:prefix>
+                                <cmd:count>7</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>13</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>25</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/vocab/vann/</cmd:URI>
+                                <cmd:prefix>vann</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
+                                <cmd:prefix>cc</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Predicates>
                     <cmd:Objects>
                         <cmd:count>35</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>0</cmd:count>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                    <cmd:prefix>owl</cmd:prefix>
+                                    <cmd:count>20</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                    <cmd:prefix>rdf</cmd:prefix>
+                                    <cmd:count>2</cmd:count>
+                                </cmd:Namespace>
+                                <cmd:Namespace>
+                                    <cmd:URI>https://w3id.org/list#</cmd:URI>
+                                    <cmd:prefix>list</cmd:prefix>
+                                    <cmd:count>11</cmd:count>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>0</cmd:count>
+                        </cmd:Literals>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

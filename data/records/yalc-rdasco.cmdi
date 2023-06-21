@@ -40,12 +40,21 @@
                 <cmd:Statements>
                     <cmd:Subjects>
                         <cmd:count>4</cmd:count>
+                        <cmd:Namespaces/>
                     </cmd:Subjects>
                     <cmd:Predicates>
                         <cmd:count>21</cmd:count>
+                        <cmd:Namespaces/>
                     </cmd:Predicates>
                     <cmd:Objects>
                         <cmd:count>95</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>0</cmd:count>
+                            <cmd:Namespaces/>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>0</cmd:count>
+                        </cmd:Literals>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces/>

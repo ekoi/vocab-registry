@@ -41,12 +41,21 @@ This model has been developed by the partners of the [Cinelab project](http://ad
                 <cmd:Statements>
                     <cmd:Subjects>
                         <cmd:count>64</cmd:count>
+                        <cmd:Namespaces/>
                     </cmd:Subjects>
                     <cmd:Predicates>
                         <cmd:count>27</cmd:count>
+                        <cmd:Namespaces/>
                     </cmd:Predicates>
                     <cmd:Objects>
                         <cmd:count>171</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>0</cmd:count>
+                            <cmd:Namespaces/>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>0</cmd:count>
+                        </cmd:Literals>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces/>
