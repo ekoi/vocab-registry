@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Vocabulary of Interlinked Datasets (VoID)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/void</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">VoID is an RDF Schema vocabulary for expressing metadata about RDF datasets.  It is intended as a bridge between the publishers and users of RDF data, with applications ranging from data discovery to cataloging and archiving of datasets.  This document is a detailed guide to the VoID vocabulary.  It describes how VoID can be used to express general metadata based on Dublin Core, access metadata, structural metadata, and links between datasets.  It also provides deployment advice and discusses the discovery of VoID descriptions.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Vocabulary of Interlinked Datasets (VoID)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/void</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">VoID is an RDF Schema vocabulary for expressing metadata about RDF datasets.  It is intended as a bridge between the publishers and users of RDF data, with applications ranging from data discovery to cataloging and archiving of datasets.  This document is a detailed guide to the VoID vocabulary.  It describes how VoID can be used to express general metadata based on Dublin Core, access metadata, structural metadata, and links between datasets.  It also provides deployment advice and discusses the discovery of VoID descriptions.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,83 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>43</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>29</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>122</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>50</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>31</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/ns/adms#</cmd:URI><cmd:prefix>adms</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/terms/</cmd:URI><cmd:prefix>dct</cmd:prefix><cmd:count>14</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/vocab/vann/</cmd:URI><cmd:prefix>vann</cmd:prefix><cmd:count>2</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI><cmd:prefix>foaf</cmd:prefix><cmd:count>6</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI><cmd:prefix>dc</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://rdfs.org/ns/void#</cmd:URI><cmd:prefix>void</cmd:prefix><cmd:count>187</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>122</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>https://schema.org/</cmd:URI><cmd:prefix>sdo</cmd:prefix><cmd:count>32</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://vocab.deri.ie/void.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://vocab.deri.ie/void.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>43</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>29</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>122</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>50</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>31</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/adms#</cmd:URI>
+                        <cmd:prefix>adms</cmd:prefix>
+                        <cmd:count>7</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                        <cmd:prefix>dct</cmd:prefix>
+                        <cmd:count>14</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>7</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/vocab/vann/</cmd:URI>
+                        <cmd:prefix>vann</cmd:prefix>
+                        <cmd:count>2</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                        <cmd:prefix>foaf</cmd:prefix>
+                        <cmd:count>6</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI>
+                        <cmd:prefix>dc</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://rdfs.org/ns/void#</cmd:URI>
+                        <cmd:prefix>void</cmd:prefix>
+                        <cmd:count>187</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>122</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>https://schema.org/</cmd:URI>
+                        <cmd:prefix>sdo</cmd:prefix>
+                        <cmd:count>32</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

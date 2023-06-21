@@ -8,12 +8,20 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Vocabulario para la representaci&#243;n de datos de territorio (incluyendo divisiones administrativas) en Espa&#241;a</cmd:title>
-            <cmd:Location><cmd:uri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Este vocabulario se utiliza para la descripci&#243;n de territorios en Espa&#241;a (incluyendo divisiones administrativas y tambi&#233;n otros conceptos que se utilizan normalmente pero no tienen entidad jur&#237;dica, como por ejemplo barrios).  Surge de la necesidad de hacer referencia a conceptos que normalmente se utilizan para describir territorios en Espa&#241;a, y para los que no exist&#237;a ning&#250;n vocabulario suficientemente completo.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Vocabulario para la representación de datos de territorio (incluyendo divisiones administrativas) en España</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/index-en.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Este vocabulario se utiliza para la descripción de territorios en España (incluyendo divisiones administrativas y también otros conceptos que se utilizan normalmente pero no tienen entidad jurídica, como por ejemplo barrios).  Surge de la necesidad de hacer referencia a conceptos que normalmente se utilizan para describir territorios en España, y para los que no existía ningún vocabulario suficientemente completo.
 
-Este vocabulario est&#225; en proceso de revisi&#243;n continua hasta que se consolide como un vocabulario de referencia para la descripci&#243;n de territorios en el contexto nacional, por lo que sus t&#233;rminos pueden sufrir cambios en los pr&#243;ximos meses.
+Este vocabulario está en proceso de revisión continua hasta que se consolide como un vocabulario de referencia para la descripción de territorios en el contexto nacional, por lo que sus términos pueden sufrir cambios en los próximos meses.
 
-Es importante destacar que el objetivo de este vocabulario es el de representar unidades territoriales que van desde el pa&#237;s hasta la secci&#243;n censal.  Para llegar a mayor nivel de detalle (por ejemplo, calles, tramos de calles o inmuebles) se est&#225; trabajando en otros vocabularios que extienden este y que tratan sobre el [callejero](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero) o sobre la representaci&#243;n de [direcciones postales](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal), entre otros.</cmd:description></cmd:Description><cmd:Assessement>
+Es importante destacar que el objetivo de este vocabulario es el de representar unidades territoriales que van desde el país hasta la sección censal.  Para llegar a mayor nivel de detalle (por ejemplo, calles, tramos de calles o inmuebles) se está trabajando en otros vocabularios que extienden este y que tratan sobre el [callejero](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero) o sobre la representación de [direcciones postales](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccionPostal), entre otros.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -21,6 +29,52 @@ Es importante destacar que el objetivo de este vocabulario es el de representar 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>193</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>35</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>299</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>299</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>251</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI><cmd:prefix>xml</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>319</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>0.5</cmd:version><cmd:Location><cmd:uri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/ontology.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>0.5</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/ontology.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>193</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>35</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>299</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>299</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>251</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI>
+                        <cmd:prefix>xml</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>319</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

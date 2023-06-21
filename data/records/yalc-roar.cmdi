@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Reconstructions and Observations in Archival Resources (ROAR)</cmd:title>
-            <cmd:Location><cmd:uri>https://w3id.org/roar</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Ontology to describe person, location etc. observations in archival resources.  One or multiple observations can be bundled into a reconstruction that combines complementary (or sometimes conflicting) information from the observation(s) so that a single entity is reconstructed out of several entity observations from one or multiple sources.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Reconstructions and Observations in Archival Resources (ROAR)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://w3id.org/roar</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Ontology to describe person, location etc. observations in archival resources.  One or multiple observations can be bundled into a reconstruction that combines complementary (or sometimes conflicting) information from the observation(s) so that a single entity is reconstructed out of several entity observations from one or multiple sources.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,28 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>66</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>19</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>131</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>0.1</cmd:version><cmd:Location><cmd:uri>https://leonvanwissen.nl/vocab/roar/roar.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>0.1</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://leonvanwissen.nl/vocab/roar/roar.nt</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>66</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>19</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>131</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces/>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

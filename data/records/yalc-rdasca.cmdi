@@ -9,7 +9,18 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">RDA value vocabularies: RDA Scale Designation</cmd:title><cmd:Location><cmd:uri>http://www.rdaregistry.info/termList/scale/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Concepts for a general designation of the lack of a ratio of the dimensions of the content of an image or three-dimensional form to the dimensions of the thing that is represented.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:title xml:lang="en">RDA value vocabularies: RDA Scale Designation</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.rdaregistry.info/termList/scale/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Concepts for a general designation of the lack of a ratio of the dimensions of the content of an image or three-dimensional form to the dimensions of the thing that is represented.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,28 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>6</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>20</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>145</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://www.rdaregistry.info/nt/termList/scale.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.rdaregistry.info/nt/termList/scale.nt</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>6</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>20</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>145</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces/>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

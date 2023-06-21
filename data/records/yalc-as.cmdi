@@ -8,11 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Activity Streams</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/activitystreams-vocabulary/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Activity Streams 2.0 Vocabulary defines a set of abstract types and properties that describe past, present and future activities.  The vocabulary is defined in two parts:
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Activity Streams</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/activitystreams-vocabulary/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Activity Streams 2.0 Vocabulary defines a set of abstract types and properties that describe past, present and future activities.  The vocabulary is defined in two parts:
 
 1. A Core set of properties describing the generalized structure of an Activity; and
-2. An Extended set of properties that cover specific types of Activities and Artifacts common to many social Web application systems.</cmd:description></cmd:Description><cmd:Assessement>
+2. An Extended set of properties that cover specific types of Activities and Artifacts common to many social Web application systems.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -20,6 +28,58 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>308</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>24</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>455</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI><cmd:prefix>as</cmd:prefix><cmd:count>802</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>296</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>530</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI><cmd:prefix>xml</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>34</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>420</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>2.0</cmd:version><cmd:Location><cmd:uri>https://www.w3.org/ns/activitystreams-owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://www.w3.org/ns/activitystreams-owl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>308</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>24</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>455</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                        <cmd:prefix>as</cmd:prefix>
+                        <cmd:count>802</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>296</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>530</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI>
+                        <cmd:prefix>xml</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>34</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>420</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Annotation Ontology</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/annotation-vocab</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Web Annotation Vocabulary specifies the set of RDF classes, predicates and named entities that are used by the Web Annotation Data Model.  It also lists recommended terms from other ontologies that are used in the model, and provides the JSON-LD Context and profile definitions needed to use the Web Annotation JSON serialization in a Linked Data context.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Annotation Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/annotation-vocab</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Web Annotation Vocabulary specifies the set of RDF classes, predicates and named entities that are used by the Web Annotation Data Model.  It also lists recommended terms from other ontologies that are used in the model, and provides the JSON-LD Context and profile definitions needed to use the Web Annotation JSON serialization in a Linked Data context.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,156 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>71</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>14</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>166</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/ns/auth/acl#</cmd:URI><cmd:prefix>acl</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI><cmd:prefix>as</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/ontology/bibo/</cmd:URI><cmd:prefix>bibo</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2011/content#</cmd:URI><cmd:prefix>cnt</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI><cmd:prefix>dc</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/terms/</cmd:URI><cmd:prefix>dcterms</cmd:prefix><cmd:count>4</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/dcmitype/</cmd:URI><cmd:prefix>dctypes</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2003/12/exif/ns#</cmd:URI><cmd:prefix>exif</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI><cmd:prefix>foaf</cmd:prefix><cmd:count>6</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2003/01/geo/wgs84_pos#</cmd:URI><cmd:prefix>geo</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/goodrelations/v1#</cmd:URI><cmd:prefix>gr</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.iana.org/assignments/relation/</cmd:URI><cmd:prefix>iana</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://iiif.io/api/image/2#</cmd:URI><cmd:prefix>iiif</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/ns/ldp#</cmd:URI><cmd:prefix>ldp</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/ns/oa#</cmd:URI><cmd:prefix>oa</cmd:prefix><cmd:count>447</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.openarchives.org/ore/terms/</cmd:URI><cmd:prefix>ore</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>2</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/ns/prov#</cmd:URI><cmd:prefix>prov</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://pcdm.org/models#</cmd:URI><cmd:prefix>pcdm</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>100</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>276</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://iiif.io/api/presentation/2#</cmd:URI><cmd:prefix>sc</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://rdfs.org/sioc/ns#</cmd:URI><cmd:prefix>sioc</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI><cmd:prefix>skos</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://rdfs.org/sioc/services#</cmd:URI><cmd:prefix>svcs</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2006/time#</cmd:URI><cmd:prefix>time</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2004/03/trix/rdfg-1/</cmd:URI><cmd:prefix>trig</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI><cmd:prefix>xml</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>11</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://www.w3.org/ns/oa.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.w3.org/ns/oa.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>71</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>14</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>166</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/auth/acl#</cmd:URI>
+                        <cmd:prefix>acl</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                        <cmd:prefix>as</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/ontology/bibo/</cmd:URI>
+                        <cmd:prefix>bibo</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2011/content#</cmd:URI>
+                        <cmd:prefix>cnt</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI>
+                        <cmd:prefix>dc</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                        <cmd:prefix>dcterms</cmd:prefix>
+                        <cmd:count>4</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/dcmitype/</cmd:URI>
+                        <cmd:prefix>dctypes</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2003/12/exif/ns#</cmd:URI>
+                        <cmd:prefix>exif</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                        <cmd:prefix>foaf</cmd:prefix>
+                        <cmd:count>6</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2003/01/geo/wgs84_pos#</cmd:URI>
+                        <cmd:prefix>geo</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/goodrelations/v1#</cmd:URI>
+                        <cmd:prefix>gr</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.iana.org/assignments/relation/</cmd:URI>
+                        <cmd:prefix>iana</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://iiif.io/api/image/2#</cmd:URI>
+                        <cmd:prefix>iiif</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/ldp#</cmd:URI>
+                        <cmd:prefix>ldp</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
+                        <cmd:prefix>oa</cmd:prefix>
+                        <cmd:count>447</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.openarchives.org/ore/terms/</cmd:URI>
+                        <cmd:prefix>ore</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>2</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
+                        <cmd:prefix>prov</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://pcdm.org/models#</cmd:URI>
+                        <cmd:prefix>pcdm</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>100</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>276</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://iiif.io/api/presentation/2#</cmd:URI>
+                        <cmd:prefix>sc</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://rdfs.org/sioc/ns#</cmd:URI>
+                        <cmd:prefix>sioc</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                        <cmd:prefix>skos</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://rdfs.org/sioc/services#</cmd:URI>
+                        <cmd:prefix>svcs</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
+                        <cmd:prefix>time</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2004/03/trix/rdfg-1/</cmd:URI>
+                        <cmd:prefix>trig</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI>
+                        <cmd:prefix>xml</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>11</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

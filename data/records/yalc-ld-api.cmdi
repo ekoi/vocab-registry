@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Linked Data API</cmd:title>
-            <cmd:Location><cmd:uri>https://github.com/UKGovLD/linked-data-api</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Configuration vocabulary for the Linked Data API.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Linked Data API</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://github.com/UKGovLD/linked-data-api</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Configuration vocabulary for the Linked Data API.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,68 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>59</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>14</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>147</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI><cmd:prefix>foaf</cmd:prefix><cmd:count>9</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>101</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>255</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI><cmd:prefix>dc</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>2</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/terms/</cmd:URI><cmd:prefix>dcterms</cmd:prefix><cmd:count>3</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI><cmd:prefix>api</cmd:prefix><cmd:count>415</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://raw.githubusercontent.com/UKGovLD/linked-data-api/master/vocab/api.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/UKGovLD/linked-data-api/master/vocab/api.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>59</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>14</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>147</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                        <cmd:prefix>foaf</cmd:prefix>
+                        <cmd:count>9</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>101</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>255</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI>
+                        <cmd:prefix>dc</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>2</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                        <cmd:prefix>dcterms</cmd:prefix>
+                        <cmd:count>3</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
+                        <cmd:prefix>api</cmd:prefix>
+                        <cmd:count>415</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

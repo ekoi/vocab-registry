@@ -8,8 +8,10 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">INSPIRE Building 2D</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">This is a draft RDF vocabulary for representing spatial data sets in INSPIRE as RDF.  This vocabulary has been created using the [&#8220;Guidelines for the RDF encoding of spatial data&#8221;](http://inspire-eu-rdf.github.io/inspire-rdf-guidelines).
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">INSPIRE Building 2D</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This is a draft RDF vocabulary for representing spatial data sets in INSPIRE as RDF.  This vocabulary has been created using the [“Guidelines for the RDF encoding of spatial data”](http://inspire-eu-rdf.github.io/inspire-rdf-guidelines).
 
 The use of RDF is optional and does not supersede or replace the requirements regarding encoding specified in Clause 9 of the INSPIRE Data Specifications.  This optional encoding is intended to support the e-government and open data community in Europe, which is increasingly looking at RDF to represent data.
 
@@ -27,7 +29,9 @@ During the derivation, the following mappings, alignments, and omissions have be
 - Alignments (through subsumption):
   - Spatial object types are aligned with `gsp:Feature`.
 
-- Omissions: none</cmd:description></cmd:Description><cmd:Assessement>
+- Omissions: none</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -35,6 +39,73 @@ During the derivation, the following mappings, alignments, and omissions have be
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>4</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>10</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>25</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://def.isotc211.org/iso19150/-2/2012/base#</cmd:URI><cmd:prefix>iso19150-2</cmd:prefix><cmd:count>3</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI><cmd:prefix>gsp</cmd:prefix><cmd:count>2</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>4</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>9</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI><cmd:prefix>skos</cmd:prefix><cmd:count>4</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI><cmd:prefix>bu-base</cmd:prefix><cmd:count>3</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>11</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/bu-core2d#</cmd:URI><cmd:prefix>bu-core2d</cmd:prefix><cmd:count>19</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://raw.githubusercontent.com/inspire-eu-rdf/inspire-rdf-vocabularies/master/bu-core2d/bu-core2d.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/inspire-eu-rdf/inspire-rdf-vocabularies/master/bu-core2d/bu-core2d.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>4</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>10</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>25</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://def.isotc211.org/iso19150/-2/2012/base#</cmd:URI>
+                        <cmd:prefix>iso19150-2</cmd:prefix>
+                        <cmd:count>3</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
+                        <cmd:prefix>gsp</cmd:prefix>
+                        <cmd:count>2</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>4</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>9</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                        <cmd:prefix>skos</cmd:prefix>
+                        <cmd:count>4</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                        <cmd:prefix>bu-base</cmd:prefix>
+                        <cmd:count>3</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>11</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/bu-core2d#</cmd:URI>
+                        <cmd:prefix>bu-core2d</cmd:prefix>
+                        <cmd:count>19</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

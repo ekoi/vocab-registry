@@ -8,8 +8,14 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Linked Languages Resources</cmd:title>
-            <cmd:Location><cmd:uri>http://linkedvocabs.org/lingvoj</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en"># Languages are an endangered heritage
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Linked Languages Resources</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://linkedvocabs.org/lingvoj</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en"># Languages are an endangered heritage
 
 According to [Ethnologue](http://www.ethnologue.com), the number of human languages currently used in the world amounts to almost 7,000.  About half of them could be extinct before the end of this century.  Only a small fraction of them is supported by some writing system and have written heritage, and among those, still less are used in modern information systems and on the Web.  A good indication of the number of languages used on the Web is provided by the [multilingual editions of Wikipedia](http://meta.wikimedia.org/wiki/List_of_Wikipedias), to-date 285 different languages, that is less than 5% of all known languages.  Ranking of languages by importance of their respective Wikipedia is a fairly good indicator for the Web influence of their communities of speakers, but very different from the ranking based on the [number of speakers](http://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers).
 
@@ -17,11 +23,13 @@ According to [Ethnologue](http://www.ethnologue.com), the number of human langua
 
 In current XML and RDF practice, languages are identified by tags, typically used in the `xml:lang` attribute.  The allowed values of tags are defined by [BCP 47](http://www.rfc-editor.org/rfc/bcp/bcp47.txt).  Those language tags are typically used for `rdfs:label` or `rdfs:comment`, and allow the filtering of such elements of description by language, for example in SPARQL queries.  But they do not provide support for queries such as:
 
-- &#8220;Can I find [native speakers](http://www.linkedvocabs.org/lingvoj/ontology#nativeLanguage) of [Bengali](http://lexvo.org/id/iso639-3/ben) in Berlin?&#8221;
-- &#8220;Which books by Victor Hugo are [translated](http://www.linkedvocabs.org/lingvoj/ontology#Translation) in [Arabic](http://lexvo.org/id/iso639-3/ara)?&#8221;
-- &#8220;Is this software documented in [Chinese](http://lexvo.org/id/iso639-3/zho)?&#8221;
+- “Can I find [native speakers](http://www.linkedvocabs.org/lingvoj/ontology#nativeLanguage) of [Bengali](http://lexvo.org/id/iso639-3/ben) in Berlin?”
+- “Which books by Victor Hugo are [translated](http://www.linkedvocabs.org/lingvoj/ontology#Translation) in [Arabic](http://lexvo.org/id/iso639-3/ara)?”
+- “Is this software documented in [Chinese](http://lexvo.org/id/iso639-3/zho)?”
 
-To answer such queries, languages need to be represented as resources, likely to be linked to other resources representing books, people, organizations, places, events, products &#8230; through dedicated properties.  Such properties can be found in the [Lingvoj Ontology](http://www.linkedvocabs.org/lingvoj/ontology).  URIs for languages have been defined in lingvoj.org namespace since 2007, and many other URIs have been defined afterwards in the linked data cloud.  Since 2010 lingvoj.org URIs mainly redirect to those of lexvo.org.</cmd:description></cmd:Description><cmd:Assessement>
+To answer such queries, languages need to be represented as resources, likely to be linked to other resources representing books, people, organizations, places, events, products … through dedicated properties.  Such properties can be found in the [Lingvoj Ontology](http://www.linkedvocabs.org/lingvoj/ontology).  URIs for languages have been defined in lingvoj.org namespace since 2007, and many other URIs have been defined afterwards in the linked data cloud.  Since 2010 lingvoj.org URIs mainly redirect to those of lexvo.org.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -29,6 +37,98 @@ To answer such queries, languages need to be represented as resources, likely to
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>64</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>35</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>677</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>3</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>74</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI><cmd:prefix>xml</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>49</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>683</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI><cmd:prefix>voaf</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/terms/</cmd:URI><cmd:prefix>dcterms</cmd:prefix><cmd:count>65</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/vocab/vann/</cmd:URI><cmd:prefix>vann</cmd:prefix><cmd:count>5</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI><cmd:prefix>foaf</cmd:prefix><cmd:count>35</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://schema.org/</cmd:URI><cmd:prefix>schema</cmd:prefix><cmd:count>9</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://linkedevents.org/ontology/</cmd:URI><cmd:prefix>lode</cmd:prefix><cmd:count>4</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.lingvoj.org/olca#</cmd:URI><cmd:prefix>olca</cmd:prefix><cmd:count>23</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://lexvo.org/ontology#</cmd:URI><cmd:prefix>lvont</cmd:prefix><cmd:count>6</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI><cmd:prefix>skos</cmd:prefix><cmd:count>8</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>2.33</cmd:version><cmd:Location><cmd:uri>http://www.linkedvocabs.org/lingvoj/ontology_v2.33.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2.33</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.linkedvocabs.org/lingvoj/ontology_v2.33.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>64</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>35</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>677</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>3</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>74</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/XML/1998/namespace</cmd:URI>
+                        <cmd:prefix>xml</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>49</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>683</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
+                        <cmd:prefix>voaf</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                        <cmd:prefix>dcterms</cmd:prefix>
+                        <cmd:count>65</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/vocab/vann/</cmd:URI>
+                        <cmd:prefix>vann</cmd:prefix>
+                        <cmd:count>5</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                        <cmd:prefix>foaf</cmd:prefix>
+                        <cmd:count>35</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://schema.org/</cmd:URI>
+                        <cmd:prefix>schema</cmd:prefix>
+                        <cmd:count>9</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://linkedevents.org/ontology/</cmd:URI>
+                        <cmd:prefix>lode</cmd:prefix>
+                        <cmd:count>4</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.lingvoj.org/olca#</cmd:URI>
+                        <cmd:prefix>olca</cmd:prefix>
+                        <cmd:count>23</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://lexvo.org/ontology#</cmd:URI>
+                        <cmd:prefix>lvont</cmd:prefix>
+                        <cmd:count>6</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                        <cmd:prefix>skos</cmd:prefix>
+                        <cmd:count>8</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

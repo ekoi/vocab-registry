@@ -8,12 +8,12 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">INSPIRE Addresses</cmd:title>
-            
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">INSPIRE Addresses</cmd:title>
             <cmd:Description>
                 <cmd:description xml:lang="en">This is a draft RDF vocabulary for representing spatial data sets in
-                    INSPIRE as RDF. This vocabulary has been created using the [&#8220;Guidelines for the RDF encoding
-                    of spatial data&#8221;](http://inspire-eu-rdf.github.io/inspire-rdf-guidelines).
+                    INSPIRE as RDF. This vocabulary has been created using the [“Guidelines for the RDF encoding
+                    of spatial data”](http://inspire-eu-rdf.github.io/inspire-rdf-guidelines).
 
                     The use of RDF is optional and does not supersede or replace the requirements regarding encoding
                     specified in Clause 9 of the INSPIRE Data Specifications. This optional encoding is intended to
@@ -60,11 +60,104 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>47</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>14</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>141</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI><cmd:prefix>ad</cmd:prefix><cmd:count>283</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://def.isotc211.org/iso19150/-2/2012/base#</cmd:URI><cmd:prefix>iso19150-2</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI><cmd:prefix>gsp</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>59</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI><cmd:prefix>gn</cmd:prefix><cmd:count>6</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>5</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI><cmd:prefix>skos</cmd:prefix><cmd:count>55</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>135</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/cp#</cmd:URI><cmd:prefix>cp</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI><cmd:prefix>au</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI><cmd:prefix>sfowl</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>47</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI><cmd:prefix>tn</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>https://www.w3.org/ns/locn#</cmd:URI><cmd:prefix>locn</cmd:prefix><cmd:count>5</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI><cmd:prefix>base</cmd:prefix></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location>
-                <cmd:uri>https://raw.githubusercontent.com/inspire-eu-rdf/inspire-rdf-vocabularies/master/ad/ad.ttl
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/inspire-eu-rdf/inspire-rdf-vocabularies/master/ad/ad.ttl
                 </cmd:uri>
-                <cmd:type>endpoint</cmd:type>
-            </cmd:Location>
-            </cmd:Version></cmd:Vocabulary>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>47</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>14</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>141</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                        <cmd:prefix>ad</cmd:prefix>
+                        <cmd:count>283</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://def.isotc211.org/iso19150/-2/2012/base#</cmd:URI>
+                        <cmd:prefix>iso19150-2</cmd:prefix>
+                        <cmd:count>7</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
+                        <cmd:prefix>gsp</cmd:prefix>
+                        <cmd:count>7</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>59</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
+                        <cmd:prefix>gn</cmd:prefix>
+                        <cmd:count>6</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>5</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                        <cmd:prefix>skos</cmd:prefix>
+                        <cmd:count>55</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>135</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/cp#</cmd:URI>
+                        <cmd:prefix>cp</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                        <cmd:prefix>au</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
+                        <cmd:prefix>sfowl</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>47</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
+                        <cmd:prefix>tn</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
+                        <cmd:prefix>locn</cmd:prefix>
+                        <cmd:count>5</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
+                        <cmd:prefix>base</cmd:prefix>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

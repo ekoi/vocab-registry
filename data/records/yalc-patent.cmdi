@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Patent Ontology</cmd:title>
-            <cmd:Location><cmd:uri>https://data.epo.org/linked-data/download</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">An ontology for representing information about patent applications, patents and patent documents.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Patent Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://data.epo.org/linked-data/download</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">An ontology for representing information about patent applications, patents and patent documents.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,73 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>229</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>19</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>622</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>190</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://data.epo.org/linked-data/def/patent/</cmd:URI><cmd:prefix>patent</cmd:prefix><cmd:count>1563</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>236</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>501</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI><cmd:prefix>skos</cmd:prefix><cmd:count>390</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.loc.gov/standards/mads/rdf/v1.rdf#</cmd:URI><cmd:prefix>v1</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2006/vcard/ns#</cmd:URI><cmd:prefix>vcard</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix><cmd:count>9</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/ns/prov#</cmd:URI><cmd:prefix>prov</cmd:prefix><cmd:count>2</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://data.epo.org/linked-data/download/vocabularies/patent.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://data.epo.org/linked-data/download/vocabularies/patent.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>229</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>19</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>622</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>190</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://data.epo.org/linked-data/def/patent/</cmd:URI>
+                        <cmd:prefix>patent</cmd:prefix>
+                        <cmd:count>1563</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>236</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>501</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                        <cmd:prefix>skos</cmd:prefix>
+                        <cmd:count>390</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.loc.gov/standards/mads/rdf/v1.rdf#</cmd:URI>
+                        <cmd:prefix>v1</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2006/vcard/ns#</cmd:URI>
+                        <cmd:prefix>vcard</cmd:prefix>
+                        <cmd:count>7</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                        <cmd:count>9</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
+                        <cmd:prefix>prov</cmd:prefix>
+                        <cmd:count>2</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

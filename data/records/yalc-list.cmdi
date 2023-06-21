@@ -9,7 +9,18 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">LIST Ontology</cmd:title><cmd:Location><cmd:uri>https://pi.pauwel.be/evoc/list_W3ID/20151211/index.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/licenses/by/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Ontology that can be used to represent ordered lists. This ontology is identical to the ontology originally published by Drummond et al. (see &lt;http://owl-workshop.man.ac.uk/acceptedLong/submission_12.pdf&gt;), with namespace &lt;http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl#&gt;. It is also available at &lt;https://gist.github.com/danlentz/6537658&gt;.  Ontology generated on Fri Sep 25 14:02:03 2015.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:title xml:lang="en">LIST Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://pi.pauwel.be/evoc/list_W3ID/20151211/index.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/licenses/by/3.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Ontology that can be used to represent ordered lists. This ontology is identical to the ontology originally published by Drummond et al. (see &lt;http://owl-workshop.man.ac.uk/acceptedLong/submission_12.pdf&gt;), with namespace &lt;http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl#&gt;. It is also available at &lt;https://gist.github.com/danlentz/6537658&gt;.  Ontology generated on Fri Sep 25 14:02:03 2015.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,68 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>18</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>24</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>35</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces><cmd:Namespace><cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI><cmd:prefix>rdfs</cmd:prefix><cmd:count>9</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI><cmd:prefix>dce</cmd:prefix><cmd:count>7</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI><cmd:prefix>owl</cmd:prefix><cmd:count>33</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI><cmd:prefix>xsd</cmd:prefix></cmd:Namespace><cmd:Namespace><cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI><cmd:prefix>rdf</cmd:prefix><cmd:count>27</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://purl.org/vocab/vann/</cmd:URI><cmd:prefix>vann</cmd:prefix><cmd:count>2</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>https://w3id.org/list#</cmd:URI><cmd:prefix>list</cmd:prefix><cmd:count>29</cmd:count></cmd:Namespace><cmd:Namespace><cmd:URI>http://creativecommons.org/ns#</cmd:URI><cmd:prefix>cc</cmd:prefix><cmd:count>1</cmd:count></cmd:Namespace></cmd:Namespaces></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.2</cmd:version><cmd:Location><cmd:uri>https://pi.pauwel.be/evoc/list_W3ID/20151211/list.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.2</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://pi.pauwel.be/evoc/list_W3ID/20151211/list.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>18</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>24</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>35</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>9</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/dc/elements/1.1/</cmd:URI>
+                        <cmd:prefix>dce</cmd:prefix>
+                        <cmd:count>7</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                        <cmd:prefix>owl</cmd:prefix>
+                        <cmd:count>33</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                        <cmd:prefix>xsd</cmd:prefix>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>27</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://purl.org/vocab/vann/</cmd:URI>
+                        <cmd:prefix>vann</cmd:prefix>
+                        <cmd:count>2</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>https://w3id.org/list#</cmd:URI>
+                        <cmd:prefix>list</cmd:prefix>
+                        <cmd:count>29</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
+                        <cmd:prefix>cc</cmd:prefix>
+                        <cmd:count>1</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

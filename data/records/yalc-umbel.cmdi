@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Upper Mapping and Binding Exchange Layer (UMBEL)</cmd:title>
-            <cmd:Location><cmd:uri>http://techwiki.umbel.org</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">UMBEL, short for Upper Mapping and Binding Exchange Layer, is written in [SKOS](/w3c/skos) and [OWL 2](/w3c/owl) and is an extracted subset of OpenCyc.  UMBEL has two main functions; it is:
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Upper Mapping and Binding Exchange Layer (UMBEL)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://techwiki.umbel.org</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by/3.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">UMBEL, short for Upper Mapping and Binding Exchange Layer, is written in [SKOS](/w3c/skos) and [OWL 2](/w3c/owl) and is an extracted subset of OpenCyc.  UMBEL has two main functions; it is:
   - An upper ontology of about 35,000 reference concepts, designed to provide a common grounding for relating different ontologies or schema to one another, and
-  - A vocabulary for aiding ontology and data mapping, including expressions of likelihood relationships distinct from exact identity or equivalence.  This vocabulary is also designed for interoperating amongst various domain ontologies.</cmd:description></cmd:Description><cmd:Assessement>
+  - A vocabulary for aiding ontology and data mapping, including expressions of likelihood relationships distinct from exact identity or equivalence.  This vocabulary is also designed for interoperating amongst various domain ontologies.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,28 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:Summary><cmd:Statements><cmd:Subjects><cmd:count>742</cmd:count></cmd:Subjects><cmd:Predicates><cmd:count>20</cmd:count></cmd:Predicates><cmd:Objects><cmd:count>847</cmd:count></cmd:Objects></cmd:Statements><cmd:Namespaces/></cmd:Summary><cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.50</cmd:version><cmd:Location><cmd:uri>https://raw.githubusercontent.com/wouterbeek/umbel/master/umbel.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.50</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/wouterbeek/umbel/master/umbel.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:Subjects>
+                        <cmd:count>742</cmd:count>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>20</cmd:count>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>847</cmd:count>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces/>
+            </cmd:Summary>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

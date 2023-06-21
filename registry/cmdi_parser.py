@@ -108,5 +108,5 @@ def parse(id):
             "validFrom": grab_value("./cmd:validFrom", elem),
             "locations": [create_location_for(loc_elem) for loc_elem in elementpath.select(elem, "./cmd:Location", ns)],
         } for elem in elementpath.select(root, f"{voc_root}/cmd:Version", ns)],
-            key=operator.itemgetter('validFrom'), reverse=True)
+            key=operator.itemgetter('validFrom', 'version'), reverse=True)
     }
