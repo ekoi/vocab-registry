@@ -39,7 +39,7 @@ export default function Summary({data}: { data: Vocab }) {
 
             <tfoot>
             <tr>
-                <th>&nbsp;</th>
+                <th className="footer-unique">Unique totals:</th>
                 <th>{summary.subjects.count ?? 0}</th>
                 <th>{summary.predicates.count ?? 0}</th>
                 <th>{summary.objects.classes?.count ?? 0}</th>

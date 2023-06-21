@@ -8,30 +8,34 @@
     margin: 0 0 0 1rem;
 }
 
-.vocabSummary table {
+table.vocabSummary  {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
 }
 
-.vocabSummary thead {
+table.vocabSummary  thead {
     border-bottom: 1px solid #aaa;
 }
 
-.vocabSummary tfoot {
+table.vocabSummary  tfoot {
     border-top: 1px solid #aaa;
 }
 
-.vocabSummary thead, .vocabSummary tfoot {
+table.vocabSummary thead, table.vocabSummary tfoot {
     background-color: #f7f8f9;
 }
 
-.vocabSummary tbody {
+table.vocabSummary tbody {
     text-align: center;
 }
 
-.vocabSummary tbody tr:nth-child(even) {
+table.vocabSummary tbody tr:nth-child(even) {
     background-color: #f7f8f9;
+}
+
+table.vocabSummary .footer-unique {
+    text-align: right;
 }
 
 .hcResultListDetail {
