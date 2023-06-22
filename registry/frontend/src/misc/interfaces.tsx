@@ -21,16 +21,7 @@ export interface Vocab {
         outOf: number;
     };
     recommendations: VocabRecommendation[];
-    summary: {
-        namespace: {
-            uri: string | null;
-            prefix: string | null;
-        },
-        stats: VocabSummary;
-        subjects: VocabSummary;
-        predicates: VocabSummary;
-        objects: VocabObjectSummary;
-    } | null;
+    summary: VocabSummary | null;
     versions: VocabVersion[];
 }
 
@@ -52,17 +43,47 @@ export interface VocabRecommendation {
 }
 
 export interface VocabSummary {
-    count: number | null;
-    stats: {
-        uri: string | null;
-        prefix: string | null;
-        count: number | null;
-    }[]
+    namespace: {
+        uri: string;
+        prefix: string;
+    },
+    stats: VocabSummaryCounts;
+    subjects: VocabSummaryCounts;
+    predicates: VocabSummaryCounts & VocabSummaryList;
+    objects: VocabObjectSummary & {
+        classes: VocabSummaryCounts & VocabSummaryList | null;
+        literals: VocabSummaryCounts & VocabSummaryList & {
+            languages: {
+                code: string;
+                count: number;
+            }[];
+        } | null;
+    }
 }
 
-export interface VocabObjectSummary extends VocabSummary {
-    classes: VocabSummary | null;
-    literals: VocabSummary | null;
+export interface VocabSummaryCounts {
+    count: number;
+    stats: {
+        uri: string;
+        prefix: string;
+        count: number;
+    }[];
+}
+
+export interface VocabSummaryList {
+    list: VocabSummaryListItem[];
+}
+
+export interface VocabSummaryListItem {
+    uri: string;
+    prefix: string;
+    name: string;
+    count: number;
+}
+
+export interface VocabObjectSummary {
+    classes: VocabSummaryCounts | null;
+    literals: VocabSummaryCounts | null;
 }
 
 export interface VocabIndex {

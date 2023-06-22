@@ -213,9 +213,13 @@ table.vocabSummary .footer-unique {
     color: #082045;
 }
 
-.vocabSummary thead tr:last-child {
+.vocabSummary thead tr:nth-child(2) {
     font-size: small;
     font-style: italic;
+}
+
+.vocabSummary + h2 {
+    margin-top: 1em;
 }
 
 .prefix {

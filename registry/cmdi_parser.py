@@ -32,8 +32,8 @@ def parse(id):
         content = elementpath.select(root, path, ns)
         return content[0] if content else None
 
-    def create_summary_for(elem, is_obj=False):
-        summary = {
+    def create_summary_for(elem):
+        return {
             "count": grab_value("./cmd:count", elem, int),
             "stats": [{
                 "uri": grab_value("./cmd:URI", ns_elem),
@@ -42,16 +42,15 @@ def parse(id):
             } for ns_elem in elementpath.select(elem, "./cmd:Namespaces/cmd:Namespace", ns)]
         }
 
-        if is_obj:
-            classes_root = grab_first("./cmd:Classes", elem)
-            literals_root = grab_first("./cmd:Literals", elem)
-
-            summary.update(
-                classes=create_summary_for(classes_root) if classes_root else None,
-                literals=create_summary_for(literals_root) if literals_root else None
-            )
-
-        return summary
+    def create_list_for(elem):
+        return {
+            "list": [{
+                "uri": grab_value("./cmd:URI", list_item_elem),
+                "prefix": grab_value("./cmd:prefix", list_item_elem),
+                "name": grab_value("./cmd:name", list_item_elem),
+                "count": grab_value("./cmd:count", list_item_elem, int),
+            } for list_item_elem in elementpath.select(elem, "./cmd:List/cmd:Item", ns)]
+        }
 
     def create_location_for(elem):
         return {
@@ -99,10 +98,33 @@ def parse(id):
             },
             "stats": create_summary_for(grab_first(f"{voc_root}/cmd:Summary", root)),
             "subjects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Subjects", root)),
-            "predicates": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
-            "objects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root),
-                                          is_obj=True),
-        } if grab_first(f"{voc_root}/cmd:Summary", root) else None,
+            "predicates": {
+                **create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
+                **create_list_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
+            },
+            "objects": {
+                **create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root)),
+                "classes": {
+                    **create_summary_for(
+                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes", root)),
+                    **create_list_for(
+                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes", root)),
+                },
+                "literals": {
+                    **create_summary_for(
+                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals", root)),
+                    **create_list_for(
+                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals", root)),
+                    "languages": [{
+                        "code": grab_value("./cmd:code", lang_elem),
+                        "count": grab_value("./cmd:count", lang_elem, int),
+                    } for lang_elem in
+                        elementpath.select(root,
+                                           f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals/cmd:Languages/cmd:Language",
+                                           ns)],
+                },
+            },
+        } if grab_first(f"{voc_root}/cmd:Summary", root) is not None else None,
         "versions": sorted([{
             "version": grab_value("./cmd:version", elem),
             "validFrom": grab_value("./cmd:validFrom", elem),
