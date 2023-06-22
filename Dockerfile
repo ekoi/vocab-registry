@@ -4,7 +4,7 @@ WORKDIR /app
 COPY ./registry/frontend/ /app
 RUN npm install && npm run build
 
-FROM python:3.7-slim
+FROM python:3.11-slim
 
 ENV PYTHONPATH /app
 ENV PYTHONUNBUFFERED 1
