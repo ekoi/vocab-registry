@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">CRMsci</cmd:title>
-            <cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmsci/home-1</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Scientific Observation Model (**CRMsci**) is a formal ontology intended to be used as a global schema for integrating metadata about scientific observation, measurements and processed data in descriptive and empirical sciences such as biodiversity, geology, geography, archaeology, cultural heritage conservation and others in research IT environments and research data libraries.  Its primary purpose is facilitating the management, integration, mediation, interchange and access to research data by description of semantic relationships, in particular causal ones.  It is not primarily a model to process the data themselves in order to produce new research results, even though its representations offer themselves to be used for some kind of processing.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">CRMsci</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.cidoc-crm.org/crmsci/home-1</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Scientific Observation Model (**CRMsci**) is a formal ontology intended to be used as a global schema for integrating metadata about scientific observation, measurements and processed data in descriptive and empirical sciences such as biodiversity, geology, geography, archaeology, cultural heritage conservation and others in research IT environments and research data libraries.  Its primary purpose is facilitating the management, integration, mediation, interchange and access to research data by description of semantic relationships, in particular causal ones.  It is not primarily a model to process the data themselves in order to produce new research results, even though its representations offer themselves to be used for some kind of processing.
 
-CRMsci uses and extends the CIDOC CRM (ISO21127) as a general ontology of human activity, things and events happening in spacetime.  It uses the same encoding-neutral formalism of knowledge representation (&#8220;data model&#8221; in the sense of computer science) as the CIDOC CRM, which can be implemented in RDFS, OWL, on RDBMS and in other forms of encoding.  Since the model reuses, wherever appropriate, parts of CIDOC Conceptual Reference Model, we provide in this document also a comprehensive list of all constructs used from ISO21127, together with their definitions following the version 6.2  maintained by CIDOC.</cmd:description></cmd:Description><cmd:Assessement>
+CRMsci uses and extends the CIDOC CRM (ISO21127) as a general ontology of human activity, things and events happening in spacetime.  It uses the same encoding-neutral formalism of knowledge representation (“data model” in the sense of computer science) as the CIDOC CRM, which can be implemented in RDFS, OWL, on RDBMS and in other forms of encoding.  Since the model reuses, wherever appropriate, parts of CIDOC Conceptual Reference Model, we provide in this document also a comprehensive list of all constructs used from ISO21127, together with their definitions following the version 6.2  maintained by CIDOC.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,14 @@ CRMsci uses and extends the CIDOC CRM (ISO21127) as a general ontology of human 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.2.6</cmd:version><cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmsci/sites/default/files/CRMsci_v1.2.6.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.2.6</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.cidoc-crm.org/crmsci/sites/default/files/CRMsci_v1.2.6.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -5,6 +5,10 @@ export default function Facets({sendCandidateHandler}: { sendCandidateHandler: I
     return <>
         <FreeTextFacet add={sendCandidateHandler}/>
         <ListFacet parentCallback={sendCandidateHandler}
+                   name="Type of vocabulary"
+                   field="type"
+                   url="/facet"/>
+        <ListFacet parentCallback={sendCandidateHandler}
                    name="Publisher"
                    field="publisher.publisher"
                    url="/facet"/>

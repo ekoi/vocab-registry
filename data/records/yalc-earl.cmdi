@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Developer Guide for Evaluation and Report Language (EARL)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/EARL10/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Vocabulary for describing test results.  The primary motivation for developing this vocabulary is to facilitate the exchange of test results between Web accessibility evaluation tools in a vendor-neutral and platform-independent format.  It also provides reusable terms for generic quality assurance and validation purposes.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Developer Guide for Evaluation and Report Language (EARL)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/EARL10/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Vocabulary for describing test results.  The primary motivation for developing this vocabulary is to facilitate the exchange of test results between Web accessibility evaluation tools in a vendor-neutral and platform-independent format.  It also provides reusable terms for generic quality assurance and validation purposes.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

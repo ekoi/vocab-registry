@@ -8,8 +8,74 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Metadata</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/26020.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ReferenceSystemInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/PortrayalCatalogueInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MetadataExtensionInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MetadataEntitySetInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MetadataApplicationInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/Metadata.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MaintenanceInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/IdentificationInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ExtentInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/DistributionInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/DataQualityInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ContentInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ConstraintInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/CitationAndResponsiblePartyInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ApplicationSchemaInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO 19115:2003 defines the schema required for describing geographic information and services.  It provides information about the identification, the extent, the quality, the spatial and temporal schema, spatial reference, and distribution of digital geographic data.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Metadata</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/26020.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ReferenceSystemInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/PortrayalCatalogueInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MetadataExtensionInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MetadataEntitySetInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MetadataApplicationInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/Metadata.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/MaintenanceInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/IdentificationInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ExtentInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/DistributionInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/DataQualityInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ContentInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ConstraintInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/CitationAndResponsiblePartyInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/ApplicationSchemaInformation.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 19115:2003 defines the schema required for describing geographic information and services.  It provides information about the identification, the extent, the quality, the spatial and temporal schema, spatial reference, and distribution of digital geographic data.
 
 ISO 19115:2003 is applicable to:
 - the cataloguing of datasets, clearinghouse activities, and the full description of datasets;
@@ -23,7 +89,9 @@ ISO 19115:2003 defines:
 
 Though ISO 19115:2003 is applicable to digital data, its principles can be extended to many other forms of geographic data such as maps, charts, and textual documents as well as non-geographic data.
 
-NOTE Certain mandatory metadata elements may not apply to these other forms of data.</cmd:description></cmd:Description><cmd:Assessement>
+NOTE Certain mandatory metadata elements may not apply to these other forms of data.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -31,6 +99,23 @@ NOTE Certain mandatory metadata elements may not apply to these other forms of d
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2003</cmd:version><cmd:validFrom>2003-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/SpatialRepresentationInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version><cmd:Version><cmd:version>2006</cmd:version><cmd:validFrom>2006-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2006/SpatialRepresentationInformation.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2003</cmd:version>
+                <cmd:validFrom>2003-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2003/SpatialRepresentationInformation.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Version>
+                <cmd:version>2006</cmd:version>
+                <cmd:validFrom>2006-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19115/2006/SpatialRepresentationInformation.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

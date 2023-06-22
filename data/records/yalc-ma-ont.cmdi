@@ -8,8 +8,12 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Cinelab Ontology</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">The Ontology for Media Resources describes a core vocabulary of properties and a set of mappings between different metadata formats of media resources hat describe media resources published on the Web (as opposed to local archives, museums, or other non-web related and non-shared collections of media resources).  The purpose of these mappings is to provide metadata representations that describe the characteristics and behavior of media resources in an interoperable manner, thereby enabling different applications to share and reuse these metadata.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Cinelab Ontology</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Ontology for Media Resources describes a core vocabulary of properties and a set of mappings between different metadata formats of media resources hat describe media resources published on the Web (as opposed to local archives, museums, or other non-web related and non-shared collections of media resources).  The purpose of these mappings is to provide metadata representations that describe the characteristics and behavior of media resources in an interoperable manner, thereby enabling different applications to share and reuse these metadata.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +21,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

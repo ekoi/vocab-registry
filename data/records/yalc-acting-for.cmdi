@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">&#8220;Acting for&#8221; Pattern</cmd:title>
-            <cmd:Location><cmd:uri>http://ontologydesignpatterns.org/wiki/Submissions:ActingFor</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This pattern can be used to represent an agent that is acting in order to forward the action of a social (non-physical) agent.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">“Acting for” Pattern</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://ontologydesignpatterns.org/wiki/Submissions:ActingFor</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This pattern can be used to represent an agent that is acting in order to forward the action of a social (non-physical) agent.
 
-An ontology designer is able to express relations like delegation, working for, etc.  It is not possible to express either time indexing (the situation pattern should be specialized to that purpose), nor the role or task, under which the social action is carried out by the physical agent (the [description &amp; situation pattern](/odp/description-and-situation) should be used instead).</cmd:description></cmd:Description><cmd:Assessement>
+An ontology designer is able to express relations like delegation, working for, etc.  It is not possible to express either time indexing (the situation pattern should be specialized to that purpose), nor the role or task, under which the social action is carried out by the physical agent (the [description &amp; situation pattern](/odp/description-and-situation) should be used instead).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,7 @@ An ontology designer is able to express relations like delegation, working for, 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

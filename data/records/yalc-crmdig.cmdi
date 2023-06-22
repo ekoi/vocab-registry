@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">CRMdig</cmd:title>
-            <cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmdig</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">**CRM Digital** is an ontology and RDF Schema to encode metadata about the steps and methods of production (&#8220;provenance&#8221;) of digitization products and synthetic digital representations such as 2D, 3D or even animated Models created by various technologies.  Its distinct features compared to competitive models is the complete inclusion of the initial physical measurement processes and their parameters.  It has been developed as compatible extension of [CIDOC CRM](/cidoc/crm), which allows for querying the most relevant facts and returning complete descriptions encoded in this model by generic [ISO21127](/iso/21127) terms without need to refer to its specific properties.  In contrast, competitive models cannot be queried by a more general standard and are restricted to the computational provenance only.  Data encoded in the major competitive models can be transformed without loss of meaning into a CRM-Digital-form.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">CRMdig</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.cidoc-crm.org/crmdig</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">**CRM Digital** is an ontology and RDF Schema to encode metadata about the steps and methods of production (“provenance”) of digitization products and synthetic digital representations such as 2D, 3D or even animated Models created by various technologies.  Its distinct features compared to competitive models is the complete inclusion of the initial physical measurement processes and their parameters.  It has been developed as compatible extension of [CIDOC CRM](/cidoc/crm), which allows for querying the most relevant facts and returning complete descriptions encoded in this model by generic [ISO21127](/iso/21127) terms without need to refer to its specific properties.  In contrast, competitive models cannot be queried by a more general standard and are restricted to the computational provenance only.  Data encoded in the major competitive models can be transformed without loss of meaning into a CRM-Digital-form.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,21 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>3.2.1</cmd:version><cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmdig/sites/default/files/CRMdig_v3.2.1.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version><cmd:Version><cmd:version>3.2</cmd:version><cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmdig/sites/default/files/CRMdig_v3.2.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>3.2.1</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.cidoc-crm.org/crmdig/sites/default/files/CRMdig_v3.2.1.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Version>
+                <cmd:version>3.2</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.cidoc-crm.org/crmdig/sites/default/files/CRMdig_v3.2.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

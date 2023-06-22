@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">WGS84 Geo Positioning</cmd:title>
-            <cmd:Location><cmd:uri>http://www.w3.org/2003/01/geo/wgs84_pos#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A vocabulary for representing latitude, longitude and altitude information in the WGS84 geodetic reference datum.  WGS stands for the World Geodetic Survey.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">WGS84 Geo Positioning</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.w3.org/2003/01/geo/wgs84_pos#</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A vocabulary for representing latitude, longitude and altitude information in the WGS84 geodetic reference datum.  WGS stands for the World Geodetic Survey.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

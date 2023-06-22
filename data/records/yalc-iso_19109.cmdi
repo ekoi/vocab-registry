@@ -8,8 +8,22 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Rules for application schema (ISO 19109:2015)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/59193.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2015/RulesForApplicationSchema.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2015/GeneralFeatureModel.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO 19109:2015 defines rules for creating and documenting application schemas, including principles for the definition of features.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Rules for application schema (ISO 19109:2015)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/59193.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2015/RulesForApplicationSchema.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2015/GeneralFeatureModel.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 19109:2015 defines rules for creating and documenting application schemas, including principles for the definition of features.
 
 The scope of this International Standard includes the following:
 - conceptual modelling of features and their properties from a universe of discourse;
@@ -26,7 +40,9 @@ The following are outside the scope:
 - rules for mapping one application schema to another;
 - implementation of the application schema in a computer environment;
 - computer system and application software design;
-- programming.</cmd:description></cmd:Description><cmd:Assessement>
+- programming.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -34,6 +50,23 @@ The following are outside the scope:
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2015</cmd:version><cmd:validFrom>2015-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2015/UtilityClasses.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version><cmd:Version><cmd:version>2005</cmd:version><cmd:validFrom>2005-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2005/GeneralFeatureModel.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2015</cmd:version>
+                <cmd:validFrom>2015-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2015/UtilityClasses.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Version>
+                <cmd:version>2005</cmd:version>
+                <cmd:validFrom>2005-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19109/2005/GeneralFeatureModel.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

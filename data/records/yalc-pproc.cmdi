@@ -8,8 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Public Procurement Ontology</cmd:title>
-            <cmd:Location><cmd:uri>http://contsem.unizar.es/def/sector-publico/pproc.html#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by-sa/4.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The PPROC ontology defines the necessary concepts to describe public procurement process and the contracts of public sector (public e-procurement).  The ontology has been designed with the main purpose of publishing data about public contracts.  This ontology extends the [Public Contracts Ontology](https://code.google.com/p/public-contracts-ontology/), an ontology developed by the czech Open Data initiative.  The development of this ontology was part of the CONTSEM project (TSI-020606-2012-4), led by [iASoft](http://www.iasoft.es) ([OESIA](http://www.oesia.com/en/home)).</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Public Procurement Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://contsem.unizar.es/def/sector-publico/pproc.html#</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by-sa/4.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The PPROC ontology defines the necessary concepts to describe public procurement process and the contracts of public sector (public e-procurement).  The ontology has been designed with the main purpose of publishing data about public contracts.  This ontology extends the [Public Contracts Ontology](https://code.google.com/p/public-contracts-ontology/), an ontology developed by the czech Open Data initiative.  The development of this ontology was part of the CONTSEM project (TSI-020606-2012-4), led by [iASoft](http://www.iasoft.es) ([OESIA](http://www.oesia.com/en/home)).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

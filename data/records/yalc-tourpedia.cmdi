@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Tourpedia</cmd:title>
-            <cmd:Location><cmd:uri>http://tour-pedia.org/about</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">TourPedia is the Wikipedia of Tourism.  It contains information about accommodations, restaurants, points of interest and attractions of different places in Europe.  At the moment only eight places are covered: Amsterdam, Barcelona, Berlin, Dubai, London, Paris, Rome and Tuscany.  However, the idea is to extend the service to all the world.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Tourpedia</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://tour-pedia.org/about</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">TourPedia is the Wikipedia of Tourism.  It contains information about accommodations, restaurants, points of interest and attractions of different places in Europe.  At the moment only eight places are covered: Amsterdam, Barcelona, Berlin, Dubai, London, Paris, Rome and Tuscany.  However, the idea is to extend the service to all the world.
 
-Data are extracted from four social media: [Facebook](http://www.facebook.com), [Foursquare](http://foursquare.com), [Google Places](https://support.google.com/places) and [Booking](http://www.booking.com).  They were elaborated and integrated in order to build a unique catalogue.</cmd:description></cmd:Description><cmd:Assessement>
+Data are extracted from four social media: [Facebook](http://www.facebook.com), [Foursquare](http://foursquare.com), [Google Places](https://support.google.com/places) and [Booking](http://www.booking.com).  They were elaborated and integrated in order to build a unique catalogue.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,14 @@ Data are extracted from four social media: [Facebook](http://www.facebook.com), 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://github.com/wouterbeek/tourpedia/raw/master/data.nt.gz</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://github.com/wouterbeek/tourpedia/raw/master/data.nt.gz</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

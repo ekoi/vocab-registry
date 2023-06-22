@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Web Of Trust RDF Ontology</cmd:title>
-            <cmd:Location><cmd:uri>http://xmlns.com/wot/0.1/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">RDF documents can make any number of statements.  Without some kind of signature or other similar verification mechanism, there is no way to understand who made these statements.  One way to document who made a set of statements is via the use of [Digital Signatures](http://en.wikipedia.org/wiki/Digital_signature): signing a document using [Public Key Cryptography](http://en.wikipedia.org/wiki/Public-key_cryptography).  The WOT, or Web Of Trust, schema is designed to facilitate the use of Public Key Cryptography tools such as PGP or GPG to sign RDF documents and document these signatures.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Web Of Trust RDF Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://xmlns.com/wot/0.1/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">RDF documents can make any number of statements.  Without some kind of signature or other similar verification mechanism, there is no way to understand who made these statements.  One way to document who made a set of statements is via the use of [Digital Signatures](http://en.wikipedia.org/wiki/Digital_signature): signing a document using [Public Key Cryptography](http://en.wikipedia.org/wiki/Public-key_cryptography).  The WOT, or Web Of Trust, schema is designed to facilitate the use of Public Key Cryptography tools such as PGP or GPG to sign RDF documents and document these signatures.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>0.1</cmd:version><cmd:Location><cmd:uri>http://xmlns.com/wot/0.1/index.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>0.1</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://xmlns.com/wot/0.1/index.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

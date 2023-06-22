@@ -8,12 +8,23 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">GeoSPARQL</cmd:title>
-            <cmd:Location><cmd:uri>http://www.opengis.net/ont/geosparql#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">GeoSPARQL - the richest and most common spatial ontologies,
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">GeoSPARQL</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.opengis.net/ont/geosparql#</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">GeoSPARQL - the richest and most common spatial ontologies,
         plus an optional SPARQL extension (hence the name) that supports spatial reasoning over geodata that are
         annotated with its ontology. Supported by various triples stores, such as TriplyDB (Druid)
         triple stores
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -21,6 +32,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

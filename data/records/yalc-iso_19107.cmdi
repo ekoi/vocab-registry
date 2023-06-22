@@ -8,8 +8,56 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Spatial schema (ISO 19107:2003)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/26012.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/Topology.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/TopologicalPrimitive.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/TopologicalComplex.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/SpatialSchema.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometryRoot.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/Geometry.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometricPrimitive.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometricComplex.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometricAggregates.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/CoordinateGeometry.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO 19107:2003 specifies conceptual schemas for describing the spatial characteristics of geographic features, and a set of spatial operations consistent with these schemas.  It treats vector geometry and topology up to three dimensions.  It defines standard spatial operations for use in access, query, management, processing, and data exchange of geographic information for spatial (geometric and topological) objects of up to three topological dimensions embedded in coordinate spaces of up to three axes.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Spatial schema (ISO 19107:2003)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/26012.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/Topology.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/TopologicalPrimitive.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/TopologicalComplex.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/SpatialSchema.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometryRoot.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/Geometry.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometricPrimitive.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometricComplex.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/GeometricAggregates.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/CoordinateGeometry.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 19107:2003 specifies conceptual schemas for describing the spatial characteristics of geographic features, and a set of spatial operations consistent with these schemas.  It treats vector geometry and topology up to three dimensions.  It defines standard spatial operations for use in access, query, management, processing, and data exchange of geographic information for spatial (geometric and topological) objects of up to three topological dimensions embedded in coordinate spaces of up to three axes.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +65,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2003</cmd:version><cmd:validFrom>2003-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/TopologyRoot.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2003</cmd:version>
+                <cmd:validFrom>2003-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19107/2003/TopologyRoot.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

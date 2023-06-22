@@ -8,8 +8,22 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Ontology &#8212; Part 4: Service ontology (ISO 19150-4:2019)</cmd:title>
-            <cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Ontology-Part4_ServiceOntology.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Metadata.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Capabilities.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This standard sets a framework for geographic information service ontology and the description of geographic information Web services in Web Ontology Language (OWL).
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Ontology — Part 4: Service ontology (ISO 19150-4:2019)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Ontology-Part4_ServiceOntology.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Metadata.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Capabilities.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This standard sets a framework for geographic information service ontology and the description of geographic information Web services in Web Ontology Language (OWL).
 
 OWL is the language adopted for ontologies.
 
@@ -21,7 +35,9 @@ In relation to ISO 19101-1:2014, 6.2, this document defines and formalizes the f
 - geographic information service components and their behaviour for data processing purposes over the Web, and
 - OWL ontologies to cast ISO/TC 211 standards to benefit from and support the Semantic Web.
 
-In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service foundation of the ISO geographic information reference model.</cmd:description></cmd:Description><cmd:Assessement>
+In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service foundation of the ISO geographic information reference model.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -29,6 +45,15 @@ In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service f
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2019</cmd:version><cmd:validFrom>2019-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Service.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2019</cmd:version>
+                <cmd:validFrom>2019-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19150/-4/2019/Service.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

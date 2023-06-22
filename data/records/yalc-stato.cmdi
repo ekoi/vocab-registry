@@ -9,11 +9,19 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">Statistics Ontology (Stato)</cmd:title><cmd:Location><cmd:uri>https://stato-ontology.org</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">STATO is a general-purpose STATistics Ontology.
+            <cmd:title xml:lang="en">Statistics Ontology (Stato)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://stato-ontology.org</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">STATO is a general-purpose STATistics Ontology.
 
 Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics.
 
-STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.</cmd:description></cmd:Description><cmd:Assessement>
+STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -21,6 +29,14 @@ STATO also covers aspects of experimental design and description of plots and gr
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.4</cmd:version><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/1.4/stato.owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.4</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/1.4/stato.owl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

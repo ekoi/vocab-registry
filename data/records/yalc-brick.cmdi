@@ -9,7 +9,16 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">Brick: A uniform metadata schema for buildings</cmd:title><cmd:Location><cmd:uri>https://brickschema.org/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://opensource.org/licenses/BSD-3-Clause</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Brick is an open-source effort to standardize semantic descriptions of the physical, logical and virtual assets in buildings and the relationships between them.  Brick consists of an extensible dictionary of terms and concepts in and around buildings, a set of relationships for linking and composing concepts together, and a flexible data model permitting seamless integration of Brick with existing tools and databases.  Through the use of powerful Semantic Web technology, Brick can describe the broad set of idiosyncratic and custom features, assets and subsystems found across the building stock in a consistent matter.
+            <cmd:title xml:lang="en">Brick: A uniform metadata schema for buildings</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://brickschema.org/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://opensource.org/licenses/BSD-3-Clause</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Brick is an open-source effort to standardize semantic descriptions of the physical, logical and virtual assets in buildings and the relationships between them.  Brick consists of an extensible dictionary of terms and concepts in and around buildings, a set of relationships for linking and composing concepts together, and a flexible data model permitting seamless integration of Brick with existing tools and databases.  Through the use of powerful Semantic Web technology, Brick can describe the broad set of idiosyncratic and custom features, assets and subsystems found across the building stock in a consistent matter.
 
 Adopting Brick as the canonical description of a building enables the following:
 
@@ -18,7 +27,9 @@ Adopting Brick as the canonical description of a building enables the following:
 - Brick simplifies the development of smart analytics and control applications
 - Brick reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
 
-Brick is free and open-sourced under the BSD 3-Clause license.  The source code for Brick, this website, and related tools developed by the Brick team are available on [GitHub](https://github.com/BrickSchema).</cmd:description></cmd:Description><cmd:Assessement>
+Brick is free and open-sourced under the BSD 3-Clause license.  The source code for Brick, this website, and related tools developed by the Brick team are available on [GitHub](https://github.com/BrickSchema).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -26,6 +37,7 @@ Brick is free and open-sourced under the BSD 3-Clause license.  The source code 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

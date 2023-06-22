@@ -8,8 +8,12 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Ontology for Linked Data</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">This is a vocabulary for describing relationships between linked data objects and things fetched from the web.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Ontology for Linked Data</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This is a vocabulary for describing relationships between linked data objects and things fetched from the web.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +21,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

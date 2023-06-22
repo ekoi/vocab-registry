@@ -8,8 +8,20 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Semantic Web Application Platform (SWAP)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/2000/10/swap</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>http://www.w3.org/2000/10/swap/pim/contact#</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Semantic Web Application Platform (SWAP) or, if you like, Semantic Web Area for Play&#8230; visiting RDF and all points west.  Working toward the SWELL langauge, MIT-LCS's advanced development prototyping of tools and langauges for the Semantic Web.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Semantic Web Application Platform (SWAP)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/2000/10/swap</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>http://www.w3.org/2000/10/swap/pim/contact#</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Semantic Web Application Platform (SWAP) or, if you like, Semantic Web Area for Play… visiting RDF and all points west.  Working toward the SWELL langauge, MIT-LCS's advanced development prototyping of tools and langauges for the Semantic Web.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +29,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.52</cmd:version><cmd:Location><cmd:uri>http://www.w3.org/2000/10/swap/pim/doc#</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.52</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.w3.org/2000/10/swap/pim/doc#</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

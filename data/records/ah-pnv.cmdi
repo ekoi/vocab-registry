@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">PNV</cmd:title>
-            <cmd:Location><cmd:uri>https://www.lodewijkpetram.nl/vocab/pnv/doc/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">PNV - The Person Name Vocabulary (PNV) is an rdf
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">PNV</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.lodewijkpetram.nl/vocab/pnv/doc/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">PNV - The Person Name Vocabulary (PNV) is an rdf
         vocabulary and data model for persons' names
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

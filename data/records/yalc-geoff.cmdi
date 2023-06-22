@@ -8,8 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geoff, the Geospatial Form and Function Vocabulary</cmd:title>
-            <cmd:Location><cmd:uri>http://ontologies.geohive.ie/geoff/index-en.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">This vocabulary defines the geospatial information systems concepts of form and function that may be applied to any geospatial feature to classify it or to further describe its shape and use.  It extends the [OGC](/ogc) [GeoSPARQL](/ogc/geosparql) ontology by defining two new classes and two new properties that may be associated with a GeoSPARQL geospatial feature entity.  Most forms and functions are highly relevant for the built environment but any geospatial entity may gain from having a form and/or a function associated with it.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geoff, the Geospatial Form and Function Vocabulary</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://ontologies.geohive.ie/geoff/index-en.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This vocabulary defines the geospatial information systems concepts of form and function that may be applied to any geospatial feature to classify it or to further describe its shape and use.  It extends the [OGC](/ogc) [GeoSPARQL](/ogc/geosparql) ontology by defining two new classes and two new properties that may be associated with a GeoSPARQL geospatial feature entity.  Most forms and functions are highly relevant for the built environment but any geospatial entity may gain from having a form and/or a function associated with it.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://ontologies.geohive.ie/geoff/ontology.nt</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://ontologies.geohive.ie/geoff/ontology.nt</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

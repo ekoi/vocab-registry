@@ -8,8 +8,24 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Feature concept dictionaries and registers</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/44875.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19126/2009/FeatureConcepts.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19126/2009/FeatureConceptDictionary.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO 19126:2009 specifies a schema for feature concept dictionaries to be established and managed as registers.  It does not specify schemas for feature catalogues or for the management of feature catalogues as registers.  However, because feature catalogue are often derived from feature concept dictionaries, ISO 19126:2009 does specify a schema for a hierarchical register of feature concept dictionaries and feature catalogues.  These registers are in accordance with ISO 19135.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Feature concept dictionaries and registers</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/44875.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19126/2009/FeatureConcepts.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19126/2009/FeatureConceptDictionary.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 19126:2009 specifies a schema for feature concept dictionaries to be established and managed as registers.  It does not specify schemas for feature catalogues or for the management of feature catalogues as registers.  However, because feature catalogue are often derived from feature concept dictionaries, ISO 19126:2009 does specify a schema for a hierarchical register of feature concept dictionaries and feature catalogues.  These registers are in accordance with ISO 19135.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +33,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2009</cmd:version><cmd:validFrom>2009-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19126/2009/HierarchicalFeatureInformationRegister.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2009</cmd:version>
+                <cmd:validFrom>2009-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19126/2009/HierarchicalFeatureInformationRegister.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

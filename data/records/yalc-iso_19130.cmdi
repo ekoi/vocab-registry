@@ -8,8 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Imagery sensor models for geopositioning &#8212; Part 1: Fundamentals</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/51789.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19130/2010/SensorData.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO/TS 19130:2010 identifies the information required to determine the relationship between the position of a remotely sensed pixel in image coordinates and its geoposition.  It supports exploitation of remotely sensed images.  It defines the metadata to be distributed with the image to enable user determination of geographic position from the observations.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Imagery sensor models for geopositioning — Part 1: Fundamentals</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/51789.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19130/2010/SensorData.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO/TS 19130:2010 identifies the information required to determine the relationship between the position of a remotely sensed pixel in image coordinates and its geoposition.  It supports exploitation of remotely sensed images.  It defines the metadata to be distributed with the image to enable user determination of geographic position from the observations.
 
 ISO/TS 19130:2010 specifies several ways in which information in support of geopositioning may be provided.
 
@@ -18,7 +28,9 @@ ISO/TS 19130:2010 specifies several ways in which information in support of geop
 3. It may be provided as a Correspondence Model that provides a functional fitting based on observed relationships between the geopositions of a set of ground control points and their image coordinates.
 4. It may be provided as a set of ground control points that can be used to develop a Correspondence Model or to refine a Physical Sensor Model or True Replacement Model.
 
-ISO/TS 19130:2010 does not specify either how users derive geoposition data or the format or content of the data the users generate.</cmd:description></cmd:Description><cmd:Assessement>
+ISO/TS 19130:2010 does not specify either how users derive geoposition data or the format or content of the data the users generate.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -26,6 +38,15 @@ ISO/TS 19130:2010 does not specify either how users derive geoposition data or t
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2010</cmd:version><cmd:validFrom>2010-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19130/2010/SensorDataS.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2010</cmd:version>
+                <cmd:validFrom>2010-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19130/2010/SensorDataS.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

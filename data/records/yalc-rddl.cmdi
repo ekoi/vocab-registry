@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">MetaVocab</cmd:title>
-            <cmd:Location><cmd:uri>http://webns.net/mvcb/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The MetaVocab vocabulary (for lack of a better name) includes the terms necessary for describing vocabularies.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">MetaVocab</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://webns.net/mvcb/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The MetaVocab vocabulary (for lack of a better name) includes the terms necessary for describing vocabularies.
 
-We should also take a look at the RDDL work to see how we can include those definitions in this vocabulary.</cmd:description></cmd:Description><cmd:Assessement>
+We should also take a look at the RDDL work to see how we can include those definitions in this vocabulary.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,14 @@ We should also take a look at the RDDL work to see how we can include those defi
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://rddl.org/rddl.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://rddl.org/rddl.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

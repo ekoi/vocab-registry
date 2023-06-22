@@ -8,12 +8,28 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Methodology for feature cataloguing</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/57303.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2016/FeatureCataloguing.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2016/FeatureCatalogueRegisters.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO 19110:2016 defines the methodology for cataloguing feature types.  This document specifies how feature types can be organized into a feature catalogue and presented to the users of a set of geographic data.  This document is applicable to creating catalogues of feature types in previously uncatalogued domains and to revising existing feature catalogues to comply with standard practice.  This document applies to the cataloguing of feature types that are represented in digital form.  Its principles can be extended to the cataloguing of other forms of geographic data.  Feature catalogues are independent of feature concept dictionaries defined in ISO 19126 and can be specified without having to use or create a Feature Concept Dictionary.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Methodology for feature cataloguing</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/57303.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2016/FeatureCataloguing.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2016/FeatureCatalogueRegisters.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 19110:2016 defines the methodology for cataloguing feature types.  This document specifies how feature types can be organized into a feature catalogue and presented to the users of a set of geographic data.  This document is applicable to creating catalogues of feature types in previously uncatalogued domains and to revising existing feature catalogues to comply with standard practice.  This document applies to the cataloguing of feature types that are represented in digital form.  Its principles can be extended to the cataloguing of other forms of geographic data.  Feature catalogues are independent of feature concept dictionaries defined in ISO 19126 and can be specified without having to use or create a Feature Concept Dictionary.
 
 ISO 19110:2016 is applicable to the definition of geographic features at the type level.  This document is not applicable to the representation of individual instances of each type.  This document excludes portrayal schemas as specified in ISO 19117.
 
-ISO 19110:2016 may be used as a basis for defining the universe of discourse being modelled in a particular application, or to standardize general aspects of real world features being modelled in more than one application.</cmd:description></cmd:Description><cmd:Assessement>
+ISO 19110:2016 may be used as a basis for defining the universe of discourse being modelled in a particular application, or to standardize general aspects of real world features being modelled in more than one application.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -21,6 +37,23 @@ ISO 19110:2016 may be used as a basis for defining the universe of discourse bei
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2016</cmd:version><cmd:validFrom>2016-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2016/MethodologyForFeatureCataloguing.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version><cmd:Version><cmd:version>2005</cmd:version><cmd:validFrom>2005-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2005/MethodologyForFeatureCataloguing.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2016</cmd:version>
+                <cmd:validFrom>2016-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2016/MethodologyForFeatureCataloguing.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Version>
+                <cmd:version>2005</cmd:version>
+                <cmd:validFrom>2005-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19110/2005/MethodologyForFeatureCataloguing.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

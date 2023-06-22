@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Covid County Statistics</cmd:title>
-            <cmd:Location><cmd:uri>https://www.rivm.nl/coronavirus-covid-19</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">COVID-19 statistieken voor Nederland, zoals gepubliceerd door het [RIVM](https://www.rivm.nl/coronavirus-covid-19) en opgeschoond door [CoronaWatchNL](https://github.com/J535D165/CoronaWatchNL).</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Covid County Statistics</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.rivm.nl/coronavirus-covid-19</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">COVID-19 statistieken voor Nederland, zoals gepubliceerd door het [RIVM](https://www.rivm.nl/coronavirus-covid-19) en opgeschoond door [CoronaWatchNL](https://github.com/J535D165/CoronaWatchNL).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://data.labs.kadaster.nl/rivm/covid-19/download.trig.gz</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://data.labs.kadaster.nl/rivm/covid-19/download.trig.gz</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -8,8 +8,10 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Information Objects Ontology</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">An ontology of information objects, encodings and realizations, as a plugin to DOLCE-Ultralite (reusing mainly the `dul:expresses` and `dul:realizes` relations from it).  Several patterns are contained inside this ontology:
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Information Objects Ontology</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">An ontology of information objects, encodings and realizations, as a plugin to DOLCE-Ultralite (reusing mainly the `dul:expresses` and `dul:realizes` relations from it).  Several patterns are contained inside this ontology:
   - encodings of information entities
   - kinds of realizations (gestural motions, depictions, digital, multimedia, speech, etc.)
   - combinatorial relations between information objects
@@ -19,7 +21,9 @@
   - authorship
   - kinds of linguistic objects
   - copies, reproductions, etc.
-  - cultural combination of information objects (reuse, mixing, metaphorical blending).</cmd:description></cmd:Description><cmd:Assessement>
+  - cultural combination of information objects (reuse, mixing, metaphorical blending).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -27,6 +31,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

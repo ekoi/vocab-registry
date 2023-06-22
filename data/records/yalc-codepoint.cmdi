@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Code-Point Open Linked Data</cmd:title>
-            <cmd:Location><cmd:uri>https://data.ordnancesurvey.co.uk/datasets/code-point-open</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Code-Point&#174; Open contains postcode units for Great Britain, each of which has a precise geographic location.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Code-Point Open Linked Data</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://data.ordnancesurvey.co.uk/datasets/code-point-open</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Code-Point® Open contains postcode units for Great Britain, each of which has a precise geographic location.
 
-There are approximately 1.7 million postcode units in England, Scotland and Wales.  Each contains an average of fifteen adjoining addresses.</cmd:description></cmd:Description><cmd:Assessement>
+There are approximately 1.7 million postcode units in England, Scotland and Wales.  Each contains an average of fifteen adjoining addresses.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,14 @@ There are approximately 1.7 million postcode units in England, Scotland and Wale
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://download.data.ordnancesurvey.co.uk/os-linked-data/codepoint.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://download.data.ordnancesurvey.co.uk/os-linked-data/codepoint.zip</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

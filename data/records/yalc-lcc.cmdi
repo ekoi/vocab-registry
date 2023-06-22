@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Leeds City Council Energy Consumption Ontology</cmd:title>
-            <cmd:Location><cmd:uri>http://smartcity.linkeddata.es/lcc/ontology/EnergyConsumption-content/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Energy consumption of council sites from council buildings to street lighting. The data set includes the energy consumption, associated costs and from 2013/14 carbon implications.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Leeds City Council Energy Consumption Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://smartcity.linkeddata.es/lcc/ontology/EnergyConsumption-content/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Energy consumption of council sites from council buildings to street lighting. The data set includes the energy consumption, associated costs and from 2013/14 carbon implications.
 
-&#183;Electricity is supplied to the Council by Engie Power Ltd and this contract is due to expire on 31 st March 2021, although there are options to extend this contract should parties so wish.</cmd:description></cmd:Description><cmd:Assessement>
+·Electricity is supplied to the Council by Engie Power Ltd and this contract is due to expire on 31 st March 2021, although there are options to extend this contract should parties so wish.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

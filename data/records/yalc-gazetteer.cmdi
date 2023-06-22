@@ -8,8 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">50K Gazetteer Linked Data</cmd:title>
-            <cmd:Location><cmd:uri>http://data.ordnancesurvey.co.uk/datasets/50k-gazetteer</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">1:50 000 Scale Gazetteer contains over 250 000 place names and is the most detailed gazetteer available.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">50K Gazetteer Linked Data</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://data.ordnancesurvey.co.uk/datasets/50k-gazetteer</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">1:50 000 Scale Gazetteer contains over 250 000 place names and is the most detailed gazetteer available.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://download.data.ordnancesurvey.co.uk/os-linked-data/50KGaz.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://download.data.ordnancesurvey.co.uk/os-linked-data/50KGaz.zip</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

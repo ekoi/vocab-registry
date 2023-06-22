@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Collections Ontology (CO)</cmd:title>
-            <cmd:Location><cmd:uri>https://github.com/collections-ontology/collections-ontology</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Collections Ontology (CO) defines unordered collections (Set and Bag) and ordered collections (or List). This ontology has been inspired by the work &#8220;Putting OWL in Order: Patterns for Sequences in OWL&#8221; by Drummond et al. (OWL-ED 2006).</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Collections Ontology (CO)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://github.com/collections-ontology/collections-ontology</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Collections Ontology (CO) defines unordered collections (Set and Bag) and ordered collections (or List). This ontology has been inspired by the work “Putting OWL in Order: Patterns for Sequences in OWL” by Drummond et al. (OWL-ED 2006).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2.0</cmd:version><cmd:Location><cmd:uri>https://raw.githubusercontent.com/collections-ontology/collections-ontology/master/collections.owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/collections-ontology/collections-ontology/master/collections.owl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

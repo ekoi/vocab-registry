@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Object Reuse and Exchange (ORE)</cmd:title>
-            <cmd:Location><cmd:uri>http://www.openarchives.org/ore/vocabulary</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Open Archives Initiative Object Reuse and Exchange (OAI-ORE) defines standards for the description and exchange of aggregations of Web resources.  This document describes a glossary of terms and the vocabularies needed to describe items of interest and express the relationships between them within the OAI-ORE context.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Object Reuse and Exchange (ORE)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.openarchives.org/ore/vocabulary</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Open Archives Initiative Object Reuse and Exchange (OAI-ORE) defines standards for the description and exchange of aggregations of Web resources.  This document describes a glossary of terms and the vocabularies needed to describe items of interest and express the relationships between them within the OAI-ORE context.
 
-This specification is one of several documents comprising the [OAI-ORE specifications and user guides](http://www.openarchives.org/ore/1.0/toc).  Readers who want a high-level understanding of the motivation for ORE, and of the solution it provides, should read the [Primer](http://www.openarchives.org/ore/1.0/primer).</cmd:description></cmd:Description><cmd:Assessement>
+This specification is one of several documents comprising the [OAI-ORE specifications and user guides](http://www.openarchives.org/ore/1.0/toc).  Readers who want a high-level understanding of the motivation for ORE, and of the solution it provides, should read the [Primer](http://www.openarchives.org/ore/1.0/primer).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,7 @@ This specification is one of several documents comprising the [OAI-ORE specifica
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Dataset status</cmd:title>
-            <cmd:Location><cmd:uri>https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This dataset provides possible statuses for datasets.  It has been developed specifically for the EU Open Data Portal.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Dataset status</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This dataset provides possible statuses for datasets.  It has been developed specifically for the EU Open Data Portal.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2016-09-21</cmd:version><cmd:validFrom>2016-09-21T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://op.europa.eu/o/opportal-service/euvoc-download-handler?cellarURI=http%3A%2F%2Fpublications.europa.eu%2Fresource%2Fcellar%2F4e6b4524-261d-11e8-ac73-01aa75ed71a1.0001.02%2FDOC_1&amp;fileName=datasetstatus-skos.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2016-09-21</cmd:version>
+                <cmd:validFrom>2016-09-21T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://op.europa.eu/o/opportal-service/euvoc-download-handler?cellarURI=http%3A%2F%2Fpublications.europa.eu%2Fresource%2Fcellar%2F4e6b4524-261d-11e8-ac73-01aa75ed71a1.0001.02%2FDOC_1&amp;fileName=datasetstatus-skos.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

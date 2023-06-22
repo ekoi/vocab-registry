@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Getty AAT Art and Architecture Thesaurus</cmd:title>
-            <cmd:Location><cmd:uri>https://www.getty.edu/research/tools/vocabularies/aat/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Getty AAT Art and Architecture Thesaurus -
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Getty AAT Art and Architecture Thesaurus</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.getty.edu/research/tools/vocabularies/aat/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Getty AAT Art and Architecture Thesaurus -
         an evolving vocabulary, growing and changing on art and architecture
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

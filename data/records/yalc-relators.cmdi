@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">MARC Code List for Relators Scheme</cmd:title>
-            <cmd:Location><cmd:uri>http://id.loc.gov/vocabulary/relators.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Relator terms and their associated codes designate the relationship between a name and a bibliographic resource.  The relator codes are three-character lowercase alphabetic strings that serve as identifiers.  Either the term or the code may be used as controlled values.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">MARC Code List for Relators Scheme</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://id.loc.gov/vocabulary/relators.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Relator terms and their associated codes designate the relationship between a name and a bibliographic resource.  The relator codes are three-character lowercase alphabetic strings that serve as identifiers.  Either the term or the code may be used as controlled values.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2017-09-07</cmd:version><cmd:validFrom>2017-09-07T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://lds-downloads.s3.amazonaws.com/vocabularyrelators.nt.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2017-09-07</cmd:version>
+                <cmd:validFrom>2017-09-07T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://lds-downloads.s3.amazonaws.com/vocabularyrelators.nt.zip</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Capability Meta Model (CMM)</cmd:title>
-            <cmd:Location><cmd:uri>http://vocab.deri.ie/cmm</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This is a capability meta-model that is presented as an RDF schema for describing capabilities as an action category and a set of properties. Additionally, this schema defines the possible property value types that can be considered when modelling capabilities: ConditionalValue, ConstrainedValue, EnumerationValue, DynamicValue and RangeValue.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Capability Meta Model (CMM)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://vocab.deri.ie/cmm</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This is a capability meta-model that is presented as an RDF schema for describing capabilities as an action category and a set of properties. Additionally, this schema defines the possible property value types that can be considered when modelling capabilities: ConditionalValue, ConstrainedValue, EnumerationValue, DynamicValue and RangeValue.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

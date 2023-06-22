@@ -8,9 +8,20 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Perio.do</cmd:title>
-            <cmd:Location><cmd:uri>https://perio.do/en/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Perio.do - a gazetteer of period definitions for linking and visualizing data
-    </cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Perio.do</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://perio.do/en/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Perio.do - a gazetteer of period definitions for linking and visualizing data
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -18,6 +29,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

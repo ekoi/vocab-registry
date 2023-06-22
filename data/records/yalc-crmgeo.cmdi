@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">CRMgeo</cmd:title>
-            <cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmgeo/home-5</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">**CRMgeo** is a formal ontology intended to be used as a global schema for integrating spatiotemporal properties of temporal entities and persistent items.  Its primary purpose is to provide a schema consistent with the CIDOC CRM to integrate geoinformation using the conceptualizations, formal definitions, encoding standards and topological relations defined by the Open Geospatial Consortium (OGC).  In order to do this it links the CIDOC CRM to the OGC standard of GeoSPARQL.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">CRMgeo</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.cidoc-crm.org/crmgeo/home-5</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">**CRMgeo** is a formal ontology intended to be used as a global schema for integrating spatiotemporal properties of temporal entities and persistent items.  Its primary purpose is to provide a schema consistent with the CIDOC CRM to integrate geoinformation using the conceptualizations, formal definitions, encoding standards and topological relations defined by the Open Geospatial Consortium (OGC).  In order to do this it links the CIDOC CRM to the OGC standard of GeoSPARQL.
 
-CRMgeo provides a refinement of spatial and temporal classes and properties of the CIDOC CRM.  It relates them to the classes, topological relations and encodings provided by GeoSPARQL and thus allows spatiotemporal analysis offered by geoinformation systems based on the semantic distinctions of the CIDOC CRM.</cmd:description></cmd:Description><cmd:Assessement>
+CRMgeo provides a refinement of spatial and temporal classes and properties of the CIDOC CRM.  It relates them to the classes, topological relations and encodings provided by GeoSPARQL and thus allows spatiotemporal analysis offered by geoinformation systems based on the semantic distinctions of the CIDOC CRM.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,14 @@ CRMgeo provides a refinement of spatial and temporal classes and properties of t
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.2</cmd:version><cmd:Location><cmd:uri>http://www.cidoc-crm.org/crmgeo/sites/default/files/CRMgeo_v1_2.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.2</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.cidoc-crm.org/crmgeo/sites/default/files/CRMgeo_v1_2.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

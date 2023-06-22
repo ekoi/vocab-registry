@@ -8,8 +8,12 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Simple Features (SF)</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">A vocabulary describing the geometries that are defined in OGC Simple Features (points, lines, polygons, etc.)</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Simple Features (SF)</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A vocabulary describing the geometries that are defined in OGC Simple Features (points, lines, polygons, etc.)</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +21,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0.1</cmd:version><cmd:Location><cmd:uri>http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0.1</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://schemas.opengis.net/sf/1.0/simple_features_geometries.rdf#</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

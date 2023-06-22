@@ -8,13 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">AGROVOC Core</cmd:title>
-            <cmd:Location><cmd:uri>http://aims.fao.org/vest-registry/vocabularies/agrovoc</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">AGROVOC is a controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, fisheries, forestry, environment etc.  It is published by FAO and edited by a community of experts.  It is widely used in specialized libraries as well as digital libraries and repositories to index content and for the purpose of text mining.  It is also used as a specialized tagging resource for content organization by FAO and third-party stakeholders.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">AGROVOC Core</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://aims.fao.org/vest-registry/vocabularies/agrovoc</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">AGROVOC is a controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, fisheries, forestry, environment etc.  It is published by FAO and edited by a community of experts.  It is widely used in specialized libraries as well as digital libraries and repositories to index content and for the purpose of text mining.  It is also used as a specialized tagging resource for content organization by FAO and third-party stakeholders.
 
 This dataset is the AGROVOC Core.  It includes:
 - data dump from VocBench
 - timestamp on the AGROVOC SKOS Concept Scheme, indicating the date/time of release
-- agrovoc mapping to other triple stores (now stored in the default graph, previously (until 2014) stored in the &lt;http://aims.fao.org/aos/agrovoc-mappings&gt; named graph; see Agrovoc VoID descriptor to get the list of all mapped files.  AGROVOC version before 2015, there is a link to the updated mapping file for that version).</cmd:description></cmd:Description><cmd:Assessement>
+- agrovoc mapping to other triple stores (now stored in the default graph, previously (until 2014) stored in the &lt;http://aims.fao.org/aos/agrovoc-mappings&gt; named graph; see Agrovoc VoID descriptor to get the list of all mapped files.  AGROVOC version before 2015, there is a link to the updated mapping file for that version).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -22,6 +30,14 @@ This dataset is the AGROVOC Core.  It includes:
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://agrovoc.uniroma2.it/agrovocReleases/agrovoc_2020-07-08_lod.nq.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://agrovoc.uniroma2.it/agrovocReleases/agrovoc_2020-07-08_lod.nq.zip</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

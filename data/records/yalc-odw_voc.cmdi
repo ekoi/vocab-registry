@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Ontology for Open Data Web</cmd:title>
-            <cmd:Location><cmd:uri>http://voc.odw.tw/ontology/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This is an ontology for publishing Linked Open Data (LOD) in the Open Data Web.  The initial ontology is being designed for implementing Creative Commons licensed data in the Union Catalog of Digital Archives Taiwan.  However, the core model of the ontology is flexible and adaptable for other uses in curating, publishing and reusing their data according to users' context.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Ontology for Open Data Web</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://voc.odw.tw/ontology/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This is an ontology for publishing Linked Open Data (LOD) in the Open Data Web.  The initial ontology is being designed for implementing Creative Commons licensed data in the Union Catalog of Digital Archives Taiwan.  However, the core model of the ontology is flexible and adaptable for other uses in curating, publishing and reusing their data according to users' context.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2016-06-01</cmd:version><cmd:validFrom>2016-06-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>http://voc.odw.tw/ontology/voc-odw-20160601.owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2016-06-01</cmd:version>
+                <cmd:validFrom>2016-06-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>http://voc.odw.tw/ontology/voc-odw-20160601.owl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

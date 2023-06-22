@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">The I18N Namespace</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/json-ld11/#the-i18n-namespace</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The i18n namespace is used for describing combinations of language tag and base direction in RDF literals.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">The I18N Namespace</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/json-ld11/#the-i18n-namespace</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The i18n namespace is used for describing combinations of language tag and base direction in RDF literals.
 
-It is used as an alternative mechanism for describing the [BCP47](https://tools.ietf.org/html/bcp47) language tag and base direction of RDF literals that would otherwise use the `xsd:string` or `rdf:langString` datatypes.</cmd:description></cmd:Description><cmd:Assessement>
+It is used as an alternative mechanism for describing the [BCP47](https://tools.ietf.org/html/bcp47) language tag and base direction of RDF literals that would otherwise use the `xsd:string` or `rdf:langString` datatypes.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,7 @@ It is used as an alternative mechanism for describing the [BCP47](https://tools.
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

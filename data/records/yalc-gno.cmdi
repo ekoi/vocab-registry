@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">GeoNames Ontology</cmd:title>
-            <cmd:Location><cmd:uri>http://www.geonames.org/ontology/documentation.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The GeoNames Ontology makes it possible to add geospatial semantic information to the Word Wide Web.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">GeoNames Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.geonames.org/ontology/documentation.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The GeoNames Ontology makes it possible to add geospatial semantic information to the Word Wide Web.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>3.2</cmd:version><cmd:Location><cmd:uri>http://www.geonames.org/ontology/ontology_v3.2.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>3.2</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.geonames.org/ontology/ontology_v3.2.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

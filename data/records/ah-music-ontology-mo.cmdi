@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Music ontology (MO)</cmd:title>
-            <cmd:Location><cmd:uri>http://musicontology.com/specification/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Music ontology (MO) - provides main concepts and
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Music ontology (MO)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://musicontology.com/specification/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Music ontology (MO) - provides main concepts and
         properties for describing music (i.e. artists, albums and tracks) on the Semantic Web
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

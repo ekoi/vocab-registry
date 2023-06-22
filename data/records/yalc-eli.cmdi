@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">European Legislation Identifier (ELI)</cmd:title>
-            <cmd:Location><cmd:uri>https://op.europa.eu/en/web/eu-vocabularies/eli</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The European Legislation Identifier (ELI) is a framework to make legislation metadata available online in a standardised format, so that it can be accessed, exchanged and reused across borders.  For general information about ELI (governance, tools and news), and the implementation status of ELI by various stakeholders (in particular, the way ELI is implemented by the Office of Publications on Eur- Lex), please consult the [ELI Register](http://eur-lex.europa.eu/eli-register/about.html) on Eur-Lex.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">European Legislation Identifier (ELI)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://op.europa.eu/en/web/eu-vocabularies/eli</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The European Legislation Identifier (ELI) is a framework to make legislation metadata available online in a standardised format, so that it can be accessed, exchanged and reused across borders.  For general information about ELI (governance, tools and news), and the implementation status of ELI by various stakeholders (in particular, the way ELI is implemented by the Office of Publications on Eur- Lex), please consult the [ELI Register](http://eur-lex.europa.eu/eli-register/about.html) on Eur-Lex.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.3</cmd:version><cmd:Location><cmd:uri>https://op.europa.eu/documents/3938058/7399866/eli.owl/</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.3</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://op.europa.eu/documents/3938058/7399866/eli.owl/</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

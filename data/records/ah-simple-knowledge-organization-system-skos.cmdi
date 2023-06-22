@@ -8,11 +8,22 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Simple Knowledge Organization System (SKOS)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/2004/02/skos/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Simple Knowledge Organization System (SKOS) - standards to
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Simple Knowledge Organization System (SKOS)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/2004/02/skos/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Simple Knowledge Organization System (SKOS) - standards to
         support the use of knowledge organization systems (KOS) such as thesauri, classification schemes, subject
         heading lists and taxonomies within the framework of the Semantic Web
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -20,6 +31,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

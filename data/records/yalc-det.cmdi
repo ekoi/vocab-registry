@@ -8,8 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Digital Europa Thesaurus (DET)</cmd:title>
-            <cmd:Location><cmd:uri>https://op.europa.eu/euvoc-portlet/download?cellarURI=http%3A%2F%2Fpublications.europa.eu%2Fresource%2Fcellar%2F1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02%2FDOC_1&amp;fileName=skos-core.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:License><cmd:url>http://publications.europa.eu/resource/authority/licence/COM_REUSE</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The Digital Europa Thesaurus (DET) is a multilingual thesaurus covering the main subject matters of the European Commission's public communications.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Digital Europa Thesaurus (DET)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://op.europa.eu/euvoc-portlet/download?cellarURI=http%3A%2F%2Fpublications.europa.eu%2Fresource%2Fcellar%2F1deb8f26-d93d-11e9-9c4e-01aa75ed71a1.0001.02%2FDOC_1&amp;fileName=skos-core.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://publications.europa.eu/resource/authority/licence/COM_REUSE</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Digital Europa Thesaurus (DET) is a multilingual thesaurus covering the main subject matters of the European Commission's public communications.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://op.europa.eu/euvoc-portlet/download?cellarURI=http://publications.europa.eu/resource/cellar/65a89dcf-d9e8-11e9-9c4e-01aa75ed71a1.0001.01/DOC_1&amp;fileName=DET_Alignment_EuroVoc.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://op.europa.eu/euvoc-portlet/download?cellarURI=http://publications.europa.eu/resource/cellar/65a89dcf-d9e8-11e9-9c4e-01aa75ed71a1.0001.01/DOC_1&amp;fileName=DET_Alignment_EuroVoc.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

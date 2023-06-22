@@ -8,7 +8,8 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <BrowserBase title="CLARIAH+ FAIR Vocabulary Registry"
+        <BrowserBase noIndexPage={true}
+                     title="CLARIAH+ FAIR Vocabulary Registry"
                      description="Find a FAIR Vocabulary that suits your needs!"
                      getFetchUrl={id => `/vocab/${id}`}
                      detailComponent={Detail}

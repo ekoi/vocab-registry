@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Simple Event Model</cmd:title>
-            <cmd:Location><cmd:uri>https://semanticweb.cs.vu.nl/2009/11/sem/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Simple Event Model (SEM) is an ontology for modelling events.  Events are central elements in the representation of data from a variety of domains.  Examples of these domains are history, cultural heritage, geography and multimedia.  Event-centered modeling captures the time and place aspects of a domain.  In addition, events provide a way to describe complicated relations between people, places, actions and objects.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Simple Event Model</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://semanticweb.cs.vu.nl/2009/11/sem/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Simple Event Model (SEM) is an ontology for modelling events.  Events are central elements in the representation of data from a variety of domains.  Examples of these domains are history, cultural heritage, geography and multimedia.  Event-centered modeling captures the time and place aspects of a domain.  In addition, events provide a way to describe complicated relations between people, places, actions and objects.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2009-11</cmd:version><cmd:validFrom>2009-11-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>http://semanticweb.cs.vu.nl/2009/11/sem/sem.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2009-11</cmd:version>
+                <cmd:validFrom>2009-11-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>http://semanticweb.cs.vu.nl/2009/11/sem/sem.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

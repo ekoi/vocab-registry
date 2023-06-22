@@ -8,8 +8,12 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Information Artifact Ontology (IAO)</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes.  Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.  For more information, see the project home page at [link](https://github.com/information-artifact-ontology/IAO).</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Information Artifact Ontology (IAO)</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes.  Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.  For more information, see the project home page at [link](https://github.com/information-artifact-ontology/IAO).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +21,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://purl.obolibrary.org/obo/iao/2019-06-07/iao.owl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

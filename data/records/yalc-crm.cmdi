@@ -8,8 +8,15 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Conceptual Reference Model (CRM)</cmd:title>
-            <cmd:License><cmd:url>https://creativecommons.org/licenses/by/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Implementation of the CIDOC Conceptual Reference Model, version 5.0.1, in OWL 2.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Conceptual Reference Model (CRM)</cmd:title>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by/3.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Implementation of the CIDOC Conceptual Reference Model, version 5.0.1, in OWL 2.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +24,28 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>7.1.1</cmd:version><cmd:Location><cmd:uri>https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/raw/master/CIDOC_CRM_v7.1.1.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version><cmd:Version><cmd:version>7.1.2</cmd:version><cmd:Location><cmd:uri>https://cidoc-crm.org/rdfs/7.1.2/CIDOC_CRM_v7.1.2.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version><cmd:Version><cmd:version>6.2.1</cmd:version><cmd:Location><cmd:uri>http://www.cidoc-crm.org/sites/default/files/cidoc_crm_v6.2.1-2018April.rdfs</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>7.1.1</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://gitlab.isl.ics.forth.gr/cidoc-crm/cidoc_crm_rdf/-/raw/master/CIDOC_CRM_v7.1.1.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Version>
+                <cmd:version>7.1.2</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://cidoc-crm.org/rdfs/7.1.2/CIDOC_CRM_v7.1.2.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+            <cmd:Version>
+                <cmd:version>6.2.1</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://www.cidoc-crm.org/sites/default/files/cidoc_crm_v6.2.1-2018April.rdfs</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

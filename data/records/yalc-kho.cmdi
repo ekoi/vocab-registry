@@ -8,8 +8,17 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Semantic Finlex: Judgments of the Supreme Administrative Court</cmd:title>
-            <cmd:Location><cmd:uri>https://data.finlex.fi</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">The key contents of Finish legal norms, such as acts, decrees that further define acts, and case-law (legal cases) related to their implementation have been made available for viewing on the Internet.  This service is proviced by Finlex, a program by the Ministry of Justice of Finland.  Although information on law and justice has been available, in this way, to human readers in the form of web pages, this dataset now also makes this information accessible for IT applications, other online services and legislative applications.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Semantic Finlex: Judgments of the Supreme Administrative Court</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://data.finlex.fi</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by/4.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The key contents of Finish legal norms, such as acts, decrees that further define acts, and case-law (legal cases) related to their implementation have been made available for viewing on the Internet.  This service is proviced by Finlex, a program by the Ministry of Justice of Finland.  Although information on law and justice has been available, in this way, to human readers in the form of web pages, this dataset now also makes this information accessible for IT applications, other online services and legislative applications.
 
 Semantic Finlex includes the following components:
   - A linked open data service on Finnish legislation and jurisdiction.
@@ -21,7 +30,9 @@ At its current initial stage, Semantic Finlex includes:
   - decisions of the Supreme Court (approx. 5,400), and
   - decisions of the Supreme Administrative Court (approx. 7,000).
 
-The contents are automatically updated from the Finlex service.</cmd:description></cmd:Description><cmd:Assessement>
+The contents are automatically updated from the Finlex service.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -29,6 +40,14 @@ The contents are automatically updated from the Finlex service.</cmd:description
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://data.finlex.fi/download/rdf/kho-nq.zip</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://data.finlex.fi/download/rdf/kho-nq.zip</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

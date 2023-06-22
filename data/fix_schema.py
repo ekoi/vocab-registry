@@ -56,6 +56,6 @@ for file in files:
 
         version_comp.append(location_comp)
 
-    fh = open(file, 'wb')
-    fh.write(etree.tostring(root, pretty_print=True))
-    fh.close()
+    tree = etree.ElementTree(root)
+    etree.indent(tree, space='    ', level=0)
+    tree.write(file, encoding='utf-8')

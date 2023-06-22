@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Covid County Statistics</cmd:title>
-            <cmd:Location><cmd:uri>http://data.geohive.ie/covidData.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Covid County Statistics data consists of Covid-19 Daily Statistics for Ireland by County as reported by the Health Surveillance Protection Centre. This data links into the OSi county geospatial Linked Data through the Unique Geospatial Identifier (UGI) for each each county.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Covid County Statistics</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://data.geohive.ie/covidData.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Covid County Statistics data consists of Covid-19 Daily Statistics for Ireland by County as reported by the Health Surveillance Protection Centre. This data links into the OSi county geospatial Linked Data through the Unique Geospatial Identifier (UGI) for each each county.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://data.geohive.ie/dumps/covid/CovidCountyStatistics.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://data.geohive.ie/dumps/covid/CovidCountyStatistics.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

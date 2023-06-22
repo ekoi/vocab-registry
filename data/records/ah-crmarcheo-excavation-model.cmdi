@@ -8,10 +8,21 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">CRMArcheo Excavation Model</cmd:title>
-            <cmd:Location><cmd:uri>https://www.ics.forth.gr/isl/index_main.php?l=e&amp;c=711</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">CRMArcheo Excavation Model - an ontology
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">CRMArcheo Excavation Model</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.ics.forth.gr/isl/index_main.php?l=e&amp;c=711</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">CRMArcheo Excavation Model - an ontology
         and RDF Schema to encode metadata about the archaeological excavation process (CIDOC-CRM extensnion)
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +30,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

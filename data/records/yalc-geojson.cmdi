@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">GeoJSON-LD Vocabulary</cmd:title>
-            <cmd:Location><cmd:uri>https://geojson.org/geojson-ld/vocab.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A description of the [RFC 7946](https://tools.ietf.org/html/rfc7946) GeoJSON model.  See [this link](https://github.com/geojson/geojson-ld) for vocabulary developments.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">GeoJSON-LD Vocabulary</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://geojson.org/geojson-ld/vocab.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A description of the [RFC 7946](https://tools.ietf.org/html/rfc7946) GeoJSON model.  See [this link](https://github.com/geojson/geojson-ld) for vocabulary developments.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

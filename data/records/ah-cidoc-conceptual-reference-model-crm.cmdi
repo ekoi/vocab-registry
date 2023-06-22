@@ -8,8 +8,8 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">CIDOC Conceptual Reference Model (CRM)</cmd:title>
-            
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">CIDOC Conceptual Reference Model (CRM)</cmd:title>
             <cmd:Location>
                 <cmd:uri>http://www.cidoc-crm.org/</cmd:uri>
                 <cmd:type>homepage</cmd:type>
@@ -31,6 +31,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

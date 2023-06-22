@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">HistoGraph</cmd:title>
-            <cmd:Location><cmd:uri>http://histograph.io</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A historical geocoder for search and standardization of place names throughout history.  For example, people used different names for the city of The Hague: &#8217;s-Gravenhage, Vander Haegen, Haga Comitis, Den Haege, La Haye, De Haach, In den Haige, Schravenhaegen and &#8216;t Haagie.  Histograph collects and links place names and uses these to georeference and standardize place names in time; currently, sources used include birth places of Dutch East India Company crew members, monastry records and historical census data.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">HistoGraph</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://histograph.io</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A historical geocoder for search and standardization of place names throughout history.  For example, people used different names for the city of The Hague: ’s-Gravenhage, Vander Haegen, Haga Comitis, Den Haege, La Haye, De Haach, In den Haige, Schravenhaegen and ‘t Haagie.  Histograph collects and links place names and uses these to georeference and standardize place names in time; currently, sources used include birth places of Dutch East India Company crew members, monastry records and historical census data.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

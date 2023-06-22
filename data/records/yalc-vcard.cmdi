@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">vCard</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/vcard-rdf</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A mapping of the [vCard specification](https://tools.ietf.org/html/rfc6350) to RDF/OWL.  The goal is to promote the use of vCard for the description of people and organizations utilizing semantic web techniques and allowing compatibility with traditional vCard implementations.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">vCard</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/vcard-rdf</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A mapping of the [vCard specification](https://tools.ietf.org/html/rfc6350) to RDF/OWL.  The goal is to promote the use of vCard for the description of people and organizations utilizing semantic web techniques and allowing compatibility with traditional vCard implementations.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

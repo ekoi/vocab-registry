@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Linked Data Quality Dimensions</cmd:title>
-            <cmd:Location><cmd:uri>https://dx.doi.org/10.3233/SW-150175</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Representation of quality categories and dimensions from Amrapali Zaveri, Anisa Rula, Andrea Maurino, Ricardo Pietrobon, Jens Lehmann, S&#246;ren Auer. 2016. &#8220;Quality Assessment for Linked Data: A Survey&#8221; in *Semantic Web*, Vol. 7, No. 1, pp. 63-93 (&lt;https://dx.doi.org/10.3233/SW-150175&gt;).</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Linked Data Quality Dimensions</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://dx.doi.org/10.3233/SW-150175</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Representation of quality categories and dimensions from Amrapali Zaveri, Anisa Rula, Andrea Maurino, Ricardo Pietrobon, Jens Lehmann, Sören Auer. 2016. “Quality Assessment for Linked Data: A Survey” in *Semantic Web*, Vol. 7, No. 1, pp. 63-93 (&lt;https://dx.doi.org/10.3233/SW-150175&gt;).</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

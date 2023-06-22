@@ -8,11 +8,22 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">NIE-INE ontologies</cmd:title>
-            <cmd:Location><cmd:uri>https://github.com/nie-ine/Ontologies/</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">NIE-INE ontologies - infrastructure developed to ensure
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">NIE-INE ontologies</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://github.com/nie-ine/Ontologies/</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">NIE-INE ontologies - infrastructure developed to ensure
         long-term storage of data of scientific edition projects in the Humanities at the Swiss Universities of Basel,
-        Bern, Z&#252;rich, and Geneva
-    </cmd:description></cmd:Description><cmd:Assessement>
+        Bern, Zürich, and Geneva
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -20,6 +31,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

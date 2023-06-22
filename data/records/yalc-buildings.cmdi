@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Building Data</cmd:title>
-            <cmd:Location><cmd:uri>http://data.geohive.ie/downloadAndQuery.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The OSi &#8216;building&#8217; dataset includes a point geometry (ITM coordinate reference system), along with building form and function details.  Please see the Geospatial Form and Function (Geoff) ontology (avaliable [here](http://ontologies.geohive.ie/geoff/voc.ttl)) which provides explainations of the different forms and functions of the building data. The following table allows building data to be downloaded in the RDF N3 format. Currently the buildng data for County Galway is available.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Building Data</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://data.geohive.ie/downloadAndQuery.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The OSi ‘building’ dataset includes a point geometry (ITM coordinate reference system), along with building form and function details.  Please see the Geospatial Form and Function (Geoff) ontology (avaliable [here](http://ontologies.geohive.ie/geoff/voc.ttl)) which provides explainations of the different forms and functions of the building data. The following table allows building data to be downloaded in the RDF N3 format. Currently the buildng data for County Galway is available.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>http://data.geohive.ie/dumps/building/GALWAY_BUILDING_DATA_ITM.n3</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://data.geohive.ie/dumps/building/GALWAY_BUILDING_DATA_ITM.n3</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

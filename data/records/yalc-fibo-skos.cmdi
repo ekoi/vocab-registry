@@ -40,7 +40,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-            <cmd:type>owl</cmd:type>
+            <cmd:type>skos</cmd:type>
             <cmd:Version>
                 <cmd:version>2020-06-30</cmd:version>
                 <cmd:validFrom>2020-06-30T00:00:00</cmd:validFrom>

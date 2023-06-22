@@ -33,8 +33,8 @@ for file in files:
             vocab_org = grab_first(voc_root, root_org)
             vocab_org.append(version_comp)
 
-            fh = open(new_file, 'wb')
-            fh.write(etree.tostring(root_org, pretty_print=True))
-            fh.close()
+            tree = etree.ElementTree(root_org)
+            etree.indent(tree, space='    ', level=0)
+            tree.write(new_file, encoding='utf-8')
 
         os.remove(file)

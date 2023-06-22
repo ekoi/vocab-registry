@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">XHTML Link Types in RDF</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/2005/05/hrel</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">An RDF representation of XHTML 2.0's built-in link types.  It is based on the Metainformation Attributes Module of XHTML2, and uses W3C's RDF Schema (RDFS) and Web Ontology (OWL) languages to describe several kinds of relationship that can hold between information resources.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">XHTML Link Types in RDF</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/2005/05/hrel</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">An RDF representation of XHTML 2.0's built-in link types.  It is based on the Metainformation Attributes Module of XHTML2, and uses W3C's RDF Schema (RDFS) and Web Ontology (OWL) languages to describe several kinds of relationship that can hold between information resources.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,14 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.53</cmd:version><cmd:Location><cmd:uri>https://www.w3.org/2005/05/hrel/linktypes.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.53</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://www.w3.org/2005/05/hrel/linktypes.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

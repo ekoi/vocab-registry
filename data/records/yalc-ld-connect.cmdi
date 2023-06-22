@@ -8,8 +8,14 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">LD Connect</cmd:title>
-            <cmd:Location><cmd:uri>http://ld.iospress.nl</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">This linked data portal contains linked metadata of all IOS Press books and journals, as well as embeddings of all full text.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">LD Connect</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://ld.iospress.nl</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">This linked data portal contains linked metadata of all IOS Press books and journals, as well as embeddings of all full text.
 
 This newly released second version offers an improved user interface and twice the number of datapoints, now offering linked data for more than 132,000 journal articles and book chapters, over 330,000 authors resulting in more than 16 million triples.
 
@@ -19,7 +25,9 @@ Our linked data is openly available to the public, so it can:
 - Further unsilo research data
 - Incentivize new discoveries
 
-We invite you to explore the data through our data browser, download our entire dataset or just subsets, download our word embeddings trained on the full text of all IOS Press publications or use the SPARQL endpoint search box on this platform.</cmd:description></cmd:Description><cmd:Assessement>
+We invite you to explore the data through our data browser, download our entire dataset or just subsets, download our word embeddings trained on the full text of all IOS Press publications or use the SPARQL endpoint search box on this platform.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -27,6 +35,14 @@ We invite you to explore the data through our data browser, download our entire 
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2.0</cmd:version><cmd:Location><cmd:uri>http://ld.iospress.nl/download/iospress-dataset.tar.gz</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>http://ld.iospress.nl/download/iospress-dataset.tar.gz</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

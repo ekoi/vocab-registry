@@ -8,10 +8,14 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Language Codes (ISO 00639)</cmd:title>
-            <cmd:Description><cmd:description xml:lang="en">ISO 639 is a set of standards by the International Organization for Standardization that is concerned with representation of names for languages and language groups.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Language Codes (ISO 00639)</cmd:title>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 639 is a set of standards by the International Organization for Standardization that is concerned with representation of names for languages and language groups.
 
-It was also the name of the original standard, approved in 1967 (as ISO 639/R) and withdrawn in 2002.  The ISO 639 set consists of five parts.</cmd:description></cmd:Description><cmd:Assessement>
+It was also the name of the original standard, approved in 1967 (as ISO 639/R) and withdrawn in 2002.  The ISO 639 set consists of five parts.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +23,14 @@ It was also the name of the original standard, approved in 1967 (as ISO 639/R) a
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>1.0</cmd:version><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/00639/VersionUndefined/ISO00639LanguageCodes.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>1.0</cmd:version>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/00639/VersionUndefined/ISO00639LanguageCodes.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

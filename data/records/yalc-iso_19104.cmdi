@@ -8,8 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Geographic information &#8212; Terminology (ISO 19104:2016)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.iso.org/standard/63541.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19104/2015/TermRegister.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">ISO 19104:2016 specifies requirements for the collection, management and publication of terminology in the field of geographic information.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Geographic information — Terminology (ISO 19104:2016)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.iso.org/standard/63541.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Location>
+                <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19104/2015/TermRegister.rdf</cmd:uri>
+                <cmd:type>endpoint</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">ISO 19104:2016 specifies requirements for the collection, management and publication of terminology in the field of geographic information.
 
 The scope of this document includes
 - selection of concepts, harmonization of concepts and development of concept systems,
@@ -20,7 +30,9 @@ The scope of this document includes
 - layout and formatting requirements in rendered documents, and
 - establishment and management of terminology registers.
 
-ISO 19104:2016 is applicable to International Standards and Technical Specifications in the field of geographic information.</cmd:description></cmd:Description><cmd:Assessement>
+ISO 19104:2016 is applicable to International Standards and Technical Specifications in the field of geographic information.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -28,6 +40,15 @@ ISO 19104:2016 is applicable to International Standards and Technical Specificat
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2015</cmd:version><cmd:validFrom>2015-01-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19104/2015/Terminology.rdf</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2015</cmd:version>
+                <cmd:validFrom>2015-01-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/iso19104/2015/Terminology.rdf</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

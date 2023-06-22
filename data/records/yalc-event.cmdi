@@ -8,12 +8,20 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Event Ontology</cmd:title>
-            <cmd:Location><cmd:uri>http://motools.sourceforge.net/event/event.html#</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The Event Ontology is developed by the Centre for Digital Music in Queen Mary, University of London. The first draft of the ontology was written in October, 2004.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Event Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://motools.sourceforge.net/event/event.html#</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The Event Ontology is developed by the Centre for Digital Music in Queen Mary, University of London. The first draft of the ontology was written in October, 2004.
 
 This ontology is centered around the notion of event, seen here as the way by which cognitive agents classify arbitrary time/space regions, which is essentially the view expressed by Allen and Fergusson:
 
-&#8220;[&#8230;] events are primarily linguistic or cognitive in nature. That is, the world does not really contain events. Rather, events are the way by which agents classify certain useful and relevant patterns of change.  This ontology has already been proven useful in a wide range of context, due to its simplicity and usability: from talks in a conference, to description of a concert, or chords being played in a Jazz piece (when used with the Timeline ontology), festivals, etc. Relevant references are given in the reference section. Some tools to manipulate data from this ontology can be found in the motools project on Sourceforge.&#8221;</cmd:description></cmd:Description><cmd:Assessement>
+“[…] events are primarily linguistic or cognitive in nature. That is, the world does not really contain events. Rather, events are the way by which agents classify certain useful and relevant patterns of change.  This ontology has already been proven useful in a wide range of context, due to its simplicity and usability: from talks in a conference, to description of a concert, or chords being played in a Jazz piece (when used with the Timeline ontology), festivals, etc. Relevant references are given in the reference section. Some tools to manipulate data from this ontology can be found in the motools project on Sourceforge.”</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -21,6 +29,7 @@ This ontology is centered around the notion of event, seen here as the way by wh
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

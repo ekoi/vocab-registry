@@ -8,8 +8,16 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Lexicon Model for Ontologies (Lemon)</cmd:title>
-            <cmd:Location><cmd:uri>http://www.lemon-model.net</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">Lemon: The lexicon model for ontologies is designed to allow for descriptions of lexical information regarding ontological elements and other RDF resources.  Lemon covers mapping of lexical decomposition, phrase structure, syntax, variation, morphology, and lexicon-ontology mapping.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Lexicon Model for Ontologies (Lemon)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://www.lemon-model.net</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Lemon: The lexicon model for ontologies is designed to allow for descriptions of lexical information regarding ontological elements and other RDF resources.  Lemon covers mapping of lexical decomposition, phrase structure, syntax, variation, morphology, and lexicon-ontology mapping.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

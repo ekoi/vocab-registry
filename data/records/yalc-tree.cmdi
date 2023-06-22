@@ -9,7 +9,15 @@
     </cmd:Resources>
     <cmd:Components>
         <cmd:Vocabulary>
-            <cmd:title xml:lang="en">The TREE hypermedia specification</cmd:title><cmd:Location><cmd:uri>https://treecg.github.io/specification</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">The TREE specification enables API developers to define relations between HTTP resources.  A collection of items can be fragmented, and these fragments can be interlinked.  It is an alternative to one-dimensional HTTP pagination.  Instead of linking to the next or previous page, the relation describes what elements can be found by following the link to another page.  Multiple links can be specified, enabling parallelization when traversing the search space.</cmd:description></cmd:Description><cmd:Assessement>
+            <cmd:title xml:lang="en">The TREE hypermedia specification</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://treecg.github.io/specification</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">The TREE specification enables API developers to define relations between HTTP resources.  A collection of items can be fragmented, and these fragments can be interlinked.  It is an alternative to one-dimensional HTTP pagination.  Instead of linking to the next or previous page, the relation describes what elements can be found by following the link to another page.  Multiple links can be specified, enabling parallelization when traversing the search space.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +25,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

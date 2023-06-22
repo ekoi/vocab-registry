@@ -8,8 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">DBpedia Ontology</cmd:title>
-            <cmd:Location><cmd:uri>https://wiki.dbpedia.org</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by-sa/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">Ontology for DBpedia.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">DBpedia Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://wiki.dbpedia.org</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by-sa/3.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">Ontology for DBpedia.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,15 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2016-10</cmd:version><cmd:validFrom>2016-10-01T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>http://downloads.dbpedia.org/2016-10/dbpedia_2016-10.owl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2016-10</cmd:version>
+                <cmd:validFrom>2016-10-01T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>http://downloads.dbpedia.org/2016-10/dbpedia_2016-10.owl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -8,8 +8,19 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">Holding Ontology</cmd:title>
-            <cmd:Location><cmd:uri>http://dini-ag-kim.github.io/holding-ontology/holding.html</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>https://creativecommons.org/licenses/by/3.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">A vocabulary for describing (library) holdings.  The Holding Ontology deals with [items]() and their relations to agents and documents. An item is a copy or exemplar of a document. Items are also referred to as holdings, but a holding is moreover the description of an agents inventory and access information for the item. Items may further be connected to services, locations, and chronologies.</cmd:description></cmd:Description><cmd:Assessement>
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">Holding Ontology</cmd:title>
+            <cmd:Location>
+                <cmd:uri>http://dini-ag-kim.github.io/holding-ontology/holding.html</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>https://creativecommons.org/licenses/by/3.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A vocabulary for describing (library) holdings.  The Holding Ontology deals with [items]() and their relations to agents and documents. An item is a copy or exemplar of a document. Items are also referred to as holdings, but a holding is moreover the description of an agents inventory and access information for the item. Items may further be connected to services, locations, and chronologies.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -17,6 +28,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

@@ -8,10 +8,18 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">The Statistical Core Vocabulary (SCOVO)</cmd:title>
-            <cmd:Location><cmd:uri>https://www.w3.org/TR/owl2-overview</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:Description><cmd:description xml:lang="en">A vocabulary for representing statistical data on the Web.
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">The Statistical Core Vocabulary (SCOVO)</cmd:title>
+            <cmd:Location>
+                <cmd:uri>https://www.w3.org/TR/owl2-overview</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:Description>
+                <cmd:description xml:lang="en">A vocabulary for representing statistical data on the Web.
 
-Note: The SCOVO vocabulary is deprecated. We strongly advise to use the [Data Cube](/w3c/dq) Vocabulary instead.</cmd:description></cmd:Description><cmd:Assessement>
+Note: The SCOVO vocabulary is deprecated. We strongly advise to use the [Data Cube](/w3c/dq) Vocabulary instead.</cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -19,6 +27,15 @@ Note: The SCOVO vocabulary is deprecated. We strongly advise to use the [Data Cu
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type><cmd:Version><cmd:version>2012-08-09</cmd:version><cmd:validFrom>2012-08-09T00:00:00</cmd:validFrom><cmd:Location><cmd:uri>http://vocab.deri.ie/scovo.ttl</cmd:uri><cmd:type>endpoint</cmd:type></cmd:Location></cmd:Version></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+            <cmd:Version>
+                <cmd:version>2012-08-09</cmd:version>
+                <cmd:validFrom>2012-08-09T00:00:00</cmd:validFrom>
+                <cmd:Location>
+                    <cmd:uri>http://vocab.deri.ie/scovo.ttl</cmd:uri>
+                    <cmd:type>endpoint</cmd:type>
+                </cmd:Location>
+            </cmd:Version>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

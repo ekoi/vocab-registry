@@ -8,11 +8,22 @@
         <cmd:ResourceRelationList/>
     </cmd:Resources>
     <cmd:Components>
-        <cmd:Vocabulary><cmd:title xml:lang="en">DOing REusable MUSical data
+        <cmd:Vocabulary>
+            <cmd:title xml:lang="en">DOing REusable MUSical data
         (DOREMUS) datamodel</cmd:title>
-            <cmd:Location><cmd:uri>https://drive.google.com/file/d/0B_nxZpGQv9GKSlhhN2tEUGxDbVU/view</cmd:uri><cmd:type>homepage</cmd:type></cmd:Location><cmd:License><cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url></cmd:License><cmd:Description><cmd:description xml:lang="en">DOing REusable MUSical data
+            <cmd:Location>
+                <cmd:uri>https://drive.google.com/file/d/0B_nxZpGQv9GKSlhhN2tEUGxDbVU/view</cmd:uri>
+                <cmd:type>homepage</cmd:type>
+            </cmd:Location>
+            <cmd:License>
+                <cmd:url>http://creativecommons.org/publicdomain/zero/1.0/</cmd:url>
+            </cmd:License>
+            <cmd:Description>
+                <cmd:description xml:lang="en">DOing REusable MUSical data
         (DOREMUS) datamodel - Events, works, expressions around classic music data
-    </cmd:description></cmd:Description><cmd:Assessement>
+    </cmd:description>
+            </cmd:Description>
+            <cmd:Assessement>
                 <cmd:Recommendation>
                     <cmd:Rating>appears</cmd:Rating>
                     <cmd:Publisher>
@@ -20,6 +31,7 @@
                     </cmd:Publisher>
                 </cmd:Recommendation>
             </cmd:Assessement>
-        <cmd:type>owl</cmd:type></cmd:Vocabulary>
+            <cmd:type>owl</cmd:type>
+        </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>
