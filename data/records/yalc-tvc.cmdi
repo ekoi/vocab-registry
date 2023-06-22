@@ -43,6 +43,7 @@ Thought as natural extension of the [Time-indexed Situation pattern](http://onto
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>37</cmd:count>
                         <cmd:Namespaces>
@@ -101,48 +102,72 @@ Thought as natural extension of the [Time-indexed Situation pattern](http://onto
                     <cmd:Objects>
                         <cmd:count>67</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
-                            <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>23</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>5</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.ontologydesignpatterns.org/cp/owl/situation.owl#</cmd:URI>
-                                    <cmd:prefix>situation</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2003/11/swrl#</cmd:URI>
-                                    <cmd:prefix>swrl</cmd:prefix>
-                                    <cmd:count>16</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
-                                    <cmd:prefix>time</cmd:prefix>
-                                    <cmd:count>4</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#</cmd:URI>
-                                    <cmd:prefix>timeindexedsituation</cmd:prefix>
-                                    <cmd:count>6</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#</cmd:URI>
-                                    <cmd:prefix>timeinterval</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                            </cmd:Namespaces>
+                            <cmd:count>67</cmd:count>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>116</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>116</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>23</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>5</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.ontologydesignpatterns.org/cp/owl/situation.owl#</cmd:URI>
+                                <cmd:prefix>situation</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2003/11/swrl#</cmd:URI>
+                                <cmd:prefix>swrl</cmd:prefix>
+                                <cmd:count>16</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
+                                <cmd:prefix>time</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#</cmd:URI>
+                                <cmd:prefix>timeindexedsituation</cmd:prefix>
+                                <cmd:count>6</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#</cmd:URI>
+                                <cmd:prefix>timeinterval</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

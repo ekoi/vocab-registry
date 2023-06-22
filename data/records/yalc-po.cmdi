@@ -35,6 +35,7 @@
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>295</cmd:count>
                         <cmd:Namespaces>
@@ -88,38 +89,83 @@
                     <cmd:Objects>
                         <cmd:count>357</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>357</cmd:count>
                             <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
                                     <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>91</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>57</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2003/11/swrl#</cmd:URI>
-                                    <cmd:prefix>swrl</cmd:prefix>
-                                    <cmd:count>139</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2003/11/swrlb#</cmd:URI>
-                                    <cmd:prefix>swrlb</cmd:prefix>
                                     <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                    <cmd:prefix>owl</cmd:prefix>
+                                    <cmd:name>Thing</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>846</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:count>3</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                        </cmd:Classes>
-                        <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>838</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>8</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>91</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>57</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2003/11/swrl#</cmd:URI>
+                                <cmd:prefix>swrl</cmd:prefix>
+                                <cmd:count>139</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2003/11/swrlb#</cmd:URI>
+                                <cmd:prefix>swrlb</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

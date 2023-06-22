@@ -39,6 +39,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>543</cmd:count>
                         <cmd:Namespaces>
@@ -127,68 +128,104 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                     <cmd:Objects>
                         <cmd:count>1026</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>1026</cmd:count>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>2263</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
                             <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
-                                    <cmd:prefix>dcterms</cmd:prefix>
-                                    <cmd:count>16</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.linkedmodel.org/schema/dtype#</cmd:URI>
-                                    <cmd:prefix>dtype</cmd:prefix>
-                                    <cmd:count>10</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>458</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
-                                    <cmd:prefix>qudt</cmd:prefix>
-                                    <cmd:count>480</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://qudt.org/vocab/type/</cmd:URI>
-                                    <cmd:prefix>qudt.type</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>42</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
-                                    <cmd:prefix>rdfs</cmd:prefix>
-                                    <cmd:count>18</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
-                                    <cmd:prefix>skos</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
-                                    <cmd:prefix>vaem</cmd:prefix>
-                                    <cmd:count>7</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://voag.linkedmodel.org/schema/voag#</cmd:URI>
-                                    <cmd:prefix>voag</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:count>85</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                        </cmd:Classes>
-                        <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>2107</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>155</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>float</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                                <cmd:prefix>dcterms</cmd:prefix>
+                                <cmd:count>16</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.linkedmodel.org/schema/dtype#</cmd:URI>
+                                <cmd:prefix>dtype</cmd:prefix>
+                                <cmd:count>10</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>458</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
+                                <cmd:prefix>qudt</cmd:prefix>
+                                <cmd:count>480</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://qudt.org/vocab/type/</cmd:URI>
+                                <cmd:prefix>qudt.type</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>42</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>18</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                                <cmd:prefix>skos</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
+                                <cmd:prefix>vaem</cmd:prefix>
+                                <cmd:count>7</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://voag.linkedmodel.org/schema/voag#</cmd:URI>
+                                <cmd:prefix>voag</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>85</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

@@ -44,6 +44,7 @@ To ensure compatibility, the GND ontology aligns with already established vocabu
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>1088</cmd:count>
                         <cmd:Namespaces/>
@@ -55,12 +56,26 @@ To ensure compatibility, the GND ontology aligns with already established vocabu
                     <cmd:Objects>
                         <cmd:count>2164</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>2164</cmd:count>
                             <cmd:Namespaces/>
+                            <cmd:List/>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>4558</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
                         </cmd:Literals>
+                        <cmd:Namespaces/>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces/>

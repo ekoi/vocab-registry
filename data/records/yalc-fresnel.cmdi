@@ -68,6 +68,7 @@ The choice of what output format to support, and how to interpret the formatted 
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>47</cmd:count>
                         <cmd:Namespaces/>
@@ -100,33 +101,47 @@ The choice of what output format to support, and how to interpret the formatted 
                     <cmd:Objects>
                         <cmd:count>107</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
-                            <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>6</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
-                                    <cmd:prefix>rdfs</cmd:prefix>
-                                    <cmd:count>10</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
-                                    <cmd:prefix>dtype</cmd:prefix>
-                                    <cmd:count>7</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>29</cmd:count>
-                                </cmd:Namespace>
-                            </cmd:Namespaces>
+                            <cmd:count>107</cmd:count>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>188</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>6</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>10</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>dtype</cmd:prefix>
+                                <cmd:count>7</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>29</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

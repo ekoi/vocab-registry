@@ -38,6 +38,7 @@
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>48</cmd:count>
                         <cmd:Namespaces>
@@ -126,43 +127,135 @@
                     <cmd:Objects>
                         <cmd:count>762</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>762</cmd:count>
                             <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>43</cmd:count>
-                                </cmd:Namespace>
                                 <cmd:Namespace>
                                     <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
                                     <cmd:prefix>voaf</cmd:prefix>
                                     <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                                 <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2006/vcard/ns#</cmd:URI>
-                                    <cmd:prefix>vcard</cmd:prefix>
-                                    <cmd:count>4</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>https://schema.org/</cmd:URI>
-                                    <cmd:prefix>schema</cmd:prefix>
-                                    <cmd:count>4</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
                                     <cmd:URI>https://w3id.org/bot#</cmd:URI>
                                     <cmd:prefix>bot</cmd:prefix>
-                                    <cmd:count>112</cmd:count>
+                                    <cmd:count>7</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Zone</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
+                                    <cmd:prefix>voaf</cmd:prefix>
+                                    <cmd:name>Vocabulary</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Space</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Site</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Interface</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Element</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Storey</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                    <cmd:prefix>bot</cmd:prefix>
+                                    <cmd:name>Building</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>955</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>953</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>2</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>43</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
+                                <cmd:prefix>voaf</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2006/vcard/ns#</cmd:URI>
+                                <cmd:prefix>vcard</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://schema.org/</cmd:URI>
+                                <cmd:prefix>schema</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://w3id.org/bot#</cmd:URI>
+                                <cmd:prefix>bot</cmd:prefix>
+                                <cmd:count>112</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

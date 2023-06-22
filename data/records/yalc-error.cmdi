@@ -40,6 +40,7 @@ It works by means of a data property, ‘hasError’ that denies its usage for a
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>12</cmd:count>
                         <cmd:Namespaces>
@@ -93,28 +94,79 @@ It works by means of a data property, ‘hasError’ that denies its usage for a
                     <cmd:Objects>
                         <cmd:count>19</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>19</cmd:count>
                             <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.essepuntato.it/2009/10/error/</cmd:URI>
-                                    <cmd:prefix>error</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
                                     <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>12</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
-                                    <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                    <cmd:prefix>owl</cmd:prefix>
+                                    <cmd:name>Thing</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>25</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>23</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>float</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.essepuntato.it/2009/10/error/</cmd:URI>
+                                <cmd:prefix>error</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>12</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

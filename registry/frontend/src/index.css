@@ -213,6 +213,10 @@ table.vocabSummary .footer-unique {
     color: #082045;
 }
 
+.vocabSummary tbody td.al-left {
+    text-align: left;
+}
+
 .vocabSummary thead tr:nth-child(2) {
     font-size: small;
     font-style: italic;

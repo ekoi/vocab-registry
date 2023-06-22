@@ -38,6 +38,7 @@
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>18</cmd:count>
                         <cmd:Namespaces>
@@ -86,28 +87,73 @@
                     <cmd:Objects>
                         <cmd:count>35</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>35</cmd:count>
                             <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>20</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
                                 <cmd:Namespace>
                                     <cmd:URI>https://w3id.org/list#</cmd:URI>
                                     <cmd:prefix>list</cmd:prefix>
-                                    <cmd:count>11</cmd:count>
+                                    <cmd:count>2</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/list#</cmd:URI>
+                                    <cmd:prefix>list</cmd:prefix>
+                                    <cmd:name>OWLList</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>https://w3id.org/list#</cmd:URI>
+                                    <cmd:prefix>list</cmd:prefix>
+                                    <cmd:name>EmptyList</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>57</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>57</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>20</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://w3id.org/list#</cmd:URI>
+                                <cmd:prefix>list</cmd:prefix>
+                                <cmd:count>11</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

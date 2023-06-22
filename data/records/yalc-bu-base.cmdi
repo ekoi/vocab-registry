@@ -56,6 +56,7 @@ During the derivation, the following mappings, alignments, and omissions have be
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>45</cmd:count>
                         <cmd:Namespaces>
@@ -99,63 +100,168 @@ During the derivation, the following mappings, alignments, and omissions have be
                     <cmd:Objects>
                         <cmd:count>169</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>169</cmd:count>
                             <cmd:Namespaces>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
-                                    <cmd:prefix>sfowl</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
-                                    <cmd:prefix>gsp</cmd:prefix>
-                                    <cmd:count>5</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>45</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
-                                    <cmd:prefix>gn</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
-                                    <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:count>10</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
-                                    <cmd:prefix>skos</cmd:prefix>
-                                    <cmd:count>9</cmd:count>
-                                </cmd:Namespace>
                                 <cmd:Namespace>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
-                                    <cmd:count>42</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
-                                    <cmd:prefix>locn</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
-                                    <cmd:prefix>base</cmd:prefix>
-                                    <cmd:count>3</cmd:count>
+                                    <cmd:count>10</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>ExternalReference</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>DateOfEvent</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>AbstractBuilding</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>AbstractConstruction</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>Elevation</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>Building</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>BuildingGeometry2D</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>BuildingPart</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>CurrentUse</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                    <cmd:prefix>bu-base</cmd:prefix>
+                                    <cmd:name>HeightAboveGround</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>273</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>268</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>4</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>float</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
+                                <cmd:prefix>sfowl</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
+                                <cmd:prefix>gsp</cmd:prefix>
+                                <cmd:count>5</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>45</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
+                                <cmd:prefix>gn</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>10</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                                <cmd:prefix>skos</cmd:prefix>
+                                <cmd:count>9</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
+                                <cmd:prefix>bu-base</cmd:prefix>
+                                <cmd:count>42</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
+                                <cmd:prefix>locn</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
+                                <cmd:prefix>base</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

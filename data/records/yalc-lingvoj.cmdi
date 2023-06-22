@@ -47,6 +47,7 @@ To answer such queries, languages need to be represented as resources, likely to
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>64</cmd:count>
                         <cmd:Namespaces/>
@@ -104,58 +105,90 @@ To answer such queries, languages need to be represented as resources, likely to
                     <cmd:Objects>
                         <cmd:count>677</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>677</cmd:count>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>858</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
                             <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:count>3</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>48</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
-                                    <cmd:prefix>voaf</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
-                                    <cmd:prefix>dcterms</cmd:prefix>
-                                    <cmd:count>3</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
-                                    <cmd:prefix>foaf</cmd:prefix>
-                                    <cmd:count>33</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://schema.org/</cmd:URI>
-                                    <cmd:prefix>schema</cmd:prefix>
-                                    <cmd:count>9</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://linkedevents.org/ontology/</cmd:URI>
-                                    <cmd:prefix>lode</cmd:prefix>
-                                    <cmd:count>4</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://lexvo.org/ontology#</cmd:URI>
-                                    <cmd:prefix>lvont</cmd:prefix>
-                                    <cmd:count>5</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
-                                    <cmd:prefix>skos</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                        </cmd:Classes>
-                        <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>843</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>15</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>48</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
+                                <cmd:prefix>voaf</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
+                                <cmd:prefix>dcterms</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://xmlns.com/foaf/0.1/</cmd:URI>
+                                <cmd:prefix>foaf</cmd:prefix>
+                                <cmd:count>33</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://schema.org/</cmd:URI>
+                                <cmd:prefix>schema</cmd:prefix>
+                                <cmd:count>9</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://linkedevents.org/ontology/</cmd:URI>
+                                <cmd:prefix>lode</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://lexvo.org/ontology#</cmd:URI>
+                                <cmd:prefix>lvont</cmd:prefix>
+                                <cmd:count>5</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                                <cmd:prefix>skos</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

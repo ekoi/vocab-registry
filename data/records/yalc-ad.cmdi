@@ -71,6 +71,7 @@
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>47</cmd:count>
                         <cmd:Namespaces>
@@ -114,68 +115,185 @@
                     <cmd:Objects>
                         <cmd:count>141</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>141</cmd:count>
                             <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
-                                    <cmd:count>49</cmd:count>
+                                    <cmd:count>12</cmd:count>
                                 </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
-                                    <cmd:prefix>gsp</cmd:prefix>
-                                    <cmd:count>7</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>47</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
-                                    <cmd:prefix>gn</cmd:prefix>
-                                    <cmd:count>6</cmd:count>
-                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>AdminUnitName</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>ThoroughfareNameValue</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>AddressAreaName</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>LocatorDesignator</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>PartOfName</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>LocatorName</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>ThoroughfareName</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>Address</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>PostalDescriptor</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>AddressLocator</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>GeographicPosition</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                    <cmd:prefix>ad</cmd:prefix>
+                                    <cmd:name>AddressComponent</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>247</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:count>5</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
-                                    <cmd:prefix>skos</cmd:prefix>
-                                    <cmd:count>9</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/cp#</cmd:URI>
-                                    <cmd:prefix>cp</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
-                                    <cmd:prefix>au</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
-                                    <cmd:prefix>sfowl</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
-                                    <cmd:prefix>tn</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
-                                    <cmd:prefix>locn</cmd:prefix>
-                                    <cmd:count>5</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                        </cmd:Classes>
-                        <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>245</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>float</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
+                                <cmd:prefix>ad</cmd:prefix>
+                                <cmd:count>49</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
+                                <cmd:prefix>gsp</cmd:prefix>
+                                <cmd:count>7</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>47</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
+                                <cmd:prefix>gn</cmd:prefix>
+                                <cmd:count>6</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>5</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                                <cmd:prefix>skos</cmd:prefix>
+                                <cmd:count>9</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/cp#</cmd:URI>
+                                <cmd:prefix>cp</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                                <cmd:prefix>au</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
+                                <cmd:prefix>sfowl</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
+                                <cmd:prefix>tn</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
+                                <cmd:prefix>locn</cmd:prefix>
+                                <cmd:count>5</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

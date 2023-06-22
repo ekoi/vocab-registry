@@ -97,7 +97,7 @@ function SummaryListTable({name, summaryList}: {
                             {idx === 0 && <th rowSpan={summaryList[prefix].length}>
                                 {item.uri} <span className="pill">{item.prefix}</span>
                             </th>}
-                            <td>{item.name}</td>
+                            <td className="al-left">{item.name}</td>
                             <td>{item.count ?? 0}</td>
                         </tr>
                     ))

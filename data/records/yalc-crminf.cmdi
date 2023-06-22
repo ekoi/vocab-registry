@@ -35,6 +35,75 @@
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
             </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:count>0</cmd:count>
+                    <cmd:Subjects>
+                        <cmd:count>23</cmd:count>
+                        <cmd:Namespaces/>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>6</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>23</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>58</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>31</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>31</cmd:count>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>81</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
+                        </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>13</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>11</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>36</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>69</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
         </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

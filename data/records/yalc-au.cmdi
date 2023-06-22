@@ -55,6 +55,7 @@ During the derivation, the following mappings, alignments, and omissions have be
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>28</cmd:count>
                         <cmd:Namespaces>
@@ -98,58 +99,121 @@ During the derivation, the following mappings, alignments, and omissions have be
                     <cmd:Objects>
                         <cmd:count>92</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>92</cmd:count>
                             <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
                                     <cmd:prefix>au</cmd:prefix>
-                                    <cmd:count>31</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
-                                    <cmd:prefix>sfowl</cmd:prefix>
                                     <cmd:count>4</cmd:count>
                                 </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
-                                    <cmd:prefix>gsp</cmd:prefix>
-                                    <cmd:count>7</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>28</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
-                                    <cmd:prefix>gn</cmd:prefix>
-                                    <cmd:count>3</cmd:count>
-                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                                    <cmd:prefix>au</cmd:prefix>
+                                    <cmd:name>AdministrativeUnit</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                                    <cmd:prefix>au</cmd:prefix>
+                                    <cmd:name>AdministrativeBoundary</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                                    <cmd:prefix>au</cmd:prefix>
+                                    <cmd:name>ResidenceOfAuthority</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                                    <cmd:prefix>au</cmd:prefix>
+                                    <cmd:name>Condominium</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>166</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
-                                    <cmd:prefix>skos</cmd:prefix>
-                                    <cmd:count>5</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
-                                    <cmd:prefix>locn</cmd:prefix>
-                                    <cmd:count>6</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                        </cmd:Classes>
-                        <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>165</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>float</cmd:name>
+                                    <cmd:count>1</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/au#</cmd:URI>
+                                <cmd:prefix>au</cmd:prefix>
+                                <cmd:count>31</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
+                                <cmd:prefix>sfowl</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
+                                <cmd:prefix>gsp</cmd:prefix>
+                                <cmd:count>7</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>28</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://inspire.ec.europa.eu/ont/gn#</cmd:URI>
+                                <cmd:prefix>gn</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
+                                <cmd:prefix>skos</cmd:prefix>
+                                <cmd:count>5</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>https://www.w3.org/ns/locn#</cmd:URI>
+                                <cmd:prefix>locn</cmd:prefix>
+                                <cmd:count>6</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>

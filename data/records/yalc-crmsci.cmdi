@@ -35,6 +35,75 @@ CRMsci uses and extends the CIDOC CRM (ISO21127) as a general ontology of human 
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
             </cmd:Version>
+            <cmd:Summary>
+                <cmd:Statements>
+                    <cmd:count>0</cmd:count>
+                    <cmd:Subjects>
+                        <cmd:count>83</cmd:count>
+                        <cmd:Namespaces/>
+                    </cmd:Subjects>
+                    <cmd:Predicates>
+                        <cmd:count>7</cmd:count>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>83</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>264</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
+                    </cmd:Predicates>
+                    <cmd:Objects>
+                        <cmd:count>162</cmd:count>
+                        <cmd:Classes>
+                            <cmd:count>162</cmd:count>
+                        </cmd:Classes>
+                        <cmd:Literals>
+                            <cmd:count>347</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
+                        </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>54</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>29</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
+                    </cmd:Objects>
+                </cmd:Statements>
+                <cmd:Namespaces>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                        <cmd:prefix>rdf</cmd:prefix>
+                        <cmd:count>137</cmd:count>
+                    </cmd:Namespace>
+                    <cmd:Namespace>
+                        <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                        <cmd:prefix>rdfs</cmd:prefix>
+                        <cmd:count>293</cmd:count>
+                    </cmd:Namespace>
+                </cmd:Namespaces>
+            </cmd:Summary>
         </cmd:Vocabulary>
     </cmd:Components>
 </cmd:CMD>

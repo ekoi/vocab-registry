@@ -38,6 +38,7 @@
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>1087</cmd:count>
                         <cmd:Namespaces/>
@@ -49,12 +50,24 @@
                     <cmd:Objects>
                         <cmd:count>5323</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
-                            <cmd:Namespaces/>
+                            <cmd:count>5323</cmd:count>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>11924</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces/>
+                            <cmd:List/>
                         </cmd:Literals>
+                        <cmd:Namespaces/>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces/>

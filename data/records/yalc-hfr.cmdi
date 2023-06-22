@@ -87,6 +87,7 @@ The data triples in this ontology instantiate `FinRegOnt` classes `USC_Title`, `
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>
+                    <cmd:count>0</cmd:count>
                     <cmd:Subjects>
                         <cmd:count>44</cmd:count>
                         <cmd:Namespaces>
@@ -155,48 +156,116 @@ The data triples in this ontology instantiate `FinRegOnt` classes `USC_Title`, `
                     <cmd:Objects>
                         <cmd:count>75</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>75</cmd:count>
                             <cmd:Namespaces>
                                 <cmd:Namespace>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
-                                    <cmd:count>4</cmd:count>
+                                    <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                                 <cmd:Namespace>
                                     <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
                                     <cmd:prefix>hfr-rule-iaa</cmd:prefix>
-                                    <cmd:count>1</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://judo.googlecode.com/svn/tunk/Judging_Contracts_Core.owl#</cmd:URI>
-                                    <cmd:prefix>jc-core</cmd:prefix>
-                                    <cmd:count>2</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
-                                    <cmd:prefix>owl</cmd:prefix>
-                                    <cmd:count>18</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
-                                    <cmd:prefix>rdf</cmd:prefix>
-                                    <cmd:count>9</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
-                                    <cmd:prefix>rdfs</cmd:prefix>
-                                    <cmd:count>3</cmd:count>
-                                </cmd:Namespace>
-                                <cmd:Namespace>
-                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
-                                    <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:count>3</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
+                                    <cmd:prefix>hfr-rule-iaa</cmd:prefix>
+                                    <cmd:name>SEC_Tiny_Private_Fund_Adviser</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
+                                    <cmd:prefix>fr-rule-iaa</cmd:prefix>
+                                    <cmd:name>Relevant_Ex_USC_IAA_202_203_Required_to_Register_Private_Fund</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
+                                    <cmd:prefix>hfr-rule-iaa</cmd:prefix>
+                                    <cmd:name>SEC_Smaller_Private_Fund_Adviser</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
+                                    <cmd:prefix>hfr-rule-iaa</cmd:prefix>
+                                    <cmd:name>SEC_Large_Private_Fund_Adviser</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>0</cmd:count>
+                            <cmd:count>119</cmd:count>
+                            <cmd:Languages>
+                                <cmd:Language>
+                                    <cmd:code>en</cmd:code>
+                                    <cmd:count>100</cmd:count>
+                                </cmd:Language>
+                                <cmd:Language>
+                                    <cmd:code>nl</cmd:code>
+                                    <cmd:count>5</cmd:count>
+                                </cmd:Language>
+                            </cmd:Languages>
+                            <cmd:Namespaces>
+                                <cmd:Namespace>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                </cmd:Namespace>
+                            </cmd:Namespaces>
+                            <cmd:List>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>115</cmd:count>
+                                </cmd:Item>
+                                <cmd:Item>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>4</cmd:count>
+                                </cmd:Item>
+                            </cmd:List>
                         </cmd:Literals>
+                        <cmd:Namespaces>
+                            <cmd:Namespace>
+                                <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
+                                <cmd:prefix>fr-rule-iaa</cmd:prefix>
+                                <cmd:count>4</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
+                                <cmd:prefix>hfr-rule-iaa</cmd:prefix>
+                                <cmd:count>1</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://judo.googlecode.com/svn/tunk/Judging_Contracts_Core.owl#</cmd:URI>
+                                <cmd:prefix>jc-core</cmd:prefix>
+                                <cmd:count>2</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
+                                <cmd:prefix>owl</cmd:prefix>
+                                <cmd:count>18</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
+                                <cmd:prefix>rdf</cmd:prefix>
+                                <cmd:count>9</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
+                                <cmd:prefix>rdfs</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                            <cmd:Namespace>
+                                <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                <cmd:prefix>xsd</cmd:prefix>
+                                <cmd:count>3</cmd:count>
+                            </cmd:Namespace>
+                        </cmd:Namespaces>
                     </cmd:Objects>
                 </cmd:Statements>
                 <cmd:Namespaces>
