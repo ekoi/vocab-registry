@@ -161,386 +161,386 @@
                                     <cmd:count>63</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_H_other</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Relevant_Ex_USC_s80b_2_a_11_Definition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_F_Rating_Organization</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>FinancialRule</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Defined_Ex_USC_s80b_2_a_11_Compensation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>RegistrationDefined</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>LegalCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>SEC_Large_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_4_C_Trust</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Filing_Consequence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Relevant_Ex_USC_s80b_2_a_11_Required_to_Register</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_3_Foreign_private</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Legal_Status_Prohibition_Defined</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>FinancialDefinitionRule</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_6_Commodity_Trading_Advisor</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_2_Insurance_clients</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Legal_Status_Prohibited</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibition_Exempted_Ex_CFR_275_203_A_2_d_multi_state</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>FinancialProhibitionRule</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Relevant_Ex_USC_s80b_2_a_11_Exclusion</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_B_Professional</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibitiion_Defined</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_7_B_Small_Business_license</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>SEC_Small_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_G_Family_Office</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibited_Ex_USC_s80b-3a_a_1_A_State_Regulated_small_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_4_A_charitable_client</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Legal_Status_Excluded</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>RegistrationProhibited</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_1_Private_Fund_same_state</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>RegistrationRequired</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Legal_Status_Prohibition_Exempted</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_A_Bank</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Relevant_Ex_USC_s80b-3a_a_1_Prohibited</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>RegistrationExcluded</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Relevant_Ex_USC_s80b_3_b_Exemption</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>DefiningCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Legal_Status_Exempted</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibition_Exempted_Ex_CFR_275_203_A_2_a_pension_consultant</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_7_A_Small_Business</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_7_C_Small_Business_affiliate</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>FinancialExclusionRule</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>SEC_Mid_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibited_Ex_USC_s80b-3a_a_2_B_State_Regulated_mid_size_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_C_Broker_Dealer</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibition_Exempted_Ex_CFR_275_203_A_2_e_internet</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>ExemptingCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>ExcludingCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_5_Church_plan</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibition_Exempted</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibition_Exempted_Ex_CFR_275_203_A_2_c_eligible_120_days</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Exempted_Ex_USC_s80b_3_b_4_B_charity_fund_80a_3c_10_B</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>RegistrationExempted</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>FinancialCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Legal_Status_Defined</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Prohibition_Exempted_Ex_CFR_275_203_A_2_b_registered_company_adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>FinancialExemptionRule</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>RegulatedManagementCompany</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Defined_Ex_USC_s80b_2_a_11_Business</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>ProhibitingCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_E_Government_Securities_only</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Defined_Ex_USC_s80b_2_a_11_Securities_Advice</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Excluded_Ex_USC_s80b_2_a_11_D_Publisher</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>1359</cmd:count>
@@ -560,20 +560,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>1355</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>4</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

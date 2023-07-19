@@ -53,7 +53,7 @@ This model has been developed by the partners of the [Cinelab project](http://ad
                         <cmd:Classes>
                             <cmd:count>171</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>285</cmd:count>
@@ -68,7 +68,7 @@ This model has been developed by the partners of the [Cinelab project](http://ad
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces/>
                     </cmd:Objects>

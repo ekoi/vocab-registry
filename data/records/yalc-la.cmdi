@@ -127,7 +127,7 @@ The model and API are based on appropriate international standards to ensure tha
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

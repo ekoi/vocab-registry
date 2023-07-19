@@ -102,14 +102,14 @@
                                     <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
                                     <cmd:prefix>owl</cmd:prefix>
                                     <cmd:name>Thing</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>473</cmd:count>
@@ -129,26 +129,26 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>462</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>10</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

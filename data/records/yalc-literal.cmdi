@@ -54,7 +54,7 @@ After considering the above-mentioned models and other related and inspiring one
                         <cmd:Classes>
                             <cmd:count>60</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>99</cmd:count>
@@ -69,7 +69,7 @@ After considering the above-mentioned models and other related and inspiring one
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces/>
                     </cmd:Objects>

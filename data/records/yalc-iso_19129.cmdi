@@ -92,128 +92,128 @@
                                     <cmd:count>20</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_Tiling</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_DiscreteSurfaceGridCoverage</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_CollectionMetadata</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_ClassificationAttributeType</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_GridCoverage</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_DiscretePointCoverage</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_CoverageData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_Feature</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_TINCoverage</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_CellValuePair</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_DiscoveryMetadata</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_StructuralMetadata</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_Transmittal</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_Surface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_AquisitionMetadata</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_QuadGriddedData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_Collection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_RiemannGriddedData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_DataSet</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19129/2009/IGCDFramework#</cmd:URI>
                                     <cmd:prefix>iso19129</cmd:prefix>
                                     <cmd:name>IF_QualityMetadata</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>484</cmd:count>
@@ -233,20 +233,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>449</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>35</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

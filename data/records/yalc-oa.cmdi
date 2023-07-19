@@ -97,134 +97,134 @@
                                     <cmd:count>21</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>ResourceSelection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>XPathSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>Annotation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>Motivation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>SvgSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>TextPositionSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>Style</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>State</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>SpecificResource</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>DataPositionSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>Direction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>TimeState</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>FragmentSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>CssSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>TextualBody</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>Selector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>CssStyle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>HttpRequestState</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>TextQuoteSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>Choice</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/oa#</cmd:URI>
                                     <cmd:prefix>oa</cmd:prefix>
                                     <cmd:name>RangeSelector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>334</cmd:count>
@@ -244,14 +244,14 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>334</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

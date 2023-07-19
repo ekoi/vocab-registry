@@ -180,74 +180,74 @@ NOTE Certain mandatory metadata elements may not apply to these other forms of d
                                     <cmd:count>11</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_VectorSpatialRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_Georectified</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_GridSpatialRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_Dimension</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_CellGeometryCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_GeometricObjects</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_TopologyLevelCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_Georeferenceable</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_SpatialRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_GeometricObjectTypeCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19115/2006/SpatialRepresentationInformation#</cmd:URI>
                                     <cmd:prefix>iso19115</cmd:prefix>
                                     <cmd:name>MD_DimensionNameTypeCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>538</cmd:count>
@@ -267,20 +267,20 @@ NOTE Certain mandatory metadata elements may not apply to these other forms of d
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>516</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>22</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

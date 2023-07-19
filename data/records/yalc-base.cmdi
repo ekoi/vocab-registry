@@ -110,44 +110,44 @@ During the derivation, the following mappings, alignments, and omissions have be
                                     <cmd:count>6</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
                                     <cmd:prefix>base</cmd:prefix>
                                     <cmd:name>LegislationCitation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
                                     <cmd:prefix>base</cmd:prefix>
                                     <cmd:name>RelatedParty</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
                                     <cmd:prefix>base</cmd:prefix>
                                     <cmd:name>DocumentCitation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
                                     <cmd:prefix>base</cmd:prefix>
                                     <cmd:name>ThematicIdentifier</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
                                     <cmd:prefix>base</cmd:prefix>
                                     <cmd:name>Contact</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/base#</cmd:URI>
                                     <cmd:prefix>base</cmd:prefix>
                                     <cmd:name>OfficialJournalInformation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>197</cmd:count>
@@ -167,14 +167,14 @@ During the derivation, the following mappings, alignments, and omissions have be
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>197</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

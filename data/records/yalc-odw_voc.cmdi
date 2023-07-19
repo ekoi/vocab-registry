@@ -303,416 +303,416 @@
                                     <cmd:count>22</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/NET/c4dm/event.owl#</cmd:URI>
                                     <cmd:prefix>event</cmd:prefix>
                                     <cmd:name>Product</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>SharedCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/org#</cmd:URI>
                                     <cmd:prefix>org</cmd:prefix>
                                     <cmd:name>OrganizationalUnit</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Influence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>CoreModels</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/vocommons/voaf#</cmd:URI>
                                     <cmd:prefix>voaf</cmd:prefix>
                                     <cmd:name>Vocabulary</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Generation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/NET/c4dm/event.owl#</cmd:URI>
                                     <cmd:prefix>event</cmd:prefix>
                                     <cmd:name>Event</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>Place</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/org#</cmd:URI>
                                     <cmd:prefix>org</cmd:prefix>
                                     <cmd:name>Organization</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>SoftwareAgent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/org#</cmd:URI>
                                     <cmd:prefix>org</cmd:prefix>
                                     <cmd:name>OrganizationalCollaboration</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Person</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
                                     <cmd:prefix>skos</cmd:prefix>
                                     <cmd:name>Concept</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>CatalogRecord</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
                                     <cmd:prefix>skos</cmd:prefix>
                                     <cmd:name>Namespace</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>Instant</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
                                     <cmd:prefix>skos</cmd:prefix>
                                     <cmd:name>Collection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>People</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>Context</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Revision</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>PrimaryData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>CollectionIDs</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>ProperInterval</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>DerivationData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>SharedData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>OpenData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>PrimarySource</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/NET/c4dm/event.owl#</cmd:URI>
                                     <cmd:prefix>event</cmd:prefix>
                                     <cmd:name>Factor</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
                                     <cmd:prefix>skos</cmd:prefix>
                                     <cmd:name>ConceptScheme</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
                                     <cmd:prefix>rdfs</cmd:prefix>
                                     <cmd:name>Resource</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>RelatedDocument</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>Feature</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>ConceptualModel</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/dcat#</cmd:URI>
                                     <cmd:prefix>dcat</cmd:prefix>
                                     <cmd:name>Dataset</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>DateTimeInterval</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>GeonamesFeature</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>EntityInfluence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>Time</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Location</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>Interval</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Start</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Usage</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2003/01/geo/wgs84_pos#</cmd:URI>
                                     <cmd:prefix>geo</cmd:prefix>
                                     <cmd:name>SpatialThing</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Agent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Organization</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Entity</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
                                     <cmd:prefix>rdfs</cmd:prefix>
                                     <cmd:name>Literal</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/dcat#</cmd:URI>
                                     <cmd:prefix>dcat</cmd:prefix>
                                     <cmd:name>Catalog</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/dcat#</cmd:URI>
                                     <cmd:prefix>dcat</cmd:prefix>
                                     <cmd:name>namespace</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>DataModel</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>DomainKnowledge</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>CommonKnowledge</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>InstantaneousEvent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>Object</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>namespaces</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/NET/c4dm/event.owl#</cmd:URI>
                                     <cmd:prefix>event</cmd:prefix>
                                     <cmd:name>Ontology</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://lod.taxonconcept.org/ontology/txn.owl#</cmd:URI>
                                     <cmd:prefix>txn</cmd:prefix>
                                     <cmd:name>TaxonConcept</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>UnKnownEvent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Activity</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>End</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2006/time#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>TemporalEntity</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>Event</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Derivation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>KnownEvent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Quotation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/prov#</cmd:URI>
                                     <cmd:prefix>prov</cmd:prefix>
                                     <cmd:name>Invalidation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://voc.odw.tw/ontology#</cmd:URI>
                                     <cmd:prefix>voc</cmd:prefix>
                                     <cmd:name>PrimarySource</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>1345</cmd:count>
@@ -732,14 +732,14 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>1345</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

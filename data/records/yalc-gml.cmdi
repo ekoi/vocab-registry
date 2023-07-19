@@ -87,326 +87,326 @@
                                     <cmd:count>53</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Shell</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Cone</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Ring</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>OrientableSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Polygon</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>TriangulatedSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Curve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>CubicSpline</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Rectangle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Geodesic</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>MultiPoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>ArcString</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>MultiSolid</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>PolygonPatch</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>MultiCurve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>BSpline</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>CompositeSolid</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>CompositeCurve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>ArcByBulge</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>PolyhedralSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Cylinder</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>CompositeSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Surface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Sphere</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>CircleByCenterPoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>AbstractParametricCurveSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>AbstractCurveSegment</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Solid</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>GeometricComplex</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>SplineCurve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Bezier</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>LinearRing</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Circle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>AbstractGeometricPrimitive</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>AbstractGeometry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>MultiGeometry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>LineString</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>MultiSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>OrientableCurve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>ArcByCenterPoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Triangle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Clothoid</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>LineStringSegment</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>GeodesicString</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>AbstractSurfacePatch</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Arc</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>AbstractGriddedSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Composite</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>ArcStringByBulge</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>OffsetCurve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Point</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>PolynomialSpline</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/gml#</cmd:URI>
                                     <cmd:prefix>gml</cmd:prefix>
                                     <cmd:name>Tin</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>223</cmd:count>
@@ -426,14 +426,14 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>223</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

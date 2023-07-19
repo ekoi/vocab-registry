@@ -113,38 +113,38 @@
                                     <cmd:count>5</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#</cmd:URI>
                                     <cmd:prefix>iso19115-2</cmd:prefix>
                                     <cmd:name>MI_GCP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#</cmd:URI>
                                     <cmd:prefix>iso19115-2</cmd:prefix>
                                     <cmd:name>MI_GCPCollection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#</cmd:URI>
                                     <cmd:prefix>iso19115-2</cmd:prefix>
                                     <cmd:name>MI_Georeferenceable</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#</cmd:URI>
                                     <cmd:prefix>iso19115-2</cmd:prefix>
                                     <cmd:name>MI_Georectified</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/19115/-2/2009/SpatialRepresentationInformation-Imagery#</cmd:URI>
                                     <cmd:prefix>iso19115-2</cmd:prefix>
                                     <cmd:name>MI_GeolocationInformation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>160</cmd:count>
@@ -164,20 +164,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
-                                    <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:name>string</cmd:name>
-                                    <cmd:count>152</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>8</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>string</cmd:name>
+                                    <cmd:count>152</cmd:count>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

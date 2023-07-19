@@ -99,56 +99,56 @@ VAEM stands for “Vocabulary for Attaching Essential Metadata”.  What VAEM re
                                     <cmd:count>8</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>Party</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>Discipline</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>Aspect</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>GraphMetaData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>Viewpoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>Domain</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>GraphRole</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
                                     <cmd:prefix>vaem</cmd:prefix>
                                     <cmd:name>Dimension</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>584</cmd:count>
@@ -168,26 +168,26 @@ VAEM stands for “Vocabulary for Attaching Essential Metadata”.  What VAEM re
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
-                                    <cmd:prefix>xsd</cmd:prefix>
-                                    <cmd:name>integer</cmd:name>
-                                    <cmd:count>19</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>564</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
+                                    <cmd:prefix>xsd</cmd:prefix>
+                                    <cmd:name>integer</cmd:name>
+                                    <cmd:count>19</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

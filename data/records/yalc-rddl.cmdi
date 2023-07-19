@@ -73,7 +73,7 @@ We should also take a look at the RDDL work to see how we can include those defi
                         <cmd:Classes>
                             <cmd:count>36</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>61</cmd:count>
@@ -88,7 +88,7 @@ We should also take a look at the RDDL work to see how we can include those defi
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

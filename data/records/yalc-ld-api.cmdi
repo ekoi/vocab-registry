@@ -87,104 +87,104 @@
                                     <cmd:count>16</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>API</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>RdfXmlFormatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>ContentNegotiationStrategy</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>Selector</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>JsonFormatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>ItemEndpoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>ListEndpoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>XsltFormatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>Viewer</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>Endpoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>CsvFormatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>TurtleFormatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>XmlFormatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>Formatter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://purl.org/linked-data/api/vocab#</cmd:URI>
                                     <cmd:prefix>api</cmd:prefix>
                                     <cmd:name>Page</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>303</cmd:count>
@@ -204,14 +204,14 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>303</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

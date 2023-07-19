@@ -122,104 +122,104 @@
                                     <cmd:count>16</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>P</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>RDFData</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>R</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>U</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>Class</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>V</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>S</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>WikipediaArticle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>Feature</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>L</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>H</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>GeonamesFeature</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>Map</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>T</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>A</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://www.geonames.org/ontology#</cmd:URI>
                                     <cmd:prefix>gn</cmd:prefix>
                                     <cmd:name>Code</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>6849</cmd:count>
@@ -239,20 +239,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>6816</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>33</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

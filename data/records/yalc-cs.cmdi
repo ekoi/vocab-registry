@@ -88,7 +88,7 @@ It introduces the notion of a ChangeSet which encapsulates the delta between two
                         <cmd:Classes>
                             <cmd:count>106</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>200</cmd:count>
@@ -103,7 +103,7 @@ It introduces the notion of a ChangeSet which encapsulates the delta between two
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

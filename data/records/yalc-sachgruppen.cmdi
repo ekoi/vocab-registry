@@ -90,7 +90,7 @@
                         <cmd:Classes>
                             <cmd:count>993</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>1964</cmd:count>
@@ -105,7 +105,7 @@
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

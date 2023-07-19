@@ -78,110 +78,110 @@
                                     <cmd:count>17</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Surface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Geometry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>MultiPolygon</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>LineString</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>MultiCurve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Curve</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>LinearRing</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>TIN</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>MultiPoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>MultiLineString</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Polygon</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Line</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Point</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>GeometryCollection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>PolyhedralSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>Triangle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/sf#</cmd:URI>
                                     <cmd:prefix>sf</cmd:prefix>
                                     <cmd:name>MultiSurface</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>105</cmd:count>
@@ -201,14 +201,14 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>105</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

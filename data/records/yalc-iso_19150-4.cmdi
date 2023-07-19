@@ -118,128 +118,128 @@ In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service f
                                     <cmd:count>20</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>ServiceParameters</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebSystemManagementSecurityFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>uMonetaryUnitCost</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebProcessingTemporalFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebProcessingSpatialFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>uComplexCost</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebProcessingThematicFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebServiceLifeCycle</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebWorkflowTaskManagementFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebCommunicationFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebServiceTaxonomy</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebBoundaryHumanInteractionServiceFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>TaxonomyFunctionPair</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebModelInformationManagementFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebServiceIdentification</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebProcessingMetadataFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>ServiceCost</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebServiceDescription</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebServiceFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19150/-4/2019/Service#</cmd:URI>
                                     <cmd:prefix>iso19150-4</cmd:prefix>
                                     <cmd:name>GeoWebProcessingFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>1150</cmd:count>
@@ -259,20 +259,20 @@ In relation to ISO 19101-1:2014, 8.3, this document addresses the Meta:Service f
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>1135</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>15</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

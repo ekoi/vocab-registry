@@ -85,44 +85,44 @@
                                     <cmd:count>6</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
                                     <cmd:prefix>cc</cmd:prefix>
                                     <cmd:name>Permission</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
                                     <cmd:prefix>cc</cmd:prefix>
                                     <cmd:name>Prohibition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
                                     <cmd:prefix>cc</cmd:prefix>
                                     <cmd:name>Work</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
                                     <cmd:prefix>cc</cmd:prefix>
                                     <cmd:name>Jurisdiction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
                                     <cmd:prefix>cc</cmd:prefix>
                                     <cmd:name>License</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://creativecommons.org/ns#</cmd:URI>
                                     <cmd:prefix>cc</cmd:prefix>
                                     <cmd:name>Requirement</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>116</cmd:count>
@@ -137,7 +137,7 @@
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

@@ -75,7 +75,7 @@ CRMsci uses and extends the CIDOC CRM (ISO21127) as a general ontology of human 
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

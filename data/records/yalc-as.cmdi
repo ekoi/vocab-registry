@@ -95,338 +95,338 @@
                                     <cmd:count>55</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>TentativeReject</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Note</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Event</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Delete</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Ignore</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Like</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Invite</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Reject</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Add</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Object</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Image</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Place</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>Follow</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>CollectionPage</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Listen</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Document</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Person</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>View</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Read</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Service</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Undo</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Audio</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Accept</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Link</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>TentativeAccept</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Group</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Offer</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Question</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Application</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>OrderedCollectionPage</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Page</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Travel</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Remove</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Activity</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Collection</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Flag</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Leave</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Move</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Article</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Tombstone</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Create</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Block</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Organization</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Profile</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Mention</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Join</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Dislike</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Update</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>IntransitiveActivity</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>OrderedCollection</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Video</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Arrive</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Announce</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
-                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
-                                    <cmd:prefix>as</cmd:prefix>
-                                    <cmd:name>Relationship</cmd:name>
-                                    <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
                                     <cmd:prefix>as</cmd:prefix>
                                     <cmd:name>OrderedItems</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>CollectionPage</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Listen</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Document</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Person</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>View</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Read</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Service</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Relationship</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Undo</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Audio</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Accept</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Link</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>TentativeAccept</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Group</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Offer</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Question</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Application</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>OrderedCollectionPage</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Page</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Travel</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Remove</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Activity</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Collection</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Flag</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Leave</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Move</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Article</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Tombstone</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Create</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Block</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Organization</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Profile</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Mention</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Join</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Dislike</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Update</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>IntransitiveActivity</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>OrderedCollection</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Video</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Arrive</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
+                                    <cmd:URI>http://www.w3.org/ns/activitystreams#</cmd:URI>
+                                    <cmd:prefix>as</cmd:prefix>
+                                    <cmd:name>Announce</cmd:name>
+                                    <cmd:count>0</cmd:count>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>951</cmd:count>
@@ -446,20 +446,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>946</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>5</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

@@ -112,116 +112,116 @@
                                     <cmd:count>18</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Work</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Manifestation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>InForce</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>FormatType</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Agent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>SubdivisionType</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Language</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Expression</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Version</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>ResourceType</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>LegalExpression</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>LegalResourceSubdivision</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Format</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>LegalResource</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Person</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>AdministrativeArea</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>Organization</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://data.europa.eu/eli/ontology#</cmd:URI>
                                     <cmd:prefix>ontology</cmd:prefix>
                                     <cmd:name>LegalValue</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>1390</cmd:count>
@@ -241,20 +241,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>1386</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>4</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

@@ -117,68 +117,68 @@ ISO 19118:2005 does not specify any digital media, it does not define any transf
                                     <cmd:count>10</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_ObjectReference</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_Collection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_BasicValue</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>EM_CodeListValueFormat</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_Value</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>EM_CodeListExtraction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_Property</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_StructuredValue</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_DataSet</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19118/2005/InstanceModel#</cmd:URI>
                                     <cmd:prefix>iso19118</cmd:prefix>
                                     <cmd:name>IM_Object</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>286</cmd:count>
@@ -198,20 +198,20 @@ ISO 19118:2005 does not specify any digital media, it does not define any transf
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>272</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>14</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

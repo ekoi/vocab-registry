@@ -111,338 +111,338 @@ This document does not specify either how users derive geoposition data or the f
                                     <cmd:count>55</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_PhysicalSensorModel</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_TrueReplacementModel</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_DetectorArray</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Position</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_GriddedGCPCollection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_OpticalSystem</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Polynomial</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_SensorSystemAndOperation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_OrbitMeasuredLocation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ScanAngleFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_AzimuthMeasure</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_FittingFunction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_MatrixAttitude</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_CorrespondenceModel</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Calibration</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_PlatformDynamics</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>uAngleTable</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_LocationGCP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_SensorModel</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>uAzimuth</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_PushbroomOperation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ShapeCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Variable</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Optics</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_RationalPolynomial</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Distortion</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ObjectGridGCPCollection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_GSD</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>uDistance</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_DistortionTable</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_AngleAttitude</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Microwave</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>uRate</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_SAROrientationCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_GCPRepository</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_RotationSequence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_DistortionPolynomial</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Attitude</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ImageGridGCPCollection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_PlatformParameters</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_OpticsOperation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_TRMAsGrid</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_PositionAndOrientation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_SAROperation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Sensor</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_EarthMeasuredLocation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_SurfaceCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ImageIdentifiableGCP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_SensorParameters</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_Dynamics</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ScanAngleTime</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_WhiskbroomOperation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_ArrayDimension</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>SD_PolynomialCoefficient</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://def.isotc211.org/iso19130/-1/2018/SensorData#</cmd:URI>
                                     <cmd:prefix>iso19130-1</cmd:prefix>
                                     <cmd:name>uAngleEquation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>2261</cmd:count>
@@ -462,20 +462,20 @@ This document does not specify either how users derive geoposition data or the f
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>2114</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>147</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

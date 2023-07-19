@@ -117,194 +117,194 @@
                                     <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>BRKRelatie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>ArcheologischTerrein</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>BouwkundigeKwaliteit</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Bronverwijzing</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>BAGRelatie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Rijksmonument</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Complex</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Kennisregistratie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.opengis.net/ont/geosparql#</cmd:URI>
                                     <cmd:prefix>gsp</cmd:prefix>
                                     <cmd:name>Geometry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Naam</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>BasisregistratieRelatie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Type</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>ArcheologischOnderzoeksgebied</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>StijlEnCultuur</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>CultuurhistorischObject</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Geometrie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>LocatieAanduiding</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Functie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>ArcheologischComplex</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Gebeurtenis</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Vondsten</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Materiaal</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>BeginDatering</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Werelderfgoed</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>EindDatering</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>ActorEnRol</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Datering</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Omschrijving</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Vondstlocatie</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Gezicht</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://linkeddata.cultureelerfgoed.nl/def/ceo#</cmd:URI>
                                     <cmd:prefix>ceo</cmd:prefix>
                                     <cmd:name>Grondsporen</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>890</cmd:count>
@@ -324,20 +324,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>876</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>14</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

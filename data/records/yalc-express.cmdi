@@ -100,236 +100,236 @@
                                     <cmd:count>38</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>SELECT</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>LogicalEnum</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>REAL_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>ENUMERATION</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BINARY</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>STRING_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>INTEGER</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>REAL_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>LOGICAL_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>STRING</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>LOGICAL_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>INTEGER_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BINARY_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>INTEGER_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BOOLEAN_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>INTEGER_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>INTEGER_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BINARY_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BOOLEAN</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>REAL_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>NUMBER_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BOOLEAN_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>STRING_List_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>LOGICAL_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>NUMBER_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>STRING_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>NUMBER_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BOOLEAN_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BOOLEAN_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BINARY_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>LOGICAL</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>LOGICAL_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>NUMBER</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>REAL</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>BINARY_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>STRING_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>NUMBER_List</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>https://w3id.org/express#</cmd:URI>
                                     <cmd:prefix>expr</cmd:prefix>
                                     <cmd:name>REAL_List_EmptyList</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>360</cmd:count>
@@ -349,14 +349,14 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>360</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

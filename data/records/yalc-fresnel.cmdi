@@ -103,7 +103,7 @@ The choice of what output format to support, and how to interpret the formatted 
                         <cmd:Classes>
                             <cmd:count>107</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>188</cmd:count>
@@ -118,7 +118,7 @@ The choice of what output format to support, and how to interpret the formatted 
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

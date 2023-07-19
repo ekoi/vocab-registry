@@ -108,68 +108,68 @@ During the derivation, the following mappings, alignments, and omissions have be
                                     <cmd:count>10</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>ExternalReference</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>DateOfEvent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>AbstractBuilding</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>AbstractConstruction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>Elevation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>Building</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>BuildingGeometry2D</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>BuildingPart</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>CurrentUse</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/bu-base#</cmd:URI>
                                     <cmd:prefix>bu-base</cmd:prefix>
                                     <cmd:name>HeightAboveGround</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>273</cmd:count>
@@ -189,26 +189,26 @@ During the derivation, the following mappings, alignments, and omissions have be
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>268</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>4</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

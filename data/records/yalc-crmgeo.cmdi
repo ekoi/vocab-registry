@@ -62,7 +62,7 @@ CRMgeo provides a refinement of spatial and temporal classes and properties of t
                         <cmd:Classes>
                             <cmd:count>70</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>217</cmd:count>
@@ -77,7 +77,7 @@ CRMgeo provides a refinement of spatial and temporal classes and properties of t
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

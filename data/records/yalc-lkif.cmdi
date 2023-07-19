@@ -189,56 +189,56 @@ Finally, the twelve modules of the abstract, basic and legal level are integrate
                                     <cmd:count>4</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/time.owl#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>Temporal_Occurrence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/time.owl#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>Interval</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/lkif-top.owl#</cmd:URI>
                                     <cmd:prefix>lkif-top</cmd:prefix>
                                     <cmd:name>Spatio_Temporal_Occurrence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/mereology.owl#</cmd:URI>
                                     <cmd:prefix>mereo</cmd:prefix>
                                     <cmd:name>Composition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/mereology.owl#</cmd:URI>
                                     <cmd:prefix>mereo</cmd:prefix>
                                     <cmd:name>Atom</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/time.owl#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>Pair_Of_Periods</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/time.owl#</cmd:URI>
                                     <cmd:prefix>time</cmd:prefix>
                                     <cmd:name>Moment</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.estrellaproject.org/lkif-core/mereology.owl#</cmd:URI>
                                     <cmd:prefix>mereo</cmd:prefix>
                                     <cmd:name>Pair</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>99</cmd:count>
@@ -258,14 +258,14 @@ Finally, the twelve modules of the abstract, basic and legal level are integrate
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>99</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

@@ -266,128 +266,128 @@ FRO is based on two industry standards:
                                     <cmd:count>20</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Subclause</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Edition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Chapter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Item</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Component</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Title</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Subsection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Section</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Note</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Paragraph</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_QuotedContent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_TextElement</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_SourceCredit</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Subparagraph</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Level</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Continuation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Subchapter</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Clause</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>USC_Chapeau</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://finregont.com/fro/usc/United_States_Code.ttl#</cmd:URI>
                                     <cmd:prefix>fro-usc</cmd:prefix>
                                     <cmd:name>UnitedStatesCode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>388</cmd:count>
@@ -407,20 +407,20 @@ FRO is based on two industry standards:
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>387</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

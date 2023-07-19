@@ -169,32 +169,32 @@ The data triples in this ontology instantiate `FinRegOnt` classes `USC_Title`, `
                                     <cmd:count>3</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
                                     <cmd:prefix>hfr-rule-iaa</cmd:prefix>
                                     <cmd:name>SEC_Tiny_Private_Fund_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://fundontology.com/fr/rule/Rules_Investment_Adviser_Act.ttl#</cmd:URI>
                                     <cmd:prefix>fr-rule-iaa</cmd:prefix>
                                     <cmd:name>Relevant_Ex_USC_IAA_202_203_Required_to_Register_Private_Fund</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
                                     <cmd:prefix>hfr-rule-iaa</cmd:prefix>
                                     <cmd:name>SEC_Smaller_Private_Fund_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://hedgefundontology.com/hfr/rule/Rules_Investment_Adviser_Act_Private_Fund.ttl#</cmd:URI>
                                     <cmd:prefix>hfr-rule-iaa</cmd:prefix>
                                     <cmd:name>SEC_Large_Private_Fund_Adviser</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>119</cmd:count>
@@ -214,20 +214,20 @@ The data triples in this ontology instantiate `FinRegOnt` classes `USC_Title`, `
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>115</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>4</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

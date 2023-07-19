@@ -103,110 +103,110 @@ During the derivation, the following mappings, alignments, and omissions have be
                                     <cmd:count>17</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportLink</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportLinkSequence</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>OwnerAuthority</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>RestrictionForVehicles</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportPoint</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>ConditionOfFacility</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportLinkSet</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportNetwork</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>VerticalPosition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportNode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>AccessRestriction</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportProperty</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>MaintenanceAuthority</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportObject</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>MarkerPost</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TransportArea</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/tn#</cmd:URI>
                                     <cmd:prefix>tn</cmd:prefix>
                                     <cmd:name>TrafficFlowDirection</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>184</cmd:count>
@@ -226,26 +226,26 @@ During the derivation, the following mappings, alignments, and omissions have be
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>175</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>8</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

@@ -123,80 +123,80 @@
                                     <cmd:count>12</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>AdminUnitName</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>ThoroughfareNameValue</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>AddressAreaName</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>LocatorDesignator</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>PartOfName</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>LocatorName</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>ThoroughfareName</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>Address</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>PostalDescriptor</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>AddressLocator</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>GeographicPosition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://inspire.ec.europa.eu/ont/ad#</cmd:URI>
                                     <cmd:prefix>ad</cmd:prefix>
                                     <cmd:name>AddressComponent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>247</cmd:count>
@@ -216,26 +216,26 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>245</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

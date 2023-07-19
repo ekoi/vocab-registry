@@ -102,320 +102,320 @@
                                     <cmd:count>1</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2002/07/owl#</cmd:URI>
                                     <cmd:prefix>owl</cmd:prefix>
                                     <cmd:name>Thing</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>AddAffix</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Noun2PP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>AddLemma</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>LiteralPropertyPredicativeRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Phrase</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>SyntacticProperty</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>ProperNounPhrase</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>LexicalEntry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>ScalarPropertyPredicativeRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>SemanticPredicate</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Subject</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>PredicativeRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Domain</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>MWENode</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>RangeOfProperty</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>TransitivePP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>IntransitivePP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Object</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>ClassPredicativeRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Mod</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>LemmaCondition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>Affix</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>SemanticArgument</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Adverb</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Adjective</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Preposition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>PropertyPredicativeRepresentation</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>TransformLemma</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>PObject</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>LMFClass</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>Sense</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Noun</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>ClassPredicate</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>PropertyPredicate</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>AdjectiveMod</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Transitive</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Self</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>GrammaticalFeatures</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>NounPhrase</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>AdjectivePhrase</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>ProperNoun</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>NounPP</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>Condition</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>SyntacticArgument</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>SubcategorizationFrame</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>VerbPhrase</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>WordForm</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Verb</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>Process</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lexinfo#</cmd:URI>
                                     <cmd:prefix>lexinfo</cmd:prefix>
                                     <cmd:name>Range</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.lexinfo.net/lmf#</cmd:URI>
                                     <cmd:prefix>lmf</cmd:prefix>
                                     <cmd:name>MWELex</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>325</cmd:count>
@@ -435,20 +435,20 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
                                     <cmd:count>310</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>15</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

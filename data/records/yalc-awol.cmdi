@@ -104,98 +104,98 @@ Atom being built on RDF is very easily extensible.  It meshes very well with oth
                                     <cmd:count>15</cmd:count>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>RelationType</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>TextContent</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Entry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>PlainText</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Person</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>XHTML</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Category</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Generator</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Link</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>FeedOrEntry</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Content</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>XML</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>HTML</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Version</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://bblfish.net/work/atom-owl/2006-06-06/#</cmd:URI>
                                     <cmd:prefix>awol</cmd:prefix>
                                     <cmd:name>Feed</cmd:name>
                                     <cmd:count>0</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>388</cmd:count>
@@ -210,7 +210,7 @@ Atom being built on RDF is very easily extensible.  It meshes very well with oth
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>

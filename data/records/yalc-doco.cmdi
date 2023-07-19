@@ -53,7 +53,7 @@
                         <cmd:Classes>
                             <cmd:count>474</cmd:count>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Classes>
                         <cmd:Literals>
                             <cmd:count>923</cmd:count>
@@ -68,7 +68,7 @@
                                 </cmd:Language>
                             </cmd:Languages>
                             <cmd:Namespaces/>
-                            <cmd:List/>
+                            <cmd:NamespaceItems/>
                         </cmd:Literals>
                         <cmd:Namespaces/>
                     </cmd:Objects>

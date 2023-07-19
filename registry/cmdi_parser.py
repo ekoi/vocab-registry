@@ -49,7 +49,7 @@ def parse(id):
                 "prefix": grab_value("./cmd:prefix", list_item_elem),
                 "name": grab_value("./cmd:name", list_item_elem),
                 "count": grab_value("./cmd:count", list_item_elem, int),
-            } for list_item_elem in elementpath.select(elem, "./cmd:List/cmd:Item", ns)]
+            } for list_item_elem in elementpath.select(elem, "./cmd:NamespaceItems/cmd:NamespaceItem", ns)]
         }
 
     def create_location_for(elem):

@@ -56,7 +56,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                                 <cmd:prefix>qudt</cmd:prefix>
-                                <cmd:count>1590</cmd:count>
+                                <cmd:count>1592</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
@@ -81,7 +81,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                             <cmd:Namespace>
                                 <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
                                 <cmd:prefix>dcterms</cmd:prefix>
-                                <cmd:count>99</cmd:count>
+                                <cmd:count>100</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.linkedmodel.org/schema/dtype#</cmd:URI>
@@ -96,7 +96,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                                 <cmd:prefix>qudt</cmd:prefix>
-                                <cmd:count>73</cmd:count>
+                                <cmd:count>74</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
@@ -131,7 +131,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                             <cmd:count>1026</cmd:count>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>2263</cmd:count>
+                            <cmd:count>2265</cmd:count>
                             <cmd:Languages>
                                 <cmd:Language>
                                     <cmd:code>en</cmd:code>
@@ -148,26 +148,26 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
-                                    <cmd:count>2107</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                    <cmd:count>2108</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
-                                    <cmd:count>155</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                    <cmd:count>156</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>
@@ -188,7 +188,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                                 <cmd:prefix>qudt</cmd:prefix>
-                                <cmd:count>480</cmd:count>
+                                <cmd:count>481</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/vocab/type/</cmd:URI>
@@ -237,7 +237,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                     <cmd:Namespace>
                         <cmd:URI>http://purl.org/dc/terms/</cmd:URI>
                         <cmd:prefix>dcterms</cmd:prefix>
-                        <cmd:count>146</cmd:count>
+                        <cmd:count>147</cmd:count>
                     </cmd:Namespace>
                     <cmd:Namespace>
                         <cmd:URI>http://www.linkedmodel.org/schema/dtype#</cmd:URI>
@@ -261,7 +261,7 @@ A quantity has meaning in the context of a measurement (i.e. the thing measured,
                     <cmd:Namespace>
                         <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                         <cmd:prefix>qudt</cmd:prefix>
-                        <cmd:count>2143</cmd:count>
+                        <cmd:count>2147</cmd:count>
                     </cmd:Namespace>
                     <cmd:Namespace>
                         <cmd:URI>http://qudt.org/vocab/type/</cmd:URI>

@@ -42,7 +42,7 @@
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/vocab/dimensionvector/</cmd:URI>
                                 <cmd:prefix>qkdv</cmd:prefix>
-                                <cmd:count>3303</cmd:count>
+                                <cmd:count>3300</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
@@ -72,17 +72,17 @@
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                                 <cmd:prefix>qudt</cmd:prefix>
-                                <cmd:count>2100</cmd:count>
+                                <cmd:count>2099</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
                                 <cmd:prefix>rdf</cmd:prefix>
-                                <cmd:count>751</cmd:count>
+                                <cmd:count>750</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
                                 <cmd:prefix>rdfs</cmd:prefix>
-                                <cmd:count>456</cmd:count>
+                                <cmd:count>455</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.linkedmodel.org/schema/vaem#</cmd:URI>
@@ -92,12 +92,12 @@
                         </cmd:Namespaces>
                     </cmd:Predicates>
                     <cmd:Objects>
-                        <cmd:count>607</cmd:count>
+                        <cmd:count>606</cmd:count>
                         <cmd:Classes>
-                            <cmd:count>607</cmd:count>
+                            <cmd:count>606</cmd:count>
                         </cmd:Classes>
                         <cmd:Literals>
-                            <cmd:count>3354</cmd:count>
+                            <cmd:count>3351</cmd:count>
                             <cmd:Languages>
                                 <cmd:Language>
                                     <cmd:code>en</cmd:code>
@@ -114,26 +114,26 @@
                                     <cmd:prefix>xsd</cmd:prefix>
                                 </cmd:Namespace>
                             </cmd:Namespaces>
-                            <cmd:List>
-                                <cmd:Item>
+                            <cmd:NamespaceItems>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>integer</cmd:name>
                                     <cmd:count>1793</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>string</cmd:name>
-                                    <cmd:count>1560</cmd:count>
-                                </cmd:Item>
-                                <cmd:Item>
+                                    <cmd:count>1557</cmd:count>
+                                </cmd:NamespaceItem>
+                                <cmd:NamespaceItem>
                                     <cmd:URI>http://www.w3.org/2001/XMLSchema#</cmd:URI>
                                     <cmd:prefix>xsd</cmd:prefix>
                                     <cmd:name>float</cmd:name>
                                     <cmd:count>1</cmd:count>
-                                </cmd:Item>
-                            </cmd:List>
+                                </cmd:NamespaceItem>
+                            </cmd:NamespaceItems>
                         </cmd:Literals>
                         <cmd:Namespaces>
                             <cmd:Namespace>
@@ -164,7 +164,7 @@
                             <cmd:Namespace>
                                 <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                                 <cmd:prefix>qudt</cmd:prefix>
-                                <cmd:count>750</cmd:count>
+                                <cmd:count>749</cmd:count>
                             </cmd:Namespace>
                             <cmd:Namespace>
                                 <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
@@ -207,7 +207,7 @@
                     <cmd:Namespace>
                         <cmd:URI>http://qudt.org/vocab/dimensionvector/</cmd:URI>
                         <cmd:prefix>qkdv</cmd:prefix>
-                        <cmd:count>3304</cmd:count>
+                        <cmd:count>3301</cmd:count>
                     </cmd:Namespace>
                     <cmd:Namespace>
                         <cmd:URI>http://qudt.org/vocab/quantitykind/</cmd:URI>
@@ -217,17 +217,17 @@
                     <cmd:Namespace>
                         <cmd:URI>http://qudt.org/schema/qudt/</cmd:URI>
                         <cmd:prefix>qudt</cmd:prefix>
-                        <cmd:count>2850</cmd:count>
+                        <cmd:count>2848</cmd:count>
                     </cmd:Namespace>
                     <cmd:Namespace>
                         <cmd:URI>http://www.w3.org/1999/02/22-rdf-syntax-ns#</cmd:URI>
                         <cmd:prefix>rdf</cmd:prefix>
-                        <cmd:count>751</cmd:count>
+                        <cmd:count>750</cmd:count>
                     </cmd:Namespace>
                     <cmd:Namespace>
                         <cmd:URI>http://www.w3.org/2000/01/rdf-schema#</cmd:URI>
                         <cmd:prefix>rdfs</cmd:prefix>
-                        <cmd:count>456</cmd:count>
+                        <cmd:count>455</cmd:count>
                     </cmd:Namespace>
                     <cmd:Namespace>
                         <cmd:URI>http://www.w3.org/2004/02/skos/core#</cmd:URI>
