@@ -1,9 +1,10 @@
 from werkzeug.http import parse_date
-from flask import Flask, request, jsonify, abort, redirect
+from flask import Flask, request, jsonify, abort, redirect, Response
 from flask_cors import CORS
 from elastic_index import Index
 from cmdi_parser import parse
 from datetime import datetime
+from doc import get_doc_html
 
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 CORS(app)
@@ -38,6 +39,14 @@ def browse():
 @app.get('/vocab/<id>')
 def get_vocab(id):
     return jsonify(parse(id))
+
+
+@app.get('/doc/<id>')
+def get_doc(id):
+    doc_bytes = get_doc_html(id)
+    if not doc_bytes:
+        abort(404)
+    return Response(doc_bytes, mimetype='text/html')
 
 
 @app.get('/proxy/<recipe>/<id>')

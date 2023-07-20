@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ontologia de idiomas</title>
+    <style>
+        #pylode {
+            position: fixed;
+            top: 205px;
+            left: -150px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+        #pylode #p {
+            color: #329545;
+        }
+        #pylode #y {
+            color: #f9cb33;
+        }
+        #pylode #version {
+            font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dl {
+            /*border: 1px solid navy;*/
+            /*padding:5px;*/
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 0;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            padding-top: 7px;
+        }
+
+        #metadata ul,
+        #classes ul {
+            list-style-type: none;
+        }
+
+        #metadata ul li,
+        #classes ul li {
+            margin-left: -40px;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        sup {
+            margin-left: -3px;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+
+#toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px navy;
+    font-size: small;
+    width: 180px;
+}
+#toc h3 {
+    margin-top: 5px;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc .first > li {
+    margin-top: 5px;
+}
+
+#toc .second,
+#toc .third {
+    padding-left: 10px;
+}
+
+#content {
+    width: calc(100% - 150px);
+}
+
+.hover_property {
+    cursor: help;
+    text-decoration: none;
+    border-bottom: dashed 1px;
+}
+
+.setclass {
+    list-style-type: none;
+}
+
+code{
+    word-wrap: break-word;
+  }
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    word-wrap: break-word;
+}
+#legend table.entity {
+    width: 25%;
+}
+	</style>
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <script id="schema.org" type="application/ld+json">
+[
+  {
+    "@id": "http://www.lingvoj.org/ontology",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/contributor": [
+      {
+        "@id": "http://google.com/+MaríaPovedaVillalón"
+      },
+      {
+        "@id": "http://google.com/+RonaldPoell"
+      },
+      {
+        "@id": "_:n7c02b99f47e141e88338dcc3ff6ab213b1"
+      },
+      {
+        "@id": "https://plus.google.com/113072078430654119300"
+      }
+    ],
+    "https://schema.org/creator": [
+      {
+        "@id": "http://google.com/+BernardVatant"
+      }
+    ],
+    "https://schema.org/dateIssued": [
+      {
+        "@value": "2007-09-17"
+      }
+    ],
+    "https://schema.org/dateModified": [
+      {
+        "@value": "2014-08-11"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "A vocabulary for describing the use of languages by people and organizations, their geographical scope and status as well as their usage in documents or during events"
+      },
+      {
+        "@language": "fr",
+        "@value": "Un vocabulaire pour décrire l'utilisation des langues par les personnes et les organisations, leur répartition géographique et leur statut, ainsi que leur usage dans les documents ou lors des événements"
+      },
+      {
+        "@language": "es",
+        "@value": "Un vocabulario para describir la utilización de lenguas por parte de personas y organizaciones, su ambito geográfico y su estatus, así como su utilización en documentos o durante eventos"
+      },
+      {
+        "@language": "nl",
+        "@value": "Een vokabular voor de beschrijving en het gebruik van talen door personen en organisaties, de geografische extensie en status en het gebruik ervan in documenten en tijdens evenmenten"
+      },
+      {
+        "@language": "ja",
+        "@value": "人や組織による言語の使用、ドキュメント内やイベント期間中におけるその使用に加え、その地理的範囲と状況を記述するための語彙"
+      },
+      {
+        "@language": "pt",
+        "@value": "Um vocabulário para descrever a utilização de idiomas por parte de pessoas ou organizações, o seu âmbito geográfico e seu estatuto, assim como a sua utilização em documentos ou durante eventos"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "The Lingvoj Ontology"
+      },
+      {
+        "@language": "es",
+        "@value": "Ontología de lenguajes"
+      },
+      {
+        "@language": "fr",
+        "@value": "Ontologie des langues"
+      },
+      {
+        "@language": "nl",
+        "@value": "Taal Ontologie"
+      },
+      {
+        "@language": "ja",
+        "@value": "言語オントロジー"
+      },
+      {
+        "@language": "pt",
+        "@value": "A Ontologia dos idiomas"
+      },
+      {
+        "@language": "pt",
+        "@value": "Ontologia de idiomas"
+      }
+    ]
+  },
+  {
+    "@id": "_:n7c02b99f47e141e88338dcc3ff6ab213b1",
+    "https://schema.org/name": [
+      {
+        "@value": "Shuji Kamitsuna"
+      }
+    ]
+  }
+]
+	</script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="section" id="metadata">
+        <h1>The Lingvoj OntologyOntología de lenguajesOntologie des languesTaal Ontologie言語オントロジーA Ontologia dos idiomasOntologia de idiomas</h1>
+        <h2>Metadata</h2>
+        <dl>
+          <div>
+            <dt>
+              <strong>IRI</strong>
+            </dt>
+            <dd>
+              <code>http://www.lingvoj.org/ontology</code>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
+            </dt>
+            <dd>
+              <ul>
+                <li><p>The Lingvoj Ontology</p></li>
+                <li><p>Ontología de lenguajes</p></li>
+                <li><p>Ontologie des langues</p></li>
+                <li><p>Taal Ontologie</p></li>
+                <li><p>言語オントロジー</p></li>
+                <li><p>A Ontologia dos idiomas</p></li>
+                <li><p>Ontologia de idiomas</p></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/creator" title="An entity responsible for making the resource. Defined in DCMI Metadata Terms">Creator</a>
+            </dt>
+            <dd>http://google.com/+BernardVatant</dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/contributor" title="An entity responsible for making contributions to the resource. Defined in DCMI Metadata Terms">Contributor</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>http://google.com/+MaríaPovedaVillalón</li>
+                <li>http://google.com/+RonaldPoell</li>
+                <li>
+                  <span>
+                    <span>Shuji Kamitsuna</span>
+                  </span>
+                </li>
+                <li>https://plus.google.com/113072078430654119300</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/modified" title="Date on which the resource was changed. Defined in DCMI Metadata Terms">Date Modified</a>
+            </dt>
+            <dd><p>2014-08-11</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/issued" title="Date of formal issuance of the resource. Defined in DCMI Metadata Terms">Date Issued</a>
+            </dt>
+            <dd><p>2007-09-17</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
+            </dt>
+            <dd>
+              <a href="http://www.lingvoj.org/ontology_v2.33.ttl">http://www.lingvoj.org/ontology_v2.33.ttl</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
+            </dt>
+            <dd><p>v2.33</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#priorVersion" title="The annotation property that indicates the predecessor ontology of a given ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Prior Version</a>
+            </dt>
+            <dd>
+              <a href="http://www.lingvoj.org/ontology_v2.32.ttl">http://www.lingvoj.org/ontology_v2.32.ttl</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
+            </dt>
+            <dd><p>lingvo</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
+            </dt>
+            <dd>
+              <a href="http://www.lingvoj.org/ontology#">http://www.lingvoj.org/ontology#</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+            </dt>
+            <dd>
+              <ul>
+                <li><p>A vocabulary for describing the use of languages by people and organizations, their geographical scope and status as well as their usage in documents or during events</p></li>
+                <li><p>Un vocabulaire pour décrire l'utilisation des langues par les personnes et les organisations, leur répartition géographique et leur statut, ainsi que leur usage dans les documents ou lors des événements</p></li>
+                <li><p>Un vocabulario para describir la utilización de lenguas por parte de personas y organizaciones, su ambito geográfico y su estatus, así como su utilización en documentos o durante eventos</p></li>
+                <li><p>Een vokabular voor de beschrijving en het gebruik van talen door personen en organisaties, de geografische extensie en status en het gebruik ervan in documenten en tijdens evenmenten</p></li>
+                <li><p>人や組織による言語の使用、ドキュメント内やイベント期間中におけるその使用に加え、その地理的範囲と状況を記述するための語彙</p></li>
+                <li><p>Um vocabulário para descrever a utilização de idiomas por parte de pessoas ou organizações, o seu âmbito geográfico e seu estatuto, assim como a sua utilização em documentos ou durante eventos</p></li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="section" id="classes">
+        <h2>Classes</h2>
+        <div class="property entity" id="Sprache">
+          <h3>SpracheLanguageLingvoLenguajeKieliLangueLinguaggio言語TaalSpråkJezykIdiomaЯзыкSpråkDil语言
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#Lingvo</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language used in spoken or written human communication, or in which a resource is written or recorded. It is recommended to use instances defined on the basis of ISO 639 codes, such as those in examples</p></li>
+                  <li><p>Una lengua utilizada en la comunicación oral o escrita entre personas, o en la que se escribe o graba un recurso. Se recomienda el uso de las instancias definidas según los códigos ISO 639, como los que aparecen en los ejemplos</p></li>
+                  <li><p>Une langue utilisée dans la communication orale ou écrite entre humains, ou dans laquelle une ressource est écrite ou enregistrée. Il est recommandé d'utiliser des instances définies sur la base d'un code ISO 639, comme dans les exemples</p></li>
+                  <li><p>Een taal gebruikt in geschreven of gesproken communicatie tussen mensen of in welke een bron is geschreven of opgenomen. Het is aan te raden instanties te gebruiken gedefinieerd op basis van de ISO 630 codes, zoals in deze voorbeelden</p></li>
+                  <li><p>会話または記述による人間のコミュニケーションで使用される言語、または資源が記述または記録される言語。例にあるような、ISO 639コードに基づいて定義されたインスタンスを使用することが推奨される</p></li>
+                  <li><p>Um idioma utilizado na comunicação oral ou escrita entre pessoas, ou na que se escreve ou grava um recurso. Recomenda-se a utilização das instâncias definidas segundo os códigos ISO 639, como os que aparecem nos excemplos</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/dc/terms/LinguisticSystem">Linguistic System</a>
+                  </li>
+                  <li>
+                    <a href="http://www.loc.gov/mads/rdf/v1#Language">http://www.loc.gov/mads/rdf/v1#Language</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://schema.org/Language">schema1:Language</a>
+                  </li>
+                  <li>
+                    <a href="http://d-nb.info/standards/elementset/gnd#Language">http://d-nb.info/standards/elementset/gnd#Language</a>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/linguistics/gold/Language">http://purl.org/linguistics/gold/Language</a>
+                  </li>
+                  <li>
+                    <a href="http://www.ontotext.com/proton/protontop#Language">http://www.ontotext.com/proton/protontop#Language</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#tag">language tag</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#livingLanguage">living language</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#endangeredLanguage">endangered language</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#extinctLanguage">extinct language</a>
+                      <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#officialIn">officiële taal</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#fromCountry">from country</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#supportingResource">support resource</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#notUnderstood">not understood</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#notSpoken">not spoken</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#notRead">not read</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#notWritten">not written</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#basicUnderstanding">basic understanding</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#basicSpeaking">basic speaking</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#basicReading">basic reading</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#basicWriting">basic writing</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#intermediateUnderstanding">intermediate understanding</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#intermediateSpeaking">intermediate speaking</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#intermediateReading">intermediate reading</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#intermediateWriting">intermediate writing</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#advancedUnderstanding">advanced understanding</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#advancedSpeaking">advanced speaking</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#advancedReading">advanced reading</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#advancedWriting">advanced writing</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#expertUnderstanding">expert understanding</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#expertSpeaking">expert speaking</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#expertReading">expert reading</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#expertWriting">expert writing</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#nativeLanguage">native language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#communicationLanguage">communication language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#workingLanguage">working language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#officialLanguage">official language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#spokenLanguage">spoken language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#mainLanguage">main language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#regionalLanguage">regional language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#minorityLanguage">minority language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#historicalLanguage">historical language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#originalLanguage">original language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#targetLanguage">target language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#supportedLanguage">supported language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Translation">
+          <h3>TranslationTraducciónTraductionVertaling翻訳Tradução
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#Translation</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>Description of a Translation should include original resource, translated resource, original language and target language. It might also include translator(s) and translation date, and relevant other information using properties inherited from the generic Event class</p></li>
+                  <li><p>La descripción de una Traducción debe incluir la fuente original, la fuente traducida, la lengua  original y la lengua de  destino. También puede incluir  el o los traductor(es) , la fecha de traducción y otra información relevante utilizando propiedades heredadas de la clase generica Event</p></li>
+                  <li><p>La description d'une Traduction inclut au minimum la ressource originale, la ressource traduite, la langue d'origine et la langue cible. Elle peut aussi inclure le(s) traducteur(s), la date de traduction, et toute autre information pertinente utilisant les propriétés de la classe générique Evénement</p></li>
+                  <li><p>De beschrijving of een vertaling zou de oorspronkelijke bron, de vertaalde bron, de brontaal en de doeltaal moeten bevatten. Het kan ook de vertaler(s), de vertaaldatum en andere relevante informatie, gebruik makend van de eigenschappen geërfd van de generieke Event klasse, bevatten</p></li>
+                  <li><p>Translation（翻訳）の記述には、元の資源、翻訳後の資源、元の言語および翻訳先の言語が含まれているべきである。さらに、それには、翻訳者と翻訳日、そして、汎用的なEventクラスから継承されたプロパティーを用いた、関連するその他の情報が含まれるかもしれない</p></li>
+                  <li><p>Descrição de uma tradução deverá inclrui o recurso original, o recurso traduzido, o idioma original e o idioma de destino. Também pode incluir o(s)/a(s) tradutore(s)/tradutora(s), a data de tradução e outra informação relevante utilizando propriedades herdadas da classe genérica Event</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
+              </th>
+              <td>
+                <a href="http://linkedevents.org/ontology/Event">lode:Event</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#originalLanguage">original language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#targetLanguage">target language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#originalResource">original resource</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#translatedResource">translated resource</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#translator">translator</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#interpreter">interpreter</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Languageresource">
+          <h3>Language resourceRecurso lingüísticoRessource linguistiqueTaal bron言語資源Recurso linguístico
+            <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#LanguageResource</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>Dictionaries, thesauri, language courses, translation services, etc.</p></li>
+                  <li><p>Dictionnaires, thesaurus, cours de langue, services de traduction, etc.</p></li>
+                  <li><p>Woordenboeken, thesauri, taalcursussen, vertaaldiensten, etc.</p></li>
+                  <li><p>Diccionarios, tesauros, cursos de idiomas, servicios de traducción, etc.</p></li>
+                  <li><p>辞書、シソーラス、言語コース、翻訳サービスなど</p></li>
+                  <li><p>Dicionários, tesauros, cursos de idiomas, serviços de tradução, etc.</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inDomainOf" title="Inverse of rdfs:domain. Defined in Ontology Documentation Profile">In Domain Of</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="#resourceType">resource type</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="#supportedLanguage">supported language</a>
+                      <sup class="sup-op" title="OWL Object Property">op</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/inRangeOf" title="Inverse of rdfs:range. Defined in Ontology Documentation Profile">In Range Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#supportingResource">support resource</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section" id="objectproperties">
+        <h2>Object Properties</h2>
+        <div class="property entity" id="notUnderstood">
+          <h3>not understoodno comprendidonon compriseniet verstaan理解されないnão compreendido
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#notUnderstood</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person does not understand at all the spoken language</p></li>
+                  <li><p>La persona no comprende la lengua hablada</p></li>
+                  <li><p>La personne ne comprend pas du tout la langue parlée</p></li>
+                  <li><p>De persoon verstaat de taal in het geheel niet</p></li>
+                  <li><p>その人はその話し言葉をまったく理解しない</p></li>
+                  <li><p>A pessoa não compreende o idioma falado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="notSpoken">
+          <h3>not spokenno habladonon parléeniet spreken話されないnão falado
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#notSpoken</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person does not speak at all the language</p></li>
+                  <li><p>La persona no puede hablar la lengua</p></li>
+                  <li><p>La personne ne parle pas du tout la langue</p></li>
+                  <li><p>De persoon spreekt de taal in het geheel niet</p></li>
+                  <li><p>その人はその言語をまったく話さない</p></li>
+                  <li><p>A pessoa não sabe falar o idioma</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="notRead">
+          <h3>not readno leídonon lueniet lezen読まれないnão lido
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#notRead</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person does not read at all the language</p></li>
+                  <li><p>La persona no puede leer la lengua</p></li>
+                  <li><p>La personne ne lit pas du tout la langue</p></li>
+                  <li><p>De persoon leest de taal in het geheel niet</p></li>
+                  <li><p>その人はその言語をまったく読まない</p></li>
+                  <li><p>A pessoa não sabe ler o idioma</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="notWritten">
+          <h3>not writtenno escritonon écriteniet schrijven書かれないnão escrito
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#notWritten</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person does not write at all the language</p></li>
+                  <li><p>La persona no puede escribir la lengua</p></li>
+                  <li><p>La personne n'écrit pas du tout la langue</p></li>
+                  <li><p>De persoon schrijft de taal in het geheel niet</p></li>
+                  <li><p>その人はその言語をまったく書かない</p></li>
+                  <li><p>A pessoa não sabe escrever no idioma</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="basicUnderstanding">
+          <h3>basic understandingcomprensión básicacompréhension élémentairebasis luisterniveau基礎的な理解entendimento básico
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#basicUnderstanding</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person has a basic understanding of the spoken language</p></li>
+                  <li><p>La persona tiene un nivel básico de comprensión de la lengua hablada</p></li>
+                  <li><p>La personne a une compréhension élémentaire de la langue parlée</p></li>
+                  <li><p>De persoon kan eenvoudige gesproken taal begrijpen</p></li>
+                  <li><p>その人はその話し言語について基礎的な理解力を有している</p></li>
+                  <li><p>A pessoa tem um nível de compreensão básico do idioma falado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="basicSpeaking">
+          <h3>basic speakingexpresión oral básicaexpression élémentairebasis spraakniveau基礎的な会話expressão oral básica
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#basicSpeaking</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can speak the language at a basic level</p></li>
+                  <li><p>La persona puede hablar la lengua a un nivel básico</p></li>
+                  <li><p>La personne parle la langue à un niveau élémentaire</p></li>
+                  <li><p>De persoon kan eenvoudige taal spreken</p></li>
+                  <li><p>その人はその言語を基礎レベルで話すことができる</p></li>
+                  <li><p>A pessoa consegue falar o idioma a um nível básico</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="basicReading">
+          <h3>basic readinglectura básicalecture élémentairebasis leesniveau基礎的な読解leitura básica
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#basicReading</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can read the language at a basic level</p></li>
+                  <li><p>La persona puede leer la lengua a un nivel básico</p></li>
+                  <li><p>La personne lit la langue à un niveau élémentaire</p></li>
+                  <li><p>De persoon kan eenvoudige taal lezen</p></li>
+                  <li><p>その人はその言語を基礎レベルで読むことができる</p></li>
+                  <li><p>A pessoa consegue ler o idioma a um nível básico</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="basicWriting">
+          <h3>basic writingescritura básicaécriture élémentairebasis schrijfniveau基礎的な記述escrita básica
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#basicWriting</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can write the language at a basic level</p></li>
+                  <li><p>La persona puede escribir la lengua a un nivel básico</p></li>
+                  <li><p>La personne écrit la langue à un niveau élémentaire</p></li>
+                  <li><p>De persoon kan eenvoudige taal schrijven</p></li>
+                  <li><p>その人はその言語を基礎レベルで書くことができる</p></li>
+                  <li><p>A pessoa consegue escrever o idioma a um nível básico</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="intermediateUnderstanding">
+          <h3>intermediate understandingcomprensión intermediacompréhension moyennevoertaal中級の理解compreensão intermédia
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#intermediateUnderstanding</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person has an intermediate understanding of the spoken language</p></li>
+                  <li><p>La persona tiene un nivel intermedio de comprensión de la lengua hablada</p></li>
+                  <li><p>La personne a une compréhension moyenne de la langue parlée</p></li>
+                  <li><p>De persoon begrijpt de gesproken taal op een gemiddeld niveau</p></li>
+                  <li><p>その人はその話し言葉について中級レベルの理解力を有している</p></li>
+                  <li><p>A pessoa possui um nível intermédio de compreensão do idioma falado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="intermediateSpeaking">
+          <h3>intermediate speakingnivel oral intermedioexpression moyennegemiddeld spraakniveau中級の会話nivel oral intermédio
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#intermediateSpeaking</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can speak the language at an intermediate level</p></li>
+                  <li><p>La persona puede hablar la lengua a un nivel intermedio</p></li>
+                  <li><p>La personne parle la langue à un niveau moyen</p></li>
+                  <li><p>De persoon spreekt de taal op een gemiddeld niveau</p></li>
+                  <li><p>その人はその言語を中級レベルで話すことができる</p></li>
+                  <li><p>A pessoa consegue falar o idioma a um nível intermédio</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="intermediateReading">
+          <h3>intermediate readinglecture moyennenivel de lectura intermediogemiddeld leesniveau中級の読解leitura intermédia
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#intermediateReading</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can read the language at a intermediate level</p></li>
+                  <li><p>La persona puede leer la lengua a un nivel intermedio</p></li>
+                  <li><p>La personne lit la langue à un niveau moyen</p></li>
+                  <li><p>De persoon leest de taal op een gemiddeld niveau</p></li>
+                  <li><p>その人はその言語を中級レベルで読むことができる</p></li>
+                  <li><p>A pessoa consegue ler o idioma a um nível intermédio</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="intermediateWriting">
+          <h3>intermediate writingnivel escrito intermedioécriture moyennegemiddeld schrijfniveau中級の記述escrita intermédia
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#intermediateWriting</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can write the language at an intermediate level</p></li>
+                  <li><p>La persona puede escribir la lengua a un nivel intermedio</p></li>
+                  <li><p>La personne écrit la langue à un niveau moyen</p></li>
+                  <li><p>De persoon schrijft de taal op een gemiddeld niveau</p></li>
+                  <li><p>その人はその言語を中級レベルで書くことができる</p></li>
+                  <li><p>A pessoa consegue escrever o idioma com um nível intermédio</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="advancedUnderstanding">
+          <h3>advanced understandingbuena comprensiónbonne compréhensiongoed luisterniveau高度な理解compreensão avançada
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#advancedUnderstanding</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person has an advanced understanding of the spoken language</p></li>
+                  <li><p>La persona tiene un nivel avanzado de comprensión de la lengua hablada</p></li>
+                  <li><p>La personne a une bonne compréhension de la langue parlée</p></li>
+                  <li><p>De persoon kan de gesproken taal goed begrijpen</p></li>
+                  <li><p>その人はその話し言葉について高度な理解力を有している</p></li>
+                  <li><p>A pessoa possui uma compreensão avançada do idioma falado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="advancedSpeaking">
+          <h3>advanced speakingbuena expresión oralbonne expressiongoed spraakniveau高度な会話boa expressão oral
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#advancedSpeaking</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can speak the language at an advanced level</p></li>
+                  <li><p>La persona puede hablar la lengua a un nivel avanzado</p></li>
+                  <li><p>La personne parle la langue à un bon niveau</p></li>
+                  <li><p>De persoon kan de taal goed spreken</p></li>
+                  <li><p>その人はその言語を上級レベルで話すことができる</p></li>
+                  <li><p>A pessoa consegue falar o idioma a um nível avançado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="advancedReading">
+          <h3>advanced readingbuen nivel de lecturabon niveau de lecturegoed leesniveau高度な読解leitura avançada
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#advancedReading</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can read the language at an advanced level</p></li>
+                  <li><p>La persona puede leer la lengua a un nivel avanzado</p></li>
+                  <li><p>La personne lit la langue à un bon niveau</p></li>
+                  <li><p>De persoon kan de taal goed lezen</p></li>
+                  <li><p>その人はその言語を上級レベルで読むことができる</p></li>
+                  <li><p>A pessoa consegue ler o idioma a um nível avançado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="advancedWriting">
+          <h3>advanced writingbuen nivel de escriturabon niveau d'écrituregoed schrijfniveau高度な記述escrita avançada
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#advancedWriting</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can write the language at an advanced level</p></li>
+                  <li><p>La persona puede escribir la lengua a un nivel avanzado</p></li>
+                  <li><p>La personne écrit la langue à un bon niveau</p></li>
+                  <li><p>De persoon kan de taal goed schrijven</p></li>
+                  <li><p>その人はその言語を上級レベルで書くことができる</p></li>
+                  <li><p>A pessoa consegue escrever o idioma a um nível avançado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="expertUnderstanding">
+          <h3>expert understandingcomprensión excelenteexcellente compréhensionuitstekend luisterniveau専門家レベルの理解compreensão a um nível de especialista
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#expertUnderstanding</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person has an expert understanding of the spoken language</p></li>
+                  <li><p>La persona tiene un nivel experto de comprensión de la lengua hablada</p></li>
+                  <li><p>La personne a une excellente compréhension de la langue parlée</p></li>
+                  <li><p>De persoon kan de gesproken taal uitstekend begrijpen</p></li>
+                  <li><p>その人はその話し言葉について専門家レベルの理解力を有している</p></li>
+                  <li><p>A pessoa tem um nível de especialista do idioma falado</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="expertSpeaking">
+          <h3>expert speakingexpresión oral excelenteexcellente expressionuitstekend spraakniveau専門家レベルの会話expressão oral a um nível de especialista
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#expertSpeaking</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can speak the language at an expert level</p></li>
+                  <li><p>La persona puede hablar la lengua a un nivel experto</p></li>
+                  <li><p>La personne parle la langue à niveau excellent</p></li>
+                  <li><p>De persoon kan de taal uitstekend spreken</p></li>
+                  <li><p>その人はその言語を専門家レベルで話すことができる</p></li>
+                  <li><p>A pessoa consegue falar o idioma a um nível de especialista</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="expertReading">
+          <h3>expert readingnivel de lectura excelenteexcellente lectureuitstekend leesniveau専門家レベルの読解leitura a um nível de especialista
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#expertReading</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can read the language at a expert level</p></li>
+                  <li><p>La persona puede leer en la lengua a un nivel experto</p></li>
+                  <li><p>La personne lit la langue à un niveau excellent</p></li>
+                  <li><p>De persoon kan de taal uitstekend lezen</p></li>
+                  <li><p>その人はその言語を専門家レベルで読むことができる</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="expertWriting">
+          <h3>expert writingnivel de escritura excelenteexcellente écritureuitstekend schrijfniveau専門家レベルの記述escrita a um nível de especialista
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#expertWriting</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The person can write the language at an expert level</p></li>
+                  <li><p>La persona puede escribir la lengua a un nivel experto</p></li>
+                  <li><p>La personne écrit la langue à un niveau excellent</p></li>
+                  <li><p>De persoon kan de taal uitstekend schrijven</p></li>
+                  <li><p>その人はその言語を専門家レベルで書くことができる</p></li>
+                  <li><p>A pessoa consegue escrever o idioma a um nível de especialista</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="nativeLanguage">
+          <h3>native language母国語lengua maternalangue maternellemoedertaalidioma mãe
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#nativeLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>This property is independent of the level of fluency, reading or writing ability</p></li>
+                  <li><p>Esta propiedad es independiente de el nivel de fluidez o de las habilidades de lectura o escritura</p></li>
+                  <li><p>Cette propriété est indépendante du niveau de langue parlée, lue ou écrite</p></li>
+                  <li><p>Deze eigenschap is onafhankelijk van het niveau van spreken, lezen of schrijven</p></li>
+                  <li><p>このプロパティーは、流暢さ、読解力、記述能力のレベルに依存しない</p></li>
+                  <li><p>Esta propriedade é independente do nível de fluência, de leitura ou de escrita</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="communicationLanguage">
+          <h3>communication languagelenguaje de comunicaciónlangue de communicationkommunikation taalコミュニケーション言語idioma de comunicação
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#communicationLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language used for external communication</p></li>
+                  <li><p>Una lengua utilizada para la comunicación externa</p></li>
+                  <li><p>Une langue utilisée pour la communication externe</p></li>
+                  <li><p>Een taal gebruikt voor externe communicatie</p></li>
+                  <li><p>外部とのコミュニケーションに用いる言語</p></li>
+                  <li><p>Um idioma utilizado para a comunicação externa</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="workingLanguage">
+          <h3>working languagelenguaje de trabajolangue de travailwerktaal実用言語idioma de trabalho
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#workingLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language the project or organization uses for internal communication</p></li>
+                  <li><p>Una lengua que el proyecto o la organización utiliza para comunicación interna</p></li>
+                  <li><p>Une langue utilisée par l'organisation ou le projet pour sa communication interne</p></li>
+                  <li><p>De taal gebruikt voor interne communicatie door een organisatie of binnen een project</p></li>
+                  <li><p>プロジェクトや組織が内部コミュニケーションに用いる言語</p></li>
+                  <li><p>O idioma que o projecto ou organização usa para a comunicação interna</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="officialLanguage">
+          <h3>official languagelengua oficiallangue officielleofficiële taal公用語idioma oficial
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#officialLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>An official language of a country, project, organization or event</p></li>
+                  <li><p>Una lengua oficial en un país, proyecto, organización o evento</p></li>
+                  <li><p>Une langue officielle d'un pays, d'une organisation, d'un projet ou d'un événement</p></li>
+                  <li><p>De officiële taal van een land, organisatie, prject of evenement</p></li>
+                  <li><p>国、プロジェクト、組織やイベントの公用語</p></li>
+                  <li><p>Um idioma oficial de um país, projecto, organização ou evento</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="officialIn">
+          <h3>officiële taalofficial language oflengua oficial delangue officielle de～の公用語idioma oficial de
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#officialIn</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="spokenLanguage">
+          <h3>spoken languagelengua habladalangue parléegesproken taal話し言葉idioma falado
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#spokenLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language which is spoken in some place or event</p></li>
+                  <li><p>Una lengua que se habla en algún lugar o evento</p></li>
+                  <li><p>Une langue parlée dans un lieu ou lors d'un événement</p></li>
+                  <li><p>Een taal gesproken op een bepaalde plek of tijdens een evenement</p></li>
+                  <li><p>ある場所やイベントで話される言語</p></li>
+                  <li><p>O idioma que é falado num determinado lugar ou evento</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="fromCountry">
+          <h3>from countrypaís de origenpays d'origineland van herkomst起源の国do país
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#fromCountry</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>Country of origin of the language</p></li>
+                  <li><p>País de origen de la lengua</p></li>
+                  <li><p>Pays d'origine de la langue</p></li>
+                  <li><p>Land van herkomst van de taal</p></li>
+                  <li><p>言語の起源の国</p></li>
+                  <li><p>País de origem do idioma</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://schema.org/Country">schema1:Country</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="mainLanguage">
+          <h3>main languagelengua principallangue principalehoofdtaal主要言語Idioma principal
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#mainLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The main language used in the place or language resource </p></li>
+                  <li><p>Una lengua ampliamente hablada en un lugar (país, región, ciudad...)</p></li>
+                  <li><p>La langue principale utilisée dans le lieu ou la ressource linguistique</p></li>
+                  <li><p>De meest gebruikte taal op deze plek (land, regio, stad ...)</p></li>
+                  <li><p>その場所または言語資源で用いられる主要言語</p></li>
+                  <li><p>O idioma principal utilizado num local ou recurso linguístico</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="regionalLanguage">
+          <h3>regional languagelengua regionallangue régionalestreektaal地方言語idioma regional
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#regionalLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language spoken in a region of a country</p></li>
+                  <li><p>Una lengua hablada en una región o un país</p></li>
+                  <li><p>Une langue parlée dans une région d'un pays</p></li>
+                  <li><p>Een taal gesproken in bepaalde streek van een land</p></li>
+                  <li><p>ある国のある地域で話される言語</p></li>
+                  <li><p>Um idioma falado num região de um país</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="minorityLanguage">
+          <h3>minority languagelengua minoritarialangue minoritaireminderheidstaal少数言語idioma minoritário
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#minorityLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language spoken by a minority in some country, but not necessarily in a specific region</p></li>
+                  <li><p>Un lengua hablada por una minoría en algún país, pero no necesariamente en una región específica</p></li>
+                  <li><p>Une langue parlée par une minorité dans un pays, mais pas nécessairement dans une région spécifique</p></li>
+                  <li><p>Een taal die door een minderheid van de bevolking van een land gesproken wordt, maar niet noodzakelijkerwijs in een specifieke regio</p></li>
+                  <li><p>ある国の少数の人々（必ずしも特定地域ではない）が話す言語</p></li>
+                  <li><p>O idioma falado por uma minoria num país, mas não necessariamente numa região específica</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="historicalLanguage">
+          <h3>historical languagelengua históricalangue historiquehistorische taal歴史的言語idioma histórico
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#historicalLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language spoken in the past in this place, but not used anymore</p></li>
+                  <li><p>Una lengua hablada en el pasado en este lugar, pero ya no se utiliza</p></li>
+                  <li><p>Une langue parlée dans le passé dans ce lieu, mais plus utilisée aujourd'hui</p></li>
+                  <li><p>Een taal die vroeger in dit gebied gesproken werd, maar wordt nu niet meer gebruikt</p></li>
+                  <li><p>この場所で過去に話されていたが、もはや用いられていない言語</p></li>
+                  <li><p>Um idioma falado no passado num determinado lugar, não sendo já utilizado no presente</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="originalLanguage">
+          <h3>original languagelengua originallangue d'origineoorspronkelijke taal元の言語idioma original
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#originalLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The language of the original ressource</p></li>
+                  <li><p>La langue de la ressource originale</p></li>
+                  <li><p>De taal van de de bron</p></li>
+                  <li><p>La lengua de la fuente original</p></li>
+                  <li><p>元の資源の言語</p></li>
+                  <li><p>O idioma do recurso original</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Translation">Translation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="targetLanguage">
+          <h3>target languagelengua destinolangue cibledoeltaal翻訳先の言語idioma destino
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#targetLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The language of the translated ressource</p></li>
+                  <li><p>La lengua de la fuente traducida</p></li>
+                  <li><p>La langue de la ressource traduite</p></li>
+                  <li><p>De taal waarin de bron vertaald is</p></li>
+                  <li><p>翻訳後の資源の言語</p></li>
+                  <li><p>O idioma do recurso traduzido</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Translation">Translation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="originalResource">
+          <h3>original resourcerecurso originalressource originaleoorspronkelijke bron元の資源recurso original
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#originalResource</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The resource which is translated</p></li>
+                  <li><p>La fuente que se traduce</p></li>
+                  <li><p>La ressource qui est traduite</p></li>
+                  <li><p>De vertaalde bron</p></li>
+                  <li><p>翻訳元の資源</p></li>
+                  <li><p>o recurso que se traduz</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Translation">Translation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="translatedResource">
+          <h3>translated resourcerecurso traducidoressource traduitevertaalde bron翻訳後の資源recurso traduzido
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#translatedResource</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The resource which is the result of the translation</p></li>
+                  <li><p>La fuente que resulta de la traducción</p></li>
+                  <li><p>La ressource qui est le résultat de la traduction</p></li>
+                  <li><p>Het resultaat van de vertaling</p></li>
+                  <li><p>翻訳の結果である資源</p></li>
+                  <li><p>O recurso que é o resultado da tradução</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Translation">Translation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="translator">
+          <h3>translatortraductortraducteurvertaler翻訳者tradutor
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#translator</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>An agent (person, organization or sofware) responsible of the translation</p></li>
+                  <li><p>Un agente (persona, organización o software) responsable de la traducción</p></li>
+                  <li><p>Un agent (personne, organisation ou logiciel) responsable de la traduction</p></li>
+                  <li><p>De agent (persoon, organisatie of applicatie) verantwoordelijk voor de vertaling</p></li>
+                  <li><p>翻訳に責任を持つエージェント（人、組織またはソフトウェア）</p></li>
+                  <li><p>um agente (pessoa, organização ou programa) responsável pela tradução</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#interpreter">interpreter</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Translation">Translation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="interpreter">
+          <h3>interpreterintérpreteinterprètetolk通訳者interprete
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#interpreter</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>An agent (person or software) responsible of a real-time oral translation</p></li>
+                  <li><p>Un agente (persona, organización o software) responsable de la interpretación oral</p></li>
+                  <li><p>Un agent (personne ou logiciel) responsable de la traduction orale en temps réel</p></li>
+                  <li><p>De agent (persoon of applicatie) verantwoordelijk voor het tolken</p></li>
+                  <li><p>即時の通訳に責任を持つエージェント（人またはソフトウェア）</p></li>
+                  <li><p>Um agente (pessoa ou programa) responsável por uma tradução oral em tempo real</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#translator">translator</a>
+                  <sup class="sup-op" title="OWL Object Property">op</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Translation">Translation</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="resourceType">
+          <h3>resource typetipo de recursotype de ressourcebron type資源の種類tipo de recurso
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#resourceType</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A concept defining the type of the language resource</p></li>
+                  <li><p>Un concepto que define el tipo de recurso lingüístico</p></li>
+                  <li><p>Un concept définissant le type de la ressource linguistique</p></li>
+                  <li><p>Een concept van het definiëren van de aard van de taal bron</p></li>
+                  <li><p>言語資源の種類を定義する概念</p></li>
+                  <li><p>Um conceito que define o tipo de recuso linguístico</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Languageresource">Language resource</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="supportedLanguage">
+          <h3>supported languageidioma soportadolangue supportéeondersteunde taalサポートされている言語 idioma suportado
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#supportedLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language supported by the language resource</p></li>
+                  <li><p>Un idioma soportado por el recurso lingüístico</p></li>
+                  <li><p>Une langue supportée par la ressource linguistique</p></li>
+                  <li><p>Een taal die wordt ondersteund door de taal bron</p></li>
+                  <li><p>言語資源でサポートされている言語</p></li>
+                  <li><p>Um idioma suportado pelo recurso linguístico</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Languageresource">Language resource</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="supportingResource">
+          <h3>support resourcerecurso soportadoressource supportondersteunende bronサポート資源recurso suportado
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#supportingResource</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>A language resource for this language</p></li>
+                  <li><p>Un recurso lingüístico para este idioma</p></li>
+                  <li><p>Une ressource linguistique pour cette langue</p></li>
+                  <li><p>Een taal bron voor deze taal</p></li>
+                  <li><p>この言語の言語資源</p></li>
+                  <li><p>Um recurso linguístico para este idioma</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Languageresource">Language resource</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section" id="datatypeproperties">
+        <h2>Datatype Properties</h2>
+        <div class="property entity" id="tag">
+          <h3>language tagtag de langueetiqueta言語タグtaal tagtag de idioma
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#tag</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The tag to use for the language, for example as value of xml:lang. See https://tools.ietf.org/html/bcp47</p></li>
+                  <li><p>Le tag à utiliser pour la langue, par exemple comme valeur de xml:lang. Voir https://tools.ietf.org/html/bcp47</p></li>
+                  <li><p>La etiqueta a utilizar para el lenguaje, por ejemplo como valor de xml:lang. Ver https://tools.ietf.org/html/bcp47</p></li>
+                  <li><p>例えばxml:langの値として、言語に用いるタグ。https://tools.ietf.org/html/bcp47を参照</p></li>
+                  <li><p>A tag para ser usada, por exemplo como valor de xml:lang. Ver https://tools.ietf.org/html/bcp47</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://purl.org/dc/terms/identifier">Identifier</a>
+                  <sup class="sup-p" title="RDF Property">p</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="livingLanguage">
+          <h3>living languagelengua vivalangue vivantelevende taal現用言語Idioma vivo
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#livingLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The language has speakers at the given date</p></li>
+                  <li><p>La lengua tiene hablantes en la fecha dada</p></li>
+                  <li><p>La langue possède des locuteurs à la date indiquée</p></li>
+                  <li><p>De taal wordt door mensen gesproken op het aangegeven moment</p></li>
+                  <li><p>ある時点でその言語を話す人がいる</p></li>
+                  <li><p>O idioma possui pessoas que o falam na data indicada</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://w3id.org/profile/ontdoc/superPropertyOf" title="Inverse of RDFS' subPropertyOf. Defined in Ontology Documentation Profile">Super Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#endangeredLanguage">endangered language</a>
+                  <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="endangeredLanguage">
+          <h3>endangered languagelengua en vías de extinciónlangue menacéebedreigde taal絶滅危惧言語idioma em vias de extinção
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#endangeredLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The language is endangered at the given date</p></li>
+                  <li><p>La lengua está en vías de extinción en la fecha dada</p></li>
+                  <li><p>La langue est menacée à la date indiquée</p></li>
+                  <li><p>De taal is bedreigd met uitsterven op de gegeven datum</p></li>
+                  <li><p>ある時点でその言語は絶滅寸前である</p></li>
+                  <li><p>O idioma está em vias de extinção na data indicada</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subPropertyOf" title="The subject is a subproperty of a property. Defined in The RDF Schema vocabulary (RDFS)">Sub Property Of</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#livingLanguage">living language</a>
+                  <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="extinctLanguage">
+          <h3>extinct languagelengua muertalangue morteuitgestorven taal死語Idioma morto
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.lingvoj.org/ontology#extinctLanguage</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+              </th>
+              <td>
+                <ul>
+                  <li><p>The language has no longer any speaker at the given date</p></li>
+                  <li><p>La lengua no tiene ningún hablante en la fecha dada</p></li>
+                  <li><p>La langue n'a plus de locuteurs à la date indiquée</p></li>
+                  <li><p>Er zijn geen mensen meer die deze taal spreken</p></li>
+                  <li><p>ある時点でその言語を話す人はいなくなった</p></li>
+                  <li><p>O idioma já não possui pessoas que o falam na data indicada</p></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+              </th>
+              <td>
+                <span>
+                  <a href="#Sprache">Sprache</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="namespaces">
+        <h2>Namespaces</h2>
+        <dl>
+          <dt id=":">:</dt>
+          <dd>
+            <code>http://www.lingvoj.org/ontology#</code>
+          </dd>
+          <dt id="dcterms">dcterms</dt>
+          <dd>
+            <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="foaf">foaf</dt>
+          <dd>
+            <code>http://xmlns.com/foaf/0.1/</code>
+          </dd>
+          <dt id="lode">lode</dt>
+          <dd>
+            <code>http://linkedevents.org/ontology/</code>
+          </dd>
+          <dt id="lvont">lvont</dt>
+          <dd>
+            <code>http://lexvo.org/ontology#</code>
+          </dd>
+          <dt id="olca">olca</dt>
+          <dd>
+            <code>http://www.lingvoj.org/olca#</code>
+          </dd>
+          <dt id="owl">owl</dt>
+          <dd>
+            <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="prov">prov</dt>
+          <dd>
+            <code>http://www.w3.org/ns/prov#</code>
+          </dd>
+          <dt id="rdf">rdf</dt>
+          <dd>
+            <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+          </dd>
+          <dt id="rdfs">rdfs</dt>
+          <dd>
+            <code>http://www.w3.org/2000/01/rdf-schema#</code>
+          </dd>
+          <dt id="schema">schema</dt>
+          <dd>
+            <code>https://schema.org/</code>
+          </dd>
+          <dt id="schema1">schema1</dt>
+          <dd>
+            <code>http://schema.org/</code>
+          </dd>
+          <dt id="skos">skos</dt>
+          <dd>
+            <code>http://www.w3.org/2004/02/skos/core#</code>
+          </dd>
+          <dt id="vann">vann</dt>
+          <dd>
+            <code>http://purl.org/vocab/vann/</code>
+          </dd>
+          <dt id="voaf">voaf</dt>
+          <dd>
+            <code>http://purl.org/vocommons/voaf#</code>
+          </dd>
+          <dt id="xsd">xsd</dt>
+          <dd>
+            <code>http://www.w3.org/2001/XMLSchema#</code>
+          </dd>
+        </dl>
+      </div>
+      <div id="legend">
+        <h2>Legend</h2>
+        <table class="entity">
+          <tr>
+            <td>
+              <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+            </td>
+            <td>Classes</td>
+          </tr>
+          <tr>
+            <td>
+              <sup class="sup-op" title="OWL Object Property">op</sup>
+            </td>
+            <td>Object Properties</td>
+          </tr>
+          <tr>
+            <td>
+              <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+            </td>
+            <td>Datatype Properties</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="pylode">
+      <p>made by 
+        <a href="https://github.com/rdflib/pyLODE">
+          <span id="p">p</span>
+          <span id="y">y</span>
+          <span>LODE</span>
+        </a>
+        <a href="https://github.com/rdflib/pyLODE/release/3.0.5" id="version">3.0.5</a>
+        <span> with the </span>
+        <a href="https://w3id.org/profile/ontpub" id="profile">OntPub</a>
+        <span>profile</span>
+      </p>
+    </div>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul class="first">
+        <li>
+          <h4>
+            <a href="#metadata">Metadata</a>
+          </h4>
+        </li>
+        <li>
+          <h4>
+            <a href="#classes">Classes</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#Sprache">SpracheLanguageLingvoLenguajeKieliLangueLinguaggio言語TaalSpråkJezykIdiomaЯзыкSpråkDil语言</a>
+            </li>
+            <li>
+              <a href="#Translation">TranslationTraducciónTraductionVertaling翻訳Tradução</a>
+            </li>
+            <li>
+              <a href="#Languageresource">Language resourceRecurso lingüísticoRessource linguistiqueTaal bron言語資源Recurso linguístico</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
+            <a href="#objectproperties">Object Properties</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#notUnderstood">not understoodno comprendidonon compriseniet verstaan理解されないnão compreendido</a>
+            </li>
+            <li>
+              <a href="#notSpoken">not spokenno habladonon parléeniet spreken話されないnão falado</a>
+            </li>
+            <li>
+              <a href="#notRead">not readno leídonon lueniet lezen読まれないnão lido</a>
+            </li>
+            <li>
+              <a href="#notWritten">not writtenno escritonon écriteniet schrijven書かれないnão escrito</a>
+            </li>
+            <li>
+              <a href="#basicUnderstanding">basic understandingcomprensión básicacompréhension élémentairebasis luisterniveau基礎的な理解entendimento básico</a>
+            </li>
+            <li>
+              <a href="#basicSpeaking">basic speakingexpresión oral básicaexpression élémentairebasis spraakniveau基礎的な会話expressão oral básica</a>
+            </li>
+            <li>
+              <a href="#basicReading">basic readinglectura básicalecture élémentairebasis leesniveau基礎的な読解leitura básica</a>
+            </li>
+            <li>
+              <a href="#basicWriting">basic writingescritura básicaécriture élémentairebasis schrijfniveau基礎的な記述escrita básica</a>
+            </li>
+            <li>
+              <a href="#intermediateUnderstanding">intermediate understandingcomprensión intermediacompréhension moyennevoertaal中級の理解compreensão intermédia</a>
+            </li>
+            <li>
+              <a href="#intermediateSpeaking">intermediate speakingnivel oral intermedioexpression moyennegemiddeld spraakniveau中級の会話nivel oral intermédio</a>
+            </li>
+            <li>
+              <a href="#intermediateReading">intermediate readinglecture moyennenivel de lectura intermediogemiddeld leesniveau中級の読解leitura intermédia</a>
+            </li>
+            <li>
+              <a href="#intermediateWriting">intermediate writingnivel escrito intermedioécriture moyennegemiddeld schrijfniveau中級の記述escrita intermédia</a>
+            </li>
+            <li>
+              <a href="#advancedUnderstanding">advanced understandingbuena comprensiónbonne compréhensiongoed luisterniveau高度な理解compreensão avançada</a>
+            </li>
+            <li>
+              <a href="#advancedSpeaking">advanced speakingbuena expresión oralbonne expressiongoed spraakniveau高度な会話boa expressão oral</a>
+            </li>
+            <li>
+              <a href="#advancedReading">advanced readingbuen nivel de lecturabon niveau de lecturegoed leesniveau高度な読解leitura avançada</a>
+            </li>
+            <li>
+              <a href="#advancedWriting">advanced writingbuen nivel de escriturabon niveau d'écrituregoed schrijfniveau高度な記述escrita avançada</a>
+            </li>
+            <li>
+              <a href="#expertUnderstanding">expert understandingcomprensión excelenteexcellente compréhensionuitstekend luisterniveau専門家レベルの理解compreensão a um nível de especialista</a>
+            </li>
+            <li>
+              <a href="#expertSpeaking">expert speakingexpresión oral excelenteexcellente expressionuitstekend spraakniveau専門家レベルの会話expressão oral a um nível de especialista</a>
+            </li>
+            <li>
+              <a href="#expertReading">expert readingnivel de lectura excelenteexcellente lectureuitstekend leesniveau専門家レベルの読解leitura a um nível de especialista</a>
+            </li>
+            <li>
+              <a href="#expertWriting">expert writingnivel de escritura excelenteexcellente écritureuitstekend schrijfniveau専門家レベルの記述escrita a um nível de especialista</a>
+            </li>
+            <li>
+              <a href="#nativeLanguage">native language母国語lengua maternalangue maternellemoedertaalidioma mãe</a>
+            </li>
+            <li>
+              <a href="#communicationLanguage">communication languagelenguaje de comunicaciónlangue de communicationkommunikation taalコミュニケーション言語idioma de comunicação</a>
+            </li>
+            <li>
+              <a href="#workingLanguage">working languagelenguaje de trabajolangue de travailwerktaal実用言語idioma de trabalho</a>
+            </li>
+            <li>
+              <a href="#officialLanguage">official languagelengua oficiallangue officielleofficiële taal公用語idioma oficial</a>
+            </li>
+            <li>
+              <a href="#officialIn">officiële taalofficial language oflengua oficial delangue officielle de～の公用語idioma oficial de</a>
+            </li>
+            <li>
+              <a href="#spokenLanguage">spoken languagelengua habladalangue parléegesproken taal話し言葉idioma falado</a>
+            </li>
+            <li>
+              <a href="#fromCountry">from countrypaís de origenpays d'origineland van herkomst起源の国do país</a>
+            </li>
+            <li>
+              <a href="#mainLanguage">main languagelengua principallangue principalehoofdtaal主要言語Idioma principal</a>
+            </li>
+            <li>
+              <a href="#regionalLanguage">regional languagelengua regionallangue régionalestreektaal地方言語idioma regional</a>
+            </li>
+            <li>
+              <a href="#minorityLanguage">minority languagelengua minoritarialangue minoritaireminderheidstaal少数言語idioma minoritário</a>
+            </li>
+            <li>
+              <a href="#historicalLanguage">historical languagelengua históricalangue historiquehistorische taal歴史的言語idioma histórico</a>
+            </li>
+            <li>
+              <a href="#originalLanguage">original languagelengua originallangue d'origineoorspronkelijke taal元の言語idioma original</a>
+            </li>
+            <li>
+              <a href="#targetLanguage">target languagelengua destinolangue cibledoeltaal翻訳先の言語idioma destino</a>
+            </li>
+            <li>
+              <a href="#originalResource">original resourcerecurso originalressource originaleoorspronkelijke bron元の資源recurso original</a>
+            </li>
+            <li>
+              <a href="#translatedResource">translated resourcerecurso traducidoressource traduitevertaalde bron翻訳後の資源recurso traduzido</a>
+            </li>
+            <li>
+              <a href="#translator">translatortraductortraducteurvertaler翻訳者tradutor</a>
+            </li>
+            <li>
+              <a href="#interpreter">interpreterintérpreteinterprètetolk通訳者interprete</a>
+            </li>
+            <li>
+              <a href="#resourceType">resource typetipo de recursotype de ressourcebron type資源の種類tipo de recurso</a>
+            </li>
+            <li>
+              <a href="#supportedLanguage">supported languageidioma soportadolangue supportéeondersteunde taalサポートされている言語 idioma suportado</a>
+            </li>
+            <li>
+              <a href="#supportingResource">support resourcerecurso soportadoressource supportondersteunende bronサポート資源recurso suportado</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
+            <a href="#datatypeproperties">Datatype Properties</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#tag">language tagtag de langueetiqueta言語タグtaal tagtag de idioma</a>
+            </li>
+            <li>
+              <a href="#livingLanguage">living languagelengua vivalangue vivantelevende taal現用言語Idioma vivo</a>
+            </li>
+            <li>
+              <a href="#endangeredLanguage">endangered languagelengua en vías de extinciónlangue menacéebedreigde taal絶滅危惧言語idioma em vias de extinção</a>
+            </li>
+            <li>
+              <a href="#extinctLanguage">extinct languagelengua muertalangue morteuitgestorven taal死語Idioma morto</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
+            <a href="#namespaces">Namespaces</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#"></a>
+            </li>
+            <li>
+              <a href="#dcterms">dcterms</a>
+            </li>
+            <li>
+              <a href="#foaf">foaf</a>
+            </li>
+            <li>
+              <a href="#lode">lode</a>
+            </li>
+            <li>
+              <a href="#lvont">lvont</a>
+            </li>
+            <li>
+              <a href="#olca">olca</a>
+            </li>
+            <li>
+              <a href="#owl">owl</a>
+            </li>
+            <li>
+              <a href="#prov">prov</a>
+            </li>
+            <li>
+              <a href="#rdf">rdf</a>
+            </li>
+            <li>
+              <a href="#rdfs">rdfs</a>
+            </li>
+            <li>
+              <a href="#schema">schema</a>
+            </li>
+            <li>
+              <a href="#schema1">schema1</a>
+            </li>
+            <li>
+              <a href="#skos">skos</a>
+            </li>
+            <li>
+              <a href="#vann">vann</a>
+            </li>
+            <li>
+              <a href="#voaf">voaf</a>
+            </li>
+            <li>
+              <a href="#xsd">xsd</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
+            <a href="#legend">Legend</a>
+          </h4>
+          <ul class="second"></ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
