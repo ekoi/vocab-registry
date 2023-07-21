@@ -1,7 +1,7 @@
 import React, {MouseEvent, MouseEventHandler} from 'react';
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faArrowUpRightFromSquare, faDownload, faGear, faHouse} from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare, faBook, faDownload, faGear, faHouse} from '@fortawesome/free-solid-svg-icons';
 import {VocabLocation} from '../misc/interfaces';
 
 interface LocationIconBarProps {
@@ -30,9 +30,9 @@ function LocationIcon({location, onClick}: {
                 iconDefinition = faArrowUpRightFromSquare;
                 text = 'Open in Skosmos';
                 break;
-            case 'webvowl':
-                iconDefinition = faArrowUpRightFromSquare;
-                text = 'Open in WebVOWL';
+            case 'doc':
+                iconDefinition = faBook;
+                text = 'Open documentation';
                 break;
             default:
                 iconDefinition = faHouse;

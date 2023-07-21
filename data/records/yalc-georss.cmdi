@@ -44,6 +44,11 @@ The Geo OWL vocabulary is nominally classified as OWL Lite, but what this design
                     <cmd:uri>https://www.w3.org/2005/Incubator/geo/XGR-geo/W3C_XGR_Geo_files/geo_2007.owl</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-georss</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
+                </cmd:Location>
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>

@@ -283,6 +283,24 @@ td {
     <script id="schema.org" type="application/ld+json">
 [
   {
+    "@id": "http://data.europa.eu/eli/ontology#SubdivisionTypeTable",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "A set of types for a legal resource subdivision.\nELI does not include a set of values for this table."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "Subdivision type table"
+      }
+    ]
+  },
+  {
     "@id": "http://data.europa.eu/eli/ontology#LegalValueTable",
     "@type": [
       "https://schema.org/DefinedTermSet"
@@ -297,24 +315,6 @@ td {
       {
         "@language": "en",
         "@value": "Legal value table"
-      }
-    ]
-  },
-  {
-    "@id": "http://data.europa.eu/eli/ontology#ResourceTypeTable",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/description": [
-      {
-        "@language": "en",
-        "@value": "A set of types for a legal resource.\nELI does not include a set of values for this table."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "Resource type table"
       }
     ]
   },
@@ -337,6 +337,12 @@ td {
     ]
   },
   {
+    "@id": "http://publications.europa.eu/resource/authority/atu",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ]
+  },
+  {
     "@id": "http://data.europa.eu/eli/ontology#InForceTable",
     "@type": [
       "https://schema.org/DefinedTermSet"
@@ -355,20 +361,20 @@ td {
     ]
   },
   {
-    "@id": "http://data.europa.eu/eli/ontology#SubdivisionTypeTable",
+    "@id": "http://data.europa.eu/eli/ontology#ResourceTypeTable",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
     "https://schema.org/description": [
       {
         "@language": "en",
-        "@value": "A set of types for a legal resource subdivision.\nELI does not include a set of values for this table."
+        "@value": "A set of types for a legal resource.\nELI does not include a set of values for this table."
       }
     ],
     "https://schema.org/name": [
       {
         "@language": "en",
-        "@value": "Subdivision type table"
+        "@value": "Resource type table"
       }
     ]
   },
@@ -381,6 +387,24 @@ td {
       {
         "@language": "en",
         "@value": "A set of values for languages.\nELI does not include a set of values for this table."
+      }
+    ]
+  },
+  {
+    "@id": "http://data.europa.eu/eli/ontology#",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "An ontology to describe legislation, based on the FRBR model, that encodes the ELI metadata fields.\nSee the classes \"LegalResource\", \"LegalExpression\" and \"Format\" as entry points.\nInterested readers can find more information about ELI on the ELI register at http://eurlex.europa.eu/eli and on the Office of Publications vocabularies website at https://op.europa.eu/en/web/eu-vocabularies/eli."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "ELI Metadata Ontology"
       }
     ]
   },
@@ -399,30 +423,6 @@ td {
       {
         "@language": "en",
         "@value": "Format type table"
-      }
-    ]
-  },
-  {
-    "@id": "http://publications.europa.eu/resource/authority/atu",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ]
-  },
-  {
-    "@id": "http://data.europa.eu/eli/ontology#",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/description": [
-      {
-        "@language": "en",
-        "@value": "An ontology to describe legislation, based on the FRBR model, that encodes the ELI metadata fields.\nSee the classes \"LegalResource\", \"LegalExpression\" and \"Format\" as entry points.\nInterested readers can find more information about ELI on the ELI register at http://eurlex.europa.eu/eli and on the Office of Publications vocabularies website at https://op.europa.eu/en/web/eu-vocabularies/eli."
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "ELI Metadata Ontology"
       }
     ]
   },
@@ -1420,15 +1420,15 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
               <td><span>
+  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">and</span> <span>
   <span>
     <span>
       <a href="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
       <sup class="sup-op" title="OWL Object Property">op</sup>
     </span>value<br>
   </span>
-</span> <span class="cardinality">and</span> <span>
-  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
             <tr>
@@ -1680,15 +1680,15 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
               <td><span>
+  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">and</span> <span>
   <span>
     <span>
       <a href="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
       <sup class="sup-op" title="OWL Object Property">op</sup>
     </span>value<br>
   </span>
-</span> <span class="cardinality">and</span> <span>
-  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
             <tr>
@@ -1737,15 +1737,15 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2002/07/owl#equivalentClass" title="The property that determines that two given classes are equivalent, and that is used to specify datatype definitions. Defined in The OWL 2 Schema vocabulary (OWL 2)">Equivalentclass</a>
               </th>
               <td><span>
-  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">and</span> <span>
   <span>
     <span>
       <a href="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
       <sup class="sup-op" title="OWL Object Property">op</sup>
     </span>value<br>
   </span>
+</span> <span class="cardinality">and</span> <span>
+  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
             <tr>
@@ -2132,10 +2132,10 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2174,10 +2174,10 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2186,10 +2186,10 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2459,10 +2459,10 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2541,10 +2541,10 @@ For example, the abstract concept of the legal resource; e.g. "act 3 of 2005" (a
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2616,10 +2616,10 @@ Note that the intended meaning of this link is to indicate that "something is ci
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2724,10 +2724,10 @@ Situations where a resource enters into force because of more than one resource 
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2768,10 +2768,10 @@ Note also that it is not possible to indicate when the entry into force should h
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2866,10 +2866,10 @@ Note also that it is not possible to indicate when the entry into force should h
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2911,10 +2911,10 @@ Note also that it is not possible to indicate when the entry into force should h
   <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#Format">Format</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#Format">Format</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -2923,10 +2923,10 @@ Note also that it is not possible to indicate when the entry into force should h
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -3399,10 +3399,10 @@ ELI includes a set of possible values for the most common use-cases and possible
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -3471,10 +3471,10 @@ ELI includes a set of possible values for the most common use-cases and possible
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4328,10 +4328,10 @@ This property should be used when the value can be identified by a suitable URI;
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4435,10 +4435,10 @@ This property should be used when the value can be identified by a suitable URI;
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4489,10 +4489,10 @@ This property should be used when the value can be identified by a suitable URI;
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4501,10 +4501,10 @@ This property should be used when the value can be identified by a suitable URI;
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -4683,10 +4683,10 @@ This property should be used when the value can be identified by a suitable URI;
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5417,10 +5417,10 @@ When the case law can be identified by a suitable URI, the property eli:cited_by
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5449,10 +5449,10 @@ When the case law can be identified by a suitable URI, the property eli:cited_by
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5537,10 +5537,10 @@ When the case law can be identified by a suitable URI, the property eli:cited_by
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5576,10 +5576,10 @@ When the case law can be identified by a suitable URI, the property eli:cited_by
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5665,10 +5665,10 @@ When the case law can be identified by a suitable URI, the property eli:cited_by
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5719,10 +5719,10 @@ When the case law can be identified by a suitable URI, the property eli:cited_by
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
               </th>
               <td><span>
-  <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+  <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
+  <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -5829,10 +5829,10 @@ This property should be used when the value cannot be identified by a suitable U
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#Format">Format</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#Format">Format</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -6100,10 +6100,10 @@ This property should be used when the value cannot be identified by a suitable U
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -6616,10 +6616,10 @@ A subdivision can have only one type.</p>
   <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#Format">Format</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#Format">Format</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -6707,10 +6707,10 @@ A subdivision can have only one type.</p>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>
@@ -6746,10 +6746,10 @@ A subdivision can have only one type.</p>
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
-  <a href="http://data.europa.eu/eli/ontology#LegalResource">Legal Resource</a>
+  <a href="http://data.europa.eu/eli/ontology#LegalExpression">Legal Expression</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>

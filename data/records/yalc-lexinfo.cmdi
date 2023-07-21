@@ -32,6 +32,11 @@
                     <cmd:uri>https://lexinfo.net/LexInfo.owl</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-lexinfo</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
+                </cmd:Location>
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>

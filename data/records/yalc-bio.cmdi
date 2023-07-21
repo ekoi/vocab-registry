@@ -36,6 +36,11 @@ The sequence of events and intervals build a timeline of history against which p
                     <cmd:uri>https://vocab.org/bio/schema.rdf</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-bio</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
+                </cmd:Location>
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>

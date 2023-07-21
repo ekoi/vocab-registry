@@ -28,7 +28,7 @@ export interface Vocab {
 export interface VocabLocation {
     location: string;
     type: 'homepage' | 'endpoint';
-    recipe: 'sparql' | 'skosmos' | 'webvowl' | 'rdf' | 'cache' | null;
+    recipe: 'sparql' | 'skosmos' | 'doc' | 'rdf' | 'cache' | null;
 }
 
 export interface VocabVersion {

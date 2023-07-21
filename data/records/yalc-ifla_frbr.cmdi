@@ -38,6 +38,11 @@ This vocabulary is a work in progress, it includes RDF classes for the group 1, 
                     <cmd:uri>http://purl.org/vocab/frbr/frbr-core-20050810.rdf</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-ifla_frbr</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
+                </cmd:Location>
             </cmd:Version>
         </cmd:Vocabulary>
     </cmd:Components>

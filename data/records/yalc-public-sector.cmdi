@@ -36,6 +36,11 @@ Es importante destacar que el objetivo de este vocabulario es el de representar 
                     <cmd:uri>http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio/ontology.ttl</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-public-sector</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
+                </cmd:Location>
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>

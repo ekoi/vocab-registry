@@ -44,6 +44,11 @@ To answer such queries, languages need to be represented as resources, likely to
                     <cmd:uri>http://www.linkedvocabs.org/lingvoj/ontology_v2.33.ttl</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                 </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-lingvoj</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
+                </cmd:Location>
             </cmd:Version>
             <cmd:Summary>
                 <cmd:Statements>

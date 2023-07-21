@@ -283,12 +283,6 @@ td {
     <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "http://www.lexinfo.net/lexinfo",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ]
-  },
-  {
     "@id": "http://www.lexinfo.net/lmf",
     "@type": [
       "https://schema.org/DefinedTermSet"
@@ -297,6 +291,12 @@ td {
       {
         "@value": "Lexical Markup Framework V0.3 (modified LMF version by P. Cimiano)."
       }
+    ]
+  },
+  {
+    "@id": "http://www.lexinfo.net/lexinfo",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
     ]
   }
 ]
@@ -2616,22 +2616,22 @@ A ClassPredicateRepresentation has an associated predicate of type ClassPredicat
                 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
               </th>
               <td><span>
-  <a href="#MWENode">lmf:MWENode</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="#MWELex">lmf:MWELex</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
   <a href="#GrammaticalFeatures">lmf:GrammaticalFeatures</a>
-  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span> <span class="cardinality">or</span> <span>
-  <a href="#WordForm">lmf:WordForm</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="#LexicalEntry">lmf:LexicalEntry</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span> <span class="cardinality">or</span> <span>
   <a href="#SyntacticArgument">lmf:SyntacticArgument</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#MWELex">lmf:MWELex</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#WordForm">lmf:WordForm</a>
+  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span> <span class="cardinality">or</span> <span>
+  <a href="#MWENode">lmf:MWENode</a>
   <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span></td>
             </tr>

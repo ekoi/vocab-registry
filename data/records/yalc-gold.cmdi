@@ -48,11 +48,6 @@
                     <cmd:recipe>cache</cmd:recipe>
                 </cmd:Location>
                 <cmd:Location>
-                    <cmd:uri>https://webvowl.vocabs.dev.clariah.nl/#iri=https://cache.vocabs.dev.clariah.nl/gold@2008.owl</cmd:uri>
-                    <cmd:type>homepage</cmd:type>
-                    <cmd:recipe>webvowl</cmd:recipe>
-                </cmd:Location>
-                <cmd:Location>
                     <cmd:uri>https://sparql.vocabs.dev.clariah.nl/vocabs?default-graph-uri=urn%3Avocab%3Agold%402008</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                     <cmd:recipe>sparql</cmd:recipe>
@@ -69,11 +64,6 @@
                     <cmd:uri>https://cache.vocabs.dev.clariah.nl/gold@2009.owl</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                     <cmd:recipe>cache</cmd:recipe>
-                </cmd:Location>
-                <cmd:Location>
-                    <cmd:uri>https://webvowl.vocabs.dev.clariah.nl/#iri=https://cache.vocabs.dev.clariah.nl/gold@2009.owl</cmd:uri>
-                    <cmd:type>homepage</cmd:type>
-                    <cmd:recipe>webvowl</cmd:recipe>
                 </cmd:Location>
                 <cmd:Location>
                     <cmd:uri>https://sparql.vocabs.dev.clariah.nl/vocabs?default-graph-uri=urn%3Avocab%3Agold%402009</cmd:uri>
@@ -94,14 +84,14 @@
                     <cmd:recipe>cache</cmd:recipe>
                 </cmd:Location>
                 <cmd:Location>
-                    <cmd:uri>https://webvowl.vocabs.dev.clariah.nl/#iri=https://cache.vocabs.dev.clariah.nl/gold@2010.owl</cmd:uri>
-                    <cmd:type>homepage</cmd:type>
-                    <cmd:recipe>webvowl</cmd:recipe>
-                </cmd:Location>
-                <cmd:Location>
                     <cmd:uri>https://sparql.vocabs.dev.clariah.nl/vocabs?default-graph-uri=urn%3Avocab%3Agold%402010</cmd:uri>
                     <cmd:type>endpoint</cmd:type>
                     <cmd:recipe>sparql</cmd:recipe>
+                </cmd:Location>
+                <cmd:Location>
+                    <cmd:uri>https://registry.vocabs.dev.clariah.nl/doc/yalc-gold</cmd:uri>
+                    <cmd:type>homepage</cmd:type>
+                    <cmd:recipe>doc</cmd:recipe>
                 </cmd:Location>
             </cmd:Version>
             <cmd:Summary>
