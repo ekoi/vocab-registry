@@ -40,10 +40,11 @@ def catch_all(path):
     return app.send_static_file("index.html")
 
 
-@app.get('/facet')
+@app.post('/facet')
 def get_facet():
-    facet = request.args.get("name")
-    amount = request.args.get("amount")
+    struc = request.get_json()
+    facet = struc["name"]
+    amount = struc["amount"]
     ret_struc = index.get_facet(facet + ".keyword", amount)
     return jsonify(ret_struc)
 
@@ -51,8 +52,7 @@ def get_facet():
 @app.post('/browse')
 def browse():
     struc = request.get_json()
-    ret_struc = index.browse(struc["page"], struc["page_length"], struc["sortorder"] + ".keyword",
-                             struc["searchvalues"])
+    ret_struc = index.browse(struc["page"], struc["page_length"], struc["searchvalues"])
     return jsonify(ret_struc)
 
 

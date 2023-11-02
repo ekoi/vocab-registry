@@ -86,7 +86,7 @@ class Index:
         else:
             return []
 
-    def browse(self, page, length, orderFieldName, searchvalues):
+    def browse(self, page, length, searchvalues):
         int_page = int(page)
         start = (int_page - 1) * length
         matches = []
@@ -100,7 +100,7 @@ class Index:
                     "from": start,
                     "_source": ["record", "title", "description", "publisher"],
                     "sort": [
-                        {orderFieldName: {"order": "asc"}}
+                        {"title.keyword": {"order": "asc"}}
                     ]
                 }
             )
@@ -120,7 +120,7 @@ class Index:
                     "size": length,
                     "from": start,
                     "sort": [
-                        {orderFieldName: {"order": "asc"}}
+                        {"title.keyword": {"order": "asc"}}
                     ]
                 }
             )

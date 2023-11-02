@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useLoaderData, useNavigate, useNavigation} from 'react-router-dom';
 import {Vocab} from '../misc/interfaces';
 import Description from './Description';
 import Summary from './Summary';
