@@ -1,3 +1,4 @@
+import json
 import os
 import uuid
 import operator
@@ -62,6 +63,13 @@ def parse(id):
     file = os.environ.get('RECORDS_PATH', '../data/records/') + id + '.cmdi'
     parsed = etree.parse(file)
     root = parsed.getroot()
+    f_reviews_path = os.environ.get('RECORDS_PATH', '../data/records/') + id + '-reviews.json'
+    if os.path.exists(f_reviews_path):
+        with open(f_reviews_path) as f:
+            f_content = f.read()
+            reviews_json = json.loads(f_content)
+    else:
+        reviews_json = []
 
     return {
         "id": id,
@@ -75,14 +83,8 @@ def parse(id):
         "created": datetime.utcfromtimestamp(os.path.getctime(file)).isoformat(),
         "modified": datetime.utcfromtimestamp(os.path.getmtime(file)).isoformat(),
         "locations": [create_location_for(elem) for elem in elementpath.select(root, f"{voc_root}/cmd:Location", ns)],
-        "reviews": [{
-            "id": str(uuid.uuid4()),
-            "rating": randint(1, 6),
-            "review": lorem.paragraphs(randint(1, 6)),
-            "nickname": None,
-            "moderation": None,
-            "user": str(uuid.uuid4())
-        } for i in range(0, randint(0, 4))],
+        "user":"123",#user_session = UserSession(flask.session, 'default')
+        "reviews": reviews_json,
         "usage": {
             "count": 0,
             "outOf": 0
