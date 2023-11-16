@@ -8,6 +8,7 @@ export interface Vocab {
     created: string;
     modified: string;
     locations: VocabLocation[];
+    user: string;
     reviews: {
         id: string;
         rating: number;
