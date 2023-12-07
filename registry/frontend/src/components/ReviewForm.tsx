@@ -39,7 +39,7 @@ const ReviewForm = ({id, user}:FormParam) => {
                 console.log("textArea message: " + textArea_msg)
                 const url_target = "/review/" + id
                 console.log(url_target)
-                alert("hello")
+
                 let result = await fetch(url_target, {
                     method: 'POST',
                     headers: {
