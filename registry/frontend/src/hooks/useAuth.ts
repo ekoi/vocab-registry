@@ -6,15 +6,13 @@ export default function useAuth():[any]{
     useEffect(()=> {
         const fetchFromLogin = async () => {
 
-                const response = await fetch('/userinfo')
+                const response = await fetch('/user-info')
             if (response.ok) {
-                console.log('------------------')
                 const rsp = await response.json()
                 setUserInfo(rsp)
             }
             else{
                 setUserInfo(null)
-                console.log('----------00000000000--------')
             }
         };
         fetchFromLogin()
