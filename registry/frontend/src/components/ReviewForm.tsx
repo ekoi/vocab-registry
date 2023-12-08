@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import * as Form from '@radix-ui/react-form';
 import StarRating from "./StarRating";
 import {useNavigate} from "react-router-dom";
-import {createBrowserRouter, RouterProvider,} from "react-router-dom"
-import {unmountComponentAtNode} from "react-dom";
 
 interface FormParam{
     id: string
@@ -23,7 +21,6 @@ const ReviewForm = ({id, user}:FormParam) => {
             // `onSubmit` only triggered if it passes client-side validation
             onSubmit={async (event) => {
                 event.preventDefault();
-                alert("eko")
                 if (!stars) {
                     setInvalidStars(true)
                     return;
@@ -58,33 +55,12 @@ const ReviewForm = ({id, user}:FormParam) => {
                         console.log("********" + response.status)
                         console.log(response)
                         let x = "/detail/"+id;
-                        console.log("--------")
-                        console.log(x)
                         console.log("id:" + id)
                         // submit was succesful
                         setSuccess(true);
                  }
                 );
-                // navigate('/');
-                // alert(data)
-                // alert(data)
-
-
-                // Submit form data and catch errors in the response
-                // submitForm(data)
-                //   .then(() => {})
-                //   /**
-                //    * Map errors from your server response into a structure you'd like to work with.
-                //    * In this case resulting in this object: `{ email: false, password: true }`
-                //    */
-                //   .catch((errors) => setServerErrors(mapServerErrors(errors)));
-
-                // prevent default form submission
-
             }}
-            // onClearServerErrors={() =>
-            //   setServerErrors({ email: false, password: false })
-            // }
         >
             <StarRating
                 page_id={id}

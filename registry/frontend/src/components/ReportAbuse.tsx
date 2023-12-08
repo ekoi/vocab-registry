@@ -2,16 +2,14 @@ import React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
 import './styles.css'
-import {Flex, Text, TextArea} from "@radix-ui/themes";
+import {Text, TextArea} from "@radix-ui/themes";
 import * as Checkbox from '@radix-ui/react-checkbox';
 import { CheckIcon } from '@radix-ui/react-icons';
 
 const DialogDemo = () =>{
 const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
 const [open, setOpen] = React.useState(false);
-    const abc= () => {
-        alert('--')
-    }
+
     return (
   <Dialog.Root open={open} onOpenChange={setOpen}>
     <Dialog.Trigger asChild>
@@ -102,9 +100,6 @@ const [open, setOpen] = React.useState(false);
 
         <div style={{ display: 'flex', marginTop: 25, justifyContent: 'flex-end' }}>
             <button type="submit" className="Button green">Submit</button>
-          {/*<Dialog.Close asChild>*/}
-          {/*  <button type="submit"  className="Button green">SEND</button>*/}
-          {/*</Dialog.Close>*/}
         </div>
 
           </form>
@@ -121,11 +116,6 @@ const [open, setOpen] = React.useState(false);
 )};
 
 export default DialogDemo;
-const handleSubmit = (e: { preventDefault: () => void; }) => {
-    alert("9999")
-  e.preventDefault();
-  alert("ppp")
-}
 
 const CustomCheckbox = ({label, id}) => {
     return (
