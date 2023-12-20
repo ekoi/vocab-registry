@@ -1,4 +1,4 @@
-"""Module to define data models for product reviews."""
+"""Module to define data models for rating reviews."""
 import datetime
 import json
 import unittest
@@ -19,13 +19,13 @@ class AuthorModel(BaseModel):
 
 
 class ReviewRatingModel(BaseModel):
-    """Model representing a product with reviews.
+    """Model representing a rating with reviews.
 
         Attributes:
-            context (str): The context of the product. Default is 'https://schema.org/'.
-            type_ (str): The type of the product. Default is 'Product'.
-            reviews (List[ReviewModel]): List of reviews for the product.
-            aggregateRating (AggregateRatingModel): Aggregate rating for the product.
+            context (str): The context of the rating. Default is 'https://schema.org/'.
+            type_ (str): The type of the rating. Default is 'Product'.
+            reviews (List[ReviewModel]): List of reviews for the rating.
+            aggregateRating (AggregateRatingModel): Aggregate rating for the rating.
         """
     type_: str = Field(alias="@type", default="rating")
     worstRating: str = Field(default="1")
@@ -34,7 +34,7 @@ class ReviewRatingModel(BaseModel):
 
 
 class ReviewModel(BaseModel):
-    """Model representing the rating of a product review.
+    """Model representing the rating of a rating review.
 
         Attributes:
             type_ (str): The type of the rating. Default is 'rating'.
@@ -65,13 +65,13 @@ class AggregateRatingModel(BaseModel):
 
 
 class RatingModel(BaseModel):
-    """Model representing a product with reviews.
+    """Model representing a rating with reviews.
 
         Attributes:
-            context (str): The context of the product. Default is 'https://schema.org/'.
-            type_ (str): The type of the product. Default is 'Product'.
-            reviews (List[ReviewModel]): List of reviews for the product.
-            aggregateRating (AggregateRatingModel): Aggregate rating for the product.
+            context (str): The context of the rating. Default is 'https://schema.org/'.
+            type_ (str): The type of the rating. Default is 'Product'.
+            reviews (List[ReviewModel]): List of reviews for the rating.
+            aggregateRating (AggregateRatingModel): Aggregate rating for the rating.
         """
     context: str = Field(alias="@context", default="https://schema.org/")
     type_: str = Field(alias="@type", default="Product")
@@ -96,32 +96,32 @@ class TestRatingModel(unittest.TestCase):
         review_rating_data = {"ratingValue": "4"}
         review_data = {
             "author": author_data,
-            "reviewBody": "Great product!",
+            "reviewBody": "Great rating!",
             "reviewRating": review_rating_data
         }
         review = ReviewModel(**review_data)
-        self.assertEqual(review.reviewBody, "Great product!")
+        self.assertEqual(review.reviewBody, "Great rating!")
 
     def test_aggregate_rating_model(self):
         aggregate_rating_data = {"ratingValue": "4", "bestRating": "5", "ratingCount": "100"}
         aggregate_rating = AggregateRatingModel(**aggregate_rating_data)
         self.assertEqual(aggregate_rating.ratingValue, "4")
 
-    def test_product_model(self):
+    def test_rating_model(self):
         author_data = {"name": "John Doe"}
         review_rating_data = {"ratingValue": "4"}
         review_data = {
             "author": author_data,
-            "reviewBody": "Great product!",
+            "reviewBody": "Great rating!",
             "reviewRating": review_rating_data
         }
         aggregate_rating_data = {"ratingValue": "4", "bestRating": "5", "ratingCount": "100"}
-        product_data = {
+        rating_data = {
             "reviews": [ReviewModel(**review_data)],
             "aggregateRating": AggregateRatingModel(**aggregate_rating_data)
         }
-        product = RatingModel(**product_data)
-        self.assertEqual(product.reviews[0].reviewBody, "Great product!")
+        rating = RatingModel(**rating_data)
+        self.assertEqual(rating.reviews[0].reviewBody, "Great rating!")
 
 
 # Example usage:
