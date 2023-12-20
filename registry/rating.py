@@ -155,28 +155,3 @@ json_data = """
 }
 """
 
-product_instance = RatingModel.model_validate(json.loads(json_data))
-print(product_instance.model_dump_json(by_alias=True, indent=4))
-
-print("--------------------------")
-new_author = AuthorModel(name="Barak Obama")
-new_rev_rat = ReviewRatingModel(ratingValue="3")
-new_review = ReviewModel(reviewBody="Awesome!", author=new_author, reviewRating=new_rev_rat)
-
-print(new_review.model_dump_json(by_alias=True, indent=4))
-print("--------------------------")
-product_instance.reviews.append(new_review)
-rating_count_avg = 0
-for _ in product_instance.reviews:
-    rating_count_avg += int(_.reviewRating.ratingValue)
-
-rating_count_avg = round(rating_count_avg / len(product_instance.reviews))
-product_instance.aggregateRating.ratingValue = str(rating_count_avg)
-print(f'average rating: {rating_count_avg}')
-print("--------------------------")
-print(product_instance.model_dump_json(by_alias=True, indent=4))
-
-g = Graph().parse(data=json.loads(product_instance.model_dump_json(by_alias=True)), format='json-ld')
-result = g.serialize(format="turtle")
-print(result)
-
