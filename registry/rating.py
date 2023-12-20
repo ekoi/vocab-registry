@@ -64,7 +64,7 @@ class AggregateRatingModel(BaseModel):
     ratingCount: str
 
 
-class ProductModel(BaseModel):
+class RatingModel(BaseModel):
     """Model representing a product with reviews.
 
         Attributes:
@@ -79,7 +79,7 @@ class ProductModel(BaseModel):
     aggregateRating: AggregateRatingModel
 
 
-class TestYourModels(unittest.TestCase):
+class TestRatingModel(unittest.TestCase):
 
     def test_author_model(self):
         author_data = {"name": "John Doe"}
@@ -120,7 +120,7 @@ class TestYourModels(unittest.TestCase):
             "reviews": [ReviewModel(**review_data)],
             "aggregateRating": AggregateRatingModel(**aggregate_rating_data)
         }
-        product = ProductModel(**product_data)
+        product = RatingModel(**product_data)
         self.assertEqual(product.reviews[0].reviewBody, "Great product!")
 
 
@@ -155,7 +155,7 @@ json_data = """
 }
 """
 
-product_instance = ProductModel.model_validate(json.loads(json_data))
+product_instance = RatingModel.model_validate(json.loads(json_data))
 print(product_instance.model_dump_json(by_alias=True, indent=4))
 
 print("--------------------------")
