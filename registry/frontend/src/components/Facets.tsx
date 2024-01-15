@@ -1,20 +1,21 @@
 import React from 'react';
-import {FreeTextFacet, ISearchValues, ISendCandidate, ListFacet} from 'browser-base-react';
+import {FreeTextFacet, ListFacet, FacetsParams} from 'browser-base-react';
 
-export default function Facets({sendCandidateHandler, searchValues}: {
-    sendCandidateHandler: ISendCandidate,
-    searchValues: ISearchValues[]
-}) {
+export default function Facets({registerFacet, unregisterFacet, setFacet, searchValues}: FacetsParams) {
     return <>
-        <FreeTextFacet add={sendCandidateHandler}/>
-        <ListFacet parentCallback={sendCandidateHandler}
+        <FreeTextFacet registerFacet={registerFacet} unregisterFacet={unregisterFacet} setFacet={setFacet}/>
+        <ListFacet registerFacet={registerFacet}
+                   unregisterFacet={unregisterFacet}
+                   setFacet={setFacet}
                    name="Type of vocabulary"
                    field="type"
                    url="/facet"
                    searchValues={searchValues}/>
-        <ListFacet parentCallback={sendCandidateHandler}
+        <ListFacet registerFacet={registerFacet}
+                   unregisterFacet={unregisterFacet}
+                   setFacet={setFacet}
                    name="Publisher"
-                   field="publisher.publisher"
+                   field="publisher"
                    url="/facet"
                    searchValues={searchValues}/>
     </>;

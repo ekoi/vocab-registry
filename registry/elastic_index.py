@@ -1,134 +1,89 @@
-import os
 import math
+import string
+
 from elasticsearch import Elasticsearch
+from config import es_host, es_user, es_password, es_index
 
 
 class Index:
     def __init__(self):
-        self.client = Elasticsearch(hosts=[{"host": os.environ.get("ES_HOST", "localhost")}], retry_on_timeout=True)
+        self.client = Elasticsearch(
+            es_host,
+            basic_auth=(es_user, es_password) if es_user and es_password else None,
+            verify_certs=False,
+            retry_on_timeout=True
+        )
 
     @staticmethod
-    def _no_case(str_in):
-        str = str_in.strip()
-        ret_str = ""
-        if str != "":
-            for char in str:
-                ret_str = ret_str + "[" + char.upper() + char.lower() + "]"
-        return ret_str + ".*"
+    def make_matches(search_values):
+        return [
+            {"multi_match" if item["field"] == "FREE_TEXT" else "match":
+                 {"query": value, "fields": ["title", "description"]} if item["field"] == "FREE_TEXT" \
+                     else {item["field"]: value}}
+            for item in search_values
+            for value in item["values"]
+        ]
 
-    def get_facet(self, field, amount):
-        ret_array = []
-        response = self.client.search(
-            index="vocab",
-            body=
-            {
-                "size": 0,
-                "aggs": {
-                    "names": {
-                        "terms": {
-                            "field": field,
-                            "size": amount,
-                            "order": {
-                                "_key": "asc"
-                            }
-                        }
-                    }
+    def get_facet(self, field, amount, facet_filter, search_values):
+        terms = {
+            "field": field,
+            "size": amount,
+            "order": {
+                "_count": "desc"
+            }
+        }
+
+        if facet_filter:
+            filtered_filter = facet_filter.translate(str.maketrans('', '', string.punctuation))
+            filtered_filter = ''.join([f"[{char.upper()}{char.lower()}]" for char in filtered_filter])
+            terms["include"] = f'.*{filtered_filter}.*'
+
+        body = {
+            "size": 0,
+            "aggs": {
+                "names": {
+                    "terms": terms
                 }
             }
-        )
-        for hits in response["aggregations"]["names"]["buckets"]:
-            buffer = {"key": hits["key"], "doc_count": hits["doc_count"]}
-            ret_array.append(buffer)
-        return ret_array
+        }
 
-    def get_filter_facet(self, field, amount, facet_filter):
-        ret_array = []
-        response = self.client.search(
-            index="vocab",
-            body=
-            {
-                "query": {
-                    "regexp": {
-                        field: self._no_case(facet_filter)
-                    }
-                },
-                "size": 0,
-                "aggs": {
-                    "names": {
-                        "terms": {
-                            "field": field,
-                            "size": amount,
-                            "order": {
-                                "_count": "desc"
-                            }
-                        }
-                    }
+        if search_values:
+            body["query"] = {
+                "bool": {
+                    "must": self.make_matches(search_values)
                 }
             }
-        )
-        for hits in response["aggregations"]["names"]["buckets"]:
-            buffer = {"key": hits["key"], "doc_count": hits["doc_count"]}
-            ret_array.append(buffer)
-        return ret_array
 
-    def item(self, id):
-        response = self.client.search(
-            index="vocab",
-            body={"query": {
-                "terms": {
-                    "record": [id]
-                }
-            }
-            }
-        )
-        if response["hits"]["total"]["value"] == 1:
-            return response["hits"]["hits"][0]["_source"]
-        else:
-            return []
+        response = self.client.search(index=es_index, body=body)
 
-    def browse(self, page, length, searchvalues):
+        return [{"key": hits["key"], "doc_count": hits["doc_count"]}
+                for hits in response["aggregations"]["names"]["buckets"]]
+
+    def browse(self, page, length, search_values):
         int_page = int(page)
         start = (int_page - 1) * length
-        matches = []
 
-        if searchvalues == []:
-            response = self.client.search(
-                index="vocab",
-                body={"query": {
-                    "match_all": {}},
-                    "size": length,
-                    "from": start,
-                    "_source": ["record", "title", "description", "publisher"],
-                    "sort": [
-                        {"title.keyword": {"order": "asc"}}
-                    ]
+        if search_values:
+            query = {
+                "bool": {
+                    "must": self.make_matches(search_values)
                 }
-            )
+            }
         else:
-            for item in searchvalues:
-                for value in item["values"]:
-                    if item["field"] == "FREE_TEXT":
-                        matches.append({"multi_match": {"query": value, "fields": ["*"]}})
-                    else:
-                        matches.append({"match": {item["field"] + ".keyword": value}})
-            response = self.client.search(
-                index="vocab",
-                body={"query": {
-                    "bool": {
-                        "must": matches
-                    }},
-                    "size": length,
-                    "from": start,
-                    "sort": [
-                        {"title.keyword": {"order": "asc"}}
-                    ]
-                }
-            )
+            query = {
+                "match_all": {}
+            }
 
-        ret_array = {"amount": response["hits"]["total"]["value"],
-                     "pages": math.ceil(response["hits"]["total"]["value"] / length), "items": []}
-        for item in response["hits"]["hits"]:
-            tmp_arr = item["_source"]
-            tmp_arr["_id"] = item["_id"]
-            ret_array["items"].append(tmp_arr)
-        return ret_array
+        response = self.client.search(index=es_index, body={
+            "query": query,
+            "size": length,
+            "from": start,
+            "_source": ["id", "title", "description", "publisher"],
+            "sort": [
+                {"title.keyword": {"order": "asc"}}
+            ]
+        })
+
+        return {"amount": response["hits"]["total"]["value"],
+                "pages": math.ceil(response["hits"]["total"]["value"] / length),
+                "items": [item["_source"] for item in response["hits"]["hits"]]}

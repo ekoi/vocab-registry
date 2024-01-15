@@ -9,6 +9,7 @@ from lxml import etree
 from random import randint
 from datetime import datetime
 from lorem_text import lorem
+from config import records_path
 
 
 def parse(id):
@@ -60,7 +61,7 @@ def parse(id):
             "recipe": grab_value("./cmd:recipe", elem),
         }
 
-    file = os.environ.get('RECORDS_PATH', '../data/records/') + id + '.cmdi'
+    file = records_path + id + '.cmdi'
     parsed = etree.parse(file)
     root = parsed.getroot()
     f_reviews_path = os.environ.get('RECORDS_PATH', '../data/records/') + id + '-reviews.json'

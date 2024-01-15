@@ -7,7 +7,9 @@ import {
     Search,
     Detail as BrowserDetail,
     createSearchLoader,
-    createDetailLoader
+    createDetailLoader,
+    searchUtils,
+    SearchParams
 } from 'browser-base-react';
 import Detail from './components/Detail.js';
 import Facets from './components/Facets.js';
@@ -15,7 +17,7 @@ import ListItem from './components/ListItem.js';
 import './index.css';
 
 const title = 'CLARIAH+ FAIR Vocabulary Registry';
-const searchLoader = createSearchLoader('/browse', 10);
+const searchLoader = createSearchLoader(searchUtils.getSearchObjectFromParams, '/browse', 10);
 const detailLoader = createDetailLoader(id => `/vocab/${id}`);
 
 const routeObject: RouteObject = {
@@ -23,10 +25,9 @@ const routeObject: RouteObject = {
     element: <App header={<PageHeader title={title}/>}/>,
     children: [{
         index: true,
-        path: 'search?/:code?',
-        loader: async ({params}) => searchLoader(params.code),
-        element: <Search title={title} pageLength={10} withPaging={true}
-                         FacetsComponent={Facets} ResultItemComponent={ListItem}/>
+        loader: async ({request}) => searchLoader(new URL(request.url).searchParams),
+        element: <Search title={title} pageLength={10} withPaging={true} hasIndexPage={false}
+                         searchParams={SearchParams.PARAMS} FacetsComponent={Facets} ResultItemComponent={ListItem}/>
     }, {
         path: 'detail/:id',
         loader: async ({params}) => detailLoader(params.id as string),
@@ -36,17 +37,6 @@ const routeObject: RouteObject = {
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        {/*<Router noIndexPage={true}*/}
-        {/*        title="CLARIAH+ FAIR Vocabulary Registry"*/}
-        {/*        description="Find a FAIR Vocabulary that suits your needs!"*/}
-        {/*        getFetchUrl={id => `/vocab/${id}`}*/}
-        {/*        DetailComponent={Detail}*/}
-        {/*        searchUrl="/browse"*/}
-        {/*        pageLength={10}*/}
-        {/*        withPaging={true}*/}
-        {/*        ResultItemComponent={ListItem}*/}
-        {/*        FacetsComponent={Facets}/>*/}
-
-        <RouterProvider router={createBrowserRouter([routeObject])}/>;
+        <RouterProvider router={createBrowserRouter([routeObject])}/>
     </React.StrictMode>
 );

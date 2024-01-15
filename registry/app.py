@@ -1,35 +1,50 @@
-from werkzeug.http import parse_date
-from flask import Flask, request, jsonify, abort, redirect, Response
+import functools
+
+from flask import Flask, request, jsonify, abort, redirect, session, Response
 from flask_cors import CORS
+from flask_pyoidc import OIDCAuthentication
+from flask_pyoidc.provider_configuration import ProviderConfiguration, ClientMetadata
+from flask_pyoidc.user_session import UserSession
+from werkzeug.http import parse_date
+from config import app_domain, secret_key, oidc_server, oidc_client_id, oidc_client_secret
 from elastic_index import Index
 from cmdi_parser import parse
 from datetime import datetime
 from doc import get_doc_html
 import os
 import json
-
-from flask_pyoidc import OIDCAuthentication
-from flask_pyoidc.provider_configuration import ProviderConfiguration, ClientMetadata
-from flask_pyoidc.user_session import UserSession
-
 import flask
 
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
+app.config.update(
+    OIDC_REDIRECT_URI=app_domain + '/signin-callback',
+    SECRET_KEY=secret_key,
+)
+
 CORS(app)
-app.config.update({'OIDC_REDIRECT_URI': 'http://127.0.0.1:5000/signin-callback',
-                   'SECRET_KEY': 'dev_key12345',  # make sure to change this!!
-                   'DEBUG': True})
-client_metadata = ClientMetadata(
-    client_id='vocab-registry-auth',
-    client_secret='VIbBpImJrfabtcdYkPBWpDyrJ2NEus9w', #From clickloack client credentials
-    post_logout_redirect_uris=['http://127.0.0.1:5000/login'])
 
+auth = OIDCAuthentication({'default': ProviderConfiguration(
+    issuer=oidc_server,
+    client_metadata=ClientMetadata(
+        client_id=oidc_client_id,
+        client_secret=oidc_client_secret),
+    auth_request_params={'scope': ['openid', 'email', 'profile']},
+)}, app) if oidc_server is not None else None
 
-provider_config = ProviderConfiguration(issuer='http://localhost:9090/realms/vocab-registry',
-                                        client_metadata=client_metadata)
-
-auth = OIDCAuthentication({'default': provider_config}, app)
 index = Index()
+
+
+def authenticated(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        if auth:
+            user_session = UserSession(session, 'default')
+            if user_session.last_authenticated is None:
+                return jsonify(result='not_authenticated', error='Please login!'), 401
+
+        return func(*args, **kwargs)
+
+    return wrapper
 
 
 @app.route('/', defaults={'path': ''})
@@ -40,12 +55,25 @@ def catch_all(path):
     return app.send_static_file("index.html")
 
 
+if auth:
+    @app.get('/login')
+    @auth.oidc_auth('default')
+    def login():
+        destination = request.values.get('redirect-uri', default='/')
+        return redirect(destination)
+
+
+    @app.get('/user-info')
+    @authenticated
+    def user_info():
+        user_session = UserSession(session, 'default')
+        return jsonify(user_session.userinfo)
+
+
 @app.post('/facet')
 def get_facet():
     struc = request.get_json()
-    facet = struc["name"]
-    amount = struc["amount"]
-    ret_struc = index.get_facet(facet + ".keyword", amount)
+    ret_struc = index.get_facet(struc["name"], struc["amount"], struc["filter"], struc["searchvalues"])
     return jsonify(ret_struc)
 
 

@@ -88,7 +88,7 @@ export interface VocabObjectSummary {
 }
 
 export interface VocabIndex {
-    record: string;
+    id: string;
     title: string;
     description: string;
 }
