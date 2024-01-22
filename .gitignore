@@ -1,6 +1,6 @@
 .idea/
 .DS_Store
-data/nodes
+data
 node_modules
 venv
 dist

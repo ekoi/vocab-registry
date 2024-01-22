@@ -1,7 +1,6 @@
 import json
 import os
 import uuid
-import operator
 import elementpath
 import unicodedata
 
@@ -13,15 +12,15 @@ from config import records_path
 
 
 def parse(id):
-    ns = {"cmd": "http://www.clarin.eu/cmd/"}
+    ns = {"cmd": "http://www.clarin.eu/cmd/1"}
     voc_root = './cmd:Components/cmd:Vocabulary'
 
     def grab_value(path, root, func=None):
         content = elementpath.select(root, path, ns)
         if content and type(content[0]) == str:
-            content = unicodedata.normalize("NFKD", content[0]).strip()
+            content = unicodedata.normalize("NFKC", content[0]).strip()
         elif content and content[0].text is not None:
-            content = unicodedata.normalize("NFKD", content[0].text).strip()
+            content = unicodedata.normalize("NFKC", content[0].text).strip()
         else:
             content = None
 
@@ -72,19 +71,58 @@ def parse(id):
     else:
         reviews_json = []
 
+    summary_namespace = {
+        "namespace": {
+            "uri": grab_value(f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:URI", root),
+            "prefix": grab_value(f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:prefix", root)
+        }
+    } if grab_first(f"{voc_root}/cmd:Summary/cmd:Namespace", root) is not None else None
+
+    summary_statements = {
+        "stats": create_summary_for(grab_first(f"{voc_root}/cmd:Summary", root)),
+        "subjects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Subjects", root)),
+        "predicates": {
+            **create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
+            **create_list_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
+        },
+        "objects": {
+            **create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root)),
+            "classes": {
+                **create_summary_for(
+                    grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes", root)),
+                **create_list_for(
+                    grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes", root)),
+            },
+            "literals": {
+                **create_summary_for(
+                    grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals", root)),
+                **create_list_for(
+                    grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals", root)),
+                "languages": [{
+                    "name": grab_value("./cmd:code", lang_elem),
+                    "count": grab_value("./cmd:count", lang_elem, int),
+                } for lang_elem in
+                    elementpath.select(root,
+                                       f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals/cmd:Languages/cmd:Language",
+                                       ns)],
+            },
+        }
+    } if grab_first(f"{voc_root}/cmd:Summary/cmd:Statements", root) is not None else None
+
     return {
         "id": id,
         "title": grab_value(
             f"({voc_root}/cmd:title[@xml:lang='en'][normalize-space(.)!=''],base-uri(/cmd:CMD)[normalize-space(.)!=''])[1]",
             root),
         "description": grab_value(f"{voc_root}/cmd:Description/cmd:description[@xml:lang='en']", root),
-        "license": grab_value(f"{voc_root}/cmd:License/cmd:url", root) or 'http://rightsstatements.org/vocab/UND/1.0/',
+        "license": grab_value(f"{voc_root}/cmd:License/cmd:url",
+                              root) or 'http://rightsstatements.org/vocab/UND/1.0/',
         "versioningPolicy": None,
         "sustainabilityPolicy": None,
         "created": datetime.utcfromtimestamp(os.path.getctime(file)).isoformat(),
         "modified": datetime.utcfromtimestamp(os.path.getmtime(file)).isoformat(),
-        "locations": [create_location_for(elem) for elem in elementpath.select(root, f"{voc_root}/cmd:Location", ns)],
-        "user":"123",#user_session = UserSession(flask.session, 'default')
+        "locations": [create_location_for(elem) for elem in
+                      elementpath.select(root, f"{voc_root}/cmd:Location", ns)],
         "reviews": reviews_json,
         "usage": {
             "count": 0,
@@ -95,43 +133,13 @@ def parse(id):
             "rating": None
         } for elem in elementpath.select(root, f"{voc_root}/cmd:Assessement/cmd:Recommendation/cmd:Publisher", ns)],
         "summary": {
-            "namespace": {
-                "uri": grab_value(f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:URI", root),
-                "prefix": grab_value(f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:prefix", root)
-            },
-            "stats": create_summary_for(grab_first(f"{voc_root}/cmd:Summary", root)),
-            "subjects": create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Subjects", root)),
-            "predicates": {
-                **create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
-                **create_list_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates", root)),
-            },
-            "objects": {
-                **create_summary_for(grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects", root)),
-                "classes": {
-                    **create_summary_for(
-                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes", root)),
-                    **create_list_for(
-                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes", root)),
-                },
-                "literals": {
-                    **create_summary_for(
-                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals", root)),
-                    **create_list_for(
-                        grab_first(f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals", root)),
-                    "languages": [{
-                        "code": grab_value("./cmd:code", lang_elem),
-                        "count": grab_value("./cmd:count", lang_elem, int),
-                    } for lang_elem in
-                        elementpath.select(root,
-                                           f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals/cmd:Languages/cmd:Language",
-                                           ns)],
-                },
-            },
-        } if grab_first(f"{voc_root}/cmd:Summary", root) is not None else None,
+            **(summary_namespace if summary_namespace is not None else {}),
+            **(summary_statements if summary_statements is not None else {}),
+        } if summary_namespace is not None or summary_statements is not None else None,
         "versions": sorted([{
             "version": grab_value("./cmd:version", elem),
             "validFrom": grab_value("./cmd:validFrom", elem),
             "locations": [create_location_for(loc_elem) for loc_elem in elementpath.select(elem, "./cmd:Location", ns)],
         } for elem in elementpath.select(root, f"{voc_root}/cmd:Version", ns)],
-            key=operator.itemgetter('validFrom', 'version'), reverse=True)
+            key=lambda x: (x['validFrom'] is not None, x['version']), reverse=True)
     }
