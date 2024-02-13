@@ -1,4 +1,4 @@
-import {Vocab, VocabSummary, VocabSummaryListItem} from '../misc/interfaces';
+import {Vocab, VocabSummary, VocabSummaryListItem, VocabVersion} from '../misc/interfaces';
 
 export default function Summary({data}: { data: Vocab }) {
     if (!data.summary)
@@ -9,7 +9,7 @@ export default function Summary({data}: { data: Vocab }) {
     const literalsSummaryList = createListMapping(data.summary.objects.literals?.list || []);
 
     return (
-        <>
+        <div className="fullWidth">
             <SummaryTable summary={data.summary}/>
 
             {Object.keys(classesSummaryList).length > 0 &&
@@ -21,7 +21,7 @@ export default function Summary({data}: { data: Vocab }) {
 
             {(data.summary.objects.literals?.languages || []).length > 0 &&
                 <SummaryLanguagesTable languages={data.summary.objects.literals?.languages || []}/>}
-        </>
+        </div>
     );
 }
 

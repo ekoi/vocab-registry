@@ -1,37 +1,40 @@
 import dayjs from 'dayjs';
 import React from 'react';
-import LocationIconBar from './LocationIconBar';
-import LocationInteract from './LocationInteract';
-import useLocationFocus from '../hooks/useLocationFocus';
-import {Vocab, VocabVersion} from '../misc/interfaces';
+import {VocabVersion} from '../misc/interfaces';
 
-export default function Versions({data}: { data: Vocab }) {
+interface VersionsParams {
+    versions: VocabVersion[];
+    active: string | null;
+    changeVersion: (version: string) => void;
+}
+
+interface VersionParams {
+    version: VocabVersion;
+    isActive: boolean;
+    setActive: () => void;
+}
+
+export default function Versions({versions, active, changeVersion}: VersionsParams) {
     return (
-        <>
-            {data.versions
-                .sort((a, b) => -1 * a.version.localeCompare(b.version))
-                .map(version => <Version version={version} key={version.version}/>)}
-        </>
+        <div className="vocabVersions">
+            <div className="vocabVersionsHeader">Versions:</div>
+
+            {versions.map(version =>
+                <Version key={version.version} version={version}
+                         isActive={active === version.version}
+                         setActive={() => changeVersion(version.version)}/>)}
+        </div>
     );
 }
 
-function Version({version}: { version: VocabVersion }) {
-    const [locationFocus, onLocationClick] = useLocationFocus();
-
+function Version({version, isActive, setActive}: VersionParams) {
     return (
-        <div className="vocabVersion">
-            <div className="vocabVersionHeader">
-                {version.version}
+        <button className={`vocabVersion ${isActive ? 'vocabVersionActive' : ''}`} onClick={setActive}>
+            {version.version}
 
-                {version.validFrom && <span className="vocabVersionDate pill">
-                    Valid from: {dayjs(version.validFrom).format('MMM D, YYYY')}
-                </span>}
-
-                {version.locations.length > 0 &&
-                    <LocationIconBar locations={version.locations} inline={true} onLocationClick={onLocationClick}/>}
-            </div>
-
-            <LocationInteract location={locationFocus}/>
-        </div>
+            {version.validFrom && <div className="vocabVersionDate pill">
+                {dayjs(version.validFrom).format('MMM D, YYYY')}
+            </div>}
+        </button>
     );
 }

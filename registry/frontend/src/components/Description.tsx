@@ -4,18 +4,14 @@ import ReactMarkdown from 'react-markdown';
 import LocationIconBar from './LocationIconBar';
 import LocationInteract from './LocationInteract';
 import useLocationFocus from '../hooks/useLocationFocus';
-import {Vocab, VocabRecommendation} from '../misc/interfaces';
+import {Vocab, VocabRecommendation, VocabVersion} from '../misc/interfaces';
 
-export default function Description({data}: { data: Vocab }) {
+export default function Description({data, version}: { data: Vocab, version?: VocabVersion }) {
     const [locationFocus, onLocationClick] = useLocationFocus();
-
-    const latestVersion = data.versions
-        ?.sort((a, b) => -1 * a.version.localeCompare(b.version))
-        ?.find(Boolean);
-    const locations = data.locations.concat(...(latestVersion?.locations || []));
+    const locations = data.locations.concat(...(version?.locations || []));
 
     return (
-        <>
+        <div>
             {locations.length > 0 && <div className="extraBottomMargin">
                 <LocationIconBar locations={locations} onLocationClick={onLocationClick} inline={false}/>
             </div>}
@@ -25,6 +21,7 @@ export default function Description({data}: { data: Vocab }) {
             </ReactMarkdown>}
 
             <div className="detailTable">
+                <DetailRow label="Type" values={data.type}/>
                 <DetailRow label="Created" values={dayjs(data.created).format('MMM D, YYYY HH:mm')}/>
                 <DetailRow label="Modified" values={dayjs(data.modified).format('MMM D, YYYY HH:mm')}/>
                 <DetailRow label="License" values={<a href={data.license}>{data.license}</a>}/>
@@ -37,7 +34,7 @@ export default function Description({data}: { data: Vocab }) {
             </div>
 
             <LocationInteract location={locationFocus}/>
-        </>
+        </div>
     );
 }
 

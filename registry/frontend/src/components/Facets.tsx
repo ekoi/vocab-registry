@@ -10,6 +10,7 @@ export default function Facets({registerFacet, unregisterFacet, setFacet, search
                    name="Type of vocabulary"
                    field="type"
                    url="/facet"
+                   flex={false}
                    searchValues={searchValues}/>
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
@@ -17,6 +18,7 @@ export default function Facets({registerFacet, unregisterFacet, setFacet, search
                    name="Publisher"
                    field="publisher"
                    url="/facet"
+                   flex={false}
                    searchValues={searchValues}/>
     </>;
 }

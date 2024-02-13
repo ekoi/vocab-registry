@@ -78,7 +78,7 @@ class Index:
             "query": query,
             "size": length,
             "from": start,
-            "_source": ["id", "title", "description", "publisher"],
+            "_source": ["id", "title", "description", "type"],
             "sort": [
                 {"title.keyword": {"order": "asc"}}
             ]

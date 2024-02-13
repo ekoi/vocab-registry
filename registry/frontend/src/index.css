@@ -8,17 +8,17 @@
     margin: 0 0 0 1rem;
 }
 
-table.vocabSummary  {
+table.vocabSummary {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
 }
 
-table.vocabSummary  thead {
+table.vocabSummary thead {
     border-bottom: 1px solid #aaa;
 }
 
-table.vocabSummary  tfoot {
+table.vocabSummary tfoot {
     border-top: 1px solid #aaa;
 }
 
@@ -48,8 +48,9 @@ table.vocabSummary .footer-unique {
 
 .hcResultListDetail h2 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.3rem;
     color: #0A3D73;
+    margin: 0;
 }
 
 .hcNoList li {
@@ -168,6 +169,7 @@ table.vocabSummary .footer-unique {
     border-radius: 6px;
     color: white;
     font-size: smaller;
+    line-height: normal;
 }
 
 .toggle {
@@ -177,34 +179,63 @@ table.vocabSummary .footer-unique {
     width: 1em;
 }
 
+.vocabHeader {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    top: 0;
+    background-color: #fff;
+}
+
+.vocabContentVersions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.vocabContent {
+    width: 100%;
+}
+
+.vocabVersions {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    background-color: #f7f8f9;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-width: fit-content;
+}
+
+.vocabVersionsHeader {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
 .vocabVersion {
-    margin-bottom: 0.5em;
-    border-bottom: 1px solid #aaa;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.vocabVersionActive {
+    font-weight: 700;
 }
 
 .vocabVersion:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
-}
-
-.vocabVersionHeader {
-    font-weight: bold;
-    margin-bottom: 0.5em;
+    border: none;
 }
 
 .vocabVersionDate {
-    font-size: small;
-}
-
-.vocabVersionBody {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s ease-out;
-}
-
-.vocabVersionBody.open {
-    display: block;
-    max-height: 100vh;
+    font-size: 0.7rem;
 }
 
 .vocabSummary tbody th {

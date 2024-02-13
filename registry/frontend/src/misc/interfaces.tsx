@@ -1,5 +1,6 @@
 export interface Vocab {
     id: string;
+    type: string;
     title: string;
     description: string | null;
     license: string;
@@ -91,4 +92,5 @@ export interface VocabIndex {
     id: string;
     title: string;
     description: string;
+    type: string;
 }

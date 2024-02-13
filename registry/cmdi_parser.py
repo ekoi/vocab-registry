@@ -6,6 +6,7 @@ import unicodedata
 
 from lxml import etree
 from random import randint
+from inspect import cleandoc
 from datetime import datetime
 from lorem_text import lorem
 from config import records_path
@@ -23,6 +24,9 @@ def parse(id):
             content = unicodedata.normalize("NFKC", content[0].text).strip()
         else:
             content = None
+
+        if content:
+            content = cleandoc(content)
 
         if content and func:
             content = func(content)
@@ -111,6 +115,7 @@ def parse(id):
 
     return {
         "id": id,
+        "type": grab_value(f"{voc_root}/cmd:type", root),
         "title": grab_value(
             f"({voc_root}/cmd:title[@xml:lang='en'][normalize-space(.)!=''],base-uri(/cmd:CMD)[normalize-space(.)!=''])[1]",
             root),

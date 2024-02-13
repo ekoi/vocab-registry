@@ -43,7 +43,7 @@ export default function Reviews({data}: { data: Vocab }) {
        window.location.href = '/login'
     };
     return (
-        <>
+        <div>
             {data.reviews.map(review => (
                 <div className="review" key={review.id}>
                     <div className="hcAlignLeft hcMarginBottom1">
@@ -54,13 +54,13 @@ export default function Reviews({data}: { data: Vocab }) {
                     <p>{review.review}</p>
                 </div>
             ))}
+
             {!userInfo ?
             <button onClick={login} >Do you want write a review? Please log in.</button> :
             <div><ReviewForm id={data.id} user={data.user} handleRating={handleRating}/></div>
         }
 
             <div><ReportAbuse/></div>
-
-        </>
+        </div>
     );
 }

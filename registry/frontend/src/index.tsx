@@ -26,12 +26,13 @@ const routeObject: RouteObject = {
     children: [{
         index: true,
         loader: async ({request}) => searchLoader(new URL(request.url).searchParams),
-        element: <Search title={title} pageLength={10} withPaging={true} hasIndexPage={false}
+        element: <Search title={title} pageLength={10} withPaging={true}
+                         hasIndexPage={false} showSearchHeader={false} updateDocumentTitle={false}
                          searchParams={SearchParams.PARAMS} FacetsComponent={Facets} ResultItemComponent={ListItem}/>
     }, {
         path: 'detail/:id',
         loader: async ({params}) => detailLoader(params.id as string),
-        element: <BrowserDetail title={title} DetailComponent={Detail}/>
+        element: <BrowserDetail title={title} updateDocumentTitle={false} DetailComponent={Detail}/>
     }]
 };
 
