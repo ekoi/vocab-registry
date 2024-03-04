@@ -10,7 +10,7 @@ import {
     createDetailLoader,
     searchUtils,
     SearchParams
-} from 'browser-base-react';
+} from '@knaw-huc/browser-base-react';
 import Detail from './components/Detail.js';
 import Facets from './components/Facets.js';
 import ListItem from './components/ListItem.js';

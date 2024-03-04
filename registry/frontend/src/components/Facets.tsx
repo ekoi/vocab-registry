@@ -1,5 +1,5 @@
 import React from 'react';
-import {FreeTextFacet, ListFacet, FacetsParams} from 'browser-base-react';
+import {FreeTextFacet, ListFacet, FacetsParams} from '@knaw-huc/browser-base-react';
 
 export default function Facets({registerFacet, unregisterFacet, setFacet, searchValues}: FacetsParams) {
     return <>
@@ -11,6 +11,7 @@ export default function Facets({registerFacet, unregisterFacet, setFacet, search
                    field="type"
                    url="/facet"
                    flex={false}
+                   usePost={true}
                    searchValues={searchValues}/>
         <ListFacet registerFacet={registerFacet}
                    unregisterFacet={unregisterFacet}
@@ -19,6 +20,7 @@ export default function Facets({registerFacet, unregisterFacet, setFacet, search
                    field="publisher"
                    url="/facet"
                    flex={false}
+                   usePost={true}
                    searchValues={searchValues}/>
     </>;
 }
