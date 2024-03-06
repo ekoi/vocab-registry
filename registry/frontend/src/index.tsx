@@ -14,6 +14,9 @@ import {
 import Detail from './components/Detail.js';
 import Facets from './components/Facets.js';
 import ListItem from './components/ListItem.js';
+import RegisterNewVocab from './components/RegisterNewVocab.js';
+
+// @ts-ignore
 import logo from './assets/logo.svg';
 import './index.css';
 
@@ -22,9 +25,14 @@ const shortTitle = 'FAIR Vocabulary Registry';
 const searchLoader = createSearchLoader(searchUtils.getSearchObjectFromParams, '/browse', 10);
 const detailLoader = createDetailLoader(id => `/vocab/${id}`);
 
+const pageHeader = <PageHeader
+    title={shortTitle}
+    logo={<img src={logo} className="logo" alt="Clariah"/>}
+    items={<RegisterNewVocab/>}/>;
+
 const routeObject: RouteObject = {
     path: '/',
-    element: <App header={<PageHeader title={shortTitle} logo={<img src={logo} className="logo" alt="Clariah"/>}/>}/>,
+    element: <App header={pageHeader}/>,
     children: [{
         index: true,
         loader: async ({request}) => searchLoader(new URL(request.url).searchParams),

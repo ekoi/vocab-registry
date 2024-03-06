@@ -1,9 +1,10 @@
 flask==3.0.2
 flask-cors==4.0.0
 flask-pyoidc==3.14.3
-elasticsearch==8.12.0
+pydantic==2.6.3
+elasticsearch==8.12.1
 python-dateutil==2.8.2
 gunicorn==21.2.0
 lxml==5.1.0
-elementpath==4.2.1
+elementpath==4.3.0
 lorem-text==2.1

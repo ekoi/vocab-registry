@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, abort, redirect, session, Response
+from flask import Flask, request, jsonify, abort, redirect, session
 from flask_cors import CORS
 from flask_pyoidc import OIDCAuthentication
 from flask_pyoidc.provider_configuration import ProviderConfiguration, ClientMetadata
@@ -7,7 +7,7 @@ from werkzeug.http import parse_date
 from functools import wraps
 from config import app_domain, secret_key, oidc_server, oidc_client_id, oidc_client_secret
 from elastic_index import Index
-from cmdi_parser import parse
+from cmdi import get_record, create_basic_cmdi
 from datetime import datetime
 from doc import get_doc_html
 import os
@@ -85,15 +85,17 @@ def browse():
 
 @app.get('/vocab/<id>')
 def get_vocab(id):
-    return jsonify(parse(id))
+    return jsonify(get_record(id).model_dump())
 
 
-@app.get('/doc/<id>')
-def get_doc(id):
-    doc_bytes = get_doc_html(id)
-    if not doc_bytes:
-        abort(404)
-    return Response(doc_bytes, mimetype='text/html')
+@app.post('/vocab/new')
+def post_vocab():
+    if 'title' in request.values and 'homepage' in request.values and 'description' in request.values:
+        if create_basic_cmdi(request.values['title'], request.values['homepage'], request.values['description']):
+            # TODO: send email
+            return jsonify(success=True), 201
+
+    return jsonify(success=False), 400
 
 
 @app.get('/proxy/<recipe>/<id>')
@@ -104,7 +106,7 @@ def proxy(recipe, id):
     # Proxy for skosmos: /{regex:[a-z0-9-]+[^_]*}
     # Proxy to: /proxy/skosmos/$1 for regex: /([a-z0-9-_]+)(/.*)?
 
-    record = parse(id)
+    record = get_record(id)
     if not record:
         abort(404)
 
@@ -113,13 +115,13 @@ def proxy(recipe, id):
 
     locations = None
     if request_date:
-        for version in record['versions']:
-            if not locations and version['validFrom'] and datetime.fromisoformat(version['validFrom']) <= request_date:
-                locations = version['locations']
+        for version in record.versions:
+            if not locations and version.validFrom and version.validFrom <= request_date:
+                locations = version.locations
     else:
-        locations = record['versions'][0]['locations']
+        locations = record.versions[0].locations
 
-    redirect_uri = next(loc['location'] for loc in locations if loc['recipe'] == recipe) if locations else None
+    redirect_uri = next(loc.location for loc in locations if loc.recipe == recipe) if locations else None
     if not redirect_uri:
         abort(404)
 
