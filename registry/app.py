@@ -1,11 +1,10 @@
-import functools
-
 from flask import Flask, request, jsonify, abort, redirect, session, Response
 from flask_cors import CORS
 from flask_pyoidc import OIDCAuthentication
 from flask_pyoidc.provider_configuration import ProviderConfiguration, ClientMetadata
 from flask_pyoidc.user_session import UserSession
 from werkzeug.http import parse_date
+from functools import wraps
 from config import app_domain, secret_key, oidc_server, oidc_client_id, oidc_client_secret
 from elastic_index import Index
 from cmdi_parser import parse
@@ -35,7 +34,7 @@ index = Index()
 
 
 def authenticated(func):
-    @functools.wraps(func)
+    @wraps(func)
     def wrapper(*args, **kwargs):
         if auth:
             user_session = UserSession(session, 'default')

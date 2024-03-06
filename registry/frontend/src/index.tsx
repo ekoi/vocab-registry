@@ -14,15 +14,17 @@ import {
 import Detail from './components/Detail.js';
 import Facets from './components/Facets.js';
 import ListItem from './components/ListItem.js';
+import logo from './assets/logo.svg';
 import './index.css';
 
 const title = 'CLARIAH+ FAIR Vocabulary Registry';
+const shortTitle = 'FAIR Vocabulary Registry';
 const searchLoader = createSearchLoader(searchUtils.getSearchObjectFromParams, '/browse', 10);
 const detailLoader = createDetailLoader(id => `/vocab/${id}`);
 
 const routeObject: RouteObject = {
     path: '/',
-    element: <App header={<PageHeader title={title}/>}/>,
+    element: <App header={<PageHeader title={shortTitle} logo={<img src={logo} className="logo" alt="Clariah"/>}/>}/>,
     children: [{
         index: true,
         loader: async ({request}) => searchLoader(new URL(request.url).searchParams),
