@@ -1,9 +1,10 @@
-import React, {FormEventHandler, useState} from 'react';
+import React, {ChangeEvent, FormEventHandler, useState} from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
-import {FieldErrors, useForm, UseFormRegister} from 'react-hook-form';
+import MDEditor from '@uiw/react-md-editor';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCheck, faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
-import Modal from './Modal.js';
+import {FieldErrors, useForm, UseFormRegister, UseFormSetValue, UseFormWatch} from 'react-hook-form';
+import Modal from '../misc/Modal.js';
 
 interface NewVocabInputs {
     title: string;
@@ -28,6 +29,8 @@ function RegisterNewVocabModalContent() {
     const {
         register,
         formState: {errors},
+        watch,
+        setValue,
         handleSubmit
     } = useForm<NewVocabInputs>();
 
@@ -51,19 +54,24 @@ function RegisterNewVocabModalContent() {
         <>
             {[FormSubmissionState.INITIAL, FormSubmissionState.WAITING].includes(state) &&
                 <RegisterNewVocabForm isDisabled={state === FormSubmissionState.WAITING}
-                                      register={register} errors={errors} onSubmit={handleSubmit(onSubmit)}/>}
+                                      register={register} errors={errors} watch={watch} setValue={setValue}
+                                      onSubmit={handleSubmit(onSubmit)}/>}
             {[FormSubmissionState.SUCCESS, FormSubmissionState.FAILED].includes(state) &&
                 <Result success={state === FormSubmissionState.SUCCESS}/>}
         </>
     );
 }
 
-function RegisterNewVocabForm({isDisabled, register, errors, onSubmit}: {
+function RegisterNewVocabForm({isDisabled, register, errors, watch, setValue, onSubmit}: {
     isDisabled: boolean,
     register: UseFormRegister<NewVocabInputs>,
     errors: FieldErrors<NewVocabInputs>,
+    watch: UseFormWatch<NewVocabInputs>,
+    setValue: UseFormSetValue<NewVocabInputs>,
     onSubmit: FormEventHandler
 }) {
+    const descriptionRegister = register('description', {required: true});
+
     return (
         <>
             <Dialog.Title className="DialogTitle">Register a new vocabulary</Dialog.Title>
@@ -88,8 +96,11 @@ function RegisterNewVocabForm({isDisabled, register, errors, onSubmit}: {
 
                     <label className={errors.description ? 'error' : ''}>
                         Description
-                        <textarea {...register('description', {required: true})}
-                                  placeholder="The description of the vocabulary"></textarea>
+                        <MDEditor className="mdEditor" value={watch('description')} onBlur={descriptionRegister.onBlur}
+                                  onChange={(description, event) => {
+                                      setValue('description', description || '');
+                                      descriptionRegister.onChange(event as ChangeEvent);
+                                  }}/>
                     </label>
 
                     <div className="center">

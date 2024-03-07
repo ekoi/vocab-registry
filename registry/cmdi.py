@@ -251,7 +251,7 @@ def get_record(id: str) -> Vocab:
         created=datetime.utcfromtimestamp(os.path.getctime(file)).isoformat(),
         modified=datetime.utcfromtimestamp(os.path.getmtime(file)).isoformat(),
         locations=[create_location_for(elem)
-                   for elem in elementpath.select(root, xpath_location_elem, ns)],
+                   for elem in elementpath.select(root, xpath_location, ns)],
         reviews=[Review(
             id=str(uuid.uuid4()),
             rating=randint(1, 6),
@@ -268,7 +268,7 @@ def get_record(id: str) -> Vocab:
             version=grab_value(xpath_version_no, elem),
             validFrom=grab_value(xpath_valid_from, elem),
             locations=[create_location_for(loc_elem)
-                       for loc_elem in elementpath.select(elem, xpath_location, ns)]
+                       for loc_elem in elementpath.select(elem, xpath_location_elem, ns)]
         ) for elem in elementpath.select(root, xpath_version, ns)],
             key=lambda x: (x.validFrom is not None, x.version), reverse=True)
     )

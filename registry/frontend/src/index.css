@@ -28,7 +28,7 @@
 table.vocabSummary {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 
 table.vocabSummary thead {
@@ -106,7 +106,7 @@ table.vocabSummary .footer-unique {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 16px;
+    font-size: 0.9em;
     font-weight: 700;
 }
 
@@ -141,7 +141,7 @@ table.vocabSummary .footer-unique {
 }
 
 .back {
-    font-size: small;
+    font-size: 0.8em;
     margin-right: 25px;
 }
 
@@ -157,7 +157,7 @@ header .hcButton {
 }
 
 .detailLine {
-    font-size: smaller;
+    font-size: 1rem;
     word-break: break-word;
 }
 
@@ -167,7 +167,6 @@ header .hcButton {
 
 .detailRow {
     display: table-row;
-    font-size: 14px;
 }
 
 .labelCell, .cell {
@@ -197,7 +196,7 @@ header .hcButton {
     background-color: #082045;
     border-radius: 6px;
     color: white;
-    font-size: smaller;
+    font-size: 0.8em;
     line-height: normal;
 }
 
@@ -227,6 +226,7 @@ header .hcButton {
 
 .vocabContent {
     width: 100%;
+    font-size: 1rem;
 }
 
 .vocabVersions {
@@ -246,7 +246,7 @@ header .hcButton {
 }
 
 .vocabVersion {
-    font-size: 1rem;
+    font-size: 0.9em;
     text-align: left;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -264,7 +264,7 @@ header .hcButton {
 }
 
 .vocabVersionDate {
-    font-size: 0.7rem;
+    font-size: 0.7em;
 }
 
 .vocabSummary tbody th {
@@ -278,22 +278,12 @@ header .hcButton {
 }
 
 .vocabSummary thead tr:nth-child(2) {
-    font-size: small;
+    font-size: 0.9em;
     font-style: italic;
 }
 
 .vocabSummary + h2 {
     margin-top: 1em;
-}
-
-.prefix {
-    display: inline;
-    padding: 2px 5px;
-    margin-left: 10px;
-    background-color: #082045;
-    border-radius: 6px;
-    color: white;
-    font-size: smaller;
 }
 
 .review {
@@ -317,7 +307,6 @@ header .hcButton {
 .review p {
     white-space: pre-wrap;
     text-align: justify;
-    font-size: smaller;
 }
 
 fieldset {
@@ -331,7 +320,6 @@ label {
     flex-direction: column;
     width: 100%;
     margin-bottom: 1em;
-    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -339,17 +327,20 @@ label.error {
     color: darkred;
 }
 
-label.error input, label.error textarea {
+label.error input, label.error .mdEditor {
     border: 1px solid darkred;
 }
 
-input, textarea {
+input {
     padding: 0.5rem;
     border: 1px solid #aaa;
     border-radius: 4px;
-    font-size: 1rem;
     color: #3e3e3e;
     height: 40px;
+}
+
+.mdEditor {
+    font-weight: normal;
 }
 
 .success {
@@ -379,6 +370,7 @@ input, textarea {
     max-width: 800px;
     max-height: 85vh;
     padding: 25px;
+    font-size: 1rem;
     animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -390,12 +382,10 @@ input, textarea {
     margin: 0;
     font-weight: 700;
     color: #082045;
-    font-size: 1.4rem;
 }
 
 .DialogDescription {
     margin: 1em 0;
-    font-size: 15px;
     line-height: 1.5;
 }
 
