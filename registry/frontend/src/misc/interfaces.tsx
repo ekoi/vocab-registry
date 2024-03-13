@@ -23,7 +23,6 @@ export interface Vocab {
         outOf: number;
     };
     recommendations: VocabRecommendation[];
-    summary: VocabSummary | null;
     versions: VocabVersion[];
 }
 
@@ -37,6 +36,7 @@ export interface VocabVersion {
     version: string;
     validFrom: string | null;
     locations: VocabLocation[];
+    summary: VocabSummary | null;
 }
 
 export interface VocabRecommendation {

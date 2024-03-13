@@ -1,26 +1,23 @@
-import {Vocab, VocabSummary, VocabSummaryListItem, VocabVersion} from '../misc/interfaces';
+import {VocabSummary, VocabSummaryListItem, VocabVersion} from '../misc/interfaces';
 
-export default function Summary({data}: { data: Vocab }) {
-    if (!data.summary)
-        return <div>No summarized data available!</div>;
+export default function Summary({version}: { version?: VocabVersion }) {
+    if (!version || !version.summary)
+        return <div>No summarized data available for this version!</div>;
 
-    const classesSummaryList = createListMapping(data.summary.objects.classes?.list || []);
-    const predicatesSummaryList = createListMapping(data.summary.predicates?.list || []);
-    const literalsSummaryList = createListMapping(data.summary.objects.literals?.list || []);
+    const classesSummaryList = createListMapping(version.summary.objects.classes?.list || []);
+    const literalsSummaryList = createListMapping(version.summary.objects.literals?.list || []);
 
     return (
         <div className="fullWidth">
-            <SummaryTable summary={data.summary}/>
+            <SummaryTable summary={version.summary}/>
 
             {Object.keys(classesSummaryList).length > 0 &&
-                <SummaryListTable name="Class" summaryList={classesSummaryList}/>}
-            {Object.keys(predicatesSummaryList).length > 0 &&
-                <SummaryListTable name="Predicate" summaryList={predicatesSummaryList}/>}
+                <SummaryListTable name="Classes" summaryList={classesSummaryList}/>}
             {Object.keys(literalsSummaryList).length > 0 &&
-                <SummaryListTable name="Predicate" summaryList={literalsSummaryList}/>}
+                <SummaryListTable name="Literals" summaryList={literalsSummaryList}/>}
 
-            {(data.summary.objects.literals?.languages || []).length > 0 &&
-                <SummaryLanguagesTable languages={data.summary.objects.literals?.languages || []}/>}
+            {(version.summary.objects.literals?.languages || []).length > 0 &&
+                <SummaryLanguagesTable languages={version.summary.objects.literals?.languages || []}/>}
         </div>
     );
 }

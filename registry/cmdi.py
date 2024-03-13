@@ -13,8 +13,8 @@ from typing import Optional, List
 from inspect import cleandoc
 from config import records_path
 
-ns = {"cmd": "http://www.clarin.eu/cmd/1"}
-ns_prefix = '{http://www.clarin.eu/cmd/1}'
+ns = {"cmd": "http://www.clarin.eu/cmd/"}
+ns_prefix = '{http://www.clarin.eu/cmd/}'
 voc_root = './cmd:Components/cmd:Vocabulary'
 
 xpath_code = "./cmd:code"
@@ -30,7 +30,20 @@ xpath_valid_from = "./cmd:validFrom"
 
 xpath_location_elem = "./cmd:Location"
 xpath_namespace_elem = "./cmd:Namespaces/cmd:Namespace"
-xpath_list_item_elem = "./cmd:List/cmd:Item"
+xpath_namespace_item_elem = "./cmd:NamespaceItems/cmd:NamespaceItem"
+xpath_summary_elem = "./cmd:Summary"
+
+xpath_summary_ns = "./cmd:Summary/cmd:Namespace"
+xpath_summary_ns_uri = "./cmd:Summary/cmd:Namespace/cmd:URI"
+xpath_summary_ns_prefix = "./cmd:Summary/cmd:Namespace/cmd:prefix"
+
+xpath_summary_st = "./cmd:Summary/cmd:Statements"
+xpath_summary_st_subj = "./cmd:Summary/cmd:Statements/cmd:Subjects"
+xpath_summary_st_pred = "./cmd:Summary/cmd:Statements/cmd:Predicates"
+xpath_summary_st_obj = "./cmd:Summary/cmd:Statements/cmd:Objects"
+xpath_summary_st_obj_classes = "./cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes"
+xpath_summary_st_obj_literals = "./cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals"
+xpath_summary_st_obj_literals_lang = "./cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals/cmd:Languages/cmd:Language"
 
 xpath_vocab_type = f"{voc_root}/cmd:type"
 xpath_title = f"({voc_root}/cmd:title[@xml:lang='en'][normalize-space(.)!=''],base-uri(/cmd:CMD)[normalize-space(.)!=''])[1]"
@@ -39,19 +52,6 @@ xpath_license = f"{voc_root}/cmd:License/cmd:url"
 xpath_publisher = f"{voc_root}/cmd:Assessement/cmd:Recommendation/cmd:Publisher"
 xpath_location = f"{voc_root}/cmd:Location"
 xpath_version = f"{voc_root}/cmd:Version"
-xpath_summary = f"{voc_root}/cmd:Summary"
-
-xpath_summary_ns = f"{voc_root}/cmd:Summary/cmd:Namespace"
-xpath_summary_ns_uri = f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:URI"
-xpath_summary_ns_prefix = f"{voc_root}/cmd:Summary/cmd:Namespace/cmd:prefix"
-
-xpath_summary_st = f"{voc_root}/cmd:Summary/cmd:Statements"
-xpath_summary_st_subj = f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Subjects"
-xpath_summary_st_pred = f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Predicates"
-xpath_summary_st_obj = f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects"
-xpath_summary_st_obj_classes = f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Classes"
-xpath_summary_st_obj_literals = f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals"
-xpath_summary_st_obj_literals_lang = f"{voc_root}/cmd:Summary/cmd:Statements/cmd:Objects/cmd:Literals/cmd:Languages/cmd:Language"
 
 
 class Location(BaseModel):
@@ -77,12 +77,6 @@ class Review(BaseModel):
     nickname: Optional[str] = None
     moderation: Optional[str] = None
     user: str
-
-
-class Version(BaseModel):
-    version: str
-    validFrom: Optional[datetime] = None
-    locations: List[Location]
 
 
 class Namespace(BaseModel):
@@ -120,8 +114,15 @@ class Summary(BaseModel):
     namespace: Optional[Namespace] = None
     stats: Optional[SummaryStats] = None
     subjects: Optional[SummaryStats] = None
-    predicates: Optional[SummaryListStats] = None
+    predicates: Optional[SummaryStats] = None
     objects: Optional[SummaryObjectStats] = None
+
+
+class Version(BaseModel):
+    version: str
+    validFrom: Optional[str] = None
+    locations: List[Location]
+    summary: Optional[Summary] = None
 
 
 class Vocab(BaseModel):
@@ -138,7 +139,6 @@ class Vocab(BaseModel):
     reviews: List[Review] = []
     usage: Usage
     recommendations: List[Recommendation]
-    summary: Optional[Summary] = None
     versions: List[Version]
 
 
@@ -197,7 +197,7 @@ def get_record(id: str) -> Vocab:
             prefix=grab_value(xpath_prefix, list_item_elem),
             name=grab_value(xpath_name, list_item_elem),
             count=grab_value(xpath_count, list_item_elem, int),
-        ) for list_item_elem in elementpath.select(elem, xpath_list_item_elem, ns)]
+        ) for list_item_elem in elementpath.select(elem, xpath_namespace_item_elem, ns)]
 
     def create_location_for(elem: Element) -> Location:
         return Location(
@@ -206,39 +206,45 @@ def get_record(id: str) -> Vocab:
             recipe=grab_value(xpath_recipe, elem),
         )
 
+    def create_version(elem: Element) -> Version:
+        summary_namespace = Namespace(
+            uri=grab_value(xpath_summary_ns_uri, elem),
+            prefix=grab_value(xpath_summary_ns_prefix, elem)
+        ) if grab_first(xpath_summary_ns, elem) is not None else None
+
+        summary = Summary(
+            namespace=summary_namespace,
+            stats=create_summary_for(grab_first(xpath_summary_elem, elem)),
+            subjects=create_summary_for(grab_first(xpath_summary_st_subj, elem)),
+            predicates=create_summary_for(grab_first(xpath_summary_st_pred, elem)),
+            objects=SummaryObjectStats(
+                **create_summary_for(grab_first(xpath_summary_st_obj, elem)).model_dump(),
+                classes=SummaryListStats(
+                    **create_summary_for(grab_first(xpath_summary_st_obj_classes, elem)).model_dump(),
+                    list=create_list_for(grab_first(xpath_summary_st_obj_classes, elem)),
+                ),
+                literals=SummaryListLanguageStats(
+                    **create_summary_for(grab_first(xpath_summary_st_obj_literals, elem)).model_dump(),
+                    list=create_list_for(grab_first(xpath_summary_st_obj_literals, elem)),
+                    languages={
+                        grab_value(xpath_code, lang_elem): grab_value(xpath_count, lang_elem, int)
+                        for lang_elem in elementpath.select(elem, xpath_summary_st_obj_literals_lang, ns)
+                    },
+                ),
+            )
+        ) if grab_first(xpath_summary_st, elem) is not None else (
+            Summary(namespace=summary_namespace)) if summary_namespace is not None else None
+
+        return Version(
+            version=grab_value(xpath_version_no, elem),
+            validFrom=grab_value(xpath_valid_from, elem),
+            locations=[create_location_for(loc_elem)
+                       for loc_elem in elementpath.select(elem, xpath_location_elem, ns)],
+            summary=summary
+        )
+
     file = get_file_for_id(id)
     root = read_root(file)
-
-    summary_namespace = Namespace(
-        uri=grab_value(xpath_summary_ns_uri, root),
-        prefix=grab_value(xpath_summary_ns_prefix, root)
-    ) if grab_first(xpath_summary_ns, root) is not None else None
-
-    summary = Summary(
-        namespace=summary_namespace,
-        stats=create_summary_for(grab_first(xpath_summary, root)),
-        subjects=create_summary_for(grab_first(xpath_summary_st_subj, root)),
-        predicates=SummaryListStats(
-            **create_summary_for(grab_first(xpath_summary_st_pred, root)).model_dump(),
-            list=create_list_for(grab_first(xpath_summary_st_pred, root)),
-        ),
-        objects=SummaryObjectStats(
-            **create_summary_for(grab_first(xpath_summary_st_obj, root)).model_dump(),
-            classes=SummaryListStats(
-                **create_summary_for(grab_first(xpath_summary_st_obj_classes, root)).model_dump(),
-                list=create_list_for(grab_first(xpath_summary_st_obj_classes, root)),
-            ),
-            literals=SummaryListLanguageStats(
-                **create_summary_for(grab_first(xpath_summary_st_obj_literals, root)).model_dump(),
-                list=create_list_for(grab_first(xpath_summary_st_obj_literals, root)),
-                languages={
-                    grab_value(xpath_code, lang_elem): grab_value(xpath_count, lang_elem, int)
-                    for lang_elem in elementpath.select(root, xpath_summary_st_obj_literals_lang, ns)
-                },
-            ),
-        )
-    ) if grab_first(xpath_summary_st, root) is not None else (
-        Summary(namespace=summary_namespace)) if summary_namespace is not None else None
 
     return Vocab(
         id=id,
@@ -263,14 +269,8 @@ def get_record(id: str) -> Vocab:
         usage=Usage(count=0, outOf=0),
         recommendations=[Recommendation(publisher=grab_value(xpath_name, elem), rating=None)
                          for elem in elementpath.select(root, xpath_publisher, ns)],
-        summary=summary,
-        versions=sorted([Version(
-            version=grab_value(xpath_version_no, elem),
-            validFrom=grab_value(xpath_valid_from, elem),
-            locations=[create_location_for(loc_elem)
-                       for loc_elem in elementpath.select(elem, xpath_location_elem, ns)]
-        ) for elem in elementpath.select(root, xpath_version, ns)],
-            key=lambda x: (x.validFrom is not None, x.version), reverse=True)
+        versions=sorted([create_version(elem) for elem in elementpath.select(root, xpath_version, ns)],
+                        key=lambda x: (x.validFrom is not None, x.version), reverse=True)
     )
 
 

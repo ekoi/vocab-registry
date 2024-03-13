@@ -51,7 +51,7 @@ export default function Detail({data}: { data: Vocab }) {
                 <div className="vocabContentVersions">
                     <div className="vocabContent">
                         {viewOpened === ViewOpened.DESCRIPTION && <Description data={data} version={version}/>}
-                        {viewOpened === ViewOpened.SUMMARY && <Summary data={data}/>}
+                        {viewOpened === ViewOpened.SUMMARY && <Summary version={version}/>}
                         {viewOpened === ViewOpened.REVIEWS && <Reviews data={data}/>}
                     </div>
 
