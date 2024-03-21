@@ -2,19 +2,16 @@ import {Vocab} from '../misc/interfaces';
 import useAuth from "../hooks/useAuth";
 import ReportAbuse from "./ReportAbuse";
 import React from "react";
-import {useNavigate} from "react-router-dom";
 
-import {StarRating} from "review-component-react"
-import ReviewForm from "./ReviewForm"
+import {ReviewForm, StarRating} from "review-component-react"
 
 
 
 export default function Reviews({data}: { data: Vocab }) {
     const [userInfo] = useAuth();
-    const navigate = useNavigate();
     const url_target = `/review/${data.id}`
 
-    const handleRating = async (stars, text, setSuccess) => {
+    const handleRating = async (stars: number, text: string) => {
 
                await fetch(url_target, {
                     method: 'POST',
@@ -34,7 +31,6 @@ export default function Reviews({data}: { data: Vocab }) {
                         console.log("********" + response.status)
                         console.log(response)
                         // submit was succesful
-                        setSuccess(true);
                  }
                 );
     }
@@ -47,7 +43,7 @@ export default function Reviews({data}: { data: Vocab }) {
             {data.reviews.map(review => (
                 <div className="review" key={review.id}>
                     <div className="hcAlignLeft hcMarginBottom1">
-                            <StarRating page_id={review.id} rate={review.rating} user_id={review.id} readonly={true} handleRating={0}/>
+                            <StarRating rate={review.rating} readonly={true} handleRating={() => null}/>
                         {review.nickname && <span>{review.nickname}</span>}
                     </div>
 
@@ -57,10 +53,10 @@ export default function Reviews({data}: { data: Vocab }) {
 
             {!userInfo ?
             <button onClick={login} >Do you want write a review? Please log in.</button> :
-            <div><ReviewForm id={data.id} user={data.user} handleRating={handleRating}/></div>
+            <div><ReviewForm handleRating={handleRating}/></div>
         }
 
-            <div><ReportAbuse/></div>
+            <div><ReportAbuse url_target="/mail"/></div>
         </div>
     );
 }

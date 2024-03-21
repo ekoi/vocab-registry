@@ -1,3 +1,4 @@
+import json
 import os
 import uuid
 import elementpath
@@ -246,6 +247,14 @@ def get_record(id: str) -> Vocab:
     file = get_file_for_id(id)
     root = read_root(file)
 
+    f_reviews_path = os.environ.get('RECORDS_PATH', '../data/records/') + id + '-reviews.json'
+    if os.path.exists(f_reviews_path):
+        with open(f_reviews_path) as f:
+            f_content = f.read()
+            reviews_json = json.loads(f_content)
+    else:
+        reviews_json = []
+
     return Vocab(
         id=id,
         type=grab_value(xpath_vocab_type, root),
@@ -258,14 +267,7 @@ def get_record(id: str) -> Vocab:
         modified=datetime.utcfromtimestamp(os.path.getmtime(file)).isoformat(),
         locations=[create_location_for(elem)
                    for elem in elementpath.select(root, xpath_location, ns)],
-        reviews=[Review(
-            id=str(uuid.uuid4()),
-            rating=randint(1, 6),
-            review=lorem.paragraphs(randint(1, 6)),
-            nickname=None,
-            moderation=None,
-            user=str(uuid.uuid4())
-        ) for i in range(0, randint(0, 4))],
+        reviews=[Review(review) for review in reviews_json],
         usage=Usage(count=0, outOf=0),
         recommendations=[Recommendation(publisher=grab_value(xpath_name, elem), rating=None)
                          for elem in elementpath.select(root, xpath_publisher, ns)],

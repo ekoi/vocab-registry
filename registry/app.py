@@ -8,11 +8,8 @@ from functools import wraps
 from config import app_domain, secret_key, oidc_server, oidc_client_id, oidc_client_secret
 from elastic_index import Index
 from cmdi import get_record, create_basic_cmdi
-from datetime import datetime
-from doc import get_doc_html
 import os
 import json
-import flask
 
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 app.config.update(
@@ -151,27 +148,6 @@ def review_form(id):
 
     data = {"status":"OK", "id": id}
     return jsonify(data)
-
-@app.get('/user-info')
-# @auth.oidc_auth('default')
-def user_info():
-    user_session = UserSession(flask.session, 'default')
-    if user_session.last_authenticated:
-        return jsonify(user_session.userinfo)
-    else:
-        return "NOT LOGIN", 401
-
-
-@app.get('/login')
-@auth.oidc_auth('default')
-def login():
-    return redirect('/', 302)
-
-
-@app.route('/logout')
-@auth.oidc_logout
-def logout():
-    return "You\'ve been successfully logged out!"
 
 
 if __name__ == '__main__':

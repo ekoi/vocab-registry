@@ -6,7 +6,7 @@ import {Text, TextArea} from "@radix-ui/themes";
 import * as Checkbox from '@radix-ui/react-checkbox';
 import { CheckIcon } from '@radix-ui/react-icons';
 
-const ReportAbuse = (url_target: string) =>{
+const ReportAbuse = ({url_target}: {url_target: string}) =>{
 const [open, setOpen] = React.useState(false);
 
     return (
@@ -112,7 +112,7 @@ const [open, setOpen] = React.useState(false);
 
 export default ReportAbuse;
 
-const CustomCheckbox = ({label, id}) => {
+const CustomCheckbox = ({label, id}: {label:string, id: string}) => {
     return (
         <div>
           <div style={{ display: 'flex'}}>
