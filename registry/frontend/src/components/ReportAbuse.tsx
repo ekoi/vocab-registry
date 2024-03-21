@@ -6,8 +6,7 @@ import {Text, TextArea} from "@radix-ui/themes";
 import * as Checkbox from '@radix-ui/react-checkbox';
 import { CheckIcon } from '@radix-ui/react-icons';
 
-const DialogDemo = () =>{
-const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
+const ReportAbuse = (url_target: string) =>{
 const [open, setOpen] = React.useState(false);
 
     return (
@@ -21,8 +20,6 @@ const [open, setOpen] = React.useState(false);
          <form
             onSubmit={async (event) => {
                 const data = Object.fromEntries(new FormData(event.currentTarget));
-                const url_target = "/mail"
-                console.log(url_target)
                 let subject = ""
                 if (data["abuse"]=='on') {
                     subject = "Abuse or Inappropriate content. "
@@ -53,8 +50,6 @@ const [open, setOpen] = React.useState(false);
                 }).then(response => {
                     console.log(response.status)
                 })
-
-                wait().then(() => setOpen(false));
 
                 event.preventDefault();
             }}
@@ -115,7 +110,7 @@ const [open, setOpen] = React.useState(false);
   </Dialog.Root>
 )};
 
-export default DialogDemo;
+export default ReportAbuse;
 
 const CustomCheckbox = ({label, id}) => {
     return (
