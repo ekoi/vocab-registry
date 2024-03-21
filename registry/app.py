@@ -126,7 +126,7 @@ def proxy(recipe, id):
 
 
 @app.post('/review/<id>')
-# @auth.oidc_auth('default')
+@authenticated
 def review_form(id):
     data = request.get_json()
 

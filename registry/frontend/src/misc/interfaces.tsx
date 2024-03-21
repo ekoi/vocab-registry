@@ -10,20 +10,22 @@ export interface Vocab {
     modified: string;
     locations: VocabLocation[];
     user: string;
-    reviews: {
-        id: string;
-        rating: number;
-        review: string;
-        nickname: string | null;
-        moderation: 'blocked' | 'quarantaine' | null;
-        user: string;
-    }[];
+    reviews: Review[];
     usages: {
         count: number;
         outOf: number;
     };
     recommendations: VocabRecommendation[];
     versions: VocabVersion[];
+}
+
+export interface Review {
+    id: string;
+    rating: number;
+    review: string;
+    nickname: string | null;
+    moderation: 'blocked' | 'quarantaine' | null;
+    user: string;
 }
 
 export interface VocabLocation {

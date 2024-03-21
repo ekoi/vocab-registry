@@ -267,7 +267,7 @@ def get_record(id: str) -> Vocab:
         modified=datetime.utcfromtimestamp(os.path.getmtime(file)).isoformat(),
         locations=[create_location_for(elem)
                    for elem in elementpath.select(root, xpath_location, ns)],
-        reviews=[Review(review) for review in reviews_json],
+        reviews=[Review.model_validate(review) for review in reviews_json],
         usage=Usage(count=0, outOf=0),
         recommendations=[Recommendation(publisher=grab_value(xpath_name, elem), rating=None)
                          for elem in elementpath.select(root, xpath_publisher, ns)],
