@@ -5,8 +5,6 @@ import LocationIconBar from './LocationIconBar';
 import LocationInteract from './LocationInteract';
 import useLocationFocus from '../hooks/useLocationFocus';
 import {Vocab, VocabRecommendation} from '../misc/interfaces';
-import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Description({data}: { data: Vocab }) {
     const [locationFocus, onLocationClick] = useLocationFocus();
@@ -36,14 +34,6 @@ export default function Description({data}: { data: Vocab }) {
                 {data.recommendations &&
                     <DetailRow label="Publisher" values={data.recommendations.map(r =>
                         <Recommendation key={r.publisher} vocab={data} recommendation={r}/>)}/>}
-                <div>
-                    <button>
-                    <FontAwesomeIcon icon={faThumbsUp} size="sm" style={{"--fa-primary-color": "#ead91f", "--fa-secondary-color": "#ead91f",}} />
-                    </button>
-                    <button>
-                    <FontAwesomeIcon icon={faThumbsDown} size="sm" style={{"--fa-primary-color": "#ead91f", "--fa-secondary-color": "#ead91f",}} />
-                    </button>
-                </div>
             </div>
 
             <LocationInteract location={locationFocus}/>
