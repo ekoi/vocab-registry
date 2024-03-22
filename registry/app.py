@@ -1,3 +1,6 @@
+import os
+import json
+
 from flask import Flask, request, jsonify, abort, redirect, session
 from flask_cors import CORS
 from flask_pyoidc import OIDCAuthentication
@@ -5,15 +8,13 @@ from flask_pyoidc.provider_configuration import ProviderConfiguration, ClientMet
 from flask_pyoidc.user_session import UserSession
 from werkzeug.http import parse_date
 from functools import wraps
-from config import app_domain, secret_key, oidc_server, oidc_client_id, oidc_client_secret
 from elastic_index import Index
 from cmdi import get_record, create_basic_cmdi
-import os
-import json
+from config import secret_key, oidc_server, oidc_client_id, oidc_client_secret, oidc_redirect_uri
 
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='')
 app.config.update(
-    OIDC_REDIRECT_URI=app_domain + '/signin-callback',
+    OIDC_REDIRECT_URI=oidc_redirect_uri,
     SECRET_KEY=secret_key,
 )
 
@@ -135,7 +136,7 @@ def review_form(id):
         with open(f_reviews_path, "r+") as f:
             f_content = f.read()
             reviews_file_json = json.loads(f_content)
-            data.update({"id": str(len(reviews_file_json)+1), "nickname": "", "moderation": ""})
+            data.update({"id": str(len(reviews_file_json) + 1), "nickname": "", "moderation": ""})
             reviews_file_json.append(data)
             f.seek(0)
             f.write(json.dumps(reviews_file_json))
@@ -146,7 +147,7 @@ def review_form(id):
         with open(f_reviews_path, "w") as f:
             f.write(json.dumps(reviews_file_json))
 
-    data = {"status":"OK", "id": id}
+    data = {"status": "OK", "id": id}
     return jsonify(data)
 
 

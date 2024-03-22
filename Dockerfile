@@ -26,8 +26,6 @@ COPY --from=frontend-build /app/dist /app/frontend/dist
 
 RUN pip3 install --trusted-host pypi.python.org -r /app/requirements.txt
 
-ENV FLASK_APP=/app/app.py
-
 EXPOSE 5000
 
 CMD ["gunicorn", "-b", ":5000", "-t", "60", "-w", "4", "app:app"]
