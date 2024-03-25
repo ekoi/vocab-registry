@@ -49,10 +49,12 @@ function AddReview({id}: { id: string }) {
     }
 
     if (authEnabled && !userInfo) {
+        const redirectUri = `/login?redirect-uri=${encodeURIComponent(window.location.href)}`;
+
         return (
-            <button onClick={_ => window.location.href = '/login'}>
-                Do you want write a review? Please log in.
-            </button>
+            <p>
+                Do you want write a review? Please <a href={redirectUri}>log in</a>.
+            </p>
         );
     }
 

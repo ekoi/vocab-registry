@@ -75,7 +75,7 @@ table.vocabSummary .footer-unique {
     margin-left: 0;
 }
 
-.hcToggle button {
+.hcToggle button, .hcToggle a {
     margin: 0 0;
     border-radius: 0;
     border-right: 0;
@@ -154,6 +154,12 @@ header .hcButton {
 .hcButton.tabActive {
     background-color: rgba(0, 0, 0, 0.11);
     border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+a.hcButton {
+    color: inherit;
+    margin: inherit;
+    border-radius: inherit;
 }
 
 .detailLine {

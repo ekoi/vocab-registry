@@ -40,7 +40,7 @@ const routeObject: RouteObject = {
                          hasIndexPage={false} showSearchHeader={false} updateDocumentTitle={false}
                          searchParams={SearchParams.PARAMS} FacetsComponent={Facets} ResultItemComponent={ListItem}/>
     }, {
-        path: 'detail/:id',
+        path: ':id/:tab?',
         loader: async ({params}) => detailLoader(params.id as string),
         element: <BrowserDetail title={title} updateDocumentTitle={false} DetailComponent={Detail}/>
     }]

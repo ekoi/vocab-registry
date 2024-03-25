@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {useNavigate} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Link, useNavigate, useParams} from 'react-router-dom';
 import {Vocab} from '../misc/interfaces';
 import Description from './Description';
 import Summary from './Summary';
@@ -10,8 +10,23 @@ enum ViewOpened { DESCRIPTION, SUMMARY, REVIEWS}
 
 export default function Detail({data}: { data: Vocab }) {
     const navigate = useNavigate();
+    const {id, tab} = useParams();
     const [viewOpened, setViewOpened] = useState<ViewOpened>(ViewOpened.DESCRIPTION);
     const [currentVersion, setCurrentVersion] = useState<string | null>(null);
+
+    useEffect(() => {
+        switch (tab) {
+            case 'summary':
+                setViewOpened(ViewOpened.SUMMARY);
+                break;
+            case 'reviews':
+                setViewOpened(ViewOpened.REVIEWS);
+                break;
+            case 'description':
+            default:
+                setViewOpened(ViewOpened.DESCRIPTION);
+        }
+    }, [id, tab]);
 
     const versions = data.versions
         .sort((a, b) => -1 * a.version.localeCompare(b.version));
@@ -32,18 +47,18 @@ export default function Detail({data}: { data: Vocab }) {
                         </a>
 
                         <div className="hcToggle">
-                            <button className={`hcButton ${viewOpened === ViewOpened.DESCRIPTION ? 'tabActive' : ''}`}
-                                    onClick={_ => setViewOpened(ViewOpened.DESCRIPTION)}>
+                            <Link to={`/${id}/description`}
+                                  className={`hcButton ${viewOpened === ViewOpened.DESCRIPTION ? 'tabActive' : ''}`}>
                                 Description
-                            </button>
-                            <button className={`hcButton ${viewOpened === ViewOpened.SUMMARY ? 'tabActive' : ''}`}
-                                    onClick={_ => setViewOpened(ViewOpened.SUMMARY)}>
+                            </Link>
+                            <Link to={`/${id}/summary`}
+                                  className={`hcButton ${viewOpened === ViewOpened.SUMMARY ? 'tabActive' : ''}`}>
                                 Summary
-                            </button>
-                            <button className={`hcButton ${viewOpened === ViewOpened.REVIEWS ? 'tabActive' : ''}`}
-                                    onClick={_ => setViewOpened(ViewOpened.REVIEWS)}>
+                            </Link>
+                            <Link to={`/${id}/reviews`}
+                                  className={`hcButton ${viewOpened === ViewOpened.REVIEWS ? 'tabActive' : ''}`}>
                                 Reviews
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
