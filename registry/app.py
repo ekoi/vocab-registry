@@ -45,7 +45,10 @@ def authenticated(func):
 
 
 @app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
+@app.route('/<path>')
+@app.route('/<path>/description')
+@app.route('/<path>/summary')
+@app.route('/<path>/reviews')
 def catch_all(path):
     return app.send_static_file("index.html")
 
