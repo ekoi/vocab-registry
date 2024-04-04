@@ -11,21 +11,23 @@ export default function useAuth(): [boolean, UserInfo | null] {
     const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
 
     useEffect(() => {
-        const fetchFromLogin = async () => {
-            const response = await fetch('/user-info');
-            if (response.ok) {
-                const rsp = await response.json();
-                setUserInfo(rsp);
-                setAuthEnabled(true);
-            }
-            else {
-                setUserInfo(null);
-                setAuthEnabled(response.status !== 404);
-            }
-        };
-
+        if (!userInfo) {
+            const fetchFromLogin = async () => {
+                const response = await fetch('/user-info');
+                if (response.ok) {
+                    const rsp = await response.json();
+                    setUserInfo(rsp);
+                    setAuthEnabled(true);
+                }
+                else {
+                    setUserInfo(null);
+                    setAuthEnabled(response.status !== 404);
+                }
+            };
         fetchFromLogin();
-    });
+        }
+
+    }, [userInfo]);
 
     return [authEnabled, userInfo];
 }
