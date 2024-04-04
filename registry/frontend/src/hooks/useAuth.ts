@@ -25,7 +25,7 @@ export default function useAuth(): [boolean, UserInfo | null] {
         };
 
         fetchFromLogin();
-    });
+    }, []);
 
     return [authEnabled, userInfo];
 }
