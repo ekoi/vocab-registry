@@ -205,7 +205,47 @@ json_data = """
       "interactionType": "LikeAction",
       "author": {
         "@type": "Person",
-        "name": "Eko Indarto"
+        "name": "Wilko steinhoff"
+      }
+    },
+    {
+      "@type": "LikeAction",
+      "interactionType": "LikeAction",
+      "author": {
+        "@type": "Person",
+        "name": "Kerim Meijer"
+      }
+    },
+     {
+      "@type": "LikeAction",
+      "interactionType": "DislikeAction",
+      "author": {
+        "@type": "Person",
+        "name": "Daan Jansen"
+      }
+    },
+    {
+      "@type": "LikeAction",
+      "interactionType": "LikeAction",
+      "author": {
+        "@type": "Person",
+        "name": "Amal Khairunnisa"
+      }
+    },
+    {
+      "@type": "LikeAction",
+      "interactionType": "LikeAction",
+      "author": {
+        "@type": "Person",
+        "name": "Menzo Windhouwer"
+      }
+    },
+     {
+      "@type": "LikeAction",
+      "interactionType": "DislikeAction",
+      "author": {
+        "@type": "Person",
+        "name": "Kerim Meyer"
       }
     }
   ]
