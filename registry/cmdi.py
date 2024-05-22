@@ -12,7 +12,8 @@ from lxml.etree import Element
 from pydantic import BaseModel
 from typing import Optional, List
 from inspect import cleandoc
-from config import records_path
+
+records_path = './data'
 
 ns = {"cmd": "http://www.clarin.eu/cmd/"}
 ns_prefix = '{http://www.clarin.eu/cmd/}'
@@ -82,7 +83,7 @@ class Review(BaseModel):
 
 class Namespace(BaseModel):
     uri: str
-    prefix: str
+    prefix: Optional[str] = None
 
 
 class SummaryNamespaceStats(Namespace):
@@ -165,6 +166,7 @@ def grab_first(path: str, root: Element) -> Element:
 
 def grab_value(path, root, func=None):
     content = elementpath.select(root, path, ns)
+
     if content and type(content[0]) == str:
         content = unicodedata.normalize("NFKC", content[0]).strip()
     elif content and content[0].text is not None:
