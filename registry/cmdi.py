@@ -12,8 +12,7 @@ from lxml.etree import Element
 from pydantic import BaseModel
 from typing import Optional, List
 from inspect import cleandoc
-
-records_path = './data'
+from config import records_path
 
 ns = {"cmd": "http://www.clarin.eu/cmd/"}
 ns_prefix = '{http://www.clarin.eu/cmd/}'
