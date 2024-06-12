@@ -3,7 +3,7 @@ import datetime
 import json
 import unittest
 from enum import StrEnum, auto
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel, Field
 from rdflib import Graph
 
@@ -34,37 +34,6 @@ class ReviewRatingModel(BaseModel):
     ratingValue: int
 
 
-class ReviewModel(BaseModel):
-    """Model representing the rating of a rating review.
-
-        Attributes:
-            type_ (str): The type of the rating. Default is 'rating'.
-            worstRating (str): The worst possible rating. Default is '1'.
-            bestRating (str): The best possible rating. Default is '5'.
-            ratingValue (str): The actual rating value.
-        """
-    type_: str = Field(alias="@type", default="review")
-    author: AuthorModel
-    datePublished: str = Field(default=datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
-    reviewBody: str
-    reviewRating: ReviewRatingModel
-
-
-class AggregateRatingModel(BaseModel):
-    """Model representing aggregate rating information.
-
-        Attributes:
-            type_ (str): The type of the aggregate rating. Default is 'AggregateRating'.
-            ratingValue (str): The value of the aggregate rating.
-            bestRating (str): The highest possible rating value.
-            ratingCount (str): The total number of ratings.
-        """
-    type_: str = Field(alias="@type", default='AggregateRating')
-    ratingValue: float
-    bestRating: int
-    ratingCount: int
-
-
 class InteractionTypeAction(StrEnum):
     """
        Enumeration for interaction types.
@@ -82,9 +51,41 @@ class InteractionStatisticItemModel(BaseModel):
             interactionType (InteractionTypeAction): The type of interaction.
             author (AuthorModel): The author of the interaction.
         """
-    type_: str = Field(alias='@type', default=None)
     interactionType: InteractionTypeAction
     author: AuthorModel
+    delete: Optional[bool] = None
+
+
+class ReviewModel(BaseModel):
+    """Model representing the rating of a rating review.
+
+        Attributes:
+            type_ (str): The type of the rating. Default is 'rating'.
+            worstRating (str): The worst possible rating. Default is '1'.
+            bestRating (str): The best possible rating. Default is '5'.
+            ratingValue (str): The actual rating value.
+        """
+    type_: str = Field(alias="@type", default="review")
+    author: AuthorModel
+    datePublished: str = Field(default=datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'))
+    reviewBody: Optional[str] = None
+    reviewRating: Optional[ReviewRatingModel] = None
+    interactionStatistic: Optional[List[InteractionStatisticItemModel]] = None
+
+
+class AggregateRatingModel(BaseModel):
+    """Model representing aggregate rating information.
+
+        Attributes:
+            type_ (str): The type of the aggregate rating. Default is 'AggregateRating'.
+            ratingValue (str): The value of the aggregate rating.
+            bestRating (str): The highest possible rating value.
+            ratingCount (str): The total number of ratings.
+        """
+    type_: str = Field(alias="@type", default='AggregateRating')
+    ratingValue: float
+    bestRating: int
+    ratingCount: int
 
 
 class RatingModel(BaseModel):
@@ -99,9 +100,7 @@ class RatingModel(BaseModel):
     context: str = Field(alias="@context", default="https://schema.org/")
     type_: str = Field(alias="@type", default="Product")
     reviews: List[ReviewModel]
-    aggregateRating: AggregateRatingModel
-    interactionStatistic: List[InteractionStatisticItemModel]
-
+    aggregateRating: Optional[AggregateRatingModel] = None
 
 class TestModels(unittest.TestCase):
 
