@@ -1,13 +1,10 @@
 import json
 import os
-import uuid
 import elementpath
 import unicodedata
 
 from lxml import etree
-from random import randint
 from datetime import datetime
-from lorem_text import lorem
 from lxml.etree import Element
 from pydantic import BaseModel
 from typing import Optional, List
@@ -57,7 +54,7 @@ xpath_summary_st_obj_literals_lang = "./cmd:Summary/cmd:Statements/cmd:Objects/c
 
 xpath_vocab_type = f"{voc_root}/cmd:type"
 xpath_title = f"({voc_root}/cmd:title[@xml:lang='en'][normalize-space(.)!=''],base-uri(/cmd:CMD)[normalize-space(.)!=''])[1]"
-xpath_description = f"{voc_root}/cmd:Description/cmd:description[@xml:lang='en']"
+xpath_description = f"{voc_root}/cmd:Description/cmd:description"
 xpath_license = f"{voc_root}/cmd:License/cmd:url"
 xpath_publisher = f"{voc_root}/cmd:Assessement/cmd:Recommendation/cmd:Publisher"
 xpath_review = f"{voc_root}/cmd:Assessement/cmd:Review"
@@ -91,7 +88,7 @@ class Review(BaseModel):
 
 class Namespace(BaseModel):
     uri: str
-    prefix: str
+    prefix: Optional[str] = None
 
 
 class SummaryNamespaceStats(Namespace):
@@ -174,6 +171,7 @@ def grab_first(path: str, root: Element) -> Element:
 
 def grab_value(path, root, func=None):
     content = elementpath.select(root, path, ns)
+
     if content and type(content[0]) == str:
         content = unicodedata.normalize("NFKC", content[0]).strip()
     elif content and content[0].text is not None:
