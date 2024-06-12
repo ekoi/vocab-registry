@@ -1,11 +1,9 @@
 """Module to define data models for rating reviews."""
 import datetime
-import json
 import unittest
-from enum import StrEnum, auto
+from enum import StrEnum
 from typing import List
 from pydantic import BaseModel, Field
-from rdflib import Graph
 
 
 class AuthorModel(BaseModel):
